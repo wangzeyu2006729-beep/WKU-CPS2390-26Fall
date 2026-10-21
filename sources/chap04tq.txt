@@ -1,0 +1,221 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 4 (Copyright Yale Patt and Moinnudin Qureshi)
+
+Multiple Choice
+---------------
+
+1. A computer memory contains:
+
+    a. Intructions only.
+    b. data only
+    c. both instructions and data.
+    d. Neither instructionn nor data.
+
+    Answer: c
+
+2. The Von Neumann model consists of ___ parts
+
+   a. 3
+   b. 4
+   c. 5
+   d. 6
+
+   Answer: c
+
+3.  Typically the size of each register is ______ the size of values processed by ALU.
+
+    a. identical to
+    b. less than
+    c. greater than
+    d. unrelated to
+
+    Answer: a
+ 
+4. The Decode phase of the Instruction Cycle examines the ________ part of the instruction.
+
+    a. Immediate (literal) value
+    b. Opcode
+    c. Offset
+    d. Register
+
+    Answer: b
+
+5. The sequence of an Instruction cycle is:
+    a. FETCH -> DECODE -> EVALUATE ADDRESS -> FETCH OPERANDS -> EXECUTE -> STORE RESULT
+    b. FETCH -> DECODE -> FETCH OPERANDS -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT 
+    c. FETCH -> DECODE -> FETCH OPERANDS -> EXECUTE -> EVALUATE ADDRESS -> STORE RESULT
+    d. FETCH -> FETCH OPERANDS -> DECODE -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT
+    Answer: a
+
+
+
+6. _________ Instructions are used to change the sequence of instruction execution.
+    a. Control 
+    b. operate 
+    c. data movement .
+    Answer: a
+
+7. ADD is an example of a/an
+
+    a. Control instruction 
+    b. operate instruction 
+    c. data movement instruction .
+    Answer: b
+
+8. Control Instructions change the value of PC in the 
+    a. FETCH phase
+    b. EVALUATE ADDRESS phase.
+    c. EXECUTE phase.
+    d. DECODE phase.
+    Answer: c
+
+9. Which of the following instructions needs an EVALUATE ADDRESS phase:
+    a. ADD
+    b. LDR
+    c. NOT
+    d. JMP
+    Answer: b
+
+10. Of the following devices, ____ is an example of an output device
+    a. Mouse
+    b. Keyboard
+    c. Scanner.
+    d. Printer.
+    Answer: d
+
+
+11. LDR is an example of a/an  
+    a. Control Instruction
+    b. operate Instruction
+    c. data movement Instruction.
+    Answer: c
+
+12. Each phase of an instruction cycle requires
+    a. exactly one clock cycle to do its job.
+    b. at least one clock cycle to do its job.
+    c. no more than one clock cycle to do its job.
+    d. between 0 and some finite value n cycles to do its job.
+    Answer: d
+    
+
+13. A digital scanner is an example of a/an 
+    a. Input device
+    b. memory
+    c. processing unit
+    d. control unit
+    Answer: a
+    
+14. In the FETCH phase, an instruction is transferred from  ______ to the 
+    Instruction Register.
+    a. Memory.
+    b. Processing Unit
+    c. Input device
+    d. Output device
+    Answer: a
+
+15. If memory accesses take 100 times more than register accesses, then a LDR instruction will take ___  machine cycles than an JMP R3 instruction .
+    a. fewer
+    b. more
+    c. same number of 
+    Answer: b
+
+16. Memory is ALWAYS accessed in the following phases of an instruction cycle
+    a. EVALUATE ADDRESS, 
+    b. DECODE 
+    c. FETCH
+    d. EXECUTE.
+    Answer: c
+
+
+17. JMP is an example of a/an 
+    a. control Instruction
+    b. operate Instruction
+    c. data movement Instruction.
+    Answer: a
+
+18. An Instruction cycle consists of
+    a. more than 1 machine cycle
+    b. fewer than 1 machine cycle
+    c. Exactly 1 machine cycle.
+    Answer: a
+
+19. The PC is incremented so that during the next instruction cycle, the next instruction will be processed.  This happens during the
+    a. FETCH phase
+    b. DECODE phase
+    c. EVAL ADDRESS phase
+    d. EXEC phase
+    Answer: a
+
+
+Fill in Blanks 
+--------------
+(Note: Blank is indicated by parentheses which contains the answer)
+
+1.  The (INSTRUCTION) is the smallest unit of work specified in a computer program, such that either the whole unit must be carried out or none of it must be carried out.  We refer to such a unit as an "atomic" unit of work.
+
+2. To read the contents of a memory location, we first place the address of that location in the (MEMORY ADDRESS REGISTER {MAR}).
+
+3. Memory supplies data and accepts data to/from other devices through the (MEMORY DATA REGISTER -MDR).
+
+4. The size of the quantities normally processed by the ALU is often referred to as the (WORD LENGTH) of the computer.
+
+5. To keep track of what instruction is being executed, the control unit has an (INSTRUCTION REGISTER).
+
+6. The control unit has a (INSTRUCTION POINTER or Program Counter) that points to next instructions to be processed.
+
+7. The Program counter contains the (address of the next instruction to be processed).
+
+8. An instruction is made up of two parts the ( OPCODE ) and the ( OPERANDS ).
+
+9. The sequence of six phases that process an instruction is called the ( INSTRUCTION CYCLE).
+
+10. A 16-bit ISA has the following format <OPCODE><DR><SR0><SR1> where DR is the Destination register and SR0 and SR1 are source registers. If the ISA defines 32 registers then the maximum number of opcodes that can have that format is (2).
+
+11. A 16-bit instruction takes the following format <OPCODE><DR><SR><IMM> where DR specifies the destination register, SR specifies the source register, and IMM is a 2's complement immediate value. If there are 27 opcodes and 16 registers, the number of bits left to specify the immediate value is (3).
+
+12. For a particular 16-bit ISA, the LDR instruction has the following format <Opcode = 0110> <DR><BaseR><OFFSET>. If there are 4 registers, the number of bits available to specify the offset is (8).
+
+13. If a machine cycle is 1 nanosecond { ie. 10^-9 seconds } then (10^9) machine cycles occur each second.
+
+14. Instructions in a program are processed (sequentially) unless directed otherwise by a (control) instruction.
+
+
+TRUE-FALSE
+------------
+1. Sometimes it is possible to carry out only a part of instruction, in which case, the computer only carries out that part of the instruction that it can (F).
+
+2. The actual processing of information in the computer is done in the control unit (F).
+
+3. It is possible to have an ISA with word length of four bits. (T)
+
+4. Most ISA's provides some small temporary storage very close to the ALU to allow the results to be temporarily stored if they will be needed to produce results in the near future (T).
+
+5. For the LC-3 ISA, the LDR instruction requires an Execute phase (F).
+
+6. The time taken to access registers is less than the time taken to access memory. (T).
+
+7. It is possible to have a machine without some form of input or output device. (F)
+
+8. All instructions require all six phases of the instruction cycle to be carried out.  That is, at least one clock cycle must be devoted to carrying out the work of each phase of each instruction (F).
+
+9. Some instructions do not require the FETCH phase (F).
+
+10. Normally, the value in the Program Counter remains unchanged as a result of carrying out the fetch phase of the instruction cycle (F).
+
+11. The Decode phase is required of all instructions (T).
+
+12. The Evaluate address phase can happen before the instruction decode phase. (F).
+
+13. If an Instruction cycle is stopped using a HALT instruction, it cannot be reinitiated using any other instruction (T).
+
+14. The processor can interact with I/O devices using an I/O status register and I/O data register (T).
+
+15. The Processing unit interacts with memory using the Memory Status Register and the Memory data register. (F)
+
+16. The function of the Instruction Register is to point to next instruction to be processed.(F)
+
+17. If the instruction at address x4000 is being processed then it is possible that the next instruction to be processed is at address x5000. (T)
+
+18. For the LC-3 ISA, the ADD instruction does not require an EVALUATE ADDRESS phase (T).
+

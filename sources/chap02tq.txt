@@ -1,0 +1,230 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 2 (copyright, 2004, Yale Patt)
+
+True/False
+----------
+
+1. When a bit has a value 1, that corresponds to a signal level of 1 volt. (F)
+
+2. If numbers are to be represented with 10 bits, we can represent more unique numbers if we use an unsigned integer representation than if we use signed integer representations.  (F)
+
+3. The 2's complement representation for -2 is 111111111110, if we have 12 bits available to represent signed integers. (T)
+
+4. If we add the 2's complement representation of a number to itself, and if the sign bit does not change, the result will simply be the same as if we had shifted the original number one bit to the left, and inserted a 0 at the right end. (T)
+
+5. A and B are integers expressed in 2's complement.  If both are positive, and their sum produces a result that is the representation of a negative number, we know we MUST have caused an overflow (T). 
+
+6. A AND B is true if at least one of the two variables A, B is true. (F)
+
+7. A XOR B is true if one of A,B is true and one of A,B is false.  (T)
+ 
+8. The exponent of an IEEE Floating point number is encoded in 2's complement representation (F)
+
+9. Hexadecimal numbers are represented with radix 16 (T)
+
+10. Every ASCII code corresponds to a key on the typewriter that can produce a character on the screen of the monitor (F)
+
+11.The ASCII code for semicolon is formed by adding the ASCII codes for period and comma. (F)
+
+12. The character ? does not have an ASCII code. (F)
+
+13. The logical NOT function is a unary function, because it has only one argument (T)
+
+14. The floating point data type allows us to represent both much larger and much smaller numbers than is possible with 2's complement integers. (T)
+
+15. If a bit string consisting of n bits is represented in hex, only ceiling (n/4) hex digits are needed. Note: Let n = ceiling (x).  If x is an integer, then n = x.  If x is not an integer, then n = the smallest integer larger than x. (T)
+
+Multiple Choice
+---------------
+
+1.  The decimal digit 5 can be represented as a bit string:
+
+a. 00000000000101
+b. 000101
+c. 00110101
+d. All of the above
+
+Answer: d
+
+
+2. If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:
+
+a. nothing about the result.
+b. that the result is also a negative integer
+c. that we must have caused an overflow condition.
+
+Answer: c
+
+
+3. Two values A = 11111111111111111111111010101 and B = 1111010101are representations of 2's complement integers.
+
+a. A is larger
+b. B is larger
+c. A and B are equal
+d. You can not tell from the information provided.
+
+Answer: c
+
+
+4. If A is true, and B is false, the expression NOT(A) OR B is:
+
+a. true
+b. false
+c. you can not tell from the information provided.
+
+Answer: b
+
+
+5. If the radix is 16, each digit can have a value in the range:
+
+a. 0 to 9
+b. 0 to 15
+c. 1 to 16
+d. 1 to 15
+
+Answer: b
+
+6. If one adds the bit strings corresponding to the ASCII codes for two decimal digits, the sum:
+
+a. is the ASCII code of the sum of the two digits.
+b. produces an overflow situation.
+c. is the ASCII code of the sum of the two digits, if you first subtract the ASCII code for 0.
+d. is the 2's complement code of the sum of the two digits.
+
+Answer: c.
+
+
+7. If a floating point number is represented in normalized form,
+
+a. it must be a positive number.
+b. it must be a negative number.
+c. the most significant digit is 1.
+d. the most significant digit is non-zero.
+
+Answer: d
+
+
+8. For the value of A OR B to be true, 
+
+a. exactly one of the two values A, B is true.
+b. neither of the two values A, B is true.
+c. at least one of the two values A, B is true.
+d. both of the values A,B must be true.
+
+Answer: c
+
+
+9. A data type is:
+
+a. a representation of information for which an opcode exists that can operate on that representation.
+b. a memory location containing integer values.
+c. the sign bit of a floating point representation.
+
+Answer: a
+ 
+
+10. Using 8 bits, the unsigned integer representation of -13 is:
+
+a. 10001101
+b. 11110101
+c. not possible to represent.
+
+Answer: c
+
+
+11. In 2's complement arithmetic, an overflow occurs if:
+
+a. two positive numbers produce a negative result
+b. two negative numbers produce a positive result
+c. both a and b
+d. neither a nor b
+
+Answer: c
+
+
+12. To divide a 2's complement integer by 4, 
+
+a. it is first necessary to convert the bit string to its decimal value.
+b. shift right the bit string two places, and insert 0 in the two left-most bit positions.
+c. shift right the bit string two places, and insert the sign bit in the two left-most bit positions.
+d. shift left the bit string two places, and insert 0 in the two right-most bit positions.
+
+Answer: c
+
+
+13. With 12 bits, we can represent uniquely:
+
+a. exactly 12 distinct items
+b. exactly 2 times 12, or 24 distinct items
+c. exactly 4096 distinct items.
+d. as many distinct items as we wish to.
+  
+Answer: c
+
+14. A and B are locations containing bit strings.
+
+a. It takes the computer more time to ADD A,B than to AND A,B.
+b. It takes the computer more time to AND A,B than to ADD A,B.
+c. It takes the computer exactly the same amount of time to AND as to ADD.
+
+Answer: a
+
+
+15. The operation ADD is
+
+a. a unary operator because it performs ONE function, ADD.
+b. a binary operator because it requires TWO operands.
+c. a ternary operator because it requires TWO values to add and produces in addition, ONE result.
+
+Answer: b
+
+
+Fill in Blanks 
+--------------
+(Note: Blank is indicated by parentheses, which contains the answer)
+
+1. An operator requiring two source operands is called a (binary) operator.
+
+2. When two positive integers produce a negative result, we know (overflow) has occurred.
+
+3. With k bits, we can uniquely represent (2^k) distinct elements.
+
+4. If we add the 2's complement representation of k to the 2's complement representation of -k, the result will be (all 0's, plus a carry).
+
+3. 00100100 is the ASCII code for ($)
+
+4. If A and B are both true, the (XOR) of A,B is false.
+ 
+5. If A is false, the (NOT) of A is true.
+
+6. The three parts of a floating point representation are (sign, fraction, and exponent).
+
+7. Decimal numbers have (radix) ten.
+
+8. The (AND) function produces the value false, unless both sources are true. 
+
+9. (Floating Point) data type allows the representation of much larger and much tinier values than 2's complement integer representation.
+
+10. The digits 0,1,...9,A,B,C,D,E,F are used in (hexadecimal) notation.
+
+11. 110001 is the 6-bit unsigned representation for (49).
+
+12. 110001 is the 6-bit 2's complement representation for (-15).
+
+13. ADD, SUB are examples of (arithmetic) operators; AND, NOT are examples of (logical) operators.
+
+14. A (data type) is a representation of information, for which an operator exists that can operator on that representation.
+
+15. We use the term (bit) as a shortened form of binary digit.
+ 
+16. A (logical variable) can take on one of two values, 0 or 1.
+
+17. The (ALU) is the mechanism inside a computer that actually does the arithmetic and logical operations.
+
+18. FABC is the hexadecimal representation of the binary string (1111101010111100).
+
+19. (0F2A) is the hexadecimal representation of the binary string 0000111100101010.
+
+20. Every key on the keyboard has at least two corresponding (ASCII) codes, depending on whether or not the SHIFT key is also simultaneously depressed.
+

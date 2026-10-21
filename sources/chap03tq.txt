@@ -1,0 +1,207 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 3 (Copyright Yale Patt and Moinnudin Qureshi)
+
+Multiple Choice
+---------------
+
+#1. The minimum number of transistors required to implement a two input AND gate is
+
+a. 2
+b. 4
+c. 6
+d. 8
+Answer: c
+
+2. Using DeMorgan's Theorem we can convert any AND-OR structure into
+
+a. NAND-NAND
+b. OR-NAND
+c. NAND-NOR
+d. NOR-NAND
+Answer: a
+
+3. For a memory with a 16-bit address space, the addressability is
+a. 16 bits
+b. 8 bits 
+c. 2^16 bits
+d. Cannot be determined 
+Answer: d
+
+4. Because we wish to allow each ASCII code to occupy one location in memory, most memories are _____ addressable.
+a. BYTE
+b. NIBBLE
+c. WORD (16 bits)
+d. DOUBLEWORD (32 bits)
+Answer: a
+
+
+5. Circuit A is a 1-bit adder; circuit B is a 1 bit multiplier.
+
+a. Circuit A has more gates than circuit B
+b. Circuit B has more gates than circuit A
+c. Circuit A has the same number of gates as circuit B
+
+(Hint: Construct the truth table for the adder and the multiplier)
+
+Answer: a
+
+
+6. When the write enable input is not asserted, the gated D latch ______ its output.
+a. can not change
+b. clears
+c. sets
+d. complements
+Answer: a
+
+7.  A structure that stores a number of bits taken "together as a unit" is a 
+a. gate
+b. mux
+c. decoder
+d. register
+Answer: d
+
+
+8. We say that a set of gates is logically complete if we can build any circuit without using any other kind of gates.  Which of the following sets are logically complete
+a. set of {AND,OR}
+b. set of {EXOR, NOT}
+c. set of {AND,OR,NOT} 
+d. None of the above
+Answer: c
+
+
+9. Of the following circuits, the one which involves storage is 
+a. RS Latch
+b. mux
+c. nand
+d. decoder
+Answer: a
+
+
+10.  If the number of address bits in a memory is reduced by 2 and the
+addressability is doubled, the size of the memory (i.e., the number of bits stored in the memory) 
+a. doubles
+b. remains unchanged
+c. halves 
+d. increases by 2^(address bits)/addressability
+
+Answer : c
+
+
+12.  If m is a power of 2, the number of select lines required for an m-input mux is:
+
+a. m
+b. 2^m
+c. log2 (m)
+d. 2*m
+
+Answer: c
+
+13.  For the number A[15:0] = 0110110010001111,  A[14:13] is ______  A[3:2].
+
+a. less than 
+b. greater than
+c. the same as
+d . cannot be determined
+Answer: c
+
+
+
+
+14. Which of the following conditions is not allowed in an RS latch?
+
+a. R is asserted, S is asserted 
+b. R is asserted, S is negated
+c. R is negated, S is asserted 
+d. R is negated, S is negated
+
+Answer: a
+
+
+15. Which of the following pair of gates can form a latch?
+a. a pair of cross coupled OR
+b. a pair of cross copled AND
+c. a pair of cross coupled NAND
+d. a cross coupled NAND/OR
+
+Answer: c
+
+
+Fill in Blanks 
+--------------
+(Note: Blank is indicated by parentheses which contains the answer)
+
+1. To implement an n input NOR gate (by generalizing the circuit for a 2-input NOR gate shown in the textbook) we would need (2*n) transistors.
+
+2. A (MUX) is used to select one of many inputs.
+
+3. If A[15:0] = 1000110001110001, A[12:9] = (0110). 
+
+4. A 2 bit by 2-bit multiplier circuit will have (4) output bits.
+
+5. It is possible to make a two input OR gate using (3) two input nand gates
+
+6. A memory, consisting of 16K entries, is 13-bit addressable. It contains (13*2^14) bits of storage.
+
+7.If 16 bits are used to specify the address space of a memory, the memory has ( 65536 ) uniquely identifiable locations.
+
+8. A decoder with n inputs can have no more than (2^n ) outputs.
+
+9. If the 2 inputs of a 2 input nand gate are connected together, then the function of the nand gate is that of a/an (INVERTER).
+
+10. A (DECODER) is helpful in identifying the opcode of an instruction.
+
+11. At any time there are exactly (TWO) transistors open circuited in a 2 input nand gate.
+
+12. The function NOT { AB+CD } can be implemented using a minimum of ( 8 ) transistors .
+
+13. A circuit for adding two n bit numbers, like the one in the textbook, requires (n) full adders with ( n+1 )  bits of output.
+
+14. A full adder generates a carry in exactly (4)  of the (8)  possible combinations of its input .
+
+15. If the delay from the inputs { A,B, Cin } to Sum is 1.5 D and to Cout is 1.0 D, then the delay of a four bit adder is  ( 4.5D )
+
+16. When the gate is supplied with 0v the p type transistor acts as a (closed circuit).
+
+17. When the gate of a n type transistor is supplied with 0 volts, the n type transistor acts like a (open circuit).
+
+18. One can write into a gated D latch only while the (WE) signal is asserted.
+
+19. We clear an R-S latch by momentarily setting the (R) signal to (0).
+
+20. If a logical variable A is applied to an inverter, and the output of that inverter is applied to the input of a second inverter, the output of that second inverter is (A). 
+
+
+TRUE-FALSE
+------------
+
+1. For a 16MB memory, memory location 50024 will always have a value which is greater than the value in location 5 (F)
+
+2. All 8-bit address spaces are byte addressable (F)
+
+3. An 8-bit register contains a value, The value 1 is written into it, the original value can still be recovered (F)
+
+4. It is possible to have circuits that contains both P type and N type transistors  (T)
+
+5. It is possible for a 3:8 decoder to have 3 out of the eight outputs asserted. (F)
+
+6. It is possible to have a 5 input and gate (T)
+
+7. For a two input NAND gate, it is possible that 3 out of 4 transistors are open circuited at a given time (F)
+
+8. The p type and n type transistors of an inverter can never both be short circuited at the same time (T)
+
+9.  Addressability of a machine can never be greater than its address space (F)
+
+10. A function (call it *) is associative if (a*b)*c = a*(b*c).  Using this definition, NAND is an associative function (F)
+
+11. DeMorgan's Law shows that we can implement any and-or function with a nand-nand function.  If the number of transisors through which a signal has to pass determines the delay of that signal, a nand-nand realisation of a function is faster than and-or realisation Hint: examine the transistor implementations of and, or, and nand. (T)
+
+12. For a logic circuit to work as a storage element it is necessary that the output be fed back to the input (T).
+
+13. If a memory has addressability of 4 bits then we need 2 bits to specify the address space (F)
+
+14. It is not possible to have a 1 bit register (F)
+
+15. The two outputs of a latch are always the complement of each other (T)
+

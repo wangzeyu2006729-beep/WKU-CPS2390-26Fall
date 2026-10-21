@@ -1,0 +1,321 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 5 (copyright 2004, Onur Mutlu and Yale Patt)
+ 
+True/False
+----------
+ 
+1. The data type supported by the LC-3 ISA is 1's complement integers. (F)
+
+2. For an LC-3 instruction that uses the PC-Relative addressing mode, bits [15:9] of the address of the operand are the same as bits [15:9] of the address of the instruction. (F)
+
+3. In LC-3 ISA, only BRx, JMP, JSR/JSRR, RET, and RTI instructions modify the value of the Program Counter. (F)
+
+4. TRAP instruction changes the PC to a memory address, which is part of the operating system. (T)
+ 
+5. In the LC-3 ISA, if an instruction modifies a condition code, the condition code register it writes to is specified in a field in the instruction's encoding. (F)
+ 
+6. All LC-3 instructions modify the condition codes. (F)
+ 
+7. Every LC-3 operate and data-movement instruction either reads or writes into the register file in the LC-3 datapath. (T)
+ 
+8. The instruction 1110111000000000 at memory location 0xF011 sets the N condition code when executed. (T)
+ 
+9. A conditional branch instruction at location 0x5200 can change the value of the PC to 0x5000. (F)
+ 
+10. There exists a sequence of LC-3 instructions such that after they are all executed, the condition codes will be set to N = 0, Z = 0, and P = 0. (F)
+ 
+11. Using a sentinel to control the number of executions of a loop is very effective if the programmer does not know ahead of time how many iterations will be performed. (T)
+ 
+12. All LC-3 instructions require the FETCH and DECODE phases of the instruction cycle for correct processing. (T)
+ 
+13. The LC-3 ISA specifies an instruction which accesses two memory locations, adds their contents, and stores the sum in another memory location. (F)
+ 
+14. Some LC-3 data movement instructions move data from one memory location to another. (F)
+
+15. During the instruction cycle of an ST instruction, the MDR in the LC-3 datapath (Figure 5.9) is written into at least twice. (T)
+
+
+
+
+
+
+
+
+Multiple Choice
+----------
+
+1. Which of the following instructions can reference a memory location that is #1000 locations from the instruction?
+
+a. ADD
+b. LD
+c. STR
+d. LEA
+e. All of the above
+f. None of the above
+
+Answer: c
+
+2. The addressability of LC-3 memory is
+
+a. 2^16 locations
+b. 16 bits
+c. 2^9 locations
+d. 2^16 bits
+
+Answer: b
+
+3. After the execution of which of the following instructions will the value in the Program Counter (PC) be 0x306e?
+
+i.   0000111001011100 at location 0x3011
+ii.  0000000001101110 at location 0x306d
+iii. 1010011001101110 at location 0x306d
+
+a. i and ii
+b. i and iii
+c. ii and iii
+d. i, ii, and iii
+
+Answer: d
+
+4. The largest positive offset that can be used by an LC-3 instruction that utilizes the base+offset addressing mode is
+
+a. 31
+b. 32
+c. 63
+d. 64
+
+Answer: a
+
+5. For which of the following LC-3 instructions is no memory access performed during the instruction cycle?
+
+a. LDR
+b. STI
+c. LEA
+d. For all of the above instructions memory is accessed during the instruction cycle.
+
+Answer: d
+
+6. Which of the following LC-3 instructions does not access memory to fetch its operand?
+
+a. LDR
+b. LDI
+c. LEA
+d. All of the above instructions access memory to fetch their operands.
+
+Answer: c
+
+7. Which of the following instructions move the value in R5 into R6?
+
+i.   0001110101100000
+ii.  0101110101111111
+iii. 1001110101111111
+
+a. Only i
+b. Only ii
+c. i and ii
+d. i and iii
+e. i, ii, and iii
+
+Answer: c
+
+8. During the processing of which of the following instructions is the use of an adder not required? (Processing of an instruction spans the whole instruction cycle.)  Neglect the requirement of incrementing PC in the FETCH phase of the instruction cycle, which can be accomplished with a simpler increment circuit and does not require a full blown adder.
+ 
+a. LDR
+b. ADD
+c. STR
+d. AND
+e. All of the above require the use of an adder.
+
+Answer: d
+
+
+9. If the LC-3 ISA was modified to specify 32 general purpose registers and every other specification remained unchanged, how many bits would be required to encode an LC-3 ADD instruction? 
+
+a. 16
+b. 20
+c. 24
+d. 31
+e. 32
+
+Answer: b
+
+
+
+
+
+
+10. If the condition codes have values N = 0, Z = 0, P = 1 at the beginning of the execution of the following sequence of instructions, what will their value be at the end of the execution of the following sequence?
+
+Address	   	     Instruction
+-------		     ------------------------
+0x3050		     0000001000000001		     
+0x3051		     0101000000100000
+0x3052		     0001000000100001
+
+a. N = 0, Z = 0, P = 1
+b. N = 0, Z = 1, P = 0
+c. N = 1, Z = 0, P = 0
+d. Cannot be determined with the information given in the question.
+
+Answer: d
+
+11. Which of the following is not specified by the ISA of LC-3?
+
+a. Number of general purpose registers
+b. Data types
+c. Encodings of opcodes
+d. Number of adders in an LC-3 processor
+
+Answer: d
+
+12. During the processing (instruction cycle) of which of the following instructions, does the PCMUX in the LC-3 datapath NOT perform useful work relevant to the processing of that particular instruction as specifed by the LC-3 ISA? (Refer to the LC-3 datapath in Figure 5.9)
+
+a. ADD 
+b. BR
+c. TRAP
+d. None of the above (For all of the above instructions, PCMUX produces an output that is useful in determining the effect of the instruction on the machine state).
+
+Answer: d
+
+13. Which of the following LC-3 instructions can only have operands that are in registers (i.e. cannot have immediate or memory operands)?
+
+a. ADD
+b. NOT
+c. LD
+d. AND
+
+Answer: b
+
+14. The following LC-3 instruction is located at memory address 0x5F55. Which of the following describes the operation of this instruction?
+
+0000101100000000
+
+a. If both the N and P condition codes are set, the instruction will load 0x5E56 into the PC.
+b. If either N or P condition code is set, the instruction will load 0x5E56 into the PC.
+c. If either N or P condition code is set, the instruction will load 0x5F56 into the PC.
+d. If both the N and P condition codes are set, the instruction will load 0x5F56 into the PC.
+
+Answer: b
+
+15. Which of the following instructions at address 0x0200 clear register R5?
+
+i.   0001101101100000
+ii.  0101101101100000
+iii. 1110101000000000
+iv.  0010101000000000
+
+a. ii
+b. i and ii 
+c. i, ii, and iii
+d. ii and iv
+e. ii, iii, and iv
+
+Answer: a
+
+16. The LC-3 ADD instruction:
+
+a. can only add two 16-bit values found in registers 
+b. can add a 16-bit value to a zero-extended 5-bit value
+c. can add a 16-bit value to a sign-extended 5-bit value
+d. can add a 16-bit value to a sign-extended 10-bit value
+
+Answer: c
+
+
+18. If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?
+
+Address	   	     Instruction
+-------		     ------------------------
+0x4400		     1001100010111111        	     
+0x4401		     0001100100100001       
+0x4402		     0001100001000100      
+0x4403                 0000100001000000       
+
+a. R1 > R2 (R1 was greater than R2)
+b. R1 < R2 (R2 was greater than R1) 
+c. R1 = R2 (R1 and R2 were equal)
+d. Cannot be determined with the given information.
+
+Answer: b
+
+
+
+
+
+
+
+
+
+
+19. If the value stored in R0 is 1 at the end of the execution of the following instructions, what can be inferred about R5?
+
+Address	   	     Instruction
+-------		     ------------------------
+0x3000		     0101000000100000   
+0x3001		     0101100101100001   
+0x3002                 0000010000000001   
+0x3003                 0001000000100001   
+
+a. R5 is odd
+b. R5 is even
+c. R5 is equal to 0
+d. R5 is equal to 1
+
+Answer: a
+
+20. If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?
+
+Address	   	     Instruction
+-------		     ------------------------
+0x3000		     0101000000100000
+0x3001		     0101111111100000    
+0x3002                 0001110111100001    
+0x3003                 0101100101000110   
+0x3004                 0000010000000001    
+0x3005                 0001000000100001    
+0x3006                 0001110110000110   
+0x3007                 0001111111100001    
+0x3008                 0001001111111000    
+0x3009                 0000100111111000    
+0x300A                 0101111111100000
+
+a. The bit string in R5 contains 5 1's.
+b. Least significant byte of R5 contains 5 1's.
+c. The bit string in R5 contains 5 0's.
+d. The value of R5 is divisible by 5.
+e. Least significant byte of R5 contains 5 0's.
+
+Answer: b
+
+
+Fill in the Blanks
+------------------
+
+1. LEA instruction uses the (immediate/literal) addressing mode.
+
+2. LD, LDR, LDI, LEA, ST, STR, and STI are (data movement) instructions of the LC-3 ISA.
+
+3. If an ISA has 256 opcodes, the number of bits in the instruction encoding used to specify the opcode should be at least (8).
+
+4. (Control instructions) change the sequence of the instructions that are executed.
+
+5. The number of system calls that could be uniquely identified using a trapvector of 12 bits would be (4096).
+
+6. ADD instruction does not do any useful work during the (Evaluate Address) phase of the instruction cycle.
+
+7. The number of memory accesses performed during the processing, i.e., entire instruction cycle, of the STI instruction is (3).
+
+8. The instruction 0011000100101111 at memory location 0x5611 store the value of register R0 into memory location 0x(5541) when executed.
+
+9. An instruction is made up of two things: its (opcode) specifies what the instruction is asking the computer to do and its (operands) specify who the computer is expected to do it to.
+
+10. A (data type) is a representation of information such that the ISA has opcodes that operate on that representation.
+
+11. The LC-3 operate instructions that perform binary operations are (ADD) and (AND).
+
+12. If the operand of an instruction is a part of the instruction, the operand is called a(n) (literal/immediate) operand.
+
+13. The largest memory address that can be referenced by an LD instruction at location 0x6631 is 0x(6731).
+
+

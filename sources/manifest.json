@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "file": "chap01tq.doc",
+      "sha256": "dcb29772f6421d493eec58182f15d0c367f67d6bc7b5679ee8c2a41139c99d5f"
+    },
+    {
+      "file": "chap02tq.doc",
+      "sha256": "e57b20f6e82d28799988d14226a4e9e0fc583d437a1f07aa85a2413c31c99389"
+    },
+    {
+      "file": "chap03tq.doc",
+      "sha256": "6ad87fdc7884874670f0c47198ff790a08ad5d0056bdb449871029a35add8dca"
+    },
+    {
+      "file": "chap04tq.doc",
+      "sha256": "8ea5ea57b42312790b9c30155157d5db19ec2c523f81a946e33f4e2eab9a3f1f"
+    },
+    {
+      "file": "chap05tq.doc",
+      "sha256": "c6a36dd599ca42f1e0c85a546c47cc40d89c3930288aa8f5f5c133f1e00f1913"
+    }
+  ],
+  "extraction": "macOS textutil -convert txt; source documents retained locally"
+}

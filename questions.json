@@ -1,0 +1,5261 @@
+{
+  "course": {
+    "code": "CPS2390",
+    "school": "Wenzhou-Kean University",
+    "instructor": "Qixia Zhang",
+    "term": "26Fall",
+    "storage_key": "cps2390-testbank-v1"
+  },
+  "chapters": [
+    {
+      "name": "计算机系统概览",
+      "english": "Welcome Aboard"
+    },
+    {
+      "name": "数据与运算",
+      "english": "Bits, Data Types, and Operations"
+    },
+    {
+      "name": "数字逻辑",
+      "english": "Digital Logic Structures"
+    },
+    {
+      "name": "冯诺依曼模型",
+      "english": "The von Neumann Model"
+    },
+    {
+      "name": "LC-3 指令集",
+      "english": "The LC-3"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF01",
+      "source_file": "chap01tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "Today's microprocessor usually consists of a single chip containing almost one million transistors.  (F)",
+      "note": "题库版权年份为 2004；涉及硬件规模的描述按原题历史语境理解。",
+      "explanation": "",
+      "text": "Today's microprocessor usually consists of a single chip containing almost one million transistors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF02",
+      "source_file": "chap01tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "Ambiguity is an important reason why one cannot program a computer in English.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Ambiguity is an important reason why one cannot program a computer in English.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF03",
+      "source_file": "chap01tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Fortran is a natural language. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Fortran is a natural language.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF04",
+      "source_file": "chap01tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "COBOL is a mechanical language. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "COBOL is a mechanical language.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 5,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF05",
+      "source_file": "chap01tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "It is likely that a program written in a (low level) language for one ISA will also run on a computer having a different ISA. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is likely that a program written in a (low level) language for one ISA will also run on a computer having a different ISA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 6,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF06",
+      "source_file": "chap01tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "COBOL is a low-level language because its programs provide a very low level of detail into the inner workings the underlying business model that is being programmed. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "COBOL is a low-level language because its programs provide a very low level of detail into the inner workings the underlying business model that is being programmed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 7,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF07",
+      "source_file": "chap01tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "Most ISAs are implemented by more than one very different microarchitecture. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Most ISAs are implemented by more than one very different microarchitecture.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 8,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF08",
+      "source_file": "chap01tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "Some ISAs are implemented by chips designed by multiple manufacturers. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Some ISAs are implemented by chips designed by multiple manufacturers.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 9,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF09",
+      "source_file": "chap01tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Keyboard, card reader, scanner, and disks are all examples of input devices. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Keyboard, card reader, scanner, and disks are all examples of input devices.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 10,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF10",
+      "source_file": "chap01tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Monitor, printer output, and disks are all examples of output devices. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Monitor, printer output, and disks are all examples of output devices.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 11,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF11",
+      "source_file": "chap01tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "It is not possible to increase the accuracy of a value in a digital computer (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is not possible to increase the accuracy of a value in a digital computer",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 12,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF12",
+      "source_file": "chap01tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "One way to improve an analog computer's accuracy is to use more finely tuned sensors (T)",
+      "note": "",
+      "explanation": "",
+      "text": "One way to improve an analog computer's accuracy is to use more finely tuned sensors",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 13,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF13",
+      "source_file": "chap01tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "Assembly language programs written for the Mac will run on the Mac after being assembled to the Mac's ISA.  They will also execute on the PC, after being assembled to the PC's ISA. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Assembly language programs written for the Mac will run on the Mac after being assembled to the Mac's ISA.  They will also execute on the PC, after being assembled to the PC's ISA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 14,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF14",
+      "source_file": "chap01tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "English can be used as a high level programming language because with care, one can state instructions precisely.  (F)",
+      "note": "",
+      "explanation": "",
+      "text": "English can be used as a high level programming language because with care, one can state instructions precisely.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 15,
+      "chapter": 0,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C1-TF15",
+      "source_file": "chap01tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "For each ISA there is exactly one microarchitecture which implements that ISA. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "For each ISA there is exactly one microarchitecture which implements that ISA.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 16,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC01",
+      "source_file": "chap01tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "Which of the following is not a high level language?\n\na. Fortran\nb. C++\nc. Assembly language\nd. COBOL\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following is not a high level language?",
+      "options": [
+        "Fortran",
+        "C++",
+        "Assembly language",
+        "COBOL"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 17,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC02",
+      "source_file": "chap01tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "Which of the following is not an output device?\n\na. Keyboard\nb. Printer\nc. Monitor\nd. Disk\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following is not an output device?",
+      "options": [
+        "Keyboard",
+        "Printer",
+        "Monitor",
+        "Disk"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 18,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC03",
+      "source_file": "chap01tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Which of the following is not a natural language?\n\na. Greek\nb. Latin\nc. French\nd. Fortran\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following is not a natural language?",
+      "options": [
+        "Greek",
+        "Latin",
+        "French",
+        "Fortran"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 19,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC04",
+      "source_file": "chap01tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "An algorithm is a step-by-step procedure, characterized by:\n\na. finiteness\nb. effective computability\nc. definiteness\nd. all of the above.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "An algorithm is a step-by-step procedure, characterized by:",
+      "options": [
+        "finiteness",
+        "effective computability",
+        "definiteness",
+        "all of the above."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 20,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC05",
+      "source_file": "chap01tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "A program can be translated into the ISA of a processor by means of:\n\na. a compiler\nb. an assembler\nc. an interpreter\nd. all of the above\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "A program can be translated into the ISA of a processor by means of:",
+      "options": [
+        "a compiler",
+        "an assembler",
+        "an interpreter",
+        "all of the above"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 21,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC06",
+      "source_file": "chap01tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "An analog value can be:\n\na. a measurement of the resistance of a spring\nb. a sequence of four single digit integers\nc. a sequence of four 0s and 1s\nd. all of the above\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "An analog value can be:",
+      "options": [
+        "a measurement of the resistance of a spring",
+        "a sequence of four single digit integers",
+        "a sequence of four 0s and 1s",
+        "all of the above"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 22,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC07",
+      "source_file": "chap01tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "A computer system contains:\n\na. a cpu\nb. memory\nc. at least one output device\nd. all of the above\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "A computer system contains:",
+      "options": [
+        "a cpu",
+        "memory",
+        "at least one output device",
+        "all of the above"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 23,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC08",
+      "source_file": "chap01tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The following is an example of an ISA:\n\na. Power-PC\nb. Power bar\nc. Power PC 641\nd. All of the above\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "The following is an example of an ISA:",
+      "options": [
+        "Power-PC",
+        "Power bar",
+        "Power PC 641",
+        "All of the above"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 24,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC09",
+      "source_file": "chap01tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "The following is an example of a microarchitecture:\n\na. Alpha 21064\nb. Alpha 21164\nc. Alpha 21264\nd. all of the above.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "The following is an example of a microarchitecture:",
+      "options": [
+        "Alpha 21064",
+        "Alpha 21164",
+        "Alpha 21264",
+        "all of the above."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 25,
+      "chapter": 0,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C1-MC10",
+      "source_file": "chap01tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "The following is an example of a device technology.\n\na. NMOS\nb. CMOS\nc. Gallium Arsenide\nd. All of the above\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "The following is an example of a device technology.",
+      "options": [
+        "NMOS",
+        "CMOS",
+        "Gallium Arsenide",
+        "All of the above"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 26,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB01",
+      "source_file": "chap01tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "A more precise term for the mechanism that directs the processing of instructions in the computer and also performs the actual processing is the (central processing unit).",
+      "note": "",
+      "explanation": "",
+      "text": "A more precise term for the mechanism that directs the processing of instructions in the computer and also performs the actual processing is the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "central processing unit"
+      ],
+      "source_answer": [
+        "central processing unit"
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB02",
+      "source_file": "chap01tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "A (computer system) consists of a processor, plus memory and various input devices and output devices.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] consists of a processor, plus memory and various input devices and output devices.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "computer system"
+      ],
+      "source_answer": [
+        "computer system"
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB03",
+      "source_file": "chap01tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "There are basically two kinds of computers, (analog) in which the values processed are physical quantities, like actual voltage or distance, and (digital) in which the values processed are discrete and distinct values.",
+      "note": "",
+      "explanation": "",
+      "text": "There are basically two kinds of computers, ____[1] in which the values processed are physical quantities, like actual voltage or distance, and ____[2] in which the values processed are discrete and distinct values.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "analog",
+        "digital"
+      ],
+      "source_answer": [
+        "analog",
+        "digital"
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB04",
+      "source_file": "chap01tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "(Alan Turing) came up with the idea of a universal computational device.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] came up with the idea of a universal computational device.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Alan Turing"
+      ],
+      "source_answer": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB05",
+      "source_file": "chap01tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "(Natural languages) are languages spoken by people, (mechanical languages) are languages designed for use with a computer.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] are languages spoken by people, ____[2] are languages designed for use with a computer.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Natural languages",
+        "mechanical languages"
+      ],
+      "source_answer": [
+        "Natural languages",
+        "mechanical languages"
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB06",
+      "source_file": "chap01tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "(Ambiguity) makes natural language unsuited for writing computer programs, because the computer would never know which was several meanings the programmer intended.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] makes natural language unsuited for writing computer programs, because the computer would never know which was several meanings the programmer intended.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Ambiguity"
+      ],
+      "source_answer": [
+        "Ambiguity"
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB07",
+      "source_file": "chap01tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "(Algorithms) are step by step procedures, whose steps are definite and effectively computable, and the entire procedure is guaranteed to terminate.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] are step by step procedures, whose steps are definite and effectively computable, and the entire procedure is guaranteed to terminate.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Algorithms"
+      ],
+      "source_answer": [
+        "Algorithms"
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB08",
+      "source_file": "chap01tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "If a procedure contains the statement \"a pinch of salt,\" the procedure lacks (definiteness).",
+      "note": "",
+      "explanation": "",
+      "text": "If a procedure contains the statement \"a pinch of salt,\" the procedure lacks ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "definiteness"
+      ],
+      "source_answer": [
+        "definiteness"
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB09",
+      "source_file": "chap01tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "If a procedure contains a statement that can not be carried out by a computer, the procedure lacks (effective computability).",
+      "note": "",
+      "explanation": "",
+      "text": "If a procedure contains a statement that can not be carried out by a computer, the procedure lacks ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "effective computability"
+      ],
+      "source_answer": [
+        "effective computability"
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB10",
+      "source_file": "chap01tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "If for some inputs, a procedure never terminates, the procedure lacks (finiteness).",
+      "note": "",
+      "explanation": "",
+      "text": "If for some inputs, a procedure never terminates, the procedure lacks ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "finiteness"
+      ],
+      "source_answer": [
+        "finiteness"
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB11",
+      "source_file": "chap01tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "Fortran, COBOL, C++ and Java are all examples of (high level languages).",
+      "note": "",
+      "explanation": "",
+      "text": "Fortran, COBOL, C++ and Java are all examples of ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "high level languages"
+      ],
+      "source_answer": [
+        "high level languages"
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB12",
+      "source_file": "chap01tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "It is likely that a program written in a (high level) language for one ISA will also run on a computer having a different ISA.",
+      "note": "",
+      "explanation": "",
+      "text": "It is likely that a program written in a ____[1] language for one ISA will also run on a computer having a different ISA.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "high level"
+      ],
+      "source_answer": [
+        "high level"
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB13",
+      "source_file": "chap01tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "Fortran, COBOL, C++ are known as (high level languages) as opposed to Assembly language, which is a (low level language).",
+      "note": "",
+      "explanation": "",
+      "text": "Fortran, COBOL, C++ are known as ____[1] as opposed to Assembly language, which is a ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "high level languages",
+        "low level language"
+      ],
+      "source_answer": [
+        "high level languages",
+        "low level language"
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB14",
+      "source_file": "chap01tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "It is not likely that a program written in a (low level) language for one ISA will also run on a computer having a different ISA.",
+      "note": "",
+      "explanation": "",
+      "text": "It is not likely that a program written in a ____[1] language for one ISA will also run on a computer having a different ISA.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "low level"
+      ],
+      "source_answer": [
+        "low level"
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB15",
+      "source_file": "chap01tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "Addressing modes and data types are elements of the (ISA).",
+      "note": "",
+      "explanation": "",
+      "text": "Addressing modes and data types are elements of the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "ISA"
+      ],
+      "source_answer": [
+        "ISA"
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB16",
+      "source_file": "chap01tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "(Addressing modes) are used to specify the mechanism that will be used to access an operand.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] are used to specify the mechanism that will be used to access an operand.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Addressing modes"
+      ],
+      "source_answer": [
+        "Addressing modes"
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB17",
+      "source_file": "chap01tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "PowerPC, SPARC, and x86 are all examples of (ISAs).",
+      "note": "",
+      "explanation": "",
+      "text": "PowerPC, SPARC, and x86 are all examples of ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "ISAs"
+      ],
+      "source_answer": [
+        "ISAs"
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB18",
+      "source_file": "chap01tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "A (compiler) is frequently used to translate a program written in a high level language into the ISA of a processor.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is frequently used to translate a program written in a high level language into the ISA of a processor.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "compiler"
+      ],
+      "source_answer": [
+        "compiler"
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB19",
+      "source_file": "chap01tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "Intel Pentium IV, IBM PowerPC 750FX and the Motorola MPC 7455 are all examples of (microarchitectures).",
+      "note": "",
+      "explanation": "",
+      "text": "Intel Pentium IV, IBM PowerPC 750FX and the Motorola MPC 7455 are all examples of ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "microarchitectures"
+      ],
+      "source_answer": [
+        "microarchitectures"
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": 0,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C1-FB20",
+      "source_file": "chap01tq.doc",
+      "source_number": 20,
+      "source_occurrence": 1,
+      "source_text": "The microarchitecture of a chip is implemented by (logic circuits).",
+      "note": "",
+      "explanation": "",
+      "text": "The microarchitecture of a chip is implemented by ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "logic circuits"
+      ],
+      "source_answer": [
+        "logic circuits"
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF01",
+      "source_file": "chap02tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "When a bit has a value 1, that corresponds to a signal level of 1 volt. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "When a bit has a value 1, that corresponds to a signal level of 1 volt.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 47,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF02",
+      "source_file": "chap02tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "If numbers are to be represented with 10 bits, we can represent more unique numbers if we use an unsigned integer representation than if we use signed integer representations.  (F)",
+      "note": "",
+      "explanation": "",
+      "text": "If numbers are to be represented with 10 bits, we can represent more unique numbers if we use an unsigned integer representation than if we use signed integer representations.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 48,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF03",
+      "source_file": "chap02tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "The 2's complement representation for -2 is 111111111110, if we have 12 bits available to represent signed integers. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The 2's complement representation for -2 is 111111111110, if we have 12 bits available to represent signed integers.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 49,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF04",
+      "source_file": "chap02tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "If we add the 2's complement representation of a number to itself, and if the sign bit does not change, the result will simply be the same as if we had shifted the original number one bit to the left, and inserted a 0 at the right end. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "If we add the 2's complement representation of a number to itself, and if the sign bit does not change, the result will simply be the same as if we had shifted the original number one bit to the left, and inserted a 0 at the right end.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 50,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF05",
+      "source_file": "chap02tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "A and B are integers expressed in 2's complement.  If both are positive, and their sum produces a result that is the representation of a negative number, we know we MUST have caused an overflow (T).",
+      "note": "",
+      "explanation": "",
+      "text": "A and B are integers expressed in 2's complement.  If both are positive, and their sum produces a result that is the representation of a negative number, we know we MUST have caused an overflow",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 51,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF06",
+      "source_file": "chap02tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "A AND B is true if at least one of the two variables A, B is true. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "A AND B is true if at least one of the two variables A, B is true.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 52,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF07",
+      "source_file": "chap02tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "A XOR B is true if one of A,B is true and one of A,B is false.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "A XOR B is true if one of A,B is true and one of A,B is false.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 53,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF08",
+      "source_file": "chap02tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The exponent of an IEEE Floating point number is encoded in 2's complement representation (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The exponent of an IEEE Floating point number is encoded in 2's complement representation",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 54,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF09",
+      "source_file": "chap02tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Hexadecimal numbers are represented with radix 16 (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Hexadecimal numbers are represented with radix 16",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 55,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF10",
+      "source_file": "chap02tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Every ASCII code corresponds to a key on the typewriter that can produce a character on the screen of the monitor (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Every ASCII code corresponds to a key on the typewriter that can produce a character on the screen of the monitor",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 56,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF11",
+      "source_file": "chap02tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "The ASCII code for semicolon is formed by adding the ASCII codes for period and comma. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The ASCII code for semicolon is formed by adding the ASCII codes for period and comma.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 57,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF12",
+      "source_file": "chap02tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "The character ? does not have an ASCII code. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The character ? does not have an ASCII code.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 58,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF13",
+      "source_file": "chap02tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "The logical NOT function is a unary function, because it has only one argument (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The logical NOT function is a unary function, because it has only one argument",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 59,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF14",
+      "source_file": "chap02tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "The floating point data type allows us to represent both much larger and much smaller numbers than is possible with 2's complement integers. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The floating point data type allows us to represent both much larger and much smaller numbers than is possible with 2's complement integers.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 60,
+      "chapter": 1,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C2-TF15",
+      "source_file": "chap02tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "If a bit string consisting of n bits is represented in hex, only ceiling (n/4) hex digits are needed. Note: Let n = ceiling (x).  If x is an integer, then n = x.  If x is not an integer, then n = the smallest integer larger than x. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "If a bit string consisting of n bits is represented in hex, only ceiling (n/4) hex digits are needed. Note: Let n = ceiling (x).  If x is an integer, then n = x.  If x is not an integer, then n = the smallest integer larger than x.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 61,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC01",
+      "source_file": "chap02tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The decimal digit 5 can be represented as a bit string:\n\na. 00000000000101\nb. 000101\nc. 00110101\nd. All of the above\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "The decimal digit 5 can be represented as a bit string:",
+      "options": [
+        "00000000000101",
+        "000101",
+        "00110101",
+        "All of the above"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 62,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC02",
+      "source_file": "chap02tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:\n\na. nothing about the result.\nb. that the result is also a negative integer\nc. that we must have caused an overflow condition.\n\nAnswer: c",
+      "note": "原文答案为 C，但存在概念错误：进位不等于有符号溢出。例如 4 位补码 1111 + 1111 = 1110，并产生进位，结果 −2 仍在范围内。题库练习保留原键 C，请向老师复核。",
+      "explanation": "",
+      "text": "If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:",
+      "options": [
+        "nothing about the result.",
+        "that the result is also a negative integer",
+        "that we must have caused an overflow condition."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 63,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC03",
+      "source_file": "chap02tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Two values A = 11111111111111111111111010101 and B = 1111010101are representations of 2's complement integers.\n\na. A is larger\nb. B is larger\nc. A and B are equal\nd. You can not tell from the information provided.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Two values A = 11111111111111111111111010101 and B = 1111010101are representations of 2's complement integers.",
+      "options": [
+        "A is larger",
+        "B is larger",
+        "A and B are equal",
+        "You can not tell from the information provided."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 64,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC04",
+      "source_file": "chap02tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "If A is true, and B is false, the expression NOT(A) OR B is:\n\na. true\nb. false\nc. you can not tell from the information provided.\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If A is true, and B is false, the expression NOT(A) OR B is:",
+      "options": [
+        "true",
+        "false",
+        "you can not tell from the information provided."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 65,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC05",
+      "source_file": "chap02tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "If the radix is 16, each digit can have a value in the range:\n\na. 0 to 9\nb. 0 to 15\nc. 1 to 16\nd. 1 to 15\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If the radix is 16, each digit can have a value in the range:",
+      "options": [
+        "0 to 9",
+        "0 to 15",
+        "1 to 16",
+        "1 to 15"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 66,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC06",
+      "source_file": "chap02tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "If one adds the bit strings corresponding to the ASCII codes for two decimal digits, the sum:\n\na. is the ASCII code of the sum of the two digits.\nb. produces an overflow situation.\nc. is the ASCII code of the sum of the two digits, if you first subtract the ASCII code for 0.\nd. is the 2's complement code of the sum of the two digits.\n\nAnswer: c.",
+      "note": "原文选 C。若两个十进制数字之和超过 9，不能再用单个数字字符的 ASCII 编码表示；该表述需要限定结果仍是单个数字。",
+      "explanation": "",
+      "text": "If one adds the bit strings corresponding to the ASCII codes for two decimal digits, the sum:",
+      "options": [
+        "is the ASCII code of the sum of the two digits.",
+        "produces an overflow situation.",
+        "is the ASCII code of the sum of the two digits, if you first subtract the ASCII code for 0.",
+        "is the 2's complement code of the sum of the two digits."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 67,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC07",
+      "source_file": "chap02tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "If a floating point number is represented in normalized form,\n\na. it must be a positive number.\nb. it must be a negative number.\nc. the most significant digit is 1.\nd. the most significant digit is non-zero.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "If a floating point number is represented in normalized form,",
+      "options": [
+        "it must be a positive number.",
+        "it must be a negative number.",
+        "the most significant digit is 1.",
+        "the most significant digit is non-zero."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 68,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC08",
+      "source_file": "chap02tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "For the value of A OR B to be true, \n\na. exactly one of the two values A, B is true.\nb. neither of the two values A, B is true.\nc. at least one of the two values A, B is true.\nd. both of the values A,B must be true.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "For the value of A OR B to be true,",
+      "options": [
+        "exactly one of the two values A, B is true.",
+        "neither of the two values A, B is true.",
+        "at least one of the two values A, B is true.",
+        "both of the values A,B must be true."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 69,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC09",
+      "source_file": "chap02tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "A data type is:\n\na. a representation of information for which an opcode exists that can operate on that representation.\nb. a memory location containing integer values.\nc. the sign bit of a floating point representation.\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "A data type is:",
+      "options": [
+        "a representation of information for which an opcode exists that can operate on that representation.",
+        "a memory location containing integer values.",
+        "the sign bit of a floating point representation."
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 70,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC10",
+      "source_file": "chap02tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Using 8 bits, the unsigned integer representation of -13 is:\n\na. 10001101\nb. 11110101\nc. not possible to represent.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Using 8 bits, the unsigned integer representation of -13 is:",
+      "options": [
+        "10001101",
+        "11110101",
+        "not possible to represent."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 71,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC11",
+      "source_file": "chap02tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "In 2's complement arithmetic, an overflow occurs if:\n\na. two positive numbers produce a negative result\nb. two negative numbers produce a positive result\nc. both a and b\nd. neither a nor b\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "In 2's complement arithmetic, an overflow occurs if:",
+      "options": [
+        "two positive numbers produce a negative result",
+        "two negative numbers produce a positive result",
+        "both a and b",
+        "neither a nor b"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 72,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC12",
+      "source_file": "chap02tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "To divide a 2's complement integer by 4, \n\na. it is first necessary to convert the bit string to its decimal value.\nb. shift right the bit string two places, and insert 0 in the two left-most bit positions.\nc. shift right the bit string two places, and insert the sign bit in the two left-most bit positions.\nd. shift left the bit string two places, and insert 0 in the two right-most bit positions.\n\nAnswer: c",
+      "note": "原文选 C。算术右移保留符号位；负数不能整除时，其舍入方向与某些语言的整数除法可能不同。",
+      "explanation": "",
+      "text": "To divide a 2's complement integer by 4,",
+      "options": [
+        "it is first necessary to convert the bit string to its decimal value.",
+        "shift right the bit string two places, and insert 0 in the two left-most bit positions.",
+        "shift right the bit string two places, and insert the sign bit in the two left-most bit positions.",
+        "shift left the bit string two places, and insert 0 in the two right-most bit positions."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 73,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC13",
+      "source_file": "chap02tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "With 12 bits, we can represent uniquely:\n\na. exactly 12 distinct items\nb. exactly 2 times 12, or 24 distinct items\nc. exactly 4096 distinct items.\nd. as many distinct items as we wish to.\n  \nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "With 12 bits, we can represent uniquely:",
+      "options": [
+        "exactly 12 distinct items",
+        "exactly 2 times 12, or 24 distinct items",
+        "exactly 4096 distinct items.",
+        "as many distinct items as we wish to."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 74,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC14",
+      "source_file": "chap02tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "A and B are locations containing bit strings.\n\na. It takes the computer more time to ADD A,B than to AND A,B.\nb. It takes the computer more time to AND A,B than to ADD A,B.\nc. It takes the computer exactly the same amount of time to AND as to ADD.\n\nAnswer: a",
+      "note": "原文选 A，按教材比较加法器与逐位逻辑电路的延迟语境理解；不宜推广为所有处理器上两条指令的实际耗时。",
+      "explanation": "",
+      "text": "A and B are locations containing bit strings.",
+      "options": [
+        "It takes the computer more time to ADD A,B than to AND A,B.",
+        "It takes the computer more time to AND A,B than to ADD A,B.",
+        "It takes the computer exactly the same amount of time to AND as to ADD."
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 75,
+      "chapter": 1,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C2-MC15",
+      "source_file": "chap02tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "The operation ADD is\n\na. a unary operator because it performs ONE function, ADD.\nb. a binary operator because it requires TWO operands.\nc. a ternary operator because it requires TWO values to add and produces in addition, ONE result.\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "The operation ADD is",
+      "options": [
+        "a unary operator because it performs ONE function, ADD.",
+        "a binary operator because it requires TWO operands.",
+        "a ternary operator because it requires TWO values to add and produces in addition, ONE result."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 76,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB01",
+      "source_file": "chap02tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "An operator requiring two source operands is called a (binary) operator.",
+      "note": "",
+      "explanation": "",
+      "text": "An operator requiring two source operands is called a ____[1] operator.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "binary"
+      ],
+      "source_answer": [
+        "binary"
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB02",
+      "source_file": "chap02tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "When two positive integers produce a negative result, we know (overflow) has occurred.",
+      "note": "",
+      "explanation": "",
+      "text": "When two positive integers produce a negative result, we know ____[1] has occurred.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "overflow"
+      ],
+      "source_answer": [
+        "overflow"
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB03",
+      "source_file": "chap02tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "With k bits, we can uniquely represent (2^k) distinct elements.",
+      "note": "",
+      "explanation": "",
+      "text": "With k bits, we can uniquely represent ____[1] distinct elements.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "2^k"
+      ],
+      "source_answer": [
+        "2^k"
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB04",
+      "source_file": "chap02tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "If we add the 2's complement representation of k to the 2's complement representation of -k, the result will be (all 0's, plus a carry).",
+      "note": "",
+      "explanation": "",
+      "text": "If we add the 2's complement representation of k to the 2's complement representation of -k, the result will be ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "all 0's, plus a carry"
+      ],
+      "source_answer": [
+        "all 0's, plus a carry"
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB03b",
+      "source_file": "chap02tq.doc",
+      "source_number": 3,
+      "source_occurrence": 2,
+      "source_text": "00100100 is the ASCII code for ($)",
+      "note": "原文此题号重复；标签末尾 b 表示同号的第二条，题目未合并或删除。",
+      "explanation": "",
+      "text": "00100100 is the ASCII code for ____[1]",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "$"
+      ],
+      "source_answer": [
+        "$"
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB04b",
+      "source_file": "chap02tq.doc",
+      "source_number": 4,
+      "source_occurrence": 2,
+      "source_text": "If A and B are both true, the (XOR) of A,B is false.",
+      "note": "原文此题号重复；标签末尾 b 表示同号的第二条，题目未合并或删除。",
+      "explanation": "",
+      "text": "If A and B are both true, the ____[1] of A,B is false.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "XOR"
+      ],
+      "source_answer": [
+        "XOR"
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB05",
+      "source_file": "chap02tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "If A is false, the (NOT) of A is true.",
+      "note": "",
+      "explanation": "",
+      "text": "If A is false, the ____[1] of A is true.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "NOT"
+      ],
+      "source_answer": [
+        "NOT"
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB06",
+      "source_file": "chap02tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "The three parts of a floating point representation are (sign, fraction, and exponent).",
+      "note": "",
+      "explanation": "",
+      "text": "The three parts of a floating point representation are ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "sign, fraction, and exponent"
+      ],
+      "source_answer": [
+        "sign, fraction, and exponent"
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB07",
+      "source_file": "chap02tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "Decimal numbers have (radix) ten.",
+      "note": "",
+      "explanation": "",
+      "text": "Decimal numbers have ____[1] ten.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "radix"
+      ],
+      "source_answer": [
+        "radix"
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB08",
+      "source_file": "chap02tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The (AND) function produces the value false, unless both sources are true.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] function produces the value false, unless both sources are true.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "AND"
+      ],
+      "source_answer": [
+        "AND"
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB09",
+      "source_file": "chap02tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "(Floating Point) data type allows the representation of much larger and much tinier values than 2's complement integer representation.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] data type allows the representation of much larger and much tinier values than 2's complement integer representation.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Floating Point"
+      ],
+      "source_answer": [
+        "Floating Point"
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB10",
+      "source_file": "chap02tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "The digits 0,1,...9,A,B,C,D,E,F are used in (hexadecimal) notation.",
+      "note": "",
+      "explanation": "",
+      "text": "The digits 0,1,...9,A,B,C,D,E,F are used in ____[1] notation.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "hexadecimal"
+      ],
+      "source_answer": [
+        "hexadecimal"
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB11",
+      "source_file": "chap02tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "110001 is the 6-bit unsigned representation for (49).",
+      "note": "",
+      "explanation": "",
+      "text": "110001 is the 6-bit unsigned representation for ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "49"
+      ],
+      "source_answer": [
+        "49"
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB12",
+      "source_file": "chap02tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "110001 is the 6-bit 2's complement representation for (-15).",
+      "note": "",
+      "explanation": "",
+      "text": "110001 is the 6-bit 2's complement representation for ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "-15"
+      ],
+      "source_answer": [
+        "-15"
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB13",
+      "source_file": "chap02tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "ADD, SUB are examples of (arithmetic) operators; AND, NOT are examples of (logical) operators.",
+      "note": "",
+      "explanation": "",
+      "text": "ADD, SUB are examples of ____[1] operators; AND, NOT are examples of ____[2] operators.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "arithmetic",
+        "logical"
+      ],
+      "source_answer": [
+        "arithmetic",
+        "logical"
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB14",
+      "source_file": "chap02tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "A (data type) is a representation of information, for which an operator exists that can operator on that representation.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is a representation of information, for which an operator exists that can operator on that representation.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "data type"
+      ],
+      "source_answer": [
+        "data type"
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB15",
+      "source_file": "chap02tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "We use the term (bit) as a shortened form of binary digit.",
+      "note": "",
+      "explanation": "",
+      "text": "We use the term ____[1] as a shortened form of binary digit.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "bit"
+      ],
+      "source_answer": [
+        "bit"
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB16",
+      "source_file": "chap02tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "A (logical variable) can take on one of two values, 0 or 1.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] can take on one of two values, 0 or 1.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "logical variable"
+      ],
+      "source_answer": [
+        "logical variable"
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB17",
+      "source_file": "chap02tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "The (ALU) is the mechanism inside a computer that actually does the arithmetic and logical operations.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] is the mechanism inside a computer that actually does the arithmetic and logical operations.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "ALU"
+      ],
+      "source_answer": [
+        "ALU"
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB18",
+      "source_file": "chap02tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "FABC is the hexadecimal representation of the binary string (1111101010111100).",
+      "note": "",
+      "explanation": "",
+      "text": "FABC is the hexadecimal representation of the binary string ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "1111101010111100"
+      ],
+      "source_answer": [
+        "1111101010111100"
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB19",
+      "source_file": "chap02tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "(0F2A) is the hexadecimal representation of the binary string 0000111100101010.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] is the hexadecimal representation of the binary string 0000111100101010.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "0F2A"
+      ],
+      "source_answer": [
+        "0F2A"
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": 1,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C2-FB20",
+      "source_file": "chap02tq.doc",
+      "source_number": 20,
+      "source_occurrence": 1,
+      "source_text": "Every key on the keyboard has at least two corresponding (ASCII) codes, depending on whether or not the SHIFT key is also simultaneously depressed.",
+      "note": "",
+      "explanation": "",
+      "text": "Every key on the keyboard has at least two corresponding ____[1] codes, depending on whether or not the SHIFT key is also simultaneously depressed.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "ASCII"
+      ],
+      "source_answer": [
+        "ASCII"
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC01",
+      "source_file": "chap03tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The minimum number of transistors required to implement a two input AND gate is\n\na. 2\nb. 4\nc. 6\nd. 8\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The minimum number of transistors required to implement a two input AND gate is",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 99,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC02",
+      "source_file": "chap03tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "Using DeMorgan's Theorem we can convert any AND-OR structure into\n\na. NAND-NAND\nb. OR-NAND\nc. NAND-NOR\nd. NOR-NAND\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Using DeMorgan's Theorem we can convert any AND-OR structure into",
+      "options": [
+        "NAND-NAND",
+        "OR-NAND",
+        "NAND-NOR",
+        "NOR-NAND"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 100,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC03",
+      "source_file": "chap03tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "For a memory with a 16-bit address space, the addressability is\na. 16 bits\nb. 8 bits \nc. 2^16 bits\nd. Cannot be determined \nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "For a memory with a 16-bit address space, the addressability is",
+      "options": [
+        "16 bits",
+        "8 bits",
+        "2^16 bits",
+        "Cannot be determined"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 101,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC04",
+      "source_file": "chap03tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "Because we wish to allow each ASCII code to occupy one location in memory, most memories are _____ addressable.\na. BYTE\nb. NIBBLE\nc. WORD (16 bits)\nd. DOUBLEWORD (32 bits)\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Because we wish to allow each ASCII code to occupy one location in memory, most memories are _____ addressable.",
+      "options": [
+        "BYTE",
+        "NIBBLE",
+        "WORD (16 bits)",
+        "DOUBLEWORD (32 bits)"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 102,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC05",
+      "source_file": "chap03tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "Circuit A is a 1-bit adder; circuit B is a 1 bit multiplier.\n\na. Circuit A has more gates than circuit B\nb. Circuit B has more gates than circuit A\nc. Circuit A has the same number of gates as circuit B\n\n(Hint: Construct the truth table for the adder and the multiplier)\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Circuit A is a 1-bit adder; circuit B is a 1 bit multiplier.\n\n(Hint: Construct the truth table for the adder and the multiplier)",
+      "options": [
+        "Circuit A has more gates than circuit B",
+        "Circuit B has more gates than circuit A",
+        "Circuit A has the same number of gates as circuit B"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 103,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC06",
+      "source_file": "chap03tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "When the write enable input is not asserted, the gated D latch ______ its output.\na. can not change\nb. clears\nc. sets\nd. complements\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "When the write enable input is not asserted, the gated D latch ______ its output.",
+      "options": [
+        "can not change",
+        "clears",
+        "sets",
+        "complements"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 104,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC07",
+      "source_file": "chap03tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "A structure that stores a number of bits taken \"together as a unit\" is a \na. gate\nb. mux\nc. decoder\nd. register\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "A structure that stores a number of bits taken \"together as a unit\" is a",
+      "options": [
+        "gate",
+        "mux",
+        "decoder",
+        "register"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 105,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC08",
+      "source_file": "chap03tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "We say that a set of gates is logically complete if we can build any circuit without using any other kind of gates.  Which of the following sets are logically complete\na. set of {AND,OR}\nb. set of {EXOR, NOT}\nc. set of {AND,OR,NOT} \nd. None of the above\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "We say that a set of gates is logically complete if we can build any circuit without using any other kind of gates.  Which of the following sets are logically complete",
+      "options": [
+        "set of {AND,OR}",
+        "set of {EXOR, NOT}",
+        "set of {AND,OR,NOT}",
+        "None of the above"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 106,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC09",
+      "source_file": "chap03tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Of the following circuits, the one which involves storage is \na. RS Latch\nb. mux\nc. nand\nd. decoder\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Of the following circuits, the one which involves storage is",
+      "options": [
+        "RS Latch",
+        "mux",
+        "nand",
+        "decoder"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 107,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC10",
+      "source_file": "chap03tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "If the number of address bits in a memory is reduced by 2 and the\naddressability is doubled, the size of the memory (i.e., the number of bits stored in the memory) \na. doubles\nb. remains unchanged\nc. halves \nd. increases by 2^(address bits)/addressability\n\nAnswer : c",
+      "note": "",
+      "explanation": "",
+      "text": "If the number of address bits in a memory is reduced by 2 and the\naddressability is doubled, the size of the memory (i.e., the number of bits stored in the memory)",
+      "options": [
+        "doubles",
+        "remains unchanged",
+        "halves",
+        "increases by 2^(address bits)/addressability"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 108,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC12",
+      "source_file": "chap03tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "If m is a power of 2, the number of select lines required for an m-input mux is:\n\na. m\nb. 2^m\nc. log2 (m)\nd. 2*m\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "If m is a power of 2, the number of select lines required for an m-input mux is:",
+      "options": [
+        "m",
+        "2^m",
+        "log2 (m)",
+        "2*m"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 109,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC13",
+      "source_file": "chap03tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "For the number A[15:0] = 0110110010001111,  A[14:13] is ______  A[3:2].\n\na. less than \nb. greater than\nc. the same as\nd . cannot be determined\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "For the number A[15:0] = 0110110010001111,  A[14:13] is ______  A[3:2].",
+      "options": [
+        "less than",
+        "greater than",
+        "the same as",
+        "cannot be determined"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 110,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC14",
+      "source_file": "chap03tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "Which of the following conditions is not allowed in an RS latch?\n\na. R is asserted, S is asserted \nb. R is asserted, S is negated\nc. R is negated, S is asserted \nd. R is negated, S is negated\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following conditions is not allowed in an RS latch?",
+      "options": [
+        "R is asserted, S is asserted",
+        "R is asserted, S is negated",
+        "R is negated, S is asserted",
+        "R is negated, S is negated"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 111,
+      "chapter": 2,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C3-MC15",
+      "source_file": "chap03tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "Which of the following pair of gates can form a latch?\na. a pair of cross coupled OR\nb. a pair of cross copled AND\nc. a pair of cross coupled NAND\nd. a cross coupled NAND/OR\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following pair of gates can form a latch?",
+      "options": [
+        "a pair of cross coupled OR",
+        "a pair of cross copled AND",
+        "a pair of cross coupled NAND",
+        "a cross coupled NAND/OR"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 112,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB01",
+      "source_file": "chap03tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "To implement an n input NOR gate (by generalizing the circuit for a 2-input NOR gate shown in the textbook) we would need (2*n) transistors.",
+      "note": "",
+      "explanation": "",
+      "text": "To implement an n input NOR gate (by generalizing the circuit for a 2-input NOR gate shown in the textbook) we would need ____[1] transistors.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "2*n"
+      ],
+      "source_answer": [
+        "2*n"
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB02",
+      "source_file": "chap03tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "A (MUX) is used to select one of many inputs.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is used to select one of many inputs.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "MUX"
+      ],
+      "source_answer": [
+        "MUX"
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB03",
+      "source_file": "chap03tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "If A[15:0] = 1000110001110001, A[12:9] = (0110).",
+      "note": "",
+      "explanation": "",
+      "text": "If A[15:0] = 1000110001110001, A[12:9] = ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "0110"
+      ],
+      "source_answer": [
+        "0110"
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB04",
+      "source_file": "chap03tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "A 2 bit by 2-bit multiplier circuit will have (4) output bits.",
+      "note": "",
+      "explanation": "",
+      "text": "A 2 bit by 2-bit multiplier circuit will have ____[1] output bits.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "4"
+      ],
+      "source_answer": [
+        "4"
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB05",
+      "source_file": "chap03tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "It is possible to make a two input OR gate using (3) two input nand gates",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible to make a two input OR gate using ____[1] two input nand gates",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "3"
+      ],
+      "source_answer": [
+        "3"
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB06",
+      "source_file": "chap03tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "A memory, consisting of 16K entries, is 13-bit addressable. It contains (13*2^14) bits of storage.",
+      "note": "",
+      "explanation": "",
+      "text": "A memory, consisting of 16K entries, is 13-bit addressable. It contains ____[1] bits of storage.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "13*2^14"
+      ],
+      "source_answer": [
+        "13*2^14"
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB07",
+      "source_file": "chap03tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "If 16 bits are used to specify the address space of a memory, the memory has ( 65536 ) uniquely identifiable locations.",
+      "note": "",
+      "explanation": "",
+      "text": "If 16 bits are used to specify the address space of a memory, the memory has ____[1] uniquely identifiable locations.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "65536"
+      ],
+      "source_answer": [
+        "65536"
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB08",
+      "source_file": "chap03tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "A decoder with n inputs can have no more than (2^n ) outputs.",
+      "note": "",
+      "explanation": "",
+      "text": "A decoder with n inputs can have no more than ____[1] outputs.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "2^n"
+      ],
+      "source_answer": [
+        "2^n"
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB09",
+      "source_file": "chap03tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "If the 2 inputs of a 2 input nand gate are connected together, then the function of the nand gate is that of a/an (INVERTER).",
+      "note": "",
+      "explanation": "",
+      "text": "If the 2 inputs of a 2 input nand gate are connected together, then the function of the nand gate is that of a/an ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "INVERTER"
+      ],
+      "source_answer": [
+        "INVERTER"
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB10",
+      "source_file": "chap03tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "A (DECODER) is helpful in identifying the opcode of an instruction.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is helpful in identifying the opcode of an instruction.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "DECODER"
+      ],
+      "source_answer": [
+        "DECODER"
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB11",
+      "source_file": "chap03tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "At any time there are exactly (TWO) transistors open circuited in a 2 input nand gate.",
+      "note": "",
+      "explanation": "",
+      "text": "At any time there are exactly ____[1] transistors open circuited in a 2 input nand gate.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "TWO"
+      ],
+      "source_answer": [
+        "TWO"
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB12",
+      "source_file": "chap03tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "The function NOT { AB+CD } can be implemented using a minimum of ( 8 ) transistors .",
+      "note": "",
+      "explanation": "",
+      "text": "The function NOT { AB+CD } can be implemented using a minimum of ____[1] transistors .",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "8"
+      ],
+      "source_answer": [
+        "8"
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB13",
+      "source_file": "chap03tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "A circuit for adding two n bit numbers, like the one in the textbook, requires (n) full adders with ( n+1 )  bits of output.",
+      "note": "",
+      "explanation": "",
+      "text": "A circuit for adding two n bit numbers, like the one in the textbook, requires ____[1] full adders with ____[2]  bits of output.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "n",
+        "n+1"
+      ],
+      "source_answer": [
+        "n",
+        "n+1"
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB14",
+      "source_file": "chap03tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "A full adder generates a carry in exactly (4)  of the (8)  possible combinations of its input .",
+      "note": "",
+      "explanation": "",
+      "text": "A full adder generates a carry in exactly ____[1]  of the ____[2]  possible combinations of its input .",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "4",
+        "8"
+      ],
+      "source_answer": [
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB15",
+      "source_file": "chap03tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "If the delay from the inputs { A,B, Cin } to Sum is 1.5 D and to Cout is 1.0 D, then the delay of a four bit adder is  ( 4.5D )",
+      "note": "",
+      "explanation": "",
+      "text": "If the delay from the inputs { A,B, Cin } to Sum is 1.5 D and to Cout is 1.0 D, then the delay of a four bit adder is  ____[1]",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "4.5D"
+      ],
+      "source_answer": [
+        "4.5D"
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB16",
+      "source_file": "chap03tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "When the gate is supplied with 0v the p type transistor acts as a (closed circuit).",
+      "note": "",
+      "explanation": "",
+      "text": "When the gate is supplied with 0v the p type transistor acts as a ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "closed circuit"
+      ],
+      "source_answer": [
+        "closed circuit"
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB17",
+      "source_file": "chap03tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "When the gate of a n type transistor is supplied with 0 volts, the n type transistor acts like a (open circuit).",
+      "note": "",
+      "explanation": "",
+      "text": "When the gate of a n type transistor is supplied with 0 volts, the n type transistor acts like a ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "open circuit"
+      ],
+      "source_answer": [
+        "open circuit"
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB18",
+      "source_file": "chap03tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "One can write into a gated D latch only while the (WE) signal is asserted.",
+      "note": "",
+      "explanation": "",
+      "text": "One can write into a gated D latch only while the ____[1] signal is asserted.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "WE"
+      ],
+      "source_answer": [
+        "WE"
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB19",
+      "source_file": "chap03tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "We clear an R-S latch by momentarily setting the (R) signal to (0).",
+      "note": "",
+      "explanation": "",
+      "text": "We clear an R-S latch by momentarily setting the ____[1] signal to ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "R",
+        "0"
+      ],
+      "source_answer": [
+        "R",
+        "0"
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": 2,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C3-FB20",
+      "source_file": "chap03tq.doc",
+      "source_number": 20,
+      "source_occurrence": 1,
+      "source_text": "If a logical variable A is applied to an inverter, and the output of that inverter is applied to the input of a second inverter, the output of that second inverter is (A).",
+      "note": "",
+      "explanation": "",
+      "text": "If a logical variable A is applied to an inverter, and the output of that inverter is applied to the input of a second inverter, the output of that second inverter is ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "A"
+      ],
+      "source_answer": [
+        "A"
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF01",
+      "source_file": "chap03tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "For a 16MB memory, memory location 50024 will always have a value which is greater than the value in location 5 (F)",
+      "note": "",
+      "explanation": "",
+      "text": "For a 16MB memory, memory location 50024 will always have a value which is greater than the value in location 5",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 133,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF02",
+      "source_file": "chap03tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "All 8-bit address spaces are byte addressable (F)",
+      "note": "",
+      "explanation": "",
+      "text": "All 8-bit address spaces are byte addressable",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 134,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF03",
+      "source_file": "chap03tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "An 8-bit register contains a value, The value 1 is written into it, the original value can still be recovered (F)",
+      "note": "",
+      "explanation": "",
+      "text": "An 8-bit register contains a value, The value 1 is written into it, the original value can still be recovered",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 135,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF04",
+      "source_file": "chap03tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "It is possible to have circuits that contains both P type and N type transistors  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible to have circuits that contains both P type and N type transistors",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 136,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF05",
+      "source_file": "chap03tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "It is possible for a 3:8 decoder to have 3 out of the eight outputs asserted. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible for a 3:8 decoder to have 3 out of the eight outputs asserted.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 137,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF06",
+      "source_file": "chap03tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "It is possible to have a 5 input and gate (T)",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible to have a 5 input and gate",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 138,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF07",
+      "source_file": "chap03tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "For a two input NAND gate, it is possible that 3 out of 4 transistors are open circuited at a given time (F)",
+      "note": "",
+      "explanation": "",
+      "text": "For a two input NAND gate, it is possible that 3 out of 4 transistors are open circuited at a given time",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 139,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF08",
+      "source_file": "chap03tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The p type and n type transistors of an inverter can never both be short circuited at the same time (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The p type and n type transistors of an inverter can never both be short circuited at the same time",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 140,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF09",
+      "source_file": "chap03tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Addressability of a machine can never be greater than its address space (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Addressability of a machine can never be greater than its address space",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 141,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF10",
+      "source_file": "chap03tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "A function (call it *) is associative if (a*b)*c = a*(b*c).  Using this definition, NAND is an associative function (F)",
+      "note": "",
+      "explanation": "",
+      "text": "A function (call it *) is associative if (a*b)*c = a*(b*c).  Using this definition, NAND is an associative function",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 142,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF11",
+      "source_file": "chap03tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "DeMorgan's Law shows that we can implement any and-or function with a nand-nand function.  If the number of transisors through which a signal has to pass determines the delay of that signal, a nand-nand realisation of a function is faster than and-or realisation Hint: examine the transistor implementations of and, or, and nand. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "DeMorgan's Law shows that we can implement any and-or function with a nand-nand function.  If the number of transisors through which a signal has to pass determines the delay of that signal, a nand-nand realisation of a function is faster than and-or realisation Hint: examine the transistor implementations of and, or, and nand.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 143,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF12",
+      "source_file": "chap03tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "For a logic circuit to work as a storage element it is necessary that the output be fed back to the input (T).",
+      "note": "",
+      "explanation": "",
+      "text": "For a logic circuit to work as a storage element it is necessary that the output be fed back to the input",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 144,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF13",
+      "source_file": "chap03tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "If a memory has addressability of 4 bits then we need 2 bits to specify the address space (F)",
+      "note": "",
+      "explanation": "",
+      "text": "If a memory has addressability of 4 bits then we need 2 bits to specify the address space",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 145,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF14",
+      "source_file": "chap03tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "It is not possible to have a 1 bit register (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is not possible to have a 1 bit register",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 146,
+      "chapter": 2,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C3-TF15",
+      "source_file": "chap03tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "The two outputs of a latch are always the complement of each other (T)",
+      "note": "原文为 True。互补输出的表述应限于锁存器的正常有效状态；禁止输入组合需要另行处理。",
+      "explanation": "",
+      "text": "The two outputs of a latch are always the complement of each other",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 147,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC01",
+      "source_file": "chap04tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "A computer memory contains:\n\n    a. Intructions only.\n    b. data only\n    c. both instructions and data.\n    d. Neither instructionn nor data.\n\n    Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "A computer memory contains:",
+      "options": [
+        "Intructions only.",
+        "data only",
+        "both instructions and data.",
+        "Neither instructionn nor data."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 148,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC02",
+      "source_file": "chap04tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "The Von Neumann model consists of ___ parts\n\n   a. 3\n   b. 4\n   c. 5\n   d. 6\n\n   Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The Von Neumann model consists of ___ parts",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 149,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC03",
+      "source_file": "chap04tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Typically the size of each register is ______ the size of values processed by ALU.\n\n    a. identical to\n    b. less than\n    c. greater than\n    d. unrelated to\n\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Typically the size of each register is ______ the size of values processed by ALU.",
+      "options": [
+        "identical to",
+        "less than",
+        "greater than",
+        "unrelated to"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 150,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC04",
+      "source_file": "chap04tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The Decode phase of the Instruction Cycle examines the ________ part of the instruction.\n\n    a. Immediate (literal) value\n    b. Opcode\n    c. Offset\n    d. Register\n\n    Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "The Decode phase of the Instruction Cycle examines the ________ part of the instruction.",
+      "options": [
+        "Immediate (literal) value",
+        "Opcode",
+        "Offset",
+        "Register"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 151,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC05",
+      "source_file": "chap04tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "The sequence of an Instruction cycle is:\n    a. FETCH -> DECODE -> EVALUATE ADDRESS -> FETCH OPERANDS -> EXECUTE -> STORE RESULT\n    b. FETCH -> DECODE -> FETCH OPERANDS -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT \n    c. FETCH -> DECODE -> FETCH OPERANDS -> EXECUTE -> EVALUATE ADDRESS -> STORE RESULT\n    d. FETCH -> FETCH OPERANDS -> DECODE -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "The sequence of an Instruction cycle is:",
+      "options": [
+        "FETCH -> DECODE -> EVALUATE ADDRESS -> FETCH OPERANDS -> EXECUTE -> STORE RESULT",
+        "FETCH -> DECODE -> FETCH OPERANDS -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT",
+        "FETCH -> DECODE -> FETCH OPERANDS -> EXECUTE -> EVALUATE ADDRESS -> STORE RESULT",
+        "FETCH -> FETCH OPERANDS -> DECODE -> EVALUATE ADDRESS -> EXECUTE -> STORE RESULT"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 152,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC06",
+      "source_file": "chap04tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "_________ Instructions are used to change the sequence of instruction execution.\n    a. Control \n    b. operate \n    c. data movement .\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "_________ Instructions are used to change the sequence of instruction execution.",
+      "options": [
+        "Control",
+        "operate",
+        "data movement ."
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 153,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC07",
+      "source_file": "chap04tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "ADD is an example of a/an\n\n    a. Control instruction \n    b. operate instruction \n    c. data movement instruction .\n    Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "ADD is an example of a/an",
+      "options": [
+        "Control instruction",
+        "operate instruction",
+        "data movement instruction ."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 154,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC08",
+      "source_file": "chap04tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "Control Instructions change the value of PC in the \n    a. FETCH phase\n    b. EVALUATE ADDRESS phase.\n    c. EXECUTE phase.\n    d. DECODE phase.\n    Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Control Instructions change the value of PC in the",
+      "options": [
+        "FETCH phase",
+        "EVALUATE ADDRESS phase.",
+        "EXECUTE phase.",
+        "DECODE phase."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 155,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC09",
+      "source_file": "chap04tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Which of the following instructions needs an EVALUATE ADDRESS phase:\n    a. ADD\n    b. LDR\n    c. NOT\n    d. JMP\n    Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following instructions needs an EVALUATE ADDRESS phase:",
+      "options": [
+        "ADD",
+        "LDR",
+        "NOT",
+        "JMP"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 156,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC10",
+      "source_file": "chap04tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Of the following devices, ____ is an example of an output device\n    a. Mouse\n    b. Keyboard\n    c. Scanner.\n    d. Printer.\n    Answer: d",
+      "note": "",
+      "explanation": "",
+      "text": "Of the following devices, ____ is an example of an output device",
+      "options": [
+        "Mouse",
+        "Keyboard",
+        "Scanner.",
+        "Printer."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 157,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC11",
+      "source_file": "chap04tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "LDR is an example of a/an  \n    a. Control Instruction\n    b. operate Instruction\n    c. data movement Instruction.\n    Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "LDR is an example of a/an",
+      "options": [
+        "Control Instruction",
+        "operate Instruction",
+        "data movement Instruction."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 158,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC12",
+      "source_file": "chap04tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "Each phase of an instruction cycle requires\n    a. exactly one clock cycle to do its job.\n    b. at least one clock cycle to do its job.\n    c. no more than one clock cycle to do its job.\n    d. between 0 and some finite value n cycles to do its job.\n    Answer: d",
+      "note": "",
+      "explanation": "",
+      "text": "Each phase of an instruction cycle requires",
+      "options": [
+        "exactly one clock cycle to do its job.",
+        "at least one clock cycle to do its job.",
+        "no more than one clock cycle to do its job.",
+        "between 0 and some finite value n cycles to do its job."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 159,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC13",
+      "source_file": "chap04tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "A digital scanner is an example of a/an \n    a. Input device\n    b. memory\n    c. processing unit\n    d. control unit\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "A digital scanner is an example of a/an",
+      "options": [
+        "Input device",
+        "memory",
+        "processing unit",
+        "control unit"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 160,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC14",
+      "source_file": "chap04tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "In the FETCH phase, an instruction is transferred from  ______ to the \n    Instruction Register.\n    a. Memory.\n    b. Processing Unit\n    c. Input device\n    d. Output device\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "In the FETCH phase, an instruction is transferred from  ______ to the \n    Instruction Register.",
+      "options": [
+        "Memory.",
+        "Processing Unit",
+        "Input device",
+        "Output device"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 161,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC15",
+      "source_file": "chap04tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "If memory accesses take 100 times more than register accesses, then a LDR instruction will take ___  machine cycles than an JMP R3 instruction .\n    a. fewer\n    b. more\n    c. same number of \n    Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If memory accesses take 100 times more than register accesses, then a LDR instruction will take ___  machine cycles than an JMP R3 instruction .",
+      "options": [
+        "fewer",
+        "more",
+        "same number of"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 162,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC16",
+      "source_file": "chap04tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "Memory is ALWAYS accessed in the following phases of an instruction cycle\n    a. EVALUATE ADDRESS, \n    b. DECODE \n    c. FETCH\n    d. EXECUTE.\n    Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Memory is ALWAYS accessed in the following phases of an instruction cycle",
+      "options": [
+        "EVALUATE ADDRESS,",
+        "DECODE",
+        "FETCH",
+        "EXECUTE."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 163,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC17",
+      "source_file": "chap04tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "JMP is an example of a/an \n    a. control Instruction\n    b. operate Instruction\n    c. data movement Instruction.\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "JMP is an example of a/an",
+      "options": [
+        "control Instruction",
+        "operate Instruction",
+        "data movement Instruction."
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 164,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC18",
+      "source_file": "chap04tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "An Instruction cycle consists of\n    a. more than 1 machine cycle\n    b. fewer than 1 machine cycle\n    c. Exactly 1 machine cycle.\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "An Instruction cycle consists of",
+      "options": [
+        "more than 1 machine cycle",
+        "fewer than 1 machine cycle",
+        "Exactly 1 machine cycle."
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 165,
+      "chapter": 3,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C4-MC19",
+      "source_file": "chap04tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "The PC is incremented so that during the next instruction cycle, the next instruction will be processed.  This happens during the\n    a. FETCH phase\n    b. DECODE phase\n    c. EVAL ADDRESS phase\n    d. EXEC phase\n    Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "The PC is incremented so that during the next instruction cycle, the next instruction will be processed.  This happens during the",
+      "options": [
+        "FETCH phase",
+        "DECODE phase",
+        "EVAL ADDRESS phase",
+        "EXEC phase"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 166,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB01",
+      "source_file": "chap04tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The (INSTRUCTION) is the smallest unit of work specified in a computer program, such that either the whole unit must be carried out or none of it must be carried out.  We refer to such a unit as an \"atomic\" unit of work.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] is the smallest unit of work specified in a computer program, such that either the whole unit must be carried out or none of it must be carried out.  We refer to such a unit as an \"atomic\" unit of work.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "INSTRUCTION"
+      ],
+      "source_answer": [
+        "INSTRUCTION"
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB02",
+      "source_file": "chap04tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "To read the contents of a memory location, we first place the address of that location in the (MEMORY ADDRESS REGISTER {MAR}).",
+      "note": "",
+      "explanation": "",
+      "text": "To read the contents of a memory location, we first place the address of that location in the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "MEMORY ADDRESS REGISTER {MAR}"
+      ],
+      "source_answer": [
+        "MEMORY ADDRESS REGISTER {MAR}"
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB03",
+      "source_file": "chap04tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Memory supplies data and accepts data to/from other devices through the (MEMORY DATA REGISTER -MDR).",
+      "note": "",
+      "explanation": "",
+      "text": "Memory supplies data and accepts data to/from other devices through the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "MEMORY DATA REGISTER -MDR"
+      ],
+      "source_answer": [
+        "MEMORY DATA REGISTER -MDR"
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB04",
+      "source_file": "chap04tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The size of the quantities normally processed by the ALU is often referred to as the (WORD LENGTH) of the computer.",
+      "note": "",
+      "explanation": "",
+      "text": "The size of the quantities normally processed by the ALU is often referred to as the ____[1] of the computer.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "WORD LENGTH"
+      ],
+      "source_answer": [
+        "WORD LENGTH"
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB05",
+      "source_file": "chap04tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "To keep track of what instruction is being executed, the control unit has an (INSTRUCTION REGISTER).",
+      "note": "",
+      "explanation": "",
+      "text": "To keep track of what instruction is being executed, the control unit has an ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "INSTRUCTION REGISTER"
+      ],
+      "source_answer": [
+        "INSTRUCTION REGISTER"
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB06",
+      "source_file": "chap04tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "The control unit has a (INSTRUCTION POINTER or Program Counter) that points to next instructions to be processed.",
+      "note": "",
+      "explanation": "",
+      "text": "The control unit has a ____[1] that points to next instructions to be processed.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "INSTRUCTION POINTER or Program Counter"
+      ],
+      "source_answer": [
+        "INSTRUCTION POINTER or Program Counter"
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB07",
+      "source_file": "chap04tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "The Program counter contains the (address of the next instruction to be processed).",
+      "note": "",
+      "explanation": "",
+      "text": "The Program counter contains the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "address of the next instruction to be processed"
+      ],
+      "source_answer": [
+        "address of the next instruction to be processed"
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB08",
+      "source_file": "chap04tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "An instruction is made up of two parts the ( OPCODE ) and the ( OPERANDS ).",
+      "note": "",
+      "explanation": "",
+      "text": "An instruction is made up of two parts the ____[1] and the ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "OPCODE",
+        "OPERANDS"
+      ],
+      "source_answer": [
+        "OPCODE",
+        "OPERANDS"
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB09",
+      "source_file": "chap04tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "The sequence of six phases that process an instruction is called the ( INSTRUCTION CYCLE).",
+      "note": "",
+      "explanation": "",
+      "text": "The sequence of six phases that process an instruction is called the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "INSTRUCTION CYCLE"
+      ],
+      "source_answer": [
+        "INSTRUCTION CYCLE"
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB10",
+      "source_file": "chap04tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "A 16-bit ISA has the following format <OPCODE><DR><SR0><SR1> where DR is the Destination register and SR0 and SR1 are source registers. If the ISA defines 32 registers then the maximum number of opcodes that can have that format is (2).",
+      "note": "",
+      "explanation": "",
+      "text": "A 16-bit ISA has the following format <OPCODE><DR><SR0><SR1> where DR is the Destination register and SR0 and SR1 are source registers. If the ISA defines 32 registers then the maximum number of opcodes that can have that format is ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "2"
+      ],
+      "source_answer": [
+        "2"
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB11",
+      "source_file": "chap04tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "A 16-bit instruction takes the following format <OPCODE><DR><SR><IMM> where DR specifies the destination register, SR specifies the source register, and IMM is a 2's complement immediate value. If there are 27 opcodes and 16 registers, the number of bits left to specify the immediate value is (3).",
+      "note": "",
+      "explanation": "",
+      "text": "A 16-bit instruction takes the following format <OPCODE><DR><SR><IMM> where DR specifies the destination register, SR specifies the source register, and IMM is a 2's complement immediate value. If there are 27 opcodes and 16 registers, the number of bits left to specify the immediate value is ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "3"
+      ],
+      "source_answer": [
+        "3"
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB12",
+      "source_file": "chap04tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "For a particular 16-bit ISA, the LDR instruction has the following format <Opcode = 0110> <DR><BaseR><OFFSET>. If there are 4 registers, the number of bits available to specify the offset is (8).",
+      "note": "",
+      "explanation": "",
+      "text": "For a particular 16-bit ISA, the LDR instruction has the following format <Opcode = 0110> <DR><BaseR><OFFSET>. If there are 4 registers, the number of bits available to specify the offset is ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "8"
+      ],
+      "source_answer": [
+        "8"
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB13",
+      "source_file": "chap04tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "If a machine cycle is 1 nanosecond { ie. 10^-9 seconds } then (10^9) machine cycles occur each second.",
+      "note": "",
+      "explanation": "",
+      "text": "If a machine cycle is 1 nanosecond { ie. 10^-9 seconds } then ____[1] machine cycles occur each second.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "10^9"
+      ],
+      "source_answer": [
+        "10^9"
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": 3,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C4-FB14",
+      "source_file": "chap04tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "Instructions in a program are processed (sequentially) unless directed otherwise by a (control) instruction.",
+      "note": "",
+      "explanation": "",
+      "text": "Instructions in a program are processed ____[1] unless directed otherwise by a ____[2] instruction.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "sequentially",
+        "control"
+      ],
+      "source_answer": [
+        "sequentially",
+        "control"
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF01",
+      "source_file": "chap04tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "Sometimes it is possible to carry out only a part of instruction, in which case, the computer only carries out that part of the instruction that it can (F).",
+      "note": "",
+      "explanation": "",
+      "text": "Sometimes it is possible to carry out only a part of instruction, in which case, the computer only carries out that part of the instruction that it can",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 181,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF02",
+      "source_file": "chap04tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "The actual processing of information in the computer is done in the control unit (F).",
+      "note": "",
+      "explanation": "",
+      "text": "The actual processing of information in the computer is done in the control unit",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 182,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF03",
+      "source_file": "chap04tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "It is possible to have an ISA with word length of four bits. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible to have an ISA with word length of four bits.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 183,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF04",
+      "source_file": "chap04tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "Most ISA's provides some small temporary storage very close to the ALU to allow the results to be temporarily stored if they will be needed to produce results in the near future (T).",
+      "note": "",
+      "explanation": "",
+      "text": "Most ISA's provides some small temporary storage very close to the ALU to allow the results to be temporarily stored if they will be needed to produce results in the near future",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 184,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF05",
+      "source_file": "chap04tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "For the LC-3 ISA, the LDR instruction requires an Execute phase (F).",
+      "note": "",
+      "explanation": "",
+      "text": "For the LC-3 ISA, the LDR instruction requires an Execute phase",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 185,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF06",
+      "source_file": "chap04tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "The time taken to access registers is less than the time taken to access memory. (T).",
+      "note": "",
+      "explanation": "",
+      "text": "The time taken to access registers is less than the time taken to access memory.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 186,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF07",
+      "source_file": "chap04tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "It is possible to have a machine without some form of input or output device. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is possible to have a machine without some form of input or output device.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 187,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF08",
+      "source_file": "chap04tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "All instructions require all six phases of the instruction cycle to be carried out.  That is, at least one clock cycle must be devoted to carrying out the work of each phase of each instruction (F).",
+      "note": "",
+      "explanation": "",
+      "text": "All instructions require all six phases of the instruction cycle to be carried out.  That is, at least one clock cycle must be devoted to carrying out the work of each phase of each instruction",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 188,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF09",
+      "source_file": "chap04tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "Some instructions do not require the FETCH phase (F).",
+      "note": "",
+      "explanation": "",
+      "text": "Some instructions do not require the FETCH phase",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 189,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF10",
+      "source_file": "chap04tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Normally, the value in the Program Counter remains unchanged as a result of carrying out the fetch phase of the instruction cycle (F).",
+      "note": "",
+      "explanation": "",
+      "text": "Normally, the value in the Program Counter remains unchanged as a result of carrying out the fetch phase of the instruction cycle",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 190,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF11",
+      "source_file": "chap04tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "The Decode phase is required of all instructions (T).",
+      "note": "",
+      "explanation": "",
+      "text": "The Decode phase is required of all instructions",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 191,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF12",
+      "source_file": "chap04tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "The Evaluate address phase can happen before the instruction decode phase. (F).",
+      "note": "",
+      "explanation": "",
+      "text": "The Evaluate address phase can happen before the instruction decode phase.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 192,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF13",
+      "source_file": "chap04tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "If an Instruction cycle is stopped using a HALT instruction, it cannot be reinitiated using any other instruction (T).",
+      "note": "",
+      "explanation": "",
+      "text": "If an Instruction cycle is stopped using a HALT instruction, it cannot be reinitiated using any other instruction",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 193,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF14",
+      "source_file": "chap04tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "The processor can interact with I/O devices using an I/O status register and I/O data register (T).",
+      "note": "",
+      "explanation": "",
+      "text": "The processor can interact with I/O devices using an I/O status register and I/O data register",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 194,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF15",
+      "source_file": "chap04tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "The Processing unit interacts with memory using the Memory Status Register and the Memory data register. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The Processing unit interacts with memory using the Memory Status Register and the Memory data register.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 195,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF16",
+      "source_file": "chap04tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "The function of the Instruction Register is to point to next instruction to be processed.(F)",
+      "note": "",
+      "explanation": "",
+      "text": "The function of the Instruction Register is to point to next instruction to be processed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 196,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF17",
+      "source_file": "chap04tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "If the instruction at address x4000 is being processed then it is possible that the next instruction to be processed is at address x5000. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "If the instruction at address x4000 is being processed then it is possible that the next instruction to be processed is at address x5000.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 197,
+      "chapter": 3,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C4-TF18",
+      "source_file": "chap04tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "For the LC-3 ISA, the ADD instruction does not require an EVALUATE ADDRESS phase (T).",
+      "note": "",
+      "explanation": "",
+      "text": "For the LC-3 ISA, the ADD instruction does not require an EVALUATE ADDRESS phase",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 198,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF01",
+      "source_file": "chap05tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The data type supported by the LC-3 ISA is 1's complement integers. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The data type supported by the LC-3 ISA is 1's complement integers.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 199,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF02",
+      "source_file": "chap05tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "For an LC-3 instruction that uses the PC-Relative addressing mode, bits [15:9] of the address of the operand are the same as bits [15:9] of the address of the instruction. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "For an LC-3 instruction that uses the PC-Relative addressing mode, bits [15:9] of the address of the operand are the same as bits [15:9] of the address of the instruction.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 200,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF03",
+      "source_file": "chap05tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "In LC-3 ISA, only BRx, JMP, JSR/JSRR, RET, and RTI instructions modify the value of the Program Counter. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "In LC-3 ISA, only BRx, JMP, JSR/JSRR, RET, and RTI instructions modify the value of the Program Counter.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 201,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF04",
+      "source_file": "chap05tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "TRAP instruction changes the PC to a memory address, which is part of the operating system. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "TRAP instruction changes the PC to a memory address, which is part of the operating system.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 202,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF05",
+      "source_file": "chap05tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "In the LC-3 ISA, if an instruction modifies a condition code, the condition code register it writes to is specified in a field in the instruction's encoding. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "In the LC-3 ISA, if an instruction modifies a condition code, the condition code register it writes to is specified in a field in the instruction's encoding.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 203,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF06",
+      "source_file": "chap05tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "All LC-3 instructions modify the condition codes. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "All LC-3 instructions modify the condition codes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 204,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF07",
+      "source_file": "chap05tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "Every LC-3 operate and data-movement instruction either reads or writes into the register file in the LC-3 datapath. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Every LC-3 operate and data-movement instruction either reads or writes into the register file in the LC-3 datapath.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 205,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF08",
+      "source_file": "chap05tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The instruction 1110111000000000 at memory location 0xF011 sets the N condition code when executed. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The instruction 1110111000000000 at memory location 0xF011 sets the N condition code when executed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 206,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF09",
+      "source_file": "chap05tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "A conditional branch instruction at location 0x5200 can change the value of the PC to 0x5000. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "A conditional branch instruction at location 0x5200 can change the value of the PC to 0x5000.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 207,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF10",
+      "source_file": "chap05tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "There exists a sequence of LC-3 instructions such that after they are all executed, the condition codes will be set to N = 0, Z = 0, and P = 0. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "There exists a sequence of LC-3 instructions such that after they are all executed, the condition codes will be set to N = 0, Z = 0, and P = 0.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 208,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF11",
+      "source_file": "chap05tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "Using a sentinel to control the number of executions of a loop is very effective if the programmer does not know ahead of time how many iterations will be performed. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Using a sentinel to control the number of executions of a loop is very effective if the programmer does not know ahead of time how many iterations will be performed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 209,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF12",
+      "source_file": "chap05tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "All LC-3 instructions require the FETCH and DECODE phases of the instruction cycle for correct processing. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "All LC-3 instructions require the FETCH and DECODE phases of the instruction cycle for correct processing.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 210,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF13",
+      "source_file": "chap05tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "The LC-3 ISA specifies an instruction which accesses two memory locations, adds their contents, and stores the sum in another memory location. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The LC-3 ISA specifies an instruction which accesses two memory locations, adds their contents, and stores the sum in another memory location.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 211,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF14",
+      "source_file": "chap05tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "Some LC-3 data movement instructions move data from one memory location to another. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Some LC-3 data movement instructions move data from one memory location to another.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F"
+    },
+    {
+      "id": 212,
+      "chapter": 4,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C5-TF15",
+      "source_file": "chap05tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "During the instruction cycle of an ST instruction, the MDR in the LC-3 datapath (Figure 5.9) is written into at least twice. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "During the instruction cycle of an ST instruction, the MDR in the LC-3 datapath (Figure 5.9) is written into at least twice.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T"
+    },
+    {
+      "id": 213,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC01",
+      "source_file": "chap05tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "Which of the following instructions can reference a memory location that is #1000 locations from the instruction?\n\na. ADD\nb. LD\nc. STR\nd. LEA\ne. All of the above\nf. None of the above\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following instructions can reference a memory location that is #1000 locations from the instruction?",
+      "options": [
+        "ADD",
+        "LD",
+        "STR",
+        "LEA",
+        "All of the above",
+        "None of the above"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 214,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC02",
+      "source_file": "chap05tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "The addressability of LC-3 memory is\n\na. 2^16 locations\nb. 16 bits\nc. 2^9 locations\nd. 2^16 bits\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "The addressability of LC-3 memory is",
+      "options": [
+        "2^16 locations",
+        "16 bits",
+        "2^9 locations",
+        "2^16 bits"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 215,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC03",
+      "source_file": "chap05tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "After the execution of which of the following instructions will the value in the Program Counter (PC) be 0x306e?\n\ni.   0000111001011100 at location 0x3011\nii.  0000000001101110 at location 0x306d\niii. 1010011001101110 at location 0x306d\n\na. i and ii\nb. i and iii\nc. ii and iii\nd. i, ii, and iii\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "After the execution of which of the following instructions will the value in the Program Counter (PC) be 0x306e?\n\ni.   0000111001011100 at location 0x3011\nii.  0000000001101110 at location 0x306d\niii. 1010011001101110 at location 0x306d",
+      "options": [
+        "i and ii",
+        "i and iii",
+        "ii and iii",
+        "i, ii, and iii"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 216,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC04",
+      "source_file": "chap05tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The largest positive offset that can be used by an LC-3 instruction that utilizes the base+offset addressing mode is\n\na. 31\nb. 32\nc. 63\nd. 64\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "The largest positive offset that can be used by an LC-3 instruction that utilizes the base+offset addressing mode is",
+      "options": [
+        "31",
+        "32",
+        "63",
+        "64"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 217,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC05",
+      "source_file": "chap05tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "For which of the following LC-3 instructions is no memory access performed during the instruction cycle?\n\na. LDR\nb. STI\nc. LEA\nd. For all of the above instructions memory is accessed during the instruction cycle.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "For which of the following LC-3 instructions is no memory access performed during the instruction cycle?",
+      "options": [
+        "LDR",
+        "STI",
+        "LEA",
+        "For all of the above instructions memory is accessed during the instruction cycle."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 218,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC06",
+      "source_file": "chap05tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "Which of the following LC-3 instructions does not access memory to fetch its operand?\n\na. LDR\nb. LDI\nc. LEA\nd. All of the above instructions access memory to fetch their operands.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following LC-3 instructions does not access memory to fetch its operand?",
+      "options": [
+        "LDR",
+        "LDI",
+        "LEA",
+        "All of the above instructions access memory to fetch their operands."
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 219,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC07",
+      "source_file": "chap05tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "Which of the following instructions move the value in R5 into R6?\n\ni.   0001110101100000\nii.  0101110101111111\niii. 1001110101111111\n\na. Only i\nb. Only ii\nc. i and ii\nd. i and iii\ne. i, ii, and iii\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following instructions move the value in R5 into R6?\n\ni.   0001110101100000\nii.  0101110101111111\niii. 1001110101111111",
+      "options": [
+        "Only i",
+        "Only ii",
+        "i and ii",
+        "i and iii",
+        "i, ii, and iii"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 220,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC08",
+      "source_file": "chap05tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "During the processing of which of the following instructions is the use of an adder not required? (Processing of an instruction spans the whole instruction cycle.)  Neglect the requirement of incrementing PC in the FETCH phase of the instruction cycle, which can be accomplished with a simpler increment circuit and does not require a full blown adder.\n \na. LDR\nb. ADD\nc. STR\nd. AND\ne. All of the above require the use of an adder.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "During the processing of which of the following instructions is the use of an adder not required? (Processing of an instruction spans the whole instruction cycle.)  Neglect the requirement of incrementing PC in the FETCH phase of the instruction cycle, which can be accomplished with a simpler increment circuit and does not require a full blown adder.",
+      "options": [
+        "LDR",
+        "ADD",
+        "STR",
+        "AND",
+        "All of the above require the use of an adder."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 221,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC09",
+      "source_file": "chap05tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "If the LC-3 ISA was modified to specify 32 general purpose registers and every other specification remained unchanged, how many bits would be required to encode an LC-3 ADD instruction? \n\na. 16\nb. 20\nc. 24\nd. 31\ne. 32\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If the LC-3 ISA was modified to specify 32 general purpose registers and every other specification remained unchanged, how many bits would be required to encode an LC-3 ADD instruction?",
+      "options": [
+        "16",
+        "20",
+        "24",
+        "31",
+        "32"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 222,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC10",
+      "source_file": "chap05tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "If the condition codes have values N = 0, Z = 0, P = 1 at the beginning of the execution of the following sequence of instructions, what will their value be at the end of the execution of the following sequence?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3050\t\t     0000001000000001\t\t     \n0x3051\t\t     0101000000100000\n0x3052\t\t     0001000000100001\n\na. N = 0, Z = 0, P = 1\nb. N = 0, Z = 1, P = 0\nc. N = 1, Z = 0, P = 0\nd. Cannot be determined with the information given in the question.\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "If the condition codes have values N = 0, Z = 0, P = 1 at the beginning of the execution of the following sequence of instructions, what will their value be at the end of the execution of the following sequence?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3050\t\t     0000001000000001\t\t     \n0x3051\t\t     0101000000100000\n0x3052\t\t     0001000000100001",
+      "options": [
+        "N = 0, Z = 0, P = 1",
+        "N = 0, Z = 1, P = 0",
+        "N = 1, Z = 0, P = 0",
+        "Cannot be determined with the information given in the question."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 223,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC11",
+      "source_file": "chap05tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "Which of the following is not specified by the ISA of LC-3?\n\na. Number of general purpose registers\nb. Data types\nc. Encodings of opcodes\nd. Number of adders in an LC-3 processor\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following is not specified by the ISA of LC-3?",
+      "options": [
+        "Number of general purpose registers",
+        "Data types",
+        "Encodings of opcodes",
+        "Number of adders in an LC-3 processor"
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 224,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC12",
+      "source_file": "chap05tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "During the processing (instruction cycle) of which of the following instructions, does the PCMUX in the LC-3 datapath NOT perform useful work relevant to the processing of that particular instruction as specifed by the LC-3 ISA? (Refer to the LC-3 datapath in Figure 5.9)\n\na. ADD \nb. BR\nc. TRAP\nd. None of the above (For all of the above instructions, PCMUX produces an output that is useful in determining the effect of the instruction on the machine state).\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "During the processing (instruction cycle) of which of the following instructions, does the PCMUX in the LC-3 datapath NOT perform useful work relevant to the processing of that particular instruction as specifed by the LC-3 ISA? (Refer to the LC-3 datapath in Figure 5.9)",
+      "options": [
+        "ADD",
+        "BR",
+        "TRAP",
+        "None of the above (For all of the above instructions, PCMUX produces an output that is useful in determining the effect of the instruction on the machine state)."
+      ],
+      "answer": "D",
+      "source_answer": "D"
+    },
+    {
+      "id": 225,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC13",
+      "source_file": "chap05tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "Which of the following LC-3 instructions can only have operands that are in registers (i.e. cannot have immediate or memory operands)?\n\na. ADD\nb. NOT\nc. LD\nd. AND\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following LC-3 instructions can only have operands that are in registers (i.e. cannot have immediate or memory operands)?",
+      "options": [
+        "ADD",
+        "NOT",
+        "LD",
+        "AND"
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 226,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC14",
+      "source_file": "chap05tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "The following LC-3 instruction is located at memory address 0x5F55. Which of the following describes the operation of this instruction?\n\n0000101100000000\n\na. If both the N and P condition codes are set, the instruction will load 0x5E56 into the PC.\nb. If either N or P condition code is set, the instruction will load 0x5E56 into the PC.\nc. If either N or P condition code is set, the instruction will load 0x5F56 into the PC.\nd. If both the N and P condition codes are set, the instruction will load 0x5F56 into the PC.\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "The following LC-3 instruction is located at memory address 0x5F55. Which of the following describes the operation of this instruction?\n\n0000101100000000",
+      "options": [
+        "If both the N and P condition codes are set, the instruction will load 0x5E56 into the PC.",
+        "If either N or P condition code is set, the instruction will load 0x5E56 into the PC.",
+        "If either N or P condition code is set, the instruction will load 0x5F56 into the PC.",
+        "If both the N and P condition codes are set, the instruction will load 0x5F56 into the PC."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 227,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC15",
+      "source_file": "chap05tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "Which of the following instructions at address 0x0200 clear register R5?\n\ni.   0001101101100000\nii.  0101101101100000\niii. 1110101000000000\niv.  0010101000000000\n\na. ii\nb. i and ii \nc. i, ii, and iii\nd. ii and iv\ne. ii, iii, and iv\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "Which of the following instructions at address 0x0200 clear register R5?\n\ni.   0001101101100000\nii.  0101101101100000\niii. 1110101000000000\niv.  0010101000000000",
+      "options": [
+        "ii",
+        "i and ii",
+        "i, ii, and iii",
+        "ii and iv",
+        "ii, iii, and iv"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 228,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC16",
+      "source_file": "chap05tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "The LC-3 ADD instruction:\n\na. can only add two 16-bit values found in registers \nb. can add a 16-bit value to a zero-extended 5-bit value\nc. can add a 16-bit value to a sign-extended 5-bit value\nd. can add a 16-bit value to a sign-extended 10-bit value\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The LC-3 ADD instruction:",
+      "options": [
+        "can only add two 16-bit values found in registers",
+        "can add a 16-bit value to a zero-extended 5-bit value",
+        "can add a 16-bit value to a sign-extended 5-bit value",
+        "can add a 16-bit value to a sign-extended 10-bit value"
+      ],
+      "answer": "C",
+      "source_answer": "C"
+    },
+    {
+      "id": 229,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC18",
+      "source_file": "chap05tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x4400\t\t     1001100010111111        \t     \n0x4401\t\t     0001100100100001       \n0x4402\t\t     0001100001000100      \n0x4403                 0000100001000000       \n\na. R1 > R2 (R1 was greater than R2)\nb. R1 < R2 (R2 was greater than R1) \nc. R1 = R2 (R1 and R2 were equal)\nd. Cannot be determined with the given information.\n\nAnswer: b",
+      "note": "原文选 B。这里用减法结果的符号比较两个补码数；若发生有符号溢出，需要额外处理。",
+      "explanation": "",
+      "text": "If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x4400\t\t     1001100010111111        \t     \n0x4401\t\t     0001100100100001       \n0x4402\t\t     0001100001000100      \n0x4403                 0000100001000000",
+      "options": [
+        "R1 > R2 (R1 was greater than R2)",
+        "R1 < R2 (R2 was greater than R1)",
+        "R1 = R2 (R1 and R2 were equal)",
+        "Cannot be determined with the given information."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 230,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC19",
+      "source_file": "chap05tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "If the value stored in R0 is 1 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000   \n0x3001\t\t     0101100101100001   \n0x3002                 0000010000000001   \n0x3003                 0001000000100001   \n\na. R5 is odd\nb. R5 is even\nc. R5 is equal to 0\nd. R5 is equal to 1\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "If the value stored in R0 is 1 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000   \n0x3001\t\t     0101100101100001   \n0x3002                 0000010000000001   \n0x3003                 0001000000100001",
+      "options": [
+        "R5 is odd",
+        "R5 is even",
+        "R5 is equal to 0",
+        "R5 is equal to 1"
+      ],
+      "answer": "A",
+      "source_answer": "A"
+    },
+    {
+      "id": 231,
+      "chapter": 4,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C5-MC20",
+      "source_file": "chap05tq.doc",
+      "source_number": 20,
+      "source_occurrence": 1,
+      "source_text": "If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000\n0x3001\t\t     0101111111100000    \n0x3002                 0001110111100001    \n0x3003                 0101100101000110   \n0x3004                 0000010000000001    \n0x3005                 0001000000100001    \n0x3006                 0001110110000110   \n0x3007                 0001111111100001    \n0x3008                 0001001111111000    \n0x3009                 0000100111111000    \n0x300A                 0101111111100000\n\na. The bit string in R5 contains 5 1's.\nb. Least significant byte of R5 contains 5 1's.\nc. The bit string in R5 contains 5 0's.\nd. The value of R5 is divisible by 5.\ne. Least significant byte of R5 contains 5 0's.\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000\n0x3001\t\t     0101111111100000    \n0x3002                 0001110111100001    \n0x3003                 0101100101000110   \n0x3004                 0000010000000001    \n0x3005                 0001000000100001    \n0x3006                 0001110110000110   \n0x3007                 0001111111100001    \n0x3008                 0001001111111000    \n0x3009                 0000100111111000    \n0x300A                 0101111111100000",
+      "options": [
+        "The bit string in R5 contains 5 1's.",
+        "Least significant byte of R5 contains 5 1's.",
+        "The bit string in R5 contains 5 0's.",
+        "The value of R5 is divisible by 5.",
+        "Least significant byte of R5 contains 5 0's."
+      ],
+      "answer": "B",
+      "source_answer": "B"
+    },
+    {
+      "id": 232,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB01",
+      "source_file": "chap05tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "LEA instruction uses the (immediate/literal) addressing mode.",
+      "note": "",
+      "explanation": "",
+      "text": "LEA instruction uses the ____[1] addressing mode.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "immediate/literal"
+      ],
+      "source_answer": [
+        "immediate/literal"
+      ]
+    },
+    {
+      "id": 233,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB02",
+      "source_file": "chap05tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "LD, LDR, LDI, LEA, ST, STR, and STI are (data movement) instructions of the LC-3 ISA.",
+      "note": "",
+      "explanation": "",
+      "text": "LD, LDR, LDI, LEA, ST, STR, and STI are ____[1] instructions of the LC-3 ISA.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "data movement"
+      ],
+      "source_answer": [
+        "data movement"
+      ]
+    },
+    {
+      "id": 234,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB03",
+      "source_file": "chap05tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "If an ISA has 256 opcodes, the number of bits in the instruction encoding used to specify the opcode should be at least (8).",
+      "note": "",
+      "explanation": "",
+      "text": "If an ISA has 256 opcodes, the number of bits in the instruction encoding used to specify the opcode should be at least ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "8"
+      ],
+      "source_answer": [
+        "8"
+      ]
+    },
+    {
+      "id": 235,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB04",
+      "source_file": "chap05tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "(Control instructions) change the sequence of the instructions that are executed.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] change the sequence of the instructions that are executed.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Control instructions"
+      ],
+      "source_answer": [
+        "Control instructions"
+      ]
+    },
+    {
+      "id": 236,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB05",
+      "source_file": "chap05tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "The number of system calls that could be uniquely identified using a trapvector of 12 bits would be (4096).",
+      "note": "",
+      "explanation": "",
+      "text": "The number of system calls that could be uniquely identified using a trapvector of 12 bits would be ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "4096"
+      ],
+      "source_answer": [
+        "4096"
+      ]
+    },
+    {
+      "id": 237,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB06",
+      "source_file": "chap05tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "ADD instruction does not do any useful work during the (Evaluate Address) phase of the instruction cycle.",
+      "note": "",
+      "explanation": "",
+      "text": "ADD instruction does not do any useful work during the ____[1] phase of the instruction cycle.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Evaluate Address"
+      ],
+      "source_answer": [
+        "Evaluate Address"
+      ]
+    },
+    {
+      "id": 238,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB07",
+      "source_file": "chap05tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "The number of memory accesses performed during the processing, i.e., entire instruction cycle, of the STI instruction is (3).",
+      "note": "",
+      "explanation": "",
+      "text": "The number of memory accesses performed during the processing, i.e., entire instruction cycle, of the STI instruction is ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "3"
+      ],
+      "source_answer": [
+        "3"
+      ]
+    },
+    {
+      "id": 239,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB08",
+      "source_file": "chap05tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The instruction 0011000100101111 at memory location 0x5611 store the value of register R0 into memory location 0x(5541) when executed.",
+      "note": "",
+      "explanation": "",
+      "text": "The instruction 0011000100101111 at memory location 0x5611 store the value of register R0 into memory location 0x____[1] when executed.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "5541"
+      ],
+      "source_answer": [
+        "5541"
+      ]
+    },
+    {
+      "id": 240,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB09",
+      "source_file": "chap05tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "An instruction is made up of two things: its (opcode) specifies what the instruction is asking the computer to do and its (operands) specify who the computer is expected to do it to.",
+      "note": "",
+      "explanation": "",
+      "text": "An instruction is made up of two things: its ____[1] specifies what the instruction is asking the computer to do and its ____[2] specify who the computer is expected to do it to.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "opcode",
+        "operands"
+      ],
+      "source_answer": [
+        "opcode",
+        "operands"
+      ]
+    },
+    {
+      "id": 241,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB10",
+      "source_file": "chap05tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "A (data type) is a representation of information such that the ISA has opcodes that operate on that representation.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is a representation of information such that the ISA has opcodes that operate on that representation.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "data type"
+      ],
+      "source_answer": [
+        "data type"
+      ]
+    },
+    {
+      "id": 242,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB11",
+      "source_file": "chap05tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "The LC-3 operate instructions that perform binary operations are (ADD) and (AND).",
+      "note": "",
+      "explanation": "",
+      "text": "The LC-3 operate instructions that perform binary operations are ____[1] and ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "ADD",
+        "AND"
+      ],
+      "source_answer": [
+        "ADD",
+        "AND"
+      ]
+    },
+    {
+      "id": 243,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB12",
+      "source_file": "chap05tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "If the operand of an instruction is a part of the instruction, the operand is called a(n) (literal/immediate) operand.",
+      "note": "",
+      "explanation": "",
+      "text": "If the operand of an instruction is a part of the instruction, the operand is called a(n) ____[1] operand.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "literal/immediate"
+      ],
+      "source_answer": [
+        "literal/immediate"
+      ]
+    },
+    {
+      "id": 244,
+      "chapter": 4,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C5-FB13",
+      "source_file": "chap05tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "The largest memory address that can be referenced by an LD instruction at location 0x6631 is 0x(6731).",
+      "note": "",
+      "explanation": "",
+      "text": "The largest memory address that can be referenced by an LD instruction at location 0x6631 is 0x____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "6731"
+      ],
+      "source_answer": [
+        "6731"
+      ]
+    }
+  ]
+}
