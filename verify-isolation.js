@@ -21,8 +21,8 @@ async page => {
   assert(requests.every(r=>r.method==='GET'&&new URL(r.url).origin===root),'No answer upload or third-party request occurs');
   if(root.startsWith('http://127.0.0.1:')){
    const shared=await browser.newContext();contexts.push(shared);
-   const mathUrl='https://wangzeyu2006729-beep.github.io/WKU3700Midquiz/';
-   const cpsUrl='https://wangzeyu2006729-beep.github.io/WKUCPS2390TestBank/';
+   const mathUrl='https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/';
+   const cpsUrl='https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/';
    await shared.route(mathUrl,async route=>route.fulfill({response:await route.fetch({url:root+'/tmp/math-index.html'})}));
    await shared.route(cpsUrl,async route=>route.fulfill({response:await route.fetch({url:root+'/index.html'})}));
    const c=await shared.newPage();await c.goto(mathUrl);

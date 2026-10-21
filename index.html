@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#111315">
 <meta name="description" content="Wenzhou-Kean CPS2390 Fall 2026 TestBank for Qixia Zhang: 244 questions across Chapters 1–5, including true/false, multiple choice, and fill in the blanks.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23191c1f'/%3E%3Cpath d='M8 8h6l2 2 2-2h6v16h-6l-2 1-2-1H8zM16 10v15' fill='none' stroke='%23bed1b9' stroke-width='1.5'/%3E%3C/svg%3E">
-<title>WKU CPS2390 · Qixia Zhang · 26Fall TestBank</title>
+<title>WKU CPS2390 · Qixia Zhang · 26Fall Practice</title>
 <style>
 :root{color-scheme:dark;--bg:#111315;--surface:#191c1f;--raised:#202428;--line:#33383e;--ink:#e7e9ec;--muted:#a2a8af;--accent:#bed1b9;--green:#b4d4b8;--red:#e5aaa4;--soft-green:#223029;--soft-red:#352724}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,input,select{font:inherit;color:inherit}button{cursor:pointer}button,input,select,a{ -webkit-tap-highlight-color:transparent}button{transition:background .15s,border-color .15s}button:disabled{cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:active:not(:disabled){transform:translateY(1px)}a{color:var(--accent)}[hidden]{display:none!important}svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0)}.skip-link{position:fixed;top:0;left:16px;z-index:3;padding:10px;background:var(--raised);transform:translateY(-150%)}.skip-link:focus{transform:translateY(0)}
@@ -42,7 +42,7 @@
 </defs></svg>
 <a class="skip-link" href="#question">跳到当前题目</a>
 <div class="app">
-<header class="topbar"><div class="brand"><h1 class="sr-only">CPS2390 TestBank</h1><label><span class="sr-only">切换课程</span><select id="course-select" class="course-select" aria-label="切换课程"><option value="math">MATH 3700</option><option value="cps" selected>CPS2390</option></select></label><span>WKU · 26Fall · Qixia Zhang · TestBank</span></div><button id="help" class="help-btn" aria-label="使用说明与快捷键">?</button></header>
+<header class="topbar"><div class="brand"><h1 class="sr-only">CPS2390 TestBank</h1><label><span class="sr-only">切换课程</span><select id="course-select" class="course-select" aria-label="切换课程"><option value="math">MATH 3700</option><option value="cps" selected>CPS2390</option></select></label><span>WKU · 26Fall · Qixia Zhang</span></div><button id="help" class="help-btn" aria-label="使用说明与快捷键">?</button></header>
 <div id="storage-warning" class="storage-warning" hidden>浏览器未允许保存本地数据，进度仅在本次打开期间保留。</div>
 <main>
 <section class="toolbar" aria-label="练习筛选">
@@ -111,7 +111,7 @@ function render(){const q=current();const answered=Object.values(state.answers),
 $('chapter-select').onchange=e=>{state.chapter=e.target.value;queue();};
 document.querySelectorAll('[data-bank]').forEach(b=>b.onclick=()=>{state.bank=b.dataset.bank;queue();});
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;queue();});
-$('course-select').onchange=e=>{if(e.target.value==='math')window.location.href='https://wangzeyu2006729-beep.github.io/WKU3700Midquiz/';};
+$('course-select').onchange=e=>{if(e.target.value==='math')window.location.href='https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/';};
 $('search').value=state.query;$('search').addEventListener('input',e=>{state.query=e.target.value;queue();});
 $('prev').onclick=()=>go(state.index-1);$('next').onclick=advance;$('restart').onclick=restart;$('help').onclick=()=>$('help-dialog').showModal();$('reset').onclick=()=>$('reset-dialog').showModal();$('help-reset').onclick=()=>{$('help-dialog').close();$('reset-dialog').showModal();};
 document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-21",
+  "semester": "26Fall",
+  "repositories": [
+    "WKU-MATH3700-26Fall",
+    "WKU-CPS2390-26Fall"
+  ],
+  "readme_headings_identical": true,
+  "questions_unchanged": true,
+  "checks": 46,
+  "results": {
+    "metadata_and_renamed_paths": {
+      "passed": 14,
+      "checks": [
+        "MATH3700 course metadata identifies Gupta and 26Fall",
+        "MATH3700 header and title use the corrected semester",
+        "Old-path MATH3700 current question and draft survive at the renamed path",
+        "MATH3700 attempts and bookmarks survive the rename",
+        "CPS2390 uses matching course metadata fields and semester",
+        "CPS2390 header uses the same semester format",
+        "CPS2390 saved position and fill drafts survive at the renamed path",
+        "Pending CPS2390 fill self-assessment survives the rename",
+        "A restored CPS2390 fill answer can still be graded",
+        "New course links round-trip and preserve MATH3700 results",
+        "CPS2390 results remain independent after switching back",
+        "Resetting CPS2390 still preserves MATH3700 progress",
+        "math normalized header fits mobile",
+        "cps normalized header fits mobile"
+      ]
+    },
+    "course_isolation": {
+      "passed": 12,
+      "checks": [
+        "Two independent browser profiles start empty",
+        "Answers and bookmarks are isolated between browsers",
+        "Wrong books are isolated",
+        "Fill drafts and reveals are isolated",
+        "Fill reveal state persists",
+        "Resetting one browser leaves another browser untouched",
+        "No answer upload or third-party request occurs",
+        "Course selector opens CPS2390 with fresh independent progress",
+        "Entering CPS2390 leaves MATH3700 data byte-for-byte intact",
+        "Switching back restores the original MATH3700 answer",
+        "Switching back retains CPS2390 records",
+        "Clearing CPS2390 does not clear MATH3700 answers or bookmarks"
+      ],
+      "url": "http://127.0.0.1:8768/index.html"
+    },
+    "math_legacy_upgrade": {
+      "passed": 20,
+      "checks": [
+        "Original answers, attempts, favorites and drafts survive the upgrade",
+        "Legacy 100-question queue expands to 140 and preserves current question",
+        "Legacy draft is restored in the question UI",
+        "Migration is idempotent across refresh",
+        "Progress denominator includes both banks",
+        "Original filter contains exactly 100 questions",
+        "Variant filter contains exactly 40 unique stable IDs",
+        "Variant label starts at V01",
+        "Variant bank and probability chapter combine correctly",
+        "V24 search resolves to its variant ID",
+        "Variant provenance and difficulty are visible",
+        "Variant filter and answer survive refresh",
+        "Q24 and V24 resolve to different questions",
+        "Invalid original labels cannot alias a variant",
+        "Invalid variant labels have no results",
+        "Wrong-answer review includes variant errors without mixing original IDs",
+        "Bookmarks from both banks coexist",
+        "Random mode respects the variant filter",
+        "Long A/B variant fits mobile without horizontal overflow",
+        "Dark background is applied"
+      ]
+    }
+  }
+}

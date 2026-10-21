@@ -1,14 +1,23 @@
-# WKUCPS2390TestBank
+# WKU-CPS2390-26Fall
 
 **Wenzhou-Kean University · CPS2390 · Qixia Zhang · Fall 2026 (26Fall)**
 
-[Practice CPS2390 online](https://wangzeyu2006729-beep.github.io/WKUCPS2390TestBank/) · [MATH3700 practice](https://wangzeyu2006729-beep.github.io/WKU3700Midquiz/)
+[Practice online](https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/) · [Other course: MATH3700](https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/)
 
-A compact dark practice site built from the five TestBank documents supplied by the repository owner. The course selector links this site and the existing MATH3700 practice site. Each course saves independent progress.
-
-The source question text and answer keys are in English. Controls and editorial notes are in Chinese. This is an independent revision aid, not an official university site or a claim of instructor endorsement.
+244 TestBank questions across Chapters 1–5: 78 true/false, 77 multiple choice, and 89 fill-in-the-blank questions. This is one of the repository owner's Fall 2026 courses at WKU. Both course sites use a compact dark interface and independent browser progress.
 
 ![Practice interface](docs/preview.png)
+
+## Course information
+
+| Field | Details |
+|---|---|
+| University | Wenzhou-Kean University (WKU) |
+| Course | CPS2390 |
+| Instructor | Qixia Zhang |
+| Semester | Fall 2026 (26Fall) |
+
+Use the course selector at the top to switch between MATH3700 and CPS2390. Questions are in English; controls and supplementary study notes are in Chinese. This is an independent revision aid, not an official university site or a statement of instructor endorsement.
 
 ## Coverage
 
@@ -23,53 +32,59 @@ The source question text and answer keys are in English. Controls and editorial 
 
 ## Practice controls
 
-- Filter by chapter and question type; combine filters with sequential, random, incorrect-answer, or bookmarked practice.
-- Labels preserve source chapter, type, and number: `C1-TF01`, `C1-MC01`, `C1-FB01`.
-- Search a complete label or a keyword. A bare number searches the internal sequential ID.
-- True/false and multiple choice are graded against the supplied answer key. All original choices are retained, including questions with five or six options.
-- Fill questions provide one optional input per blank. Reveal the original reference answers, compare your response, and choose **答对了** or **需巩固**. Revealing alone does not count as a completed question. This self-assessment avoids rejecting equivalent terminology or spelling variants.
-- Answers, typed drafts, pending fill reveals, bookmarks, and practice position survive refresh.
-- Keyboard: `1`–`6` or `A`–`F` select an option; `Enter` confirms; arrow keys navigate; `S` bookmarks. Enter in a fill field reveals its reference answers.
-- Restart hides previous solutions without deleting historical records. Clearing progress requires confirmation.
+- Combine chapter and question-type filters with sequential, random, incorrect-answer, or bookmarked practice.
+- Labels preserve chapter, type, and original number: `C1-TF01`, `C1-MC01`, `C1-FB01`. Search a complete label or keyword; a bare number searches the internal sequential ID.
+- True/false and multiple choice are graded against the supplied answer key. All original choices are retained, including five- and six-option questions.
+- Fill questions offer an optional input for each blank. Reveal the original reference answers, compare your response, then choose **答对了** or **需巩固**. Revealing alone does not count as completion; self-assessment avoids rejecting equivalent terms.
+- Keyboard: `1`–`6` or `A`–`F` select; `Enter` confirms; arrow keys navigate; `S` bookmarks. Enter in a fill field reveals its reference answers.
 
-## Source fidelity and notes
+Incorrect-answer review collects the latest mistakes; a correct retry removes a question when the list is refreshed. Restarting hides solutions while retaining previous records. Clearing course progress requires confirmation.
 
-The supplied files are `chap01tq.doc` through `chap05tq.doc`, headed Patt/Patel, *Introduction to Computing Systems: From Bits and Gates to C and Beyond*, 2e. The documents identify their original authors and copyright holders. Qixia Zhang is the instructor identified by the repository owner, not the asserted author of the textbook bank.
+## Source material and editorial notes
 
-Extracted source text is retained in `sources/`; the original local Word files remain unchanged. Their SHA-256 hashes are recorded in `sources/manifest.json`. `source-audit.json` records per-file counts, types, and original numbers.
+The supplied files are `chap01tq.doc` through `chap05tq.doc`, headed Patt/Patel, *Introduction to Computing Systems: From Bits and Gates to C and Beyond*, 2e. Qixia Zhang is the instructor identified by the repository owner, not the asserted author of the textbook bank.
 
-Chapter 2 repeats fill-question numbers 3 and 4. The second occurrences are labeled `C2-FB03b` and `C2-FB04b`. Chapter 3 omits multiple-choice number 11; Chapter 5 omits multiple-choice number 17. These are source irregularities: no supplied question is dropped and no missing question is invented.
+- `sources/`: extracted source text and original-file SHA-256 hashes; the local Word documents remain unchanged.
+- `source-audit.json`: per-file counts, types, and original numbers.
+- `build.py`: parses all questions and removes inline fill answers while preserving contextual parentheses such as `a(n)`.
 
-The original keys are retained even where an editorial note identifies an issue. In particular, `C2-MC02` incorrectly treats a carry from adding negative two's-complement integers as sufficient evidence of overflow. The interface flags this and supplies a counterexample; grading continues to follow the original key so learners can distinguish the source answer from the conceptual qualification. Other notes qualify source assumptions. This is not a claim that every source answer has been independently corrected.
+Chapter 2 repeats fill-question numbers 3 and 4; the second occurrences use `C2-FB03b` and `C2-FB04b`. Chapter 3 omits multiple-choice 11; Chapter 5 omits multiple-choice 17. No supplied question is dropped and no missing question is invented.
 
-## Private browser progress
+Original keys are retained, with editorial notes where issues are identified. In particular, `C2-MC02` incorrectly treats a carry from adding negative two's-complement integers as sufficient evidence of signed overflow. The interface flags this with a counterexample while retaining the source key for grading. This does not imply that every source key has been independently corrected.
 
-There is no backend, login, tracking, or answer upload. CPS2390 uses localStorage key `cps2390-testbank-v1`; MATH3700 continues to use `math3700-practice-v1`. Course switching and clearing CPS2390 records do not clear MATH3700 records.
+## Progress and privacy
 
-Different devices, browsers, and browser profiles have independent records. Tabs in the same browser profile share them. There is no cross-device synchronization. Clearing browser data removes progress; private browsing may discard it on close. If storage is unavailable, a warning appears and practice remains usable for the current session.
+Records stay in the current browser's localStorage under `cps2390-testbank-v1`. There is no backend, account, tracking, or answer upload. The other course uses its own key; switching courses or clearing one course does not clear the other.
+
+Typed fill drafts, pending reference-answer reveals, self-assessment results, bookmarks, and position survive refresh.
+
+The repository rename changes the page path but keeps the same GitHub Pages hostname and storage key, so existing online records remain available in the same browser profile. Different devices, browsers, and profiles have independent records; tabs in one profile share them. There is no cross-device synchronization. Clearing browser data removes progress; private browsing may discard it on close. If storage is unavailable, practice remains usable for that session with a warning.
 
 ## Build and offline use
 
-`index.html` embeds the entire interface and question bank. Download it and open it directly to practice offline. Switching to the other online course requires an internet connection.
+`index.html` embeds the full interface and question bank. Download it and open it to practice offline. Online and offline copies have separate browser storage; switching to the other online course requires an internet connection.
 
-Rebuild with Python 3, without third-party packages:
+Rebuild with Python 3, without third-party Python dependencies:
 
 ```bash
 python3 build.py
 ```
 
-`build.py` parses the included text sources into `questions.json`, produces `source-audit.json`, and embeds the bank into `template.html`. It preserves source numbering and removes inline answers from fill-question stems while preserving contextual parentheses such as `a(n)`.
+`template.html` contains the interface; `questions.json` and `index.html` are generated outputs.
 
-Serve for browser verification:
+## Verification
+
+Serve locally and use a disposable test browser profile; the functional checks clear that profile's progress:
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 open http://127.0.0.1:8000/index.html
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-browser.js
+npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-isolation.js
 ```
 
-Use a disposable browser profile: the browser checks clear test progress. `verify-isolation.js` creates independent contexts for browser and course isolation. Verification results are recorded in `docs/verification.json`.
+Checks cover question navigation and grading, filters, persistence, storage-denied operation, and layouts from 320 to 1440 pixels. Isolation checks use independent browser contexts. See `docs/verification.json` and the additional course checks in `docs/` for verified results.
 
-## License
+## License and attribution
 
-Application code is provided under the [MIT License](LICENSE). Source questions and answer keys remain the materials of their respective authors; the application license does not relicense them. See [CONTENT_NOTICE.md](CONTENT_NOTICE.md).
+Application code is provided under the [MIT License](LICENSE). Original course questions and answer keys retain their respective authors' rights; the code license does not relicense those materials. See [CONTENT_NOTICE.md](CONTENT_NOTICE.md).
