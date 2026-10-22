@@ -9,7 +9,7 @@ async page => {
  assert(data.questions.length===244,'All 244 source questions are present');
  assert(data.questions.filter(q=>q.type==='tf').length===78&&data.questions.filter(q=>q.type==='mc').length===77&&data.questions.filter(q=>q.type==='fill').length===89,'Question type totals match the five source documents');
  assert(new Set(data.questions.map(q=>q.label)).size===244,'All labels are unique despite duplicate source numbers');
- assert(await page.locator('#course-select').inputValue()==='cps','Course selector identifies CPS2390');
+ assert(await page.locator('#course-switch').getAttribute('data-current-course')==='cps','Course selector identifies CPS2390');
  assert(await page.locator('#submit').isDisabled(),'Choice questions require a selection');
  assert(await page.locator('.answer-reason,.option-analysis').count()===0,'Explanations are hidden before submission');
  await page.locator('[data-choice="A"]').click();await page.locator('#submit').click();

@@ -19,6 +19,14 @@
 
 Use the course selector at the top to switch between MATH3700 and CPS2390. Questions are in English; controls and supplementary study notes are in Chinese. This is an independent revision aid, not an official university site or a statement of instructor endorsement.
 
+## Chinese meaning and course navigation
+
+Click **查看中文释义** below a question to expand its Chinese meaning, including all choices. Click again to collapse it. Formulas and code identifiers remain intact; fill questions retain blanks. This does not reveal an answer or change grading. The per-question expansion state survives refresh, and search accepts Chinese keywords.
+
+The course name opens a compact dark course panel with the current course marked. Use arrow keys or Tab to move, Enter to follow a course, and Escape or an outside click to dismiss. Both course pages retain their independent learning records.
+
+The shared course catalogue and presentation components support adding real courses later. Only the current Quiz and TestBank are included; exercises and assignments are not added. See [adding courses](docs/adding-courses.md).
+
 ## Coverage
 
 | Chapter | Topic | True/false | Multiple choice | Fill in the blanks | Total |
@@ -83,6 +91,7 @@ Serve locally and use a disposable test browser profile; the functional checks c
 python3 -m http.server 8000 --bind 127.0.0.1
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 open http://127.0.0.1:8000/index.html
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-browser.js
+npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-ui.js
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-review.js
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-isolation.js
 ```

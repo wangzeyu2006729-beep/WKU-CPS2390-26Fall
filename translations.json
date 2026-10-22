@@ -1,0 +1,1839 @@
+{
+  "version": 1,
+  "language": "zh-CN",
+  "questions": {
+    "C1-TF01": {
+      "text": "当今的微处理器通常由单个芯片构成，芯片中包含接近一百万个晶体管。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "98538f5faaeef76958c9a852808c3950283ecb63e7c0d3ee3779c0c49eb26fb1"
+    },
+    "C1-TF02": {
+      "text": "歧义是不能用英语给计算机编程的一个重要原因。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "59aa8d06b206b72ca3772ddb79b27d9a4d2f6fdfe80eec81c9d9b85b40f4a425"
+    },
+    "C1-TF03": {
+      "text": "Fortran 是一种自然语言。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "a016726d5e59e1e9744c5fa0e18d24faa89c65865708b9cbd83b24d0a13085f1"
+    },
+    "C1-TF04": {
+      "text": "COBOL 是一种为计算机设计的人工语言（mechanical language）。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "195cd3d2fee161be434cb2d756ff72870ba373386a3d6bd4016267fe900e7158"
+    },
+    "C1-TF05": {
+      "text": "为某个 ISA 编写的低级语言程序，很可能也能在采用不同 ISA 的计算机上运行。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "1eff93d8c5d0cf0c18e2450e577554273f5dfd7a41784e60e1300324cb39b7df"
+    },
+    "C1-TF06": {
+      "text": "COBOL 是低级语言，因为其程序对所编业务模型内部工作的细节描述程度很低。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "506677188273fe9df41ec1db57fb36f8526e4533ee82bfcc436eb2cc3ffc0736"
+    },
+    "C1-TF07": {
+      "text": "大多数 ISA 都由不止一种、且差别很大的微体系结构实现。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "5fb7a3ce4a427491bb4a186040ef71564269bfa3107d4d43e357079e33f1bef1"
+    },
+    "C1-TF08": {
+      "text": "某些 ISA 由多家制造商设计的芯片实现。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "67bc33ab4800bde543ecec5a2af567f2ecc0f63c439ed6dd0d18d072aabc35f5"
+    },
+    "C1-TF09": {
+      "text": "键盘、读卡器、扫描仪和磁盘都是输入设备的例子。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "e17959687ff2424ea9cef00fc41faebb07123795f4b985c315d112320713f5f4"
+    },
+    "C1-TF10": {
+      "text": "显示器、打印输出和磁盘都是输出设备的例子。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b19fb8a5e695b0bf75d3104fc8bfb21439f4c411d79c623cc2389107d9fed1b1"
+    },
+    "C1-TF11": {
+      "text": "不可能提高数字计算机中某个数值的准确度。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "3b3e6ca2a0749e12309f26815a33870e29b2d9044648614e3831ba49d4c7a0ed"
+    },
+    "C1-TF12": {
+      "text": "提高模拟计算机精度的一种方法是使用调校更精细的传感器。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "a2c4d0fe9aa34cca2c6d230a54ffce6e4bdbb75231044cb5ee60e33fe0131a3e"
+    },
+    "C1-TF13": {
+      "text": "为 Mac 编写的汇编语言程序，汇编为 Mac 的 ISA 后可在 Mac 上运行；汇编为 PC 的 ISA 后，也能在 PC 上执行。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "063a451faf23e380e1f04a8230373ebe97289e48769f9fbffaee593b2aeac7db"
+    },
+    "C1-TF14": {
+      "text": "英语可以作为高级程序设计语言，因为只要足够谨慎，就能精确陈述指令。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "7f63f1034ef640770c98c2f84f5e8ab62497607d3dc75c9b1739ad0591dad648"
+    },
+    "C1-TF15": {
+      "text": "对每个 ISA，都恰好只有一种微体系结构实现它。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "52e0b635a12e50d40e96b1b0992a6f0046de6289750b89233dce9e755781b253"
+    },
+    "C1-MC01": {
+      "text": "下列哪一种不是高级语言？",
+      "options": [
+        "Fortran",
+        "C++",
+        "汇编语言",
+        "COBOL"
+      ],
+      "source_sha256": "4acf5b311853fa939fe1c1f35c0de5bf41d560789e3bca34bc7eab6e0384c2e6"
+    },
+    "C1-MC02": {
+      "text": "下列哪一种不是输出设备？",
+      "options": [
+        "键盘",
+        "打印机",
+        "显示器",
+        "磁盘"
+      ],
+      "source_sha256": "816356b9ce68f501272db46eb1d316b2cdbe8a0050043ee69e44926e5c818fc1"
+    },
+    "C1-MC03": {
+      "text": "下列哪一种不是自然语言？",
+      "options": [
+        "希腊语",
+        "拉丁语",
+        "法语",
+        "Fortran"
+      ],
+      "source_sha256": "8c792234884afa64d9c08367793e5823e658cb5de8962d0369c8d64eceb7629b"
+    },
+    "C1-MC04": {
+      "text": "算法是一种逐步执行的过程，具有哪些特征？",
+      "options": [
+        "有穷性",
+        "有效可计算性",
+        "确定性",
+        "以上全部"
+      ],
+      "source_sha256": "bbfd33dae44d2411b4740aba03cc08b808b1214e92bb0a04a1b15a1c929314ba"
+    },
+    "C1-MC05": {
+      "text": "通过什么工具可把程序翻译为处理器的 ISA？",
+      "options": [
+        "编译器",
+        "汇编器",
+        "解释器",
+        "以上全部"
+      ],
+      "source_sha256": "1e0a7a6810d7615f2a778ffa09a6982f3414bf9861a258473f5d0969d0627b57"
+    },
+    "C1-MC06": {
+      "text": "下列哪一种可以是模拟量？",
+      "options": [
+        "弹簧阻力的测量值",
+        "四个单个整数构成的序列",
+        "四个 0 和 1 构成的序列",
+        "以上全部"
+      ],
+      "source_sha256": "6819929c393dca4d72346449762b798f932682ba7eec4d8b0817b4ae4fe05025"
+    },
+    "C1-MC07": {
+      "text": "一个计算机系统包含什么？",
+      "options": [
+        "CPU",
+        "存储器",
+        "至少一个输出设备",
+        "以上全部"
+      ],
+      "source_sha256": "150c2f6341d795b9806b2f24360ccc4c92460eaacf43d445299b7d5fc55a6ca4"
+    },
+    "C1-MC08": {
+      "text": "下列哪一种是 ISA 的例子？",
+      "options": [
+        "PowerPC",
+        "Power bar",
+        "Power PC 641",
+        "以上全部"
+      ],
+      "source_sha256": "f80ba1a078de5f86b8a3f27d331747ac894677663750bb1035d2622e4e733e3e"
+    },
+    "C1-MC09": {
+      "text": "下列哪一种是微体系结构的例子？",
+      "options": [
+        "Alpha 21064",
+        "Alpha 21164",
+        "Alpha 21264",
+        "以上全部"
+      ],
+      "source_sha256": "79f091e86e0e5f7bb92bc4c20f1adbbf68428308508af1c70743a682a2d629e0"
+    },
+    "C1-MC10": {
+      "text": "下列哪一种是器件技术的例子？",
+      "options": [
+        "NMOS",
+        "CMOS",
+        "砷化镓",
+        "以上全部"
+      ],
+      "source_sha256": "75d86a7b24347d90260578ccc5d6b4d862d36451dd1be29ebf595a55e13fd6ed"
+    },
+    "C1-FB01": {
+      "text": "对负责指导指令处理并实际执行处理的机制，更准确的称呼是 ____[1]。",
+      "options": [],
+      "source_sha256": "33a08df8de1ed39f23e7ae270031c149b5d7dba5caaee2a3ab1ef007a8072239"
+    },
+    "C1-FB02": {
+      "text": "一个 ____[1] 由处理器、存储器以及各种输入设备和输出设备组成。",
+      "options": [],
+      "source_sha256": "a66b759976d57cb08dd7b4eaf709558d01a8ec965e749a963e74e50dff5932bd"
+    },
+    "C1-FB03": {
+      "text": "计算机基本可分为两类：____[1] 处理实际电压、距离等物理量；____[2] 处理离散且可区分的值。",
+      "options": [],
+      "source_sha256": "7044d885a8d8764c886ff775a209275106cac100afa1442fa20df7b8492c155e"
+    },
+    "C1-FB04": {
+      "text": "____[1] 提出了通用计算装置的思想。",
+      "options": [],
+      "source_sha256": "cc18140b4e29337c3750d92cccbcd90306803716d83e1056d13eda2bad1d580b"
+    },
+    "C1-FB05": {
+      "text": "____[1] 是人们日常使用的语言；____[2] 是为计算机使用而设计的语言。",
+      "options": [],
+      "source_sha256": "9773f509ad5b9e4614a05e9c32399dcd0c05e940abdb87474582da4f7b90c502"
+    },
+    "C1-FB06": {
+      "text": "____[1] 使自然语言不适合直接编程，因为计算机无法知道程序员想表达多个含义中的哪一个。",
+      "options": [],
+      "source_sha256": "967a3a1a9b84f0401dc273acc690e40ce95d6d21b9ad6a184b49f43df8961e70"
+    },
+    "C1-FB07": {
+      "text": "____[1] 是逐步执行的过程，每一步明确且有效可计算，并保证整个过程终止。",
+      "options": [],
+      "source_sha256": "605ec9df2090f3a5aa7b173d436feb771e52a05b1a95b0b0a1743ac0a8d6d260"
+    },
+    "C1-FB08": {
+      "text": "如果过程包含“一撮盐”这样的指令，就缺少 ____[1]。",
+      "options": [],
+      "source_sha256": "90e2147d724a7b3aab3d7e7c2da381a68648b2ec10b02edb07b8e8403a931543"
+    },
+    "C1-FB09": {
+      "text": "如果过程包含计算机无法执行的步骤，就缺少 ____[1]。",
+      "options": [],
+      "source_sha256": "e20f5d95ab59324d662804d0420792f2c0ce4d797166bd5f50515240c2d4e14e"
+    },
+    "C1-FB10": {
+      "text": "如果某些输入使过程永不终止，就缺少 ____[1]。",
+      "options": [],
+      "source_sha256": "a9d7ef511c3ddf7d455b32bab5f437af3cf8e91a73de83158a0b9d14ecf9074c"
+    },
+    "C1-FB11": {
+      "text": "Fortran、COBOL、C++ 和 Java 都属于 ____[1]。",
+      "options": [],
+      "source_sha256": "2f549b9ea9e45973dac371cc1e6bbe6089abc99e563820a1b1783f0428efb079"
+    },
+    "C1-FB12": {
+      "text": "为一种 ISA 编写的 ____[1] 语言程序，很可能也能在另一种 ISA 的计算机上运行。",
+      "options": [],
+      "source_sha256": "ecc23ce2ef119473ec694e084fbd1ec8a890153b4a1208e1fe1a5ca341c7e9da"
+    },
+    "C1-FB13": {
+      "text": "Fortran、COBOL、C++ 称为 ____[1]；相对地，汇编语言是一种 ____[2]。",
+      "options": [],
+      "source_sha256": "1055ba025e5df5c827cd52647ba813a4e7b49a4fe6f419e140a0c8e051370892"
+    },
+    "C1-FB14": {
+      "text": "为一种 ISA 编写的 ____[1] 语言程序，不太可能直接在另一种 ISA 的计算机上运行。",
+      "options": [],
+      "source_sha256": "155778cdbd1622d67adbe27177c4bd96350e118bffea1e6028258f8a62136a35"
+    },
+    "C1-FB15": {
+      "text": "寻址方式和数据类型属于 ____[1] 的组成要素。",
+      "options": [],
+      "source_sha256": "dba06823f84db3beb2e86ac0cc546467d221eb31b10ec20f929f344e4705a3a9"
+    },
+    "C1-FB16": {
+      "text": "____[1] 用来规定访问操作数所采用的机制。",
+      "options": [],
+      "source_sha256": "b9b3377af1e76b6969d9baf4bb0b652fdcd40907c0a36a4c8f3987831e6f066f"
+    },
+    "C1-FB17": {
+      "text": "PowerPC、SPARC 和 x86 都是 ____[1] 的例子。",
+      "options": [],
+      "source_sha256": "fdbf6d8c0968a376e55a27120fc4b40b7dc15fe9e33a7b19db493da3acbb919b"
+    },
+    "C1-FB18": {
+      "text": "通常使用 ____[1] 把高级语言程序翻译为处理器的 ISA。",
+      "options": [],
+      "source_sha256": "2be68f867111ba20d8a51ab4c16207c8add26242f12410dc8e4e19ed0cceb5e5"
+    },
+    "C1-FB19": {
+      "text": "Intel Pentium IV、IBM PowerPC 750FX 和 Motorola MPC 7455 都是 ____[1] 的例子。",
+      "options": [],
+      "source_sha256": "a984af6457a4f869d2b6bcd87f0edf1d5673048f78ec825c6d5c5016e095e7c0"
+    },
+    "C1-FB20": {
+      "text": "芯片的微体系结构通过 ____[1] 实现。",
+      "options": [],
+      "source_sha256": "d16cf37e09ed486e7acff246098da9ae3878900573a97a3f0c7d81b40be3f838"
+    },
+    "C2-TF01": {
+      "text": "某个位的值为 1，就对应 1 伏的信号电平。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "a95d972f990849de842fcb0f82863a414862e87e8689f137cd600f5912128e03"
+    },
+    "C2-TF02": {
+      "text": "用 10 位表示数字时，无符号整数表示法能表示的不同数字比有符号整数表示法更多。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "90f21878e6021564cf6eccaf341c8b19977f4742494c795fa7a06b8549f8a2e5"
+    },
+    "C2-TF03": {
+      "text": "用 12 位表示有符号整数时，−2 的补码表示为 111111111110。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "8e637202dd334afed1111baf5b057e6e366ae37e370653a38bfe2da52ab8eb21"
+    },
+    "C2-TF04": {
+      "text": "把某个数的补码表示与自身相加，若符号位不变，所得结果等同于将原数左移一位、右端补 0。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b04e7adb06e5135e145d265a9618bac2039375d43df97bd9cc20b989b469b811"
+    },
+    "C2-TF05": {
+      "text": "A、B 是补码整数。若二者都为正，而相加结果表示负数，就能确定一定发生了溢出。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "37cf6ba335a56687341eb65db638398d1bb4a3745d5758c51950dba1e3e60b5b"
+    },
+    "C2-TF06": {
+      "text": "A、B 至少一个为真时，A AND B 就为真。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "5f2c4968c473333c19588bb9a6e8d68cfcfff4a9d043a089c37f24dc1859e312"
+    },
+    "C2-TF07": {
+      "text": "当 A、B 中一个为真、另一个为假时，A XOR B 为真。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "7a1b880fb0bba8c7fa90a9d3f9ec70cc266f780bd7edd130f9664b5e39dc6783"
+    },
+    "C2-TF08": {
+      "text": "IEEE 浮点数的指数采用补码编码。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "85a664ca20e7f58913e587902abcef2fb404ab7f87cb04832765e04a45e870db"
+    },
+    "C2-TF09": {
+      "text": "十六进制数采用基数 16。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "02ca441ce55cb52751bef77b9178b59ead8830cc7773645e0167683340f5f8c7"
+    },
+    "C2-TF10": {
+      "text": "每一个 ASCII 码都对应打字机上某个能在显示器上产生字符的按键。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "79e3e13fea3c632e4d11f152aea0dbb140b64633249a9e26dda3f0acb38a463a"
+    },
+    "C2-TF11": {
+      "text": "分号的 ASCII 码等于句点和逗号 ASCII 码之和。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "878c750d1c7f74c4a23d07a546f903517306c105f3768cb1267f3073be6c1c1b"
+    },
+    "C2-TF12": {
+      "text": "字符 ? 没有 ASCII 码。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "691640851d4730c9ad4417aa359026533b99b386f94803cf3e81ee7d3f2d2f23"
+    },
+    "C2-TF13": {
+      "text": "逻辑 NOT 是一元函数，因为它只有一个参数。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "157f099989a2f635ccd54b18ebf6b593aa74046e08590bf4149a7dda1efd2773"
+    },
+    "C2-TF14": {
+      "text": "浮点数据类型能表示比补码整数大得多和小得多的数值。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "2a0c06569a071e872bb4021d747810903e6eb833fe9c0c8b10666d2c9eaee30a"
+    },
+    "C2-TF15": {
+      "text": "n 位位串用十六进制表示时，只需 ceil(n/4) 个十六进制数字。ceil(x) 为不小于 x 的最小整数。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "bfe3ea782ba8dc33e34a4c6df689453850489dc4170d1501358f759072ee5437"
+    },
+    "C2-MC01": {
+      "text": "十进制数字 5 可以用以下哪个位串表示？",
+      "options": [
+        "00000000000101",
+        "000101",
+        "00110101",
+        "以上全部"
+      ],
+      "source_sha256": "e54277e1a175329628b2f180f1e392ce7ac246a3244d5dd93e12d59fd020bbd0"
+    },
+    "C2-MC02": {
+      "text": "将两个负整数的补码表示相加，若产生最高位进位，可得出什么结论？",
+      "options": [
+        "无法据此判断结果",
+        "结果也一定是负整数",
+        "一定发生了溢出"
+      ],
+      "source_sha256": "7698f2e1d7fb2de632541e7078a74a5261b3159abe1b7f83f258b9a421db6fe8"
+    },
+    "C2-MC03": {
+      "text": "A=11111111111111111111111010101，B=1111010101，二者都表示补码整数。它们的大小关系如何？",
+      "options": [
+        "A 更大",
+        "B 更大",
+        "A 与 B 相等",
+        "给定信息不足，无法判断"
+      ],
+      "source_sha256": "665fa70e70038ade28ba5b63eb432ef9fc01a1f0e2297e3b8ef412402804d0ec"
+    },
+    "C2-MC04": {
+      "text": "A 为真、B 为假时，NOT(A) OR B 的结果是什么？",
+      "options": [
+        "真",
+        "假",
+        "给定信息不足，无法判断"
+      ],
+      "source_sha256": "5c4c07dd60bae6e43faf2a4fad4b5407aa2413c0d8a2af93b21779abe0409905"
+    },
+    "C2-MC05": {
+      "text": "基数为 16 时，每个数字的取值范围是什么？",
+      "options": [
+        "0 到 9",
+        "0 到 15",
+        "1 到 16",
+        "1 到 15"
+      ],
+      "source_sha256": "a429926ab69d514144b4570cc7e12d8a05c767e78dc46117f140d395811b45e7"
+    },
+    "C2-MC06": {
+      "text": "把两个十进制数字的 ASCII 编码位串相加，所得和有什么性质？",
+      "options": [
+        "就是两个数字之和的 ASCII 码",
+        "会产生溢出",
+        "先减去字符 0 的 ASCII 码后，才是两个数字之和的 ASCII 码",
+        "就是两个数字之和的补码编码"
+      ],
+      "source_sha256": "4dbe0eaef2e7ef67f3f9c32d0fdb8d01c1013194067ec689737a4db087f1bc85"
+    },
+    "C2-MC07": {
+      "text": "若一个浮点数采用规格化形式表示，以下哪项成立？",
+      "options": [
+        "它必须是正数",
+        "它必须是负数",
+        "最高有效数字是 1",
+        "最高有效数字非零"
+      ],
+      "source_sha256": "17737643ea94433e3249c4c33a9650ce85c51135f02c014fff3fde87ab0506d7"
+    },
+    "C2-MC08": {
+      "text": "为使 A OR B 为真，需要什么条件？",
+      "options": [
+        "A、B 恰好一个为真",
+        "A、B 都不为真",
+        "A、B 至少一个为真",
+        "A、B 必须都为真"
+      ],
+      "source_sha256": "ee1eddcac0afb00ca658acedfc67a13ab69c7443f68c8269d9257ec614a4ddfe"
+    },
+    "C2-MC09": {
+      "text": "数据类型是什么？",
+      "options": [
+        "一种信息表示方式，并且存在能操作这种表示的操作码",
+        "保存整数值的某个存储位置",
+        "浮点表示中的符号位"
+      ],
+      "source_sha256": "92e553fbd13cc4fc6e79d72bebb3552febf9d2ec60b6fb124964820f2d8756f1"
+    },
+    "C2-MC10": {
+      "text": "用 8 位无符号整数表示 −13，结果是什么？",
+      "options": [
+        "10001101",
+        "11110101",
+        "无法表示"
+      ],
+      "source_sha256": "e5ac1d586191e162ad212d37fb9c8620e6b4f57820cbbfd9da9475f5589c9d63"
+    },
+    "C2-MC11": {
+      "text": "补码运算中，哪种情况会发生溢出？",
+      "options": [
+        "两个正数相加得到负数",
+        "两个负数相加得到正数",
+        "A、B 两种情况都成立",
+        "A、B 均不成立"
+      ],
+      "source_sha256": "f834fbda99de7d8d5bc0712c24a66345a0752a3a5db9b47949482741f49e7d6d"
+    },
+    "C2-MC12": {
+      "text": "要把一个补码整数除以 4，应如何操作？",
+      "options": [
+        "必须先把位串转换为十进制",
+        "右移两位，最左两位补 0",
+        "右移两位，最左两位复制符号位",
+        "左移两位，最右两位补 0"
+      ],
+      "source_sha256": "f4e7bd807bbad1fc4ff6a0d6c75ed43d2c30ca1e905f569c629741da2c5c3a0a"
+    },
+    "C2-MC13": {
+      "text": "12 位能唯一表示多少种不同对象？",
+      "options": [
+        "恰好 12 种",
+        "恰好 2×12=24 种",
+        "恰好 4096 种",
+        "任意多种"
+      ],
+      "source_sha256": "f91945e7b7262336e2fe5451ef9e89d1919b12a8829c1bd7af677debea5c8b41"
+    },
+    "C2-MC14": {
+      "text": "A、B 是保存位串的位置，下面哪个说法成立？",
+      "options": [
+        "计算机执行 ADD A,B 比 AND A,B 更耗时",
+        "计算机执行 AND A,B 比 ADD A,B 更耗时",
+        "执行 AND 与 ADD 所需时间完全相同"
+      ],
+      "source_sha256": "8bb54a2388f734f90438dd880ab55a68ffa51f4dc4330b015f8aeb930a97de28"
+    },
+    "C2-MC15": {
+      "text": "ADD 属于哪一种操作符？",
+      "options": [
+        "一元操作符，因为它只执行加法这一种功能",
+        "二元操作符，因为它需要两个操作数",
+        "三元操作符，因为有两个输入值和一个输出结果"
+      ],
+      "source_sha256": "cfee13d9f21289dea4db1bd07fe4a150e735833a298380ba224a6f03dee61774"
+    },
+    "C2-FB01": {
+      "text": "需要两个源操作数的操作符称为 ____[1] 操作符。",
+      "options": [],
+      "source_sha256": "9279eb219f1432587adf1e97502c6411db114fb16da3dda1bc4557eef884684e"
+    },
+    "C2-FB02": {
+      "text": "两个正整数相加却得到负数时，可知发生了 ____[1]。",
+      "options": [],
+      "source_sha256": "54c19bb69125b6400d93f56e365e53ce8239430a3eb1e01e113d1eddb9c9cc71"
+    },
+    "C2-FB03": {
+      "text": "k 个位能唯一表示 ____[1] 个不同元素。",
+      "options": [],
+      "source_sha256": "3f48236feb1f793ec16ec2ee8aa49c00babdcde3228e1e6df64ec96dbb005d24"
+    },
+    "C2-FB04": {
+      "text": "将 k 的补码表示与 −k 的补码表示相加，结果是 ____[1]。",
+      "options": [],
+      "source_sha256": "6eefd1de079ea8f1c05e13636b89be44181e8bb3d7fa524114dd89bc0b6da4f9"
+    },
+    "C2-FB03b": {
+      "text": "00100100 是字符 ____[1] 的 ASCII 码。",
+      "options": [],
+      "source_sha256": "5b87199bd1920cde9c1aa663aa0d392985feefba225b340af1d5d1487d79ac61"
+    },
+    "C2-FB04b": {
+      "text": "若 A、B 都为真，则它们的 ____[1] 为假。",
+      "options": [],
+      "source_sha256": "0cd7c2b80f77d59692f9ca004d44dd1a4737665c9b5953e5a3767179087c1f38"
+    },
+    "C2-FB05": {
+      "text": "若 A 为假，则 A 的 ____[1] 为真。",
+      "options": [],
+      "source_sha256": "92aa770dd312eef0365dae341ae5d7c0f10dd5cb06862f3da14af8d99a150fd1"
+    },
+    "C2-FB06": {
+      "text": "浮点表示的三个部分是 ____[1]。",
+      "options": [],
+      "source_sha256": "a60d583abb35bf2f7755af97ea4b5b0020fe1c33fb90eb52db38e01d5b3c5265"
+    },
+    "C2-FB07": {
+      "text": "十进制数的 ____[1] 为 10。",
+      "options": [],
+      "source_sha256": "2b35f0da30fc14bcf26681dbefdff3d939841ce50ab890d80cf0d29b8dfc2958"
+    },
+    "C2-FB08": {
+      "text": "____[1] 函数仅在两个输入都为真时才为真。",
+      "options": [],
+      "source_sha256": "574441b668f6a6aa2bf3460736f4e473243612179380565b193f24b0d24966e6"
+    },
+    "C2-FB09": {
+      "text": "____[1] 数据类型能表示比补码整数大得多或微小得多的数值。",
+      "options": [],
+      "source_sha256": "f2f6fa58571b03df58b1ca8250d55084c7f7c80e4032f29dcd4fd35dd7b02960"
+    },
+    "C2-FB10": {
+      "text": "数字符号 0,1,…,9,A,B,C,D,E,F 用于 ____[1] 记数法。",
+      "options": [],
+      "source_sha256": "2dd2654284cfeee3501c6c6ebd124ad7ad8a613b6493d52d02769d0a66e1398d"
+    },
+    "C2-FB11": {
+      "text": "110001 是十进制数 ____[1] 的 6 位无符号表示。",
+      "options": [],
+      "source_sha256": "fac326f5d8fdebe378870321df443a600448abec32c4d7e4776751753d055cc5"
+    },
+    "C2-FB12": {
+      "text": "110001 是十进制数 ____[1] 的 6 位补码表示。",
+      "options": [],
+      "source_sha256": "5a4afb2d6344d43a9918c73e3e9696870e2fca98b7d7d4b99eaa9785fd6c4f2c"
+    },
+    "C2-FB13": {
+      "text": "ADD、SUB 是 ____[1] 操作符；AND、NOT 是 ____[2] 操作符。",
+      "options": [],
+      "source_sha256": "d337c0a32ecc6c92395a9166be240ec7278655ac4f42a263a439e323ca1f69a8"
+    },
+    "C2-FB14": {
+      "text": "____[1] 是一种信息表示方式，并存在可以操作这种表示的操作符。",
+      "options": [],
+      "source_sha256": "4263c7f5b9d934b3c59a6b958b60939e42d9313b875ac8cfa240f1306efb94f8"
+    },
+    "C2-FB15": {
+      "text": "____[1] 是 binary digit 的缩写。",
+      "options": [],
+      "source_sha256": "cb00feeb457c2f63b27292e310549d9c7660c3e967007d181b4cb173176706d0"
+    },
+    "C2-FB16": {
+      "text": "____[1] 可以取两个值之一：0 或 1。",
+      "options": [],
+      "source_sha256": "22e9e0e4602f431eae1706047140e37e6e079f4b17ace33b4481627c057bb39b"
+    },
+    "C2-FB17": {
+      "text": "计算机内部实际执行算术和逻辑运算的机制称为 ____[1]。",
+      "options": [],
+      "source_sha256": "e77493452fdbba27f36f9c424a2ac4f094a94edb054d568c2b88e6100149ffa9"
+    },
+    "C2-FB18": {
+      "text": "十六进制 FABC 对应二进制位串 ____[1]。",
+      "options": [],
+      "source_sha256": "cc4ef33ca5dca878117c6a99180ec8784409ae2a54cf6bfc4c7220d8df36348a"
+    },
+    "C2-FB19": {
+      "text": "二进制位串 0000111100101010 的十六进制表示是 ____[1]。",
+      "options": [],
+      "source_sha256": "b3522ea4a0f391c5c26439d54ba163c459cdd948fef0891d9696323fee94d737"
+    },
+    "C2-FB20": {
+      "text": "键盘上每个键至少有两个对应的 ____[1] 码，取决于是否同时按下 SHIFT。",
+      "options": [],
+      "source_sha256": "f1c0e94f7b5491baa0c784445f7b0f4cd898187e9879a235d7aedc6a95d3532e"
+    },
+    "C3-MC01": {
+      "text": "实现一个二输入 AND 门，最少需要多少个晶体管？",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "source_sha256": "a43d6e346ed66a5129e7d077119297fc3409e816dcaf8e010c3a64bf85ef17bf"
+    },
+    "C3-MC02": {
+      "text": "利用德摩根定律，可把任意 AND–OR（与–或）结构转换成什么结构？",
+      "options": [
+        "NAND–NAND",
+        "OR–NAND",
+        "NAND–NOR",
+        "NOR–NAND"
+      ],
+      "source_sha256": "facb9ef6b8814fc21ac939d408648a41e250721d0ba6c0d3ddfc5809520b2e13"
+    },
+    "C3-MC03": {
+      "text": "某存储器使用 16 位地址，其可寻址单位宽度（addressability）是多少？",
+      "options": [
+        "16 位",
+        "8 位",
+        "2^16 位",
+        "无法确定"
+      ],
+      "source_sha256": "34cd6c84ed1216f9e802e4c2ce64d1110863a2df2107aeefa8b07f777c11d33e"
+    },
+    "C3-MC04": {
+      "text": "为了让每个 ASCII 码占一个存储位置，大多数存储器采用哪种可寻址单位？",
+      "options": [
+        "字节（BYTE）",
+        "半字节（NIBBLE）",
+        "16 位字（WORD）",
+        "32 位双字（DOUBLEWORD）"
+      ],
+      "source_sha256": "3c30c34d5830e64fabf1c3ce82098615afdb3dd210840e156b9c748e26bcefb9"
+    },
+    "C3-MC05": {
+      "text": "电路 A 是 1 位加法器，电路 B 是 1 位乘法器，门数关系如何？提示：分别构造加法与乘法真值表。",
+      "options": [
+        "A 的门数多于 B",
+        "B 的门数多于 A",
+        "A 与 B 的门数相同"
+      ],
+      "source_sha256": "6e4b7bef490d0d1784ca1ba748c11a3196454c12ed663a47842b476fa185337e"
+    },
+    "C3-MC06": {
+      "text": "写使能输入未置为有效时，门控 D 锁存器的输出如何变化？",
+      "options": [
+        "不能改变",
+        "被清零",
+        "被置为 1",
+        "取反"
+      ],
+      "source_sha256": "37c44132d86870bc3294ef9b99306f5525cfb7e1b998b1f2f595d88e84092ed4"
+    },
+    "C3-MC07": {
+      "text": "把若干位作为一个整体保存的结构称为什么？",
+      "options": [
+        "逻辑门",
+        "多路选择器（MUX）",
+        "译码器",
+        "寄存器"
+      ],
+      "source_sha256": "f9f5c9abb5b9b30902c268a0f76850e8fd341c89a51114a4e86da308a20ff3fa"
+    },
+    "C3-MC08": {
+      "text": "若仅使用某组门就能构造任意电路，则称其逻辑完备。以下哪组逻辑完备？",
+      "options": [
+        "{AND,OR}",
+        "{XOR,NOT}",
+        "{AND,OR,NOT}",
+        "以上都不是"
+      ],
+      "source_sha256": "058328e3254fda22ae8613e4a69abfcdfa7cb7ef4de5988d038acb189f61828e"
+    },
+    "C3-MC09": {
+      "text": "下列哪个电路包含存储功能？",
+      "options": [
+        "RS 锁存器",
+        "多路选择器",
+        "NAND 门",
+        "译码器"
+      ],
+      "source_sha256": "9475359c649b2b7e70f60d3f4f75316f52b2c5abd350accbdacfdf1e6a7d3917"
+    },
+    "C3-MC10": {
+      "text": "存储器地址位数减少 2 位，每个可寻址单位的位数翻倍，总存储容量（位数）如何变化？",
+      "options": [
+        "翻倍",
+        "不变",
+        "减半",
+        "增加 2^(地址位数)/可寻址单位宽度"
+      ],
+      "source_sha256": "c36087db2abc5784dc904297c742ed1601422f74c7a021177d987309698a56f7"
+    },
+    "C3-MC12": {
+      "text": "若 m 是 2 的幂，m 路输入 MUX 需要多少根选择线？",
+      "options": [
+        "m",
+        "2^m",
+        "log₂(m)",
+        "2m"
+      ],
+      "source_sha256": "6fc832a8a6acccc8d56a584a37f1734f58853246cb5e1270b4670e257ee14f27"
+    },
+    "C3-MC13": {
+      "text": "A[15:0]=0110110010001111，A[14:13] 与 A[3:2] 的关系是什么？",
+      "options": [
+        "小于",
+        "大于",
+        "相等",
+        "无法确定"
+      ],
+      "source_sha256": "b345d823e6d164abfe8e6e07eee1ca60c9c9d74376488e6f64ff7a1c4c25312b"
+    },
+    "C3-MC14": {
+      "text": "RS 锁存器中，哪种情况不允许出现？",
+      "options": [
+        "R、S 均有效",
+        "R 有效、S 无效",
+        "R 无效、S 有效",
+        "R、S 均无效"
+      ],
+      "source_sha256": "4b6be4625a605f53b58297efae3231aee300b2083cf51b1b6459c233ba67920d"
+    },
+    "C3-MC15": {
+      "text": "哪对门可以构成锁存器？",
+      "options": [
+        "交叉耦合的两个 OR 门",
+        "交叉耦合的两个 AND 门",
+        "交叉耦合的两个 NAND 门",
+        "交叉耦合的 NAND 门与 OR 门"
+      ],
+      "source_sha256": "db9aa63a51821fbb7441b041c66270e207ade3ce029280a8c9593898a1f8dd8f"
+    },
+    "C3-FB01": {
+      "text": "将教材二输入 NOR 电路推广为 n 输入 NOR，需要 ____[1] 个晶体管。",
+      "options": [],
+      "source_sha256": "de186ded40a283915106a84b86e7dbcc1e3bb2e961a4cbee5cc9e6825316b826"
+    },
+    "C3-FB02": {
+      "text": "____[1] 用来从多个输入中选择一个。",
+      "options": [],
+      "source_sha256": "50ad29fac695bce5560d5d0935bbb1ebd0ad8672740e5d5f4293e734d6ad3ae7"
+    },
+    "C3-FB03": {
+      "text": "若 A[15:0]=1000110001110001，则 A[12:9]=____[1]。",
+      "options": [],
+      "source_sha256": "456e5a42c53e0f0a283d3cdf98c6d1b2f61aaab069b0d0059c950193d8fb9a92"
+    },
+    "C3-FB04": {
+      "text": "一个 2 位乘 2 位的乘法器有 ____[1] 个输出位。",
+      "options": [],
+      "source_sha256": "3c0f99fa54b9c7d001dadc1568a15544a9f13e57512e437bd68b5b36e7a43c3e"
+    },
+    "C3-FB05": {
+      "text": "用 ____[1] 个二输入 NAND 门，可以构成一个二输入 OR 门。",
+      "options": [],
+      "source_sha256": "724305db28f99f01947fa9d49f52389035529c4f8be5a386c38d178010c4817f"
+    },
+    "C3-FB06": {
+      "text": "某存储器有 16K 个位置，每个可寻址单位宽度为 13 位，共保存 ____[1] 位。",
+      "options": [],
+      "source_sha256": "cb4dd7e0489111b6ea577cf515f36529c465da2f2076124b3dba87ff4bdb2b97"
+    },
+    "C3-FB07": {
+      "text": "若用 16 位指定存储器地址，则有 ____[1] 个可唯一识别的位置。",
+      "options": [],
+      "source_sha256": "297c4a45fe292e771d6ee254ae94d82284bc289b635bc9a06975382408e295ac"
+    },
+    "C3-FB08": {
+      "text": "n 个输入的译码器最多可以有 ____[1] 个输出。",
+      "options": [],
+      "source_sha256": "5bcccb1aaf13ac849f8de38037764c81c8a71233792dc2723211e264d2394ed5"
+    },
+    "C3-FB09": {
+      "text": "将二输入 NAND 门的两个输入接在一起，该门的功能相当于 ____[1]。",
+      "options": [],
+      "source_sha256": "81854db0f9c3621f2d60dc928bab30511189364122c58422b49566d0ffb0fc8c"
+    },
+    "C3-FB10": {
+      "text": "____[1] 有助于识别指令中的操作码。",
+      "options": [],
+      "source_sha256": "b5b0d50dc8e95e8d91196902cf476341959fbd403f3678b914a9c749e021ddfe"
+    },
+    "C3-FB11": {
+      "text": "二输入 NAND 门中，任意时刻恰有 ____[1] 个晶体管处于开路状态。",
+      "options": [],
+      "source_sha256": "51423f9dbf600415593e901b35035d60464bb6ed70b89167493b3648e57b7b0d"
+    },
+    "C3-FB12": {
+      "text": "实现 NOT{AB+CD} 最少需要 ____[1] 个晶体管。",
+      "options": [],
+      "source_sha256": "c92b1960be4cceba34dac2d70dcae4e7c75dcf30ddeae906059d380d7ee0340b"
+    },
+    "C3-FB13": {
+      "text": "类似教材中的 n 位数加法电路，需要 ____[1] 个全加器，共产生 ____[2] 个输出位。",
+      "options": [],
+      "source_sha256": "39d26171fb52bbc0cdfcfd4aca3d0b5884bbf5abfdd58d2bece8f5b4bcefff31"
+    },
+    "C3-FB14": {
+      "text": "全加器在恰好 ____[1] 种输入组合中产生进位，输入组合总共有 ____[2] 种。",
+      "options": [],
+      "source_sha256": "a60dad9e93fb4f308181ca8ab82f3ba14aa9a290cbbd3eecb1f8029bf44d652f"
+    },
+    "C3-FB15": {
+      "text": "若输入 {A,B,Cin} 到 Sum 的延迟为 1.5D，到 Cout 的延迟为 1.0D，则四位加法器的延迟为 ____[1]。",
+      "options": [],
+      "source_sha256": "45bd3f953f8cdac519451653dc25124ebe9154254fd2e9180a9cea4f76b80b56"
+    },
+    "C3-FB16": {
+      "text": "p 型晶体管的栅极为 0 伏时，等效于 ____[1]。",
+      "options": [],
+      "source_sha256": "782195b9a09d5d27813699a9faa0f43118f963a01e214139180a423b4f28f3e2"
+    },
+    "C3-FB17": {
+      "text": "n 型晶体管的栅极为 0 伏时，等效于 ____[1]。",
+      "options": [],
+      "source_sha256": "23b7aaf977728d60cad8e2db28f4a6a84300c964c44ebfe3fb87340624c65066"
+    },
+    "C3-FB18": {
+      "text": "只有 ____[1] 信号有效时，才可向门控 D 锁存器写入。",
+      "options": [],
+      "source_sha256": "eb3b95b59df0cc8119423b62a46196988483aaf50475c17a2951dc19f04c5ae3"
+    },
+    "C3-FB19": {
+      "text": "短暂地把 ____[1] 信号设为 ____[2]，即可清零 R-S 锁存器。",
+      "options": [],
+      "source_sha256": "87f8fcda20e91888f67ddacfabfc7d02ecb85bf7d0b0c3cd0b2470e3457e0ce2"
+    },
+    "C3-FB20": {
+      "text": "逻辑变量 A 通过一个反相器，再通过第二个反相器，最后输出是 ____[1]。",
+      "options": [],
+      "source_sha256": "54f5254ce7f842c9c8b888fae3600b3a9534165aec26ccc53f7f814b5443bfba"
+    },
+    "C3-TF01": {
+      "text": "对一个 16MB 存储器，位置 50024 中的数值总比位置 5 中的数值大。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "45776a59ff18e41606af112c999b95cf9d644bc69dabcf43bc96f58135f10747"
+    },
+    "C3-TF02": {
+      "text": "所有使用 8 位地址的地址空间都按字节寻址。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "ee919deaf12b13571bb2670c6eecbb21cbea8aef1ccc5de33d66cb399cb97691"
+    },
+    "C3-TF03": {
+      "text": "一个 8 位寄存器原先保存某个值。将 1 写入后，仍能恢复原值。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b4618be3faedcc7de8fd94d0b5fca28093db79482ae3a4dd5bbcf83465fcd926"
+    },
+    "C3-TF04": {
+      "text": "同一个电路中可以同时包含 p 型和 n 型晶体管。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "972618699437dbe74409d556a2f9187bcd3af8f80544b38877f8b22643afea51"
+    },
+    "C3-TF05": {
+      "text": "一个 3→8 译码器可能同时有三个输出有效。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "c607c8589fe252f5ac400945f071aef84463f65a6631247a48ebb0ea76dd3dbd"
+    },
+    "C3-TF06": {
+      "text": "可以构造一个五输入 AND 门。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "925baa0c157e517e1091418b29d1cc3cfb3cdf7fc1df4f12f6ed5a6a9a8abb88"
+    },
+    "C3-TF07": {
+      "text": "对二输入 NAND 门，其四个晶体管中可能在某时刻有三个开路。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "9cd86d68cc03d849ab0867f7c8e14fe7b542cee449e7e7538c296811d4ac54ce"
+    },
+    "C3-TF08": {
+      "text": "一个反相器中的 p 型和 n 型晶体管绝不可能同时导通。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "8fd81c5860dcc6775253f5f7949b715b0bb8fb18297a62cb1907ab062e28a115"
+    },
+    "C3-TF09": {
+      "text": "一台机器的可寻址单位宽度绝不可能大于其地址空间大小。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "36e4bbd35c7ebe134acb21ea369a3521dc80a3485184555566ecf1754a8c519d"
+    },
+    "C3-TF10": {
+      "text": "运算 * 若满足 (a*b)*c=a*(b*c)，就称具有结合律。按此定义，NAND 具有结合律。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "693618b70274f4595a23b292eb2ed55f91976b5ccd228235f59d37cbba7ece17"
+    },
+    "C3-TF11": {
+      "text": "德摩根定律表明任意 AND–OR 函数均可用 NAND–NAND 实现。若信号经过的晶体管数量决定延迟，则 NAND–NAND 实现比 AND–OR 更快。提示：查看 AND、OR、NAND 的晶体管实现。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "c2a74bad75f71c64266443cd0e75de5b7ea2f2a92c62a06091186344ee9026f5"
+    },
+    "C3-TF12": {
+      "text": "若要使逻辑电路成为存储元件，必须把输出反馈到输入。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "8be488c81c9893d32751461dfa3fba27ebf1c5037e36992dac87e2a6dc93813b"
+    },
+    "C3-TF13": {
+      "text": "若存储器每个可寻址单位为 4 位，则需要 2 位来指定地址空间。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b4c53513e4e41d0576aa1fc9a65201b4531b84419cc8352bd303181ba9b81713"
+    },
+    "C3-TF14": {
+      "text": "不可能有 1 位寄存器。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "481228f9eb930b81a3e1684b8758ff9d74cc3efdd1006b4e900e579062659945"
+    },
+    "C3-TF15": {
+      "text": "锁存器的两个输出总是互为补值。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "0c3aa76ebf124b8674e5d83c09c684b9cdab9a2fd07614dac3be8f1f14e6e34e"
+    },
+    "C4-MC01": {
+      "text": "计算机存储器中保存什么？",
+      "options": [
+        "只有指令",
+        "只有数据",
+        "指令和数据都有",
+        "既无指令也无数据"
+      ],
+      "source_sha256": "23b547779ca104ba212e0585233061314b0795547373d7f675f24ca0b92824fe"
+    },
+    "C4-MC02": {
+      "text": "冯诺依曼模型包含几个部分？",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "source_sha256": "62c14734065419d838890e53b722011c8914f0c06ff9926a307b5b7d20468abb"
+    },
+    "C4-MC03": {
+      "text": "通常，寄存器宽度与 ALU 所处理数值的宽度是什么关系？",
+      "options": [
+        "相同",
+        "更小",
+        "更大",
+        "无关"
+      ],
+      "source_sha256": "4b801c52a07eeeb19888cc2dfc059ec96b9f6d0852223d60580c06e1c7efe074"
+    },
+    "C4-MC04": {
+      "text": "指令周期的译码阶段检查指令的哪一部分？",
+      "options": [
+        "立即数或字面量",
+        "操作码",
+        "偏移量",
+        "寄存器字段"
+      ],
+      "source_sha256": "d5b0199951032efb2c8ee41eedff4e86aa445191856c586d3be83a4e3a88906e"
+    },
+    "C4-MC05": {
+      "text": "指令周期的正确顺序是哪一项？",
+      "options": [
+        "取指 → 译码 → 计算有效地址 → 取操作数 → 执行 → 存结果",
+        "取指 → 译码 → 取操作数 → 计算有效地址 → 执行 → 存结果",
+        "取指 → 译码 → 取操作数 → 执行 → 计算有效地址 → 存结果",
+        "取指 → 取操作数 → 译码 → 计算有效地址 → 执行 → 存结果"
+      ],
+      "source_sha256": "4a570d4f22985ae72f6b04542e1efb495610826df412b3cfc062e91241bf6956"
+    },
+    "C4-MC06": {
+      "text": "哪类指令用来改变指令执行顺序？",
+      "options": [
+        "控制类",
+        "运算类",
+        "数据传送类"
+      ],
+      "source_sha256": "64b73b5485337713f6a2795e8331fe2a43a961a2179ef6fd7d78c839a0224e36"
+    },
+    "C4-MC07": {
+      "text": "ADD 属于哪类指令？",
+      "options": [
+        "控制类",
+        "运算类",
+        "数据传送类"
+      ],
+      "source_sha256": "86b179d7c0c796598d0cf9f10e22f7a8a33dcbccd2e188501b6372c22be83327"
+    },
+    "C4-MC08": {
+      "text": "控制类指令在什么阶段改变 PC 的值？",
+      "options": [
+        "取指",
+        "计算有效地址",
+        "执行",
+        "译码"
+      ],
+      "source_sha256": "c5618410a4c546127493734a7f16d48e51afc0e60168aa2a0cb73b2da2ba644b"
+    },
+    "C4-MC09": {
+      "text": "以下哪条指令需要计算有效地址阶段？",
+      "options": [
+        "ADD",
+        "LDR",
+        "NOT",
+        "JMP"
+      ],
+      "source_sha256": "6e6760074baaba03862f49cce95572bad4569aa18dbd496930384ef8b13e8ee7"
+    },
+    "C4-MC10": {
+      "text": "下列哪种设备属于输出设备？",
+      "options": [
+        "鼠标",
+        "键盘",
+        "扫描仪",
+        "打印机"
+      ],
+      "source_sha256": "64894d127f7c453ba781ce77117938f3ff3066da975264a8855122224e8c81b6"
+    },
+    "C4-MC11": {
+      "text": "LDR 属于哪类指令？",
+      "options": [
+        "控制类",
+        "运算类",
+        "数据传送类"
+      ],
+      "source_sha256": "18134ffabfbd55a6e4a0f605d7c27815636a062a0179f0c43b6e14871398cc64"
+    },
+    "C4-MC12": {
+      "text": "指令周期的每个阶段需要多少个时钟周期来完成工作？",
+      "options": [
+        "恰好一个",
+        "至少一个",
+        "最多一个",
+        "从 0 到某个有限值 n 个"
+      ],
+      "source_sha256": "882c16945b3360ecb4b3596f08d62a9825f44851645e25bddc9786010963266d"
+    },
+    "C4-MC13": {
+      "text": "数字扫描仪属于什么设备？",
+      "options": [
+        "输入设备",
+        "存储器",
+        "处理单元",
+        "控制单元"
+      ],
+      "source_sha256": "755e99c5c3e383971e232ad2ef2bda1e07306279717efb989a032700d912d305"
+    },
+    "C4-MC14": {
+      "text": "在取指阶段，指令从哪里传送到指令寄存器？",
+      "options": [
+        "存储器",
+        "处理单元",
+        "输入设备",
+        "输出设备"
+      ],
+      "source_sha256": "eff70cb4a45031179825aefd6e7667e78d9567d07c8df75ed83783060b5a34e0"
+    },
+    "C4-MC15": {
+      "text": "若存储器访问耗时是寄存器访问的 100 倍，则 LDR 相比 JMP R3 所需机器周期如何？",
+      "options": [
+        "更少",
+        "更多",
+        "相同"
+      ],
+      "source_sha256": "6f80b4eb816ebfb2a68e975b74a41b2d99549cf7312b7b73fb371ab031639871"
+    },
+    "C4-MC16": {
+      "text": "在指令周期的哪个阶段，总是要访问存储器？",
+      "options": [
+        "计算有效地址",
+        "译码",
+        "取指",
+        "执行"
+      ],
+      "source_sha256": "d3b32f4c26a4be15f6963c5e8f71f317434ea0cdb0072386f0791a59aca8a9f8"
+    },
+    "C4-MC17": {
+      "text": "JMP 属于哪类指令？",
+      "options": [
+        "控制类",
+        "运算类",
+        "数据传送类"
+      ],
+      "source_sha256": "14fe8b34efcab58bea4b8e8f2894442dcf4f964f6f52cbb39076a7227f35eb8a"
+    },
+    "C4-MC18": {
+      "text": "一个指令周期包含多少个机器周期？",
+      "options": [
+        "多于 1 个",
+        "少于 1 个",
+        "恰好 1 个"
+      ],
+      "source_sha256": "ad6173cdf59ec28073eb1078623613956c6d55a22a52595694e0f2c32d912ef1"
+    },
+    "C4-MC19": {
+      "text": "PC 的自增使下一指令周期处理顺序下一条指令。这发生在哪个阶段？",
+      "options": [
+        "取指",
+        "译码",
+        "计算有效地址",
+        "执行"
+      ],
+      "source_sha256": "a6f75a0607cfe871411d97be5997a3930577a0d8b9f7e327bdd406f808060234"
+    },
+    "C4-FB01": {
+      "text": "____[1] 是程序指定的最小工作单位，要么完整执行，要么完全不执行，因此称为“原子”工作单位。",
+      "options": [],
+      "source_sha256": "d27190c8ede1001cf1d1f7ca758402682c84352d908c0ba43579811a1e63b713"
+    },
+    "C4-FB02": {
+      "text": "读取某个存储位置前，先把该位置的地址放入 ____[1]。",
+      "options": [],
+      "source_sha256": "ee68c169e31ff18ebca8da4fac9eaaa802475c3ede2e876c515543d18ab3a6fa"
+    },
+    "C4-FB03": {
+      "text": "存储器通过 ____[1] 向其他部件提供数据，并接收数据。",
+      "options": [],
+      "source_sha256": "1cd86bd4616e332388c62543ed85f8f8408ddf5153cbabb9385540e349fe5fc7"
+    },
+    "C4-FB04": {
+      "text": "ALU 通常处理的数值宽度称为计算机的 ____[1]。",
+      "options": [],
+      "source_sha256": "eb000eabe6a31fc7b20c0e84c29ca6df209cfa98b4ba7b7c9c45de2aa522615d"
+    },
+    "C4-FB05": {
+      "text": "为跟踪当前正在执行的指令，控制单元设有 ____[1]。",
+      "options": [],
+      "source_sha256": "d0e97e0368fda9a54e93c0e8a12a0488fd3f2695cc3622ceeb66db3ef36b5d53"
+    },
+    "C4-FB06": {
+      "text": "控制单元设有 ____[1]，指向下一条待处理指令。",
+      "options": [],
+      "source_sha256": "5cf00c7b75d2132ede3d8b8af1844624d390dfe3bc3f4f71b72c14a5d3430fc3"
+    },
+    "C4-FB07": {
+      "text": "程序计数器中保存 ____[1]。",
+      "options": [],
+      "source_sha256": "384524093fb1adc8bfcfc7d2d02e754939119129d9499c5b28feb40526094846"
+    },
+    "C4-FB08": {
+      "text": "指令由两部分构成：____[1] 和 ____[2]。",
+      "options": [],
+      "source_sha256": "129fbd9f99e6b0232bcb729caa78281f20a75783f10b56b422a781d7813a33fb"
+    },
+    "C4-FB09": {
+      "text": "处理一条指令的六阶段序列称为 ____[1]。",
+      "options": [],
+      "source_sha256": "74763828e206a71878349c44c5fe2cc38c1244d4f474d1d07d24c3fba9dd74fc"
+    },
+    "C4-FB10": {
+      "text": "16 位 ISA 的格式为 <OPCODE><DR><SR0><SR1>。DR 为目的寄存器，SR0、SR1 为源寄存器。若 ISA 定义 32 个寄存器，此格式最多有 ____[1] 个操作码。",
+      "options": [],
+      "source_sha256": "ff9e600a880fc9c72d90887fedec232d1694a445e3a43d6cf7ac65d98579785c"
+    },
+    "C4-FB11": {
+      "text": "16 位指令格式为 <OPCODE><DR><SR><IMM>，IMM 是补码立即数。若有 27 种操作码和 16 个寄存器，则立即数字段剩 ____[1] 位。",
+      "options": [],
+      "source_sha256": "338eb58b1462affdd637ac96acf938e9bdb5403ccc239cb4db3a0de80717a24d"
+    },
+    "C4-FB12": {
+      "text": "某 16 位 ISA 的 LDR 格式为 <0110><DR><BaseR><OFFSET>。若有 4 个寄存器，则 offset 可使用 ____[1] 位。",
+      "options": [],
+      "source_sha256": "6abb76f306dc5e32d7b08501ec742ec827130f830a9c64da4b797a85faab3fcd"
+    },
+    "C4-FB13": {
+      "text": "若一个机器周期为 1 纳秒，即 10^−9 秒，则每秒有 ____[1] 个机器周期。",
+      "options": [],
+      "source_sha256": "6ae8ba02d87bcdb1fbfab8591e7c4a71d66e9d46a94f5ca30b45ddbd46e39c1c"
+    },
+    "C4-FB14": {
+      "text": "程序中的指令通常按 ____[1] 顺序处理，除非 ____[2] 指令改变这个顺序。",
+      "options": [],
+      "source_sha256": "616232d5e66c1694f6300bd65ff612da21c259ee1641210917422180a1aeb2f6"
+    },
+    "C4-TF01": {
+      "text": "有时可以只执行一条指令的一部分，这种情况下计算机只执行它能完成的那部分。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b56e17fcfb1db4d1705f14482185dd004724aaa5eaabb2360a40f16ce8f9efa2"
+    },
+    "C4-TF02": {
+      "text": "计算机实际的信息处理由控制单元完成。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b40504da0b1b70b954c5c70924a885a1461573e60fc55665a3929f326ad7b8e7"
+    },
+    "C4-TF03": {
+      "text": "一个 ISA 的字长可以是 4 位。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "487c1ee25168902bec7a0f1ac2e23868f02b460296e796604b9bf8d0e19a5529"
+    },
+    "C4-TF04": {
+      "text": "大多数 ISA 在 ALU 附近提供小型临时存储，以保存很快会被后续运算用到的中间结果。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "0175bdd4eb7188a09f79e356fdbe9b7163b7da21476eff75f1b638d586a88b4a"
+    },
+    "C4-TF05": {
+      "text": "在 LC-3 ISA 中，LDR 指令需要 Execute（执行）阶段。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "18ec53e6628b7157272389f87fcbd4a2cd90d8be0f06fa7793f4fb14018f3672"
+    },
+    "C4-TF06": {
+      "text": "访问寄存器比访问存储器耗时更少。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "b698adef44a9ef7e5c2b91add86ed0993563a45a5085c4c3b3e87eda57e2cd15"
+    },
+    "C4-TF07": {
+      "text": "可以存在没有任何形式的输入或输出设备的机器。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "cb42156dacedddfa03b3f4c7a4d169b4a372a9f96f81483e3781a788c8d6058e"
+    },
+    "C4-TF08": {
+      "text": "所有指令都必须执行指令周期的全部六个阶段，即每个阶段至少占一个时钟周期。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "1ed80b257900ada72733a0ac83b51a4ef163dcad51985d1a5ccfb7e78b4934df"
+    },
+    "C4-TF09": {
+      "text": "某些指令不需要 FETCH（取指）阶段。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "5bf21189f03ba268a6a26ab64224c1cc9610b237515d83384b9e22a0871395da"
+    },
+    "C4-TF10": {
+      "text": "通常，完成取指阶段后，程序计数器的值保持不变。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "4b3e6023b85dbb93c38b5d2b863c24109a26c4de14083efff27065a036341adf"
+    },
+    "C4-TF11": {
+      "text": "所有指令都需要 DECODE（译码）阶段。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "dd51c9a86a2908f5791991049e376c403f70cabf23c4d5bf3447cde3c799d9a9"
+    },
+    "C4-TF12": {
+      "text": "计算有效地址阶段可以在指令译码前发生。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "8e087591088bf8a179a3f305db06d84f5adc386c28afb0a9127706ae3e43d326"
+    },
+    "C4-TF13": {
+      "text": "若用 HALT 停止指令周期，就不能再用另一条指令使其重新开始。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "2ccf479d13e45fb5badf918c2316113a8dd816f060940cfbe57bce7f10dfb30f"
+    },
+    "C4-TF14": {
+      "text": "处理器可以通过 I/O 状态寄存器和 I/O 数据寄存器与输入输出设备交互。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "d08d646089e642c23144e00d96f85d18076dc6a22ca5de55cd9023b0f62ce6c4"
+    },
+    "C4-TF15": {
+      "text": "处理单元通过 Memory Status Register（存储器状态寄存器）和 Memory Data Register（存储器数据寄存器）与存储器交互。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "69c0fbfd76213a4547d7ce8534c436fc52eb7976d6386c811a05c0c780595182"
+    },
+    "C4-TF16": {
+      "text": "指令寄存器的功能是指向下一条待处理指令。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "1aef67201af90bc0c8943851c8612375b1327c48b2b183ef554dc7bea20fd42d"
+    },
+    "C4-TF17": {
+      "text": "若正在处理 x4000 地址处的指令，下一条指令有可能位于 x5000。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "7fea8ce5c063d5e16797164c65657d3e29ed72c217e1baf888e4a3f506840ace"
+    },
+    "C4-TF18": {
+      "text": "在 LC-3 ISA 中，ADD 不需要计算有效地址阶段。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "5837bad1f918db4c3d41ef44c1d205eaf5605d42cd6c627b60faef1e91a32cef"
+    },
+    "C5-TF01": {
+      "text": "LC-3 ISA 支持的数据类型是反码整数（1's complement）。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "becae9e8205e61297695e417a10cef113a170143204c3b16751dcba5ed73ca40"
+    },
+    "C5-TF02": {
+      "text": "对采用 PC 相对寻址的 LC-3 指令，操作数地址的 [15:9] 位与指令地址的 [15:9] 位相同。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "a29583de331c01315fad6505c08154f0b177d0abc666304e9c633cc2b51ea166"
+    },
+    "C5-TF03": {
+      "text": "在 LC-3 ISA 中，只有 BRx、JMP、JSR/JSRR、RET、RTI 会改变程序计数器。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "9305d5d674ef758daf053947c1b5fef545b512b37eac0a10acd92eebedea9dca"
+    },
+    "C5-TF04": {
+      "text": "TRAP 会把 PC 改为属于操作系统的某个存储地址。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "c84a1e506e5dd120632deb6a861a41c0004dabe12d92c54a516a949c2e50c8a0"
+    },
+    "C5-TF05": {
+      "text": "若 LC-3 指令修改条件码，其指令编码中有一个字段指定要写入哪个条件码寄存器。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "a28f8dda1fd48951e6a238a13447f7e825f81e91505b35d3c47bd429a11366da"
+    },
+    "C5-TF06": {
+      "text": "所有 LC-3 指令都会修改条件码。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "45ec30736540c878bccfadcf93bccdb7d89df6bfac4d998818a273457701c371"
+    },
+    "C5-TF07": {
+      "text": "每条 LC-3 运算类和数据传送类指令，都会读取或写入数据通路的寄存器组。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "ab99a06990f99fcca6b7defed5f30069ac34ba31b00a333b4aa306accbda0f41"
+    },
+    "C5-TF08": {
+      "text": "位于地址 0xF011 的指令 1110111000000000 执行后会设置 N 条件码。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "f367d3afeec1ea2680d0d214c331b4b9e0dff00170a4eaf721f90bbcbbb250d1"
+    },
+    "C5-TF09": {
+      "text": "位于 0x5200 的条件分支指令能够把 PC 改为 0x5000。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "edb82551632794664119008edb4767c0aae3148ebb8eb56ab4111626e677507d"
+    },
+    "C5-TF10": {
+      "text": "存在一个 LC-3 指令序列，使执行完后的条件码为 N=0、Z=0、P=0。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "e652a7e8bd334bce5c12f5e89afc549904063062e3ada5c63c296a6ba125c51b"
+    },
+    "C5-TF11": {
+      "text": "不知道循环将执行多少次时，使用哨兵值控制循环次数很有效。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "efa3b579ff9216fe6cb048fa60874e3bfb64a0da66e1ddcb5a48bd5ac3232bc8"
+    },
+    "C5-TF12": {
+      "text": "所有 LC-3 指令都需要 FETCH 和 DECODE 阶段才能正确处理。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "eb402611d97756096f72859eed09f873e5190733e768e076c63d7d9699616761"
+    },
+    "C5-TF13": {
+      "text": "LC-3 ISA 提供一条指令，可读取两个存储位置，将内容相加，再把和存入另一个存储位置。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "6b069150e25115e623a70caf4e2c85114c9118714c12357bef814b6dd8db52ba"
+    },
+    "C5-TF14": {
+      "text": "某些 LC-3 数据传送指令可以把数据从一个存储位置直接移到另一个位置。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "e021be654bc57c2dd08a5f9cc301c45ba21d38fc8d60cff24a77892dabf0b988"
+    },
+    "C5-TF15": {
+      "text": "在 ST 指令的整个指令周期中，LC-3 数据通路的 MDR 至少被写入两次，参见教材图 5.9。",
+      "options": [
+        "正确（True）",
+        "错误（False）"
+      ],
+      "source_sha256": "9e0a2030bb5270095540cf6b5839f8cbd032c41c9efa5cd2b4794ac39a2e8e49"
+    },
+    "C5-MC01": {
+      "text": "哪条指令能够引用距该指令 1000 个位置的存储位置？",
+      "options": [
+        "ADD",
+        "LD",
+        "STR",
+        "LEA",
+        "以上全部",
+        "以上都不是"
+      ],
+      "source_sha256": "ff77ae856e53f5b71e72ddcdb00fbe19e4e10c240334da953ed17cd0e3acdcfa"
+    },
+    "C5-MC02": {
+      "text": "LC-3 存储器的可寻址单位宽度是多少？",
+      "options": [
+        "2^16 个位置",
+        "16 位",
+        "2^9 个位置",
+        "2^16 位"
+      ],
+      "source_sha256": "32158b74ed6243b4445cafda8c30bc23911a8a9c0916098161bae1e76a747e3f"
+    },
+    "C5-MC03": {
+      "text": "分别执行上方列出的 i、ii、iii 三条指令，哪些执行后的 PC 为 0x306E？指令机器码与所在地址见英文题干。",
+      "options": [
+        "i 和 ii",
+        "i 和 iii",
+        "ii 和 iii",
+        "i、ii、iii"
+      ],
+      "source_sha256": "3060a104b259283b3b83107461e910ee442371da608a423b5591addbedca7c3c"
+    },
+    "C5-MC04": {
+      "text": "LC-3 基址加偏移寻址所能使用的最大正偏移量是多少？",
+      "options": [
+        "31",
+        "32",
+        "63",
+        "64"
+      ],
+      "source_sha256": "ec4acb782a1264d54636aaf27ec06e81ace8e6b6e83f4b4198ece45f241f4759"
+    },
+    "C5-MC05": {
+      "text": "哪条 LC-3 指令在整个指令周期中都不访问存储器？",
+      "options": [
+        "LDR",
+        "STI",
+        "LEA",
+        "以上所有指令在整个周期中都会访问存储器"
+      ],
+      "source_sha256": "a3e98e6223616eb0493824af4d9e3f9324e4db7ab78c456098cea275b2a498df"
+    },
+    "C5-MC06": {
+      "text": "哪条 LC-3 指令不通过访问存储器来取得操作数？",
+      "options": [
+        "LDR",
+        "LDI",
+        "LEA",
+        "以上所有指令都会访问存储器来取得操作数"
+      ],
+      "source_sha256": "dd192c103fed02f9be9098f668235274dadf7b422ddd7d6246866a47385d4690"
+    },
+    "C5-MC07": {
+      "text": "上方列出的 i、ii、iii 中，哪些指令把 R5 的值复制到 R6？机器码见英文题干。",
+      "options": [
+        "仅 i",
+        "仅 ii",
+        "i 和 ii",
+        "i 和 iii",
+        "i、ii、iii"
+      ],
+      "source_sha256": "49c6e1bf5a6a6218b34c62fd5d43bc2e844748c5a5f90ae7e8d66f90b675f445"
+    },
+    "C5-MC08": {
+      "text": "处理哪条指令时不需要加法器？这里考虑整个指令周期，但忽略 FETCH 中的 PC 自增：题设认为它可用简单增量电路完成，无需完整加法器。",
+      "options": [
+        "LDR",
+        "ADD",
+        "STR",
+        "AND",
+        "以上指令都需要加法器"
+      ],
+      "source_sha256": "46290da5c57dab6e79616e3cb3647dcf0d8782a5dcaec6a333f867c710ef8552"
+    },
+    "C5-MC09": {
+      "text": "若修改 LC-3 ISA，使其有 32 个通用寄存器，其他所有规格不变，一条 ADD 指令需要多少位编码？",
+      "options": [
+        "16",
+        "20",
+        "24",
+        "31",
+        "32"
+      ],
+      "source_sha256": "6f87e2d9278f6fa781756d6ea2eb79d16e1166598befc20ca4073c6bef85bd33"
+    },
+    "C5-MC10": {
+      "text": "执行上方指令序列前，N=0、Z=0、P=1。序列执行后条件码是什么？地址和机器码见英文题干。",
+      "options": [
+        "N=0、Z=0、P=1",
+        "N=0、Z=1、P=0",
+        "N=1、Z=0、P=0",
+        "给定信息不足，无法确定"
+      ],
+      "source_sha256": "8908ef2ae3e94d0bf134859d5343e84ab81f66d575dc6afc08f93b33f9512994"
+    },
+    "C5-MC11": {
+      "text": "下列哪一项不由 LC-3 的 ISA 规定？",
+      "options": [
+        "通用寄存器个数",
+        "数据类型",
+        "操作码编码",
+        "处理器中加法器的数量"
+      ],
+      "source_sha256": "f489d611283ccffbb2e2da1ac1507e97c47f3f3faba67a468d8364e327ca6f8e"
+    },
+    "C5-MC12": {
+      "text": "哪条 LC-3 指令在整个指令周期中，PCMUX 都不承担与该指令 ISA 效果相关的有效工作？参见教材图 5.9。",
+      "options": [
+        "ADD",
+        "BR",
+        "TRAP",
+        "以上都不是；它们都需要 PCMUX 提供有用的输出"
+      ],
+      "source_sha256": "e7fb0f9db75d1ed585f778efd96408fe491dfcbb551c3dad1b31bdb736760802"
+    },
+    "C5-MC13": {
+      "text": "哪条 LC-3 指令的操作数只能位于寄存器中，不能是立即数或内存操作数？",
+      "options": [
+        "ADD",
+        "NOT",
+        "LD",
+        "AND"
+      ],
+      "source_sha256": "a2a4b31ca78ff29bf1c6a683a6540d4730c494af8b7eac5dc994f0e011a57b89"
+    },
+    "C5-MC14": {
+      "text": "地址 0x5F55 处的指令为 0000101100000000，哪个描述符合其操作？",
+      "options": [
+        "N 和 P 都为 1 时，把 0x5E56 装入 PC",
+        "N 或 P 任一个为 1 时，把 0x5E56 装入 PC",
+        "N 或 P 任一个为 1 时，把 0x5F56 装入 PC",
+        "N 和 P 都为 1 时，把 0x5F56 装入 PC"
+      ],
+      "source_sha256": "7dd35b129139e1c1c60c0487a760ec7eebac426dc30b170c4f72656c29aef650"
+    },
+    "C5-MC15": {
+      "text": "上方位于 0x0200 的四条候选指令，哪些会清零 R5？各条机器码见英文题干。",
+      "options": [
+        "仅 ii",
+        "i 和 ii",
+        "i、ii、iii",
+        "ii 和 iv",
+        "ii、iii、iv"
+      ],
+      "source_sha256": "c69f65a013d65387e89a2c1a690859773975bd5b758a51d549a972e01531e25b"
+    },
+    "C5-MC16": {
+      "text": "LC-3 的 ADD 指令具有什么能力？",
+      "options": [
+        "只能相加两个寄存器中的 16 位值",
+        "可把 16 位值与零扩展的 5 位值相加",
+        "可把 16 位值与符号扩展的 5 位值相加",
+        "可把 16 位值与符号扩展的 10 位值相加"
+      ],
+      "source_sha256": "e16d3f9888993595f67037ad51842344a100d4e595fe6d38516ee32b9a197e6c"
+    },
+    "C5-MC18": {
+      "text": "若执行上方指令后控制转移到 0x4444，执行前 R1 与 R2 应有什么关系？地址和机器码见英文题干。",
+      "options": [
+        "R1>R2，R1 较大",
+        "R1<R2，R2 较大",
+        "R1=R2，二者相等",
+        "给定信息不足，无法确定"
+      ],
+      "source_sha256": "f1765e12cdafe432b06e033cd3f3a860298498f847da8fa128238a518f60f677"
+    },
+    "C5-MC19": {
+      "text": "若执行上方指令序列后 R0=1，可以推断 R5 有什么性质？地址和机器码见英文题干。",
+      "options": [
+        "R5 为奇数",
+        "R5 为偶数",
+        "R5 等于 0",
+        "R5 等于 1"
+      ],
+      "source_sha256": "6b934384c1b4a3a605f55ce99e0d5f7fd98e6428d211f800d74c73baa7674d9b"
+    },
+    "C5-MC20": {
+      "text": "若执行上方指令序列后 R0=5，可以推断 R5 有什么性质？地址和机器码见英文题干。",
+      "options": [
+        "R5 的整个位串含 5 个 1",
+        "R5 最低有效字节含 5 个 1",
+        "R5 的整个位串含 5 个 0",
+        "R5 的数值能被 5 整除",
+        "R5 最低有效字节含 5 个 0"
+      ],
+      "source_sha256": "dd537a76cbc703bfa1b3d95f06b0aa83999163000547fe8893d2d954f58670c7"
+    },
+    "C5-FB01": {
+      "text": "LEA 指令使用 ____[1] 寻址方式。",
+      "options": [],
+      "source_sha256": "b4d505c5afeb355c46f69c21c114cde7fef96a0c6911dbd12b3a5bb9a2f41dc6"
+    },
+    "C5-FB02": {
+      "text": "LD、LDR、LDI、LEA、ST、STR、STI 都属于 LC-3 的 ____[1] 指令。",
+      "options": [],
+      "source_sha256": "d5d16388d5def842b2e04a395d58bf1047084f1148fa6d6ae7a1fc1ac3433eec"
+    },
+    "C5-FB03": {
+      "text": "若某 ISA 有 256 种操作码，指令中至少需要 ____[1] 位来指定操作码。",
+      "options": [],
+      "source_sha256": "9f0393d9844b0da67d6f636277682eead9e7ecef66d983567f1f6ee9bafd55f0"
+    },
+    "C5-FB04": {
+      "text": "____[1] 会改变指令的执行顺序。",
+      "options": [],
+      "source_sha256": "dcded6f28f4142b04f98070a3c2d69061b6d1218736d8877a220840cb5c4a0f6"
+    },
+    "C5-FB05": {
+      "text": "若 trapvector 为 12 位，最多能唯一区分 ____[1] 个系统调用。",
+      "options": [],
+      "source_sha256": "99299eef784c3c5cc8a639c9c22a199191ce612e22963b8436cceca3882ce0da"
+    },
+    "C5-FB06": {
+      "text": "ADD 在指令周期的 ____[1] 阶段不做有效工作。",
+      "options": [],
+      "source_sha256": "1dca1406f75d043ac2b66fa748c499a85df5a2bbf64cce9c1656165308820a7c"
+    },
+    "C5-FB07": {
+      "text": "STI 在整个指令周期中共执行 ____[1] 次存储器访问。",
+      "options": [],
+      "source_sha256": "1baa505c1beaf3d62f1fa22181592d51a96aabfce1c9a87c376324ac5cb7349e"
+    },
+    "C5-FB08": {
+      "text": "地址 0x5611 处的指令 0011000100101111 执行后，会把 R0 的值存入地址 0x____[1]。",
+      "options": [],
+      "source_sha256": "09fb3f438c1e4f1080bd4e7f05e2ff7fe5e1cbd74ad1427d855d1511acd71723"
+    },
+    "C5-FB09": {
+      "text": "一条指令包含两部分：____[1] 指定计算机做什么；____[2] 指定操作对象是谁。",
+      "options": [],
+      "source_sha256": "1483f3b822f1a6ca4f47972637393ed6e08c63ceecfb1ac1d843cf69dc517fbf"
+    },
+    "C5-FB10": {
+      "text": "____[1] 是一种信息表示方式，ISA 中存在可操作这种表示的操作码。",
+      "options": [],
+      "source_sha256": "4a723def656340ce8f2ad97e1c7d2da5b21c04e6dbf3d0d2e3750f8d08f16345"
+    },
+    "C5-FB11": {
+      "text": "LC-3 运算类指令中，执行二元运算的是 ____[1] 和 ____[2]。",
+      "options": [],
+      "source_sha256": "10152788d5fd48ed013c3584e80ea849cdbe2bc1686a0b215975165b8be06568"
+    },
+    "C5-FB12": {
+      "text": "若操作数直接包含在指令编码中，则称为 ____[1] 操作数。",
+      "options": [],
+      "source_sha256": "a8e2f6cc0881f87d455e812732f540b8ba65d62edb7c81a0f401d16ef676b9f1"
+    },
+    "C5-FB13": {
+      "text": "位于 0x6631 的 LD 指令可引用的最大存储地址是 0x____[1]。",
+      "options": [],
+      "source_sha256": "fefc326e77d49abd3c7ecb7e14bc7db00e622ceb78c728d123074faf24b8dffd"
+    }
+  }
+}

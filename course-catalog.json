@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "id": "math",
+      "code": "MATH3700",
+      "description": "Big Data Computing · Quiz",
+      "instructor": "Gupta",
+      "term": "26Fall",
+      "questions": 140,
+      "storage_key": "math3700-practice-v1",
+      "url": "https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/"
+    },
+    {
+      "id": "cps",
+      "code": "CPS2390",
+      "description": "Computer Organization · TestBank",
+      "instructor": "Qixia Zhang",
+      "term": "26Fall",
+      "questions": 244,
+      "storage_key": "cps2390-testbank-v1",
+      "url": "https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/"
+    }
+  ]
+}

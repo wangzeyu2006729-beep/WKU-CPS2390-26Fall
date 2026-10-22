@@ -4,6 +4,7 @@ from pathlib import Path
 import hashlib
 import json
 import re
+from practice_ui import prepare_ui
 from reviewed_answers import apply_review, REVISION
 
 ROOT = Path(__file__).resolve().parent
@@ -102,6 +103,7 @@ def parse():
     data = dict(course=dict(code='CPS2390', school='Wenzhou-Kean University', instructor='Qixia Zhang',
                             term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION,
                             answer_basis='source'), chapters=chapters, questions=questions)
+    prepare_ui(ROOT, data)
     (ROOT / 'questions.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
     (ROOT / 'source-audit.json').write_text(json.dumps(dict(total=len(questions), files=reports), ensure_ascii=False, indent=2)+'\n')
     return data
@@ -110,6 +112,8 @@ def parse():
 def build():
     data = parse()
     template = (ROOT / 'template.html').read_text()
+    for marker, value in prepare_ui(ROOT, data).items():
+        template = template.replace(marker, value)
     (ROOT / 'index.html').write_text(template.replace('__QUIZ_DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')))
     print(json.dumps({'questions':len(data['questions']), 'types':dict(Counter(q['type'] for q in data['questions']))}, ensure_ascii=False))
 

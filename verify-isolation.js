@@ -28,15 +28,15 @@ async page => {
    const c=await shared.newPage();await c.goto(mathUrl);
    await c.locator('[data-choice="D"]').click();await c.locator('#submit').click();await c.locator('#bookmark').click();
    const original=await c.evaluate(()=>localStorage.getItem('math3700-practice-v1'));
-   await c.locator('#course-select').selectOption('cps');await c.waitForURL(cpsUrl);
-   assert(await c.locator('#course-select').inputValue()==='cps'&&Object.keys((await read(c)).answers).length===0,'Course selector opens CPS2390 with fresh independent progress');
+   await c.locator('#course-trigger').click();await c.locator('[data-course="cps"]').click();await c.waitForURL(cpsUrl);
+   assert(await c.locator('#course-switch').getAttribute('data-current-course')==='cps'&&Object.keys((await read(c)).answers).length===0,'Course selector opens CPS2390 with fresh independent progress');
    assert(await c.evaluate(()=>localStorage.getItem('math3700-practice-v1'))===original,'Entering CPS2390 leaves MATH3700 data byte-for-byte intact');
    await c.locator('[data-choice="A"]').click();await c.locator('#submit').click();await c.locator('#bookmark').click();
    const cps=await c.evaluate(()=>localStorage.getItem('cps2390-testbank-v1'));
-   await c.locator('#course-select').selectOption('math');await c.waitForURL(mathUrl);
+   await c.locator('#course-trigger').click();await c.locator('[data-course="math"]').click();await c.waitForURL(mathUrl);
    assert((await c.locator('.question-id').textContent()).includes('Q01')&&await c.locator('.option.correct').getAttribute('data-choice')==='D','Switching back restores the original MATH3700 answer');
    assert(await c.evaluate(()=>localStorage.getItem('cps2390-testbank-v1'))===cps,'Switching back retains CPS2390 records');
-   await c.locator('#course-select').selectOption('cps');await c.waitForURL(cpsUrl);await c.locator('#reset').click();await c.locator('#confirm-reset').click();
+   await c.locator('#course-trigger').click();await c.locator('[data-course="cps"]').click();await c.waitForURL(cpsUrl);await c.locator('#reset').click();await c.locator('#confirm-reset').click();
    const mathAfter=JSON.parse(await c.evaluate(()=>localStorage.getItem('math3700-practice-v1')));
    assert(mathAfter.answers[1].correct&&mathAfter.favorites.includes(1),'Clearing CPS2390 does not clear MATH3700 answers or bookmarks');
   }
