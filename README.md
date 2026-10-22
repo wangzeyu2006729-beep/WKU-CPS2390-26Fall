@@ -4,7 +4,7 @@
 
 [Practice online](https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/) · [Other course: MATH3700](https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/)
 
-244 TestBank questions across Chapters 1–5: 78 true/false, 77 multiple choice, and 89 fill-in-the-blank questions. This is one of the repository owner's Fall 2026 courses at WKU. Both course sites use a compact dark interface and independent browser progress.
+244 reviewed TestBank questions across Chapters 1–5: 78 true/false, 77 multiple choice, and 89 fill-in-the-blank questions, with Chinese explanations for every question and all 458 TF/MC alternatives. This is one of the repository owner's Fall 2026 courses at WKU. Both course sites use a compact dark interface and independent browser progress.
 
 ![Practice interface](docs/preview.png)
 
@@ -34,8 +34,8 @@ Use the course selector at the top to switch between MATH3700 and CPS2390. Quest
 
 - Combine chapter and question-type filters with sequential, random, incorrect-answer, or bookmarked practice.
 - Labels preserve chapter, type, and original number: `C1-TF01`, `C1-MC01`, `C1-FB01`. Search a complete label or keyword; a bare number searches the internal sequential ID.
-- True/false and multiple choice are graded against the supplied answer key. All original choices are retained, including five- and six-option questions.
-- Fill questions offer an optional input for each blank. Reveal the original reference answers, compare your response, then choose **答对了** or **需巩固**. Revealing alone does not count as completion; self-assessment avoids rejecting equivalent terms.
+- True/false and multiple choice are graded against reviewed keys. Every alternative explains why it should or should not be selected, including five- and six-option questions. Original wording and keys can be expanded below the explanation.
+- Fill questions offer an optional input for each blank. Reveal the reviewed reference answers and reasoning, compare your response, then choose **答对了** or **需巩固**. Revealing alone does not count as completion; self-assessment avoids rejecting equivalent terms.
 - Keyboard: `1`–`6` or `A`–`F` select; `Enter` confirms; arrow keys navigate; `S` bookmarks. Enter in a fill field reveals its reference answers.
 
 Incorrect-answer review collects the latest mistakes; a correct retry removes a question when the list is refreshed. Restarting hides solutions while retaining previous records. Clearing course progress requires confirmation.
@@ -50,13 +50,15 @@ The supplied files are `chap01tq.doc` through `chap05tq.doc`, headed Patt/Patel,
 
 Chapter 2 repeats fill-question numbers 3 and 4; the second occurrences use `C2-FB03b` and `C2-FB04b`. Chapter 3 omits multiple-choice 11; Chapter 5 omits multiple-choice 17. No supplied question is dropped and no missing question is invented.
 
-Original keys are retained, with editorial notes where issues are identified. In particular, `C2-MC02` incorrectly treats a carry from adding negative two's-complement integers as sufficient evidence of signed overflow. The interface flags this with a counterexample while retaining the source key for grading. This does not imply that every source key has been independently corrected.
+All 244 questions have authored Chinese explanations. Three source keys are corrected (`C2-MC02`, `C3-TF15`, `C5-MC18`), one branch-offset typo is repaired (`C5-MC20`), and 25 questions explicitly clarify their assumptions. Source text/keys remain unchanged in provenance fields; the interface discloses every edit. See [the complete answer review](docs/answer-review.md). LC-3 follows the course slides / second-edition LEA convention, with the third-edition difference stated where relevant.
+
+`reviewed_answers.py` contains the review layer; `verify_content.py` independently checks calculations, truth tables and machine-code execution, including all 65,536 R5 inputs for the parity and repaired population-count programs. Conceptual review is based on the supplied slides and textbook and does not imply instructor endorsement.
 
 ## Progress and privacy
 
 Records stay in the current browser's localStorage under `cps2390-testbank-v1`. There is no backend, account, tracking, or answer upload. The other course uses its own key; switching courses or clearing one course does not clear the other.
 
-Typed fill drafts, pending reference-answer reveals, self-assessment results, bookmarks, and position survive refresh.
+Typed fill drafts, pending reference-answer reveals, self-assessment results, bookmarks, and position survive refresh. Existing submitted choices are regraded against corrected keys; their attempts and history remain, and changed grades are explained on screen.
 
 The repository rename changes the page path but keeps the same GitHub Pages hostname and storage key, so existing online records remain available in the same browser profile. Different devices, browsers, and profiles have independent records; tabs in one profile share them. There is no cross-device synchronization. Clearing browser data removes progress; private browsing may discard it on close. If storage is unavailable, practice remains usable for that session with a warning.
 
@@ -68,6 +70,7 @@ Rebuild with Python 3, without third-party Python dependencies:
 
 ```bash
 python3 build.py
+python3 verify_content.py
 ```
 
 `template.html` contains the interface; `questions.json` and `index.html` are generated outputs.
@@ -80,10 +83,11 @@ Serve locally and use a disposable test browser profile; the functional checks c
 python3 -m http.server 8000 --bind 127.0.0.1
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 open http://127.0.0.1:8000/index.html
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-browser.js
+npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-review.js
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-isolation.js
 ```
 
-Checks cover question navigation and grading, filters, persistence, storage-denied operation, and layouts from 320 to 1440 pixels. Isolation checks use independent browser contexts. See `docs/verification.json` and the additional course checks in `docs/` for verified results.
+Checks cover all 244 question submissions and explanations, all 458 option explanations, corrected-key migration, filters, persistence, storage-denied operation, and answered layouts from 320 to 1440 pixels. Isolation checks use independent browser contexts. The local cross-course bridge requires the MATH3700 HTML at `tmp/math-index.html` (copy it from the sibling course checkout); public isolation checks do not need that fixture. See `docs/verification.json` and the additional course checks in `docs/` for verified results.
 
 ## License and attribution
 

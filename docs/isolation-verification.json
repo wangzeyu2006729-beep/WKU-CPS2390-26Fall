@@ -1,0 +1,20 @@
+{
+  "passed": 12,
+  "checks": [
+    "Two independent browser profiles start empty",
+    "Answers and bookmarks are isolated between browsers",
+    "Wrong books are isolated",
+    "Fill drafts and reveals are isolated",
+    "Fill reveal state persists",
+    "Resetting one browser leaves another browser untouched",
+    "No answer upload or third-party request occurs",
+    "Course selector opens CPS2390 with fresh independent progress",
+    "Entering CPS2390 leaves MATH3700 data byte-for-byte intact",
+    "Switching back restores the original MATH3700 answer",
+    "Switching back retains CPS2390 records",
+    "Clearing CPS2390 does not clear MATH3700 answers or bookmarks"
+  ],
+  "url": "http://127.0.0.1:8768/index.html",
+  "review_revision": "2026-10-22.1",
+  "verified_at_utc": "2026-10-22T02:49:01.368750+00:00"
+}

@@ -11,6 +11,7 @@ async page => {
  assert(new Set(data.questions.map(q=>q.label)).size===244,'All labels are unique despite duplicate source numbers');
  assert(await page.locator('#course-select').inputValue()==='cps','Course selector identifies CPS2390');
  assert(await page.locator('#submit').isDisabled(),'Choice questions require a selection');
+ assert(await page.locator('.answer-reason,.option-analysis').count()===0,'Explanations are hidden before submission');
  await page.locator('[data-choice="A"]').click();await page.locator('#submit').click();
  assert(!(await read()).answers[1].correct&&await page.locator('.option.correct').getAttribute('data-choice')==='B','True/false grading uses the original F key');
  await page.locator('#bookmark').click();await page.reload();
@@ -58,7 +59,20 @@ async page => {
  await page.keyboard.press('Enter');
  assert(await page.locator('.option.correct').getAttribute('data-choice')==='C','Six-option question uses the source key');
  await page.locator('#search').fill('C2-MC02');await page.locator('[data-choice="C"]').click();await page.locator('#submit').click();
- assert((await page.locator('.source-note').first().textContent()).includes('进位不等于'),'Known source-key issue is disclosed while preserving the original key');
+ assert(await page.locator('.option.correct').getAttribute('data-choice')==='A'&&(await page.locator('.review-note').textContent()).includes('原 C → A'),'Corrected carry/overflow question grades A and discloses original C');
+ assert(await page.locator('.option-analysis li').count()===3,'Correct and incorrect choices all receive explanations');
+ await page.locator('.source-original summary').click();
+ assert(/Answer\s*:\s*C/i.test(await page.locator('.original-text').textContent()),'Original source key is still available for comparison');
+ await reset();
+ const corrected=data.questions.filter(q=>q.answer!==q.original_answer),fillQ=data.questions.find(q=>q.type==='fill');
+ await page.evaluate(({corrected,fillQ,key})=>{const s=JSON.parse(localStorage.getItem(key));for(const q of corrected)s.answers[q.id]={choice:q.original_answer,correct:true,attempts:3};s.answers[fillQ.id]={choice:'self',correct:true,given:['saved answer'],attempts:2};s.favorites=[corrected[0].id];s.index=s.order.indexOf(corrected[0].id);s.drafts[244]=['saved draft'];delete s.review_revision;localStorage.setItem(key,JSON.stringify(s));},{corrected,fillQ,key});
+ await page.reload();
+ const migrated=await read();
+ assert(corrected.every(q=>migrated.answers[q.id].correct===false&&migrated.answers[q.id].choice===q.original_answer&&migrated.answers[q.id].attempts===3&&migrated.answers[q.id].regraded),'Old source-key submissions are regraded without losing choices or attempts');
+ assert(migrated.favorites.includes(corrected[0].id)&&migrated.drafts[244][0]==='saved draft'&&migrated.order[migrated.index]===corrected[0].id&&migrated.answers[fillQ.id].given[0]==='saved answer','Migration preserves bookmarks, drafts, current position and fill self-assessment');
+ assert(await page.locator('.regrade-note').isVisible(),'Changed grades are explained to returning users');
+ await page.locator(`[data-index="${migrated.order.indexOf(corrected[0].id)}"]`).click();await page.locator('#retry-current').click();await page.locator(`[data-choice="${corrected[0].answer}"]`).click();await page.locator('#submit').click();
+ assert((await read()).answers[corrected[0].id].correct&&await page.locator('.regrade-note').count()===0,'New attempt uses corrected answer and clears old regrade notice');
  await reset();
  for(const q of data.questions){
   if(q.type==='fill'){
@@ -70,9 +84,15 @@ async page => {
    await page.locator(`[data-choice="${q.answer}"]`).click();await page.locator('#submit').click();
    if(await page.locator('.option.correct').getAttribute('data-choice')!==q.answer)throw new Error(`Grading mismatch ${q.label}`);
   }
+  if(await page.locator('.answer-reason').textContent()!==q.explanation)throw new Error(`Explanation mismatch ${q.label}`);
+  if(q.type!=='fill'){
+   const notes=await page.locator('.option-analysis li').allTextContents();
+   if(notes.length!==q.options.length||notes.some((t,i)=>!t.endsWith(q.option_explanations[i])))throw new Error(`Option explanation mismatch ${q.label}`);
+  }
   if(q.id<data.questions.length)await page.locator('#submit').click();
  }
  assert(Object.keys((await read()).answers).length===244&&Object.values((await read()).answers).every(a=>a.correct),'Every one of the 244 questions completes and grades correctly');
+ assert(true,'All 244 explanations and all 458 option explanations render with the authored text');
  assert(await page.locator('#coverage').textContent()==='100'&&await page.locator('#correct-stat').textContent()==='244','Full completion shows 244 answers and 100 percent coverage');
  await page.locator('#submit').click();
  assert(await page.locator('#summary-dialog').isVisible()&&(await page.locator('.summary-number').textContent()).includes('244'),'End-of-round summary uses all 244 questions');
@@ -87,10 +107,14 @@ async page => {
   await page.setViewportSize({width,height:950});
   for(const label of ['C1-TF01','C5-MC01','C1-FB03','C5-MC20']){
    await page.locator('#search').fill(label);
+   const q=data.questions.find(q=>q.label===label);
+   if(q.type==='fill'){await page.locator('#submit').click();await page.locator('#self-correct').click();}else {await page.locator(`[data-choice="${q.answer}"]`).click();await page.locator('#submit').click();}
    assert(!(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),`${label} fits ${width}px width`);
+   await page.locator('#retry-current').count()&&await page.locator('#retry-current').click();
   }
  }
  await reset();await page.setViewportSize({width:1440,height:1050});await page.locator('[data-bank="mc"]').click();await page.locator('#chapter-select').selectOption('4');
+ await page.locator('#search').fill('C5-MC20');await page.locator('[data-choice="B"]').click();await page.locator('#submit').click();
  await page.evaluate(()=>{document.activeElement.blur();window.scrollTo(0,0);});await page.screenshot({path:'output/playwright/desktop.png',fullPage:true,animations:'disabled'});
  await page.setViewportSize({width:390,height:844});await page.locator('[data-bank="fill"]').click();await page.locator('#chapter-select').selectOption('0');await page.locator('#search').fill('C1-FB03');
  await page.locator('[data-blank="0"]').fill('analog');await page.locator('[data-blank="1"]').fill('digital');await page.locator('#submit').click();

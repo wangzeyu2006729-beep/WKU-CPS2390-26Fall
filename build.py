@@ -4,6 +4,7 @@ from pathlib import Path
 import hashlib
 import json
 import re
+from reviewed_answers import apply_review, REVISION
 
 ROOT = Path(__file__).resolve().parent
 SOURCES = ROOT / 'sources'
@@ -16,18 +17,6 @@ CHAPTERS = [
 ]
 TYPES = {'tf': '判断题', 'mc': '选择题', 'fill': '填空题'}
 CODES = {'tf': 'TF', 'mc': 'MC', 'fill': 'FB'}
-
-# Editorial notes preserve the supplied keys, rather than silently changing them.
-NOTES = {
-    (1, 'tf', 1): '题库版权年份为 2004；涉及硬件规模的描述按原题历史语境理解。',
-    (2, 'mc', 2): '原文答案为 C，但存在概念错误：进位不等于有符号溢出。例如 4 位补码 1111 + 1111 = 1110，并产生进位，结果 −2 仍在范围内。题库练习保留原键 C，请向老师复核。',
-    (2, 'mc', 6): '原文选 C。若两个十进制数字之和超过 9，不能再用单个数字字符的 ASCII 编码表示；该表述需要限定结果仍是单个数字。',
-    (2, 'mc', 12): '原文选 C。算术右移保留符号位；负数不能整除时，其舍入方向与某些语言的整数除法可能不同。',
-    (2, 'mc', 14): '原文选 A，按教材比较加法器与逐位逻辑电路的延迟语境理解；不宜推广为所有处理器上两条指令的实际耗时。',
-    (3, 'tf', 15): '原文为 True。互补输出的表述应限于锁存器的正常有效状态；禁止输入组合需要另行处理。',
-    (5, 'mc', 18): '原文选 B。这里用减法结果的符号比较两个补码数；若发生有符号溢出，需要额外处理。',
-}
-
 
 def clean(text):
     return re.sub(r'[ \t]+', ' ', text).strip()
@@ -56,7 +45,7 @@ def parse():
                 occurrence = seen[kind, number]
                 suffix = chr(96 + occurrence) if occurrence > 1 else ''
                 label = f'C{chapter}-{CODES[kind]}{number:02d}{suffix}'
-                note = NOTES.get((chapter, kind, number), '')
+                note = ''
                 if occurrence > 1:
                     note += ' 原文此题号重复；标签末尾 b 表示同号的第二条，题目未合并或删除。'
                 q = dict(id=len(questions)+1, chapter=chapter-1, bank=kind, type=kind,
@@ -109,8 +98,9 @@ def parse():
     assert len({q['label'] for q in questions}) == len(questions)
     assert [q['id'] for q in questions] == list(range(1, len(questions)+1))
     chapters = [dict(name=name, english=english) for name, english in CHAPTERS]
+    apply_review(questions)
     data = dict(course=dict(code='CPS2390', school='Wenzhou-Kean University', instructor='Qixia Zhang',
-                            term='26Fall', storage_key='cps2390-testbank-v1'), chapters=chapters, questions=questions)
+                            term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION), chapters=chapters, questions=questions)
     (ROOT / 'questions.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
     (ROOT / 'source-audit.json').write_text(json.dumps(dict(total=len(questions), files=reports), ensure_ascii=False, indent=2)+'\n')
     return data
