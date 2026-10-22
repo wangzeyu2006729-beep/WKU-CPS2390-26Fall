@@ -1,19 +1,19 @@
 # Adding courses without changing existing learning records
 
-The present release contains only MATH3700 Quiz and CPS2390 TestBank.
+The present release contains MATH3700 Quiz, CPS2390 TestBank and CPS2232 past exams + question bank.
 CPS2390 exercises and assignments have not been imported or given empty pages.
 
 ## Small shared interface
 
 `practice_ui.py`, `practice-ui.css`, `practice-ui.js`, `course-catalog.json`,
-`verify-ui.js` and `verify-course-flow.js` are kept identical in the two repositories. The build embeds
+`verify-ui.js` and `verify-course-flow.js` are kept identical in the three repositories. The build embeds
 these files into each standalone HTML page; there is no runtime dependency on
 another repository, translation service or UI framework.
 
 The catalogue contains one entry per real course: a stable ID, display code,
 description, instructor, term, question count, storage key and public URL.
 Register a future course by updating the catalogue in each published course
-checkout, then rebuilding and checking both directions of navigation.
+checkout, then rebuilding and checking navigation between every pair of courses.
 The current-course marker is derived from course metadata, not a hardcoded menu.
 
 ## Content and translation
@@ -50,4 +50,4 @@ English rendering, translation persistence and search, course-menu keyboard and
 outside-click behavior, legacy progress, and 320–1440 px layouts. Confirm the
 shared files match between repositories, source fields and answer keys are
 unchanged, and no unrequested content collection was added. After publishing,
-check the actual public course links in both directions with `verify-course-flow.js`. This also checks Chinese-assisted answering, numerical-choice de-duplication and separate course progress. The local bridge runs from the CPS checkout with its Math HTML fixture; public checks use the real course URLs.
+check the actual public course links between all three courses with `verify-course-flow.js`. This also checks Chinese-assisted answering, numerical-choice de-duplication and separate course progress. The local bridge runs from the CPS2390 checkout with Math and CPS2232 HTML fixtures (`tmp/math-index.html`, `tmp/ds-index.html`); public checks use the real course URLs.

@@ -9,7 +9,7 @@ async page => {
   await p.evaluate(({key,data})=>{const s=JSON.parse(localStorage.getItem(key));s.answers={1:{choice:data.questions[0].answer,correct:true,attempts:3}};s.favorites=[1];s.drafts={2:'B'};s.index=4;delete s.translated;localStorage.setItem(key,JSON.stringify(s));},{key,data});await p.reload();
   assert((await read()).answers[1].attempts===3&&(await read()).favorites.includes(1)&&(await read()).drafts[2]==='B'&&(await read()).order[(await read()).index]===5,'Existing answers, favorites, drafts and position survive the UI upgrade');
   assert(await p.locator('#course-switch').getAttribute('data-current-course')===id&&await p.locator('#course-select').count()===0,'Current course is identified without a native course select');
-  assert(await p.locator('.course-entry').count()===2&&await p.locator('.course-entry[aria-current="page"]').getAttribute('data-course')===id,'Course panel has two real courses and an accessible current-course marker');
+  assert(await p.locator('.course-entry').count()===3&&await p.locator('.course-entry[aria-current="page"]').getAttribute('data-course')===id,'Course panel lists the three real courses and an accessible current-course marker');
   await p.locator('#course-trigger').click();await p.waitForFunction(()=>document.getElementById('course-trigger').getAttribute('aria-expanded')==='true');
   assert(await p.locator('.course-panel').isVisible(),'Course panel opens with consistent inline styling');
   await p.keyboard.press('ArrowDown');assert(await p.locator('[data-course="math"]').evaluate(e=>e===document.activeElement),'Down arrow focuses first course');

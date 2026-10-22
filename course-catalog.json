@@ -20,6 +20,16 @@
       "questions": 244,
       "storage_key": "cps2390-testbank-v1",
       "url": "https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/"
+    },
+    {
+      "id": "ds",
+      "code": "CPS2232",
+      "description": "Data Structures · Exams + Bank",
+      "instructor": "Ehimwenma, K.",
+      "term": "26Fall",
+      "questions": 193,
+      "storage_key": "cps2232-practice-v1",
+      "url": "https://wangzeyu2006729-beep.github.io/WKU-CPS2232-26Fall/"
     }
   ]
 }

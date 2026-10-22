@@ -1,13 +1,14 @@
 async page => {
  const ctx=await page.context().browser().newContext(),checks=[],errors=[];
  const assert=(ok,name)=>{if(!ok)throw new Error(name);checks.push(name);};
- const math='https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/',cps='https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/';
+ const math='https://wangzeyu2006729-beep.github.io/WKU-MATH3700-26Fall/',cps='https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/',ds='https://wangzeyu2006729-beep.github.io/WKU-CPS2232-26Fall/';
  const switchTo=async(p,id,url)=>{await p.locator('#course-trigger').click();await p.locator(`[data-course="${id}"]`).click();await p.waitForURL(url);};
  try{
   const origin=new URL(page.url()).origin;
   if(origin.startsWith('http://127.0.0.1:')){
    await ctx.route(math,async route=>route.fulfill({response:await route.fetch({url:origin+'/tmp/math-index.html'})}));
    await ctx.route(cps,async route=>route.fulfill({response:await route.fetch({url:origin+'/index.html'})}));
+   await ctx.route(ds,async route=>route.fulfill({response:await route.fetch({url:origin+'/tmp/ds-index.html'})}));
   }
   const p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(math);
   const m=JSON.parse(await p.locator('#quiz-data').textContent());
@@ -38,9 +39,21 @@ async page => {
   const mathBeforeReset=await p.evaluate(()=>localStorage.getItem('math3700-practice-v1'));
   await p.locator('#reset').click();await p.locator('#confirm-reset').click();
   assert(await p.evaluate(()=>localStorage.getItem('math3700-practice-v1'))===mathBeforeReset&&!(await p.locator('#question-translation').evaluate(e=>e.open)),'CPS reset clears its own translation state without touching MATH');
+  const cpsAfterReset=await p.evaluate(()=>localStorage.getItem('cps2390-testbank-v1'));
+  await switchTo(p,'ds',ds);
+  const d=JSON.parse(await p.locator('#quiz-data').textContent());
+  assert(d.course.code==='CPS2232'&&d.questions.length===193&&Object.keys(d.papers).length===2,'CPS2232 loads all 193 questions and both past papers');
+  await p.locator('#paper-select').selectOption('M24');
+  assert((await p.locator('.question-id').textContent()).includes('24春期中 第 1 题'),'Past-paper filter starts at original question 1');
+  await p.locator('[data-choice="B"]').click();await p.locator('#submit').click();
+  assert(await p.locator('.option.correct').getAttribute('data-choice')==='B','CPS2232 grades the past-paper answer');
+  assert(await p.evaluate(()=>localStorage.getItem('math3700-practice-v1'))===mathBeforeReset&&await p.evaluate(()=>localStorage.getItem('cps2390-testbank-v1'))===cpsAfterReset,'CPS2232 practice leaves MATH and CPS2390 records untouched');
+  const dsState=await p.evaluate(()=>localStorage.getItem('cps2232-practice-v1'));
+  await switchTo(p,'cps',cps);
+  assert(await p.evaluate(()=>localStorage.getItem('cps2232-practice-v1'))===dsState,'Returning to CPS2390 preserves CPS2232 state byte-for-byte');
   await p.setViewportSize({width:320,height:850});await p.locator('#course-trigger').click();const bounds=await p.locator('.course-panel').boundingBox();
   assert(bounds.x>=0&&bounds.x+bounds.width<=321&&!(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),'Course panel fits a 320px phone viewport');
-  assert(errors.length===0,'No runtime errors during the two-course learning flow');
+  assert(errors.length===0,'No runtime errors during the three-course learning flow');
   return {passed:checks.length,checks,errors,mode:origin.startsWith('http://127.0.0.1:')?'local bridge':'public pages'};
  }finally{await ctx.close();}
 }
