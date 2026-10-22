@@ -29,13 +29,13 @@
     "Six-option questions render all choices",
     "F keyboard shortcut selects the sixth option",
     "Six-option question uses the source key",
-    "Corrected carry/overflow question grades A and discloses original C",
+    "Carry/overflow question grades original C and keeps the conceptual caveat separate",
     "Correct and incorrect choices all receive explanations",
     "Original source key is still available for comparison",
-    "Old source-key submissions are regraded without losing choices or attempts",
+    "Previous editorial keys are regraded against source answers without losing choices or attempts",
     "Migration preserves bookmarks, drafts, current position and fill self-assessment",
     "Changed grades are explained to returning users",
-    "New attempt uses corrected answer and clears old regrade notice",
+    "New attempt uses source answer and clears old regrade notice",
     "Every one of the 244 questions completes and grades correctly",
     "All 244 explanations and all 458 option explanations render with the authored text",
     "Full completion shows 244 answers and 100 percent coverage",
@@ -73,6 +73,7 @@
     "No JavaScript errors during all checks"
   ],
   "errors": [],
-  "review_revision": "2026-10-22.1",
-  "verified_at_utc": "2026-10-22T02:49:01.368371+00:00"
+  "review_revision": "2026-10-22.2-source",
+  "answer_basis": "source",
+  "verified_at_utc": "2026-10-22T03:04:40.815658+00:00"
 }

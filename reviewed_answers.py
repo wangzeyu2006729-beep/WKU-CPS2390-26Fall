@@ -1,10 +1,11 @@
 """Authored Chinese teaching notes, keyed by stable source labels.
 
-Source text/keys remain in sources/ and source_* fields. Corrections are explicit.
+Original source text, options and keys are authoritative for practice and grading.
+Conceptual caveats are teaching notes only; they never change the supplied bank.
 The LC-3 convention follows the supplied course slides (second-edition LEA).
 """
 
-REVISION = '2026-10-22.1'
+REVISION = '2026-10-22.2-source'
 REVIEW = {}
 REFERENCES = {
     1: '课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。',
@@ -29,8 +30,8 @@ def mc(chapter, number, explanation, *options):
     REVIEW[f'C{chapter}-MC{number:02}'] = dict(explanation=explanation, option_explanations=list(options))
 
 
-def amend(label, **changes):
-    REVIEW[label].update(changes)
+def amend(label, note):
+    REVIEW[label]['review_note'] = note
 
 
 tf(1, '''
@@ -63,10 +64,10 @@ mc(1, 4, '本课程的算法定义同时要求有穷性、有效可计算性和�
    '有穷性要求对合法输入在有限步骤后结束，确实必要，但只列出一项。',
    '有效可计算性要求每一步确实可被执行，确实必要，但不完整。',
    '确定性要求每一步含义清楚无歧义，确实必要，但不完整。', '前三项都成立，综合选项最完整。')
-mc(1, 5, '编译器、汇编器和解释器均可让适合的源程序在处理器上运行，但解释执行不等于生成独立机器码文件。原题把解释器一概称为“翻译成 ISA”不严谨，已明确改为翻译或执行。',
+mc(1, 5, '题库答案为 D，将编译器、汇编器和解释器都归入让源程序在处理器上运行的工具。概念上，解释执行不一定生成独立机器码文件；原题把解释器一概称为“翻译成 ISA”较宽泛。',
    '编译器可把高级源程序翻译为目标代码，是可用工具之一。', '汇编器把对应 ISA 的汇编程序编码为机器指令，是可用工具之一。',
-   '解释器读取源程序或中间代码，并通过宿主程序执行语义；不一定输出独立的 ISA 程序，也是执行工具之一。', '按澄清后的“翻译或执行”题意，前三种工具都可用。')
-amend('C1-MC05', text='Which of the following tools can translate or execute a program on a processor, for a suitable source language?', review_note='题干澄清：解释器不一定把整个程序翻译成独立的 ISA 机器码；改为“翻译或执行”，保留 D。')
+   '解释器读取源程序或中间代码，并通过宿主程序执行语义；不一定输出独立的 ISA 程序，也是执行工具之一。', '题库将翻译与解释执行作广义理解，因此选择全部。需注意解释器不一定生成独立机器码。')
+amend('C1-MC05', '题库选 D。解释器不一定生成独立机器码；原题将翻译与解释执行作广义理解，原题与原键保持不变。')
 mc(1, 6, '模拟量连续变化；用有限个数字或位构成的序列是离散表示。',
    '弹簧阻力的物理测量值可以在连续区间变化，是模拟量。', '四个单个整数的序列只有离散取值，不是连续模拟量。',
    '四个二进制位只有 16 种序列，是数字表示。', 'B、C 均不是模拟量，故不能选全部。')
@@ -125,11 +126,11 @@ NOT 只接收一个输入，属于 unary（一元）操作；运算结果不算�
 mc(2, 1, '同一个数字可采用不同编码。A、B 按无符号二进制读是 5；C 按 ASCII 字符编码读是字符 5。必须同时说明编码规则。',
    '00000000000101 的数值为 4+1=5，前导 0 不改变值。', '000101 的无符号数值也是 5。',
    '00110101=0x35，是字符 5 的 ASCII 编码；若按纯二进制整数读则是 53。', '题目允许不同表示规则，因此前三项都可表示数字或字符 5。')
-mc(2, 2, '原键 C 错误，修正为 A。仅有最高位进位不能判定有符号溢出，也不能确定结果符号。4 位下 −1+−1=1110（−2），有进位无溢出；−8+−8=0000，有进位且溢出。',
-   '意为“仅凭该进位无法确定结果符号或溢出”。上述两个反例说明这是本题的最佳选项，并非完全不知道任何数学事实。',
+mc(2, 2, '题库答案为 C，网页按 C 判分。概念补充：最高位进位与有符号溢出不同。4 位下 −1+−1=1110（−2），有进位无溢出；−8+−8=0000，有进位且溢出。因此原答案存在理论疑点，不能把“有进位”直接记成“有符号溢出”。',
+   '题库未选 A。从严格补码规则看，单凭进位确实不能确定结果符号或溢出；若把 nothing about the result 理解为这一点，A 更接近理论结论。',
    '负数相加若溢出，截断结果可以为非负，例如 1000+1000=0000，不能保证负数。',
-   '进位是无符号加法的现象；补码溢出需检查同号相加后符号是否改变。有进位不必溢出。')
-amend('C2-MC02', answer='A', options=["The carry alone does not determine the result's sign or whether signed overflow occurred.", 'that the result is also a negative integer', 'that we must have caused an overflow condition.'], review_note='答案修正：原 C → A。最高位进位不能单独判断补码有符号溢出；A 的原文 nothing about the result 明确为“不能确定符号或溢出”，避免过强断言。')
+   '这是题库指定答案，练习按 C 判分。不过该断言并不普遍成立：补码溢出检查同号相加后符号是否改变，不能只检查进位。')
+amend('C2-MC02', '题库原答案 C，网页按 C 判分。进位不等于有符号溢出，相关反例只作概念补充，不替换原键。')
 mc(2, 3, '两串位都是同一负数的不同宽度表示。B=981−1024=−43；A 是在 B 左侧补符号位 1，值不变。',
    'A 位数更多只表示做了符号扩展，并不使负数变大。', 'B 位数更少不意味着其补码值更大。',
    '二者都表示 −43，符号扩展保持补码数值。', '编码类型已明确为补码，可以确定数值并比较。')
@@ -140,14 +141,14 @@ mc(2, 5, '基数为 r 的一个数字可表示 0 到 r−1，共 r 个值。',
 mc(2, 6, '对数字 d1、d2，ASCII(d)=0x30+d，所以 ASCII(d1)+ASCII(d2)−0x30=0x30+(d1+d2)。只有 d1+d2≤9 时，它才是单个和数字的 ASCII 码。',
    '直接相加多出一个 0x30；例如字符 1 与 2 的编码和是 0x63，并非字符 3 的 0x33。',
    '两个数字的编码最大为 57，和最大 114，在 8 位有符号或无符号范围内，不必发生溢出。',
-   '减去一次字符 0 的编码可消除多余偏置；在题干已限定和≤9 时成立。',
+   '题库指定 C。减去一次字符 0 的编码可消除多余偏置；还需和≤9，才能表示为单个数字字符，原题未明确这个限制。',
    '直接相加得到 96+d1+d2，不是数值 d1+d2 的补码编码。')
-amend('C2-MC06', text='Assume two decimal digits have a sum no greater than 9. If one adds the bit strings corresponding to their ASCII codes, the sum:', review_note='题干澄清：限定两位数字之和≤9，否则结果不再是单个十进制数字字符。')
+amend('C2-MC06', '讲解中的理解条件：限定两位数字之和≤9，否则结果不再是单个十进制数字字符。')
 mc(2, 7, '非零正规化浮点表示要求最高有效数字非零；在二进制中它恰为 1，在其他基数下可为其他非零数字。',
    '正规化只约束有效数字形式，不限制正负号。', '负数也可正规化，但并非必须为负。',
-   '只有基数为 2 的非零正规数才必有首位 1；题目允许任意基数，例如十进制 3.2×10^4。',
+   '只有基数为 2 的非零正规数才必有首位 1；原题未限定基数，若作一般基数理解（如十进制 3.2×10^4），C 不普遍成立。',
    '任意基数的非零正规化表示均要求首个有效数字非零，这是最一般的表述。')
-amend('C2-MC07', text='For a nonzero floating-point number normalized in an arbitrary radix (not necessarily binary),', review_note='题干澄清：非零、任意基数。二进制正规数首位既是 1 也非零；原题未说明基数，C、D 容易同时成立。')
+amend('C2-MC07', '讲解中的理解条件：非零、任意基数。二进制正规数首位既是 1 也非零；原题未说明基数，C、D 容易同时成立。')
 mc(2, 8, 'OR 是包含式或：01、10、11 都产生真，只有 00 产生假。',
    '恰好一个真是 XOR 的真值条件；OR 也允许两个都真。', '两个都假时 OR 为假。',
    '至少一个输入真正是 OR 的条件。', '两个都真是充分但非必要条件，01、10 也为真。')
@@ -161,18 +162,18 @@ mc(2, 10, '8 位无符号整数范围是 0–255，没有表示 −13 的编码�
 mc(2, 11, '固定宽度补码加法的溢出条件为：同号操作数相加，截断结果符号与操作数不同。异号相加不会有符号溢出。',
    '正+正得负是溢出的一类情形，但不是全部。', '负+负得正（含按符号位判为非负的 0）是另一类溢出；例如最小负数加自身得 0。',
    'A、B 分别描述两类同号加法溢出，故选综合选项。', 'A 和 B 都是溢出的典型判据，不能全否定。')
-amend('C2-MC11', options=['two positive numbers produce a negative result', 'two negative numbers produce a nonnegative result', 'both a and b', 'neither a nor b'], review_note='选项 B 用 nonnegative 代替 positive：最小负数加自身截断为 0 时也会溢出。原答案 C 保持不变。')
+amend('C2-MC11', '题库原答案 C。B 中的 positive 若写作 nonnegative 更完整：最小负数加自身截断为 0 时也会溢出。网页保留原选项措辞。')
 mc(2, 12, '算术右移两位复制原符号位，相当于除以 4 并向负无穷方向取整。可整除时得到精确商；负数有余数时与向零取整不同，如 −5>>2=−2。',
    '二进制硬件可以直接移位，无需先转十进制。', '补 0 是逻辑右移，会破坏负数的符号，例如 11111100（−4）变成 00111111（63）。',
-   '复制符号位是算术右移，满足题干指定的舍入规则。', '左移两位对应乘 4 的低位结果，不是除 4，并可能溢出。')
-amend('C2-MC12', text="To divide a fixed-width 2's complement integer by 4, rounding down toward negative infinity when necessary,", review_note='题干澄清：算术右移向负无穷取整，不等于所有语言中向零取整的整数除法。')
+   '题库指定 C：复制符号位进行算术右移。它向负无穷取整；原题没有说明舍入方式，不能把它与所有语言的整数除法等同。', '左移两位对应乘 4 的低位结果，不是除 4，并可能溢出。')
+amend('C2-MC12', '讲解中的理解条件：算术右移向负无穷取整，不等于所有语言中向零取整的整数除法。')
 mc(2, 13, 'n 个独立二进制位共有 2^n 种不同组合；2^12=4096。',
    '12 是位数，不是所有位组合的数量。', '每增加一位，组合数量乘 2，而不是总共乘一次 2。',
    '2^12=4096，恰好对应所有 12 位模式。', '固定位数的信息容量有限，不能唯一编码任意多个对象。')
 mc(2, 14, '在教材的逐位并行 AND 与串行进位加法器模型中，AND 各位可同时计算，而 ADD 的最坏路径需等待进位传播。实际处理器指令延迟还取决于具体实现。',
-   '按题干的串行进位电路模型，ADD 的关键路径通常更长。', 'AND 没有跨位的进位依赖，题设模型不支持其更慢。',
+   '按课件的串行进位电路模型，ADD 的关键路径通常更长，题库据此选 A。', 'AND 没有跨位的进位依赖，课件模型不支持其更慢。',
    '该电路模型中两者关键路径不同；不能据此说任何 CPU 上延迟一定不同或相同。')
-amend('C2-MC14', text='In the textbook circuit-delay model, compare a ripple-carry ADD with a parallel bitwise AND on equal-width operands A and B. Ignore instruction scheduling and memory access.', review_note='题干澄清：比较教材电路延迟，不把结论推广到所有处理器的指令耗时。')
+amend('C2-MC14', '讲解中的理解条件：比较教材电路延迟，不把结论推广到所有处理器的指令耗时。')
 mc(2, 15, '操作符的元数按输入操作数数量计算；ADD 接收两个被加数，因此是二元运算。',
    '做一种功能不代表一元；一元表示只有一个输入。', '两个源操作数决定 ADD 为 binary operator。', '输出不计入元数；两个输入加一个输出仍是二元运算。')
 fill(2, {
@@ -197,17 +198,17 @@ fill(2, {
  '17':'ALU 即 Arithmetic and Logic Unit（算术逻辑单元），负责加法和逐位逻辑等运算。',
  '18':'逐位十六进制展开：F→1111，A→1010，B→1011，C→1100，连接得 1111101010111100。',
  '19':'从右每 4 位分组：0000 1111 0010 1010 → 0 F 2 A，即 0F2A；前导 0 可以省略，但这里保留 16 位宽度。',
- '20':'这里问 ASCII 字符码，例如 a 为 0x61、SHIFT 后的 A 为 0x41。原文“每个键至少两个码”不成立：SHIFT、方向键等并非两个可打印 ASCII 字符，现已限定例子的范围。',
+ '20':'按题库填 ASCII，例如 a 为 0x61、SHIFT 后的 A 为 0x41。理解时需注意原文“每个键至少两个码”过强：SHIFT、方向键等并非两个可打印 ASCII 字符；该例只适用于具有不同 ASCII 字符的按键。',
 })
-amend('C2-FB04', text="For a nonzero integer k such that both k and -k are representable in the same n-bit 2's complement format, their encoded sum is ____[1].", review_note='题干澄清：排除 k=0，并要求 k 与 −k 均可表示，否则“全 0 加进位”不总成立。')
-amend('C2-FB20', text='For a printable keyboard key whose SHIFT variant is a different ASCII character (for example a and A), the two characters have different ____[1] codes.', review_note='题干澄清：原文对每个键的断言过强，改为有两个不同 ASCII 可打印字符的按键。')
+amend('C2-FB04', '讲解中的理解条件：排除 k=0，并要求 k 与 −k 均可表示，否则“全 0 加进位”不总成立。')
+amend('C2-FB20', '题库填 ASCII。原断言并非对每个键都成立，讲解用具有两个不同可打印 ASCII 字符的按键说明。')
 
 mc(3, 1, '教材的静态互补 CMOS 中，二输入 NAND 用 4 个晶体管，再接 2 个晶体管的反相器，得到 AND，共 6 个。此结论不跨越到其他逻辑家族。',
    '2 个晶体管只能构成教材中的一个 CMOS 反相器，不能完成标准二输入 AND。',
    '4 个足以构成二输入 NAND 或 NOR，但其输出反相，还不是 AND。',
    'NAND 的 4 个加反相器的 2 个，共 6 个，符合题目模型。',
    '8 个可用于更冗余的实现，但不是本模型所需的最少数量。')
-amend('C3-MC01', text='In the textbook static complementary CMOS implementation (using NAND followed by NOT), the minimum transistor count for a two-input AND gate is', review_note='题干澄清：指定教材静态互补 CMOS 门模型；不对所有晶体管逻辑家族宣称同一最小数量。')
+amend('C3-MC01', '讲解中的理解条件：指定教材静态互补 CMOS 门模型；不对所有晶体管逻辑家族宣称同一最小数量。')
 mc(3, 2, '对与或表达式 F=AB+CD，F=NOT(NOT(AB) AND NOT(CD))，所以第一层 NAND 后接第二层 NAND 即可实现。',
    '两级 NAND 正好实现“积之和”，由德摩根定律可得。', '仅把 OR 和 NAND 这样排列，不能直接保持原与或逻辑关系。',
    '末级 NOR 会对第一层结果取另一种否定，不能直接得到原积之和。', 'NOR–NAND 不是题目所问与或网络的直接德摩根等价两级形式。')
@@ -277,9 +278,9 @@ fill(3, {
  '19':'按课件低有效 NAND RS 锁存器，短暂令 R=0、S=1 即复位 Q=0；然后 R 回到 1 进入保持。NOR 型高有效锁存器的电平规则不同。',
  '20':'两次取反还原输入：NOT(NOT A)=A。实际电路有传播延迟，此题问稳态逻辑值。',
 })
-amend('C3-FB11', text='For stable binary inputs in the textbook ideal complementary CMOS two-input NAND gate, exactly ____[1] transistors are open-circuited.', review_note='题干澄清：理想稳态二值输入模型，不讨论切换瞬态或模拟电压。')
-amend('C3-FB12', text='In static complementary CMOS, NOT { AB+CD } can be implemented directly with a minimum of ____[1] transistors.', review_note='题干澄清：晶体管计数采用静态互补 CMOS 的直接 AOI22 实现。')
-amend('C3-FB19', text='For the course NAND-based, active-low R-S latch, clear Q by momentarily setting ____[1] to ____[2] while keeping S inactive.', review_note='题干澄清：指定低有效 NAND 锁存器；高有效 NOR 型的复位电平不是 0。')
+amend('C3-FB11', '讲解中的理解条件：理想稳态二值输入模型，不讨论切换瞬态或模拟电压。')
+amend('C3-FB12', '讲解中的理解条件：晶体管计数采用静态互补 CMOS 的直接 AOI22 实现。')
+amend('C3-FB19', '讲解中的理解条件：指定低有效 NAND 锁存器；高有效 NOR 型的复位电平不是 0。')
 tf(3, '''
 地址只是位置编号，与所存数值无大小关系。地址 50024 可存 0，而地址 5 可存 255；数据可任意写入。
 8 位地址只决定 256 个位置；每位置可以是 1 位、8 位或其他宽度。地址位数与字节寻址没有必然联系。
@@ -295,14 +296,14 @@ NAND 不满足结合律。取 a=0,b=1,c=1：(a NAND b) NAND c=1 NAND 1=0，而 a
 本章的静态逻辑存储电路依靠输出反馈维持状态，使输出除当前输入外还依赖历史。这是课件锁存器模型的结论，不泛指所有物理存储技术。
 每位置 4 位只说明 addressability=4；地址位数由位置个数决定。例如 1024×4 位存储器需要 10 位地址，而不是 2 位。
 1 位寄存器完全可能，由一个存储位构成；寄存器不要求至少 8 位或一个字节。
-“总是互补”过强，原键 True 修正为 False。正常有效稳态下 Q 与反相输出互补；禁止输入时 NAND 型可使两输出都为 1，NOR 型可使两输出都为 0。
+题库答案为 True，按原文判分。按课程通常默认的正常有效稳态理解，Q 与反相输出互补；概念补充：“总是”不能扩展到禁止输入，NAND 型可能两输出都为 1，NOR 型可能两输出都为 0。
 ''')
-amend('C3-TF05', text='For stable inputs, a standard one-hot 3-to-8 decoder can have three of its eight outputs asserted.', review_note='题干澄清：标准稳定输入的 one-hot 译码器，不讨论译码瞬态毛刺。')
-amend('C3-TF07', text='In the textbook ideal complementary CMOS two-input NAND gate with stable binary inputs, three of its four transistors can be open-circuited.', review_note='题干澄清：采用课件的理想稳态 CMOS 模型。')
-amend('C3-TF08', text='For stable binary inputs in the textbook ideal CMOS inverter, its p-type and n-type transistors cannot both be conducting at the same time.', review_note='题干澄清：排除真实晶体管切换瞬态；原文的 never 不能跨模型使用。')
-amend('C3-TF11', text="In the textbook ideal CMOS gate model with comparable loads, replacing an AND–OR network by its DeMorgan-equivalent NAND–NAND network removes inverter stages and reduces the modeled propagation delay.", review_note='题干澄清：速度比较限定在课件的理想门延迟模型，不声称所有真实电路都更快。')
-amend('C3-TF12', text='For the static logic storage circuits studied in this chapter, feedback from outputs to inputs is necessary to retain state.', review_note='题干澄清：范围为本章的静态反馈存储逻辑，不概括 DRAM 等所有物理存储机制。')
-amend('C3-TF15', answer='B', review_note='答案修正：原 True → False。禁止输入组合能使两个输出相同；只有正常有效状态下才互补。')
+amend('C3-TF05', '讲解中的理解条件：标准稳定输入的 one-hot 译码器，不讨论译码瞬态毛刺。')
+amend('C3-TF07', '讲解中的理解条件：采用课件的理想稳态 CMOS 模型。')
+amend('C3-TF08', '讲解中的理解条件：排除真实晶体管切换瞬态；原文的 never 不能跨模型使用。')
+amend('C3-TF11', '讲解中的理解条件：速度比较限定在课件的理想门延迟模型，不声称所有真实电路都更快。')
+amend('C3-TF12', '讲解中的理解条件：范围为本章的静态反馈存储逻辑，不概括 DRAM 等所有物理存储机制。')
+amend('C3-TF15', '题库原答案 True，网页按 True 判分。按正常有效稳态理解；禁止输入时两输出可能相同。')
 
 mc(4, 1, '冯诺依曼存储程序模型在同一个存储器中保存指令和数据；两者底层都是位串，由用途决定解释。',
    '忽略了程序要读取、修改的数据。', '忽略了存储程序模型中的指令。', '指令与数据都保存在存储器中。', '两者都不存与存储程序模型矛盾。')
@@ -336,7 +337,7 @@ mc(4, 11, 'LDR 把 BaseR+offset 指定的内存字载入寄存器，是 data mov
 mc(4, 12, '按课件多周期概念模型，不需要的阶段可跳过（0 周期）；需要的阶段可能占一个或多个周期。题目假定操作最终完成，不讨论无限等待。',
    '内存阶段等可能需要多个周期，并非固定一个。', '某些阶段可跳过，因而不保证至少一个。', '需要的阶段可能超过一个周期，不能限制最多一个。',
    '允许阶段跳过和多周期执行，最符合本章概念模型。')
-amend('C4-MC12', text='In the course multi-cycle model, assuming processing completes, a conceptual phase of an instruction cycle (including a phase skipped by that instruction) may require', review_note='题干澄清：计入被跳过的阶段，并假设操作完成；0 周期表示该阶段无需执行。')
+amend('C4-MC12', '讲解中的理解条件：计入被跳过的阶段，并假设操作完成；0 周期表示该阶段无需执行。')
 mc(4, 13, '扫描仪把物理文档/图像转换成计算机可存储的数据，是输入设备。',
    '把外部信息输入计算机，符合定义。', '扫描仪内部可能有缓存，但设备主要角色不是主存。', '它不承担本章 CPU 处理单元的指令运算职责。', '它不控制整机指令处理流程。')
 mc(4, 14, 'FETCH 从 PC 指定的存储器位置取指，经过 MAR/MDR 等通路送入 IR。',
@@ -349,7 +350,7 @@ mc(4, 17, 'JMP 令 PC 取寄存器中的目标地址，属于控制转移指令�
    '改变下一条指令地址，是 control。', '不做算术或逐位逻辑结果运算。', '虽然复制目标到 PC，但按 ISA 功能分类属于控制类而非普通数据搬移。')
 mc(4, 18, '本题采用课件多周期 LC-3 数据通路，指令处理需要多个时钟/机器周期。这不是所有单周期、流水线或其他处理器的普遍定律。',
    '本章的数据通路取指、译码及后续操作分多个机器周期完成。', '整个指令处理不可能在本题模型中少于一个机器周期。', '单周期设计另有可能，但不是此处课件模型。')
-amend('C4-MC18', text='In the course multi-cycle LC-3 implementation, an instruction cycle consists of', review_note='题干澄清：限定课件多周期实现；ISA 本身不规定每条指令必须用多少时钟周期。')
+amend('C4-MC18', '讲解中的理解条件：限定课件多周期实现；ISA 本身不规定每条指令必须用多少时钟周期。')
 mc(4, 19, 'FETCH 取得当前指令的同时使 PC 指向顺序下一条，LC-3 为 PC+1；之后控制指令还可以覆盖它。',
    'PC 顺序自增发生于 FETCH。', 'DECODE 时已持有指令，顺序 PC 自增早已完成。', 'EVALUATE ADDRESS 可以使用已自增的 PC，但不负责该顺序自增。', 'EXECUTE 可能因分支改写 PC，不是本题问的常规顺序自增。')
 fill(4, {
@@ -388,8 +389,8 @@ IR 保存当前指令位串；指向下一条指令的是 PC，因此题目把�
 分支、跳转等控制指令可把下一地址从 x4001 改成 x5000；程序不必永远顺序执行。
 ADD 的源来自寄存器或立即数，不需要计算数据内存有效地址。取指访问内存仍然存在，不要把它混为 EVALUATE ADDRESS。
 ''')
-amend('C4-TF01', text='In the course ISA-level model, an instruction may be considered successfully completed after carrying out only the part of its specified work that happens to be possible.', review_note='题干澄清：讨论 ISA 规定的完整效果，不否认实现中的微操作、异常或部分进度。')
-amend('C4-TF07', text='Under the course definition of a complete von Neumann computer system, the system may omit all forms of input, or omit all forms of output.', review_note='题干澄清：限定课程完整系统模型；不把它作为关于所有理论计算装置的不可能性断言。')
+amend('C4-TF01', '讲解中的理解条件：讨论 ISA 规定的完整效果，不否认实现中的微操作、异常或部分进度。')
+amend('C4-TF07', '讲解中的理解条件：限定课程完整系统模型；不把它作为关于所有理论计算装置的不可能性断言。')
 
 tf(5, '''
 LC-3 的整数算术使用 16 位 2's complement（补码），不是 1's complement（反码）。例如 −1 为 xFFFF。
@@ -408,8 +409,8 @@ LC-3 是寄存器型 ISA，ADD 的源是寄存器或立即数，不能直接同�
 LC-3 普通数据搬移在内存与寄存器之间进行。LDI/STI 虽有间接指针访问，也不是单条内存到内存复制；内存复制需先加载再存储。
 ST 的 FETCH 要把指令读入 MDR；存结果时还要把源寄存器的数据送入 MDR 再写存储器，因此整个指令周期至少两次写 MDR。
 ''')
-amend('C5-TF08', text='Using the course slides / second-edition LC-3 convention that LEA updates NZP, instruction 1110111000000000 at 0xF011 sets N when executed.', review_note='版本限定：课件 Part 2 PDF 20 页包含 LEA 更新 NZP；所提供第三版教材已改变此规则。本题按课件/第二版判断 True。')
-amend('C5-TF10', text='Starting with a valid one-hot NZP state, a sequence of normally executed legal LC-3 instructions can leave N=0, Z=0, P=0.', review_note='题干澄清：从有效 NZP 状态开始，排除未初始化或外部篡改状态。')
+amend('C5-TF08', '版本限定：课件 Part 2 PDF 20 页包含 LEA 更新 NZP；所提供第三版教材已改变此规则。本题按课件/第二版判断 True。')
+amend('C5-TF10', '讲解中的理解条件：从有效 NZP 状态开始，排除未初始化或外部篡改状态。')
 mc(5, 1, 'STR 使用寄存器基址加 offset6，适当设置基址即可访问距离当前指令 1000 个位置的地址；PC 相对 offset9 范围不足。',
    'ADD 不读取或写入数据内存位置，不能完成该内存引用。',
    'LD 使用自增 PC 加 offset9，范围 −256…255，无法覆盖距离指令 +1000 的位置。',
@@ -439,10 +440,10 @@ mc(5, 7, 'i=ADD R6,R5,#0；ii=AND R6,R5,#−1；iii=NOT R6,R5。加零与和全 
 mc(5, 8, '按题干排除 FETCH 的 PC 自增后，AND 只需按位逻辑；LDR/STR 需要基址加位移的地址加法，ADD 需要算术加法。',
    'LDR 必须算 BaseR+SEXT(offset6)，需要加法器。', 'ADD 本身执行加法，需要加法器。',
    'STR 同样要计算 BaseR+SEXT(offset6)。', 'AND 是逐位逻辑操作，排除通用 PC 自增后没有额外加法。', 'AND 不需要，因此“全部需要”不成立。')
-mc(5, 9, '32 个寄存器字段各需 5 位。重排并去掉原寄存器格式的无用填充后：opcode4+DR5+SR1五位+mode1+SR2五位（或 imm5）=20 位。原题“其他都不变”会产生保留填充位的歧义，已明确要求紧凑重编码。',
-   '16 位不足以同时保存这些必要字段。', '4+5+5+1+5=20，是题干明确的紧凑格式长度。',
+mc(5, 9, '题库答案为 B。32 个寄存器字段各需 5 位，按紧凑重编码理解：opcode4+DR5+SR1五位+mode1+SR2五位（或 imm5）=20 位。原题“其他都不变”有保留填充位的歧义；20 位需要采用去掉无用填充的预期解释。',
+   '16 位不足以同时保存这些必要字段。', '4+5+5+1+5=20，是题库预期的紧凑格式长度。',
    '24 比必要字段之和更多，题目没有要求凑整到字节。', '31 没有对应的必要字段计数。', '32 可容纳但不是最小所需位数。')
-amend('C5-MC09', text='Redesign LC-3 ADD for 32 general-purpose registers. Keep a 4-bit opcode, a 1-bit register/immediate mode selector, and a 5-bit immediate. Use 5-bit register fields and omit unused padding bits. What minimum fixed instruction width is required for both ADD forms?', review_note='题干澄清：保留必要语义字段并去除未用填充位，得 20 位。原题“其他规格不变”若连保留位也原样保留，会造成不同计数。')
+amend('C5-MC09', '题库选 B（20 位），按去除无用填充的紧凑编码理解。若逐字保留原题“其他规格不变”的填充位，计数会有歧义。')
 mc(5, 10, 'x3050 是 BRp #1。初始 P=1，跳过清零指令 x3051，直接执行 x3052 的 ADD R0,R0,#1。R0 初值未给出，所以结果及 NZP 无法唯一确定。',
    '若原 R0=0 会得到 +1 和 P，但原 R0 未知，不能保证。',
    '若原 R0=−1 会得到 0 和 Z，但并非唯一可能。', '若原 R0=−2 会得到 −1 和 N，也并非唯一可能。',
@@ -467,22 +468,22 @@ mc(5, 15, 'i=ADD R5,R5,#0，ii=AND R5,R5,#0，iii=LEA R5,#0，iv=LD R5,#0。只�
 mc(5, 16, 'ADD 有寄存器模式和立即数模式；立即数 imm5 必须符号扩展为 16 位，范围 −16…15。',
    '漏掉了 ADD 的立即数模式。', '补 0 会把负 imm5 误读为正数，不是 LC-3 的规则。',
    '立即数形式把有符号 imm5 符号扩展后与寄存器相加，正确。', 'ADD 的立即数字段是 5 位，不是 10 位。')
-mc(5, 18, '三条运算形成 R4=(R1−R2) mod 2^16，BRn 依据截断结果负号跳到 x4444。若有溢出，负号不能可靠表示 R1<R2：R1=32767、R2=−1 时结果 x8000 为负，却有 R1>R2。故原键 B 修正为 D。',
+mc(5, 18, '题库答案为 B，网页按 B 判分。三条运算形成 R4=(R1−R2) mod 2^16，BRn 依据结果负号跳到 x4444。题库预期不发生有符号溢出时，R1−R2<0 意味着 R1<R2。概念补充：原题未声明不溢出；R1=32767、R2=−1 时结果 x8000 为负，却有 R1>R2。',
    'R1>R2 可在溢出时导致负结果，但也可不跳，无法由跳转唯一推出。',
-   '仅在减法不溢出时可由负结果推出小于；题目没有给该限制。',
+   '这是题库指定答案。在减法不溢出的默认条件下，负差说明 R1<R2；讲解保留原题没有明确此前提的疑点。',
    '相等时差为 0，置 Z，不会 BRn，因此不能推出相等。',
-   '存在 R1<R2 和 R1>R2 两类可跳转输入，无法唯一判断大小关系；原 B 忽略了溢出。')
-amend('C5-MC18', answer='D', review_note='答案修正：原 B → D。题干未保证减法不溢出，不能只看 N 比较两个补码数。')
+   '题库未选 D，因为其预期忽略溢出。若严格允许全部 16 位补码输入，确有两种大小关系都能跳转，D 更严谨；网页仍以原键 B 为准。')
+amend('C5-MC18', '题库原答案 B，网页按 B 判分。此预期解释默认减法不溢出；若不加此前提，存在反例。')
 mc(5, 19, '先清 R0，再用 AND R4,R5,#1 检测最低位；若为 0，BRz 跳过 R0 加 1。最后 R0=1 当且仅当 R5 最低位为 1，即为奇数。',
    '奇数最低位为 1，AND 得 1、不跳过加一，符合最终 R0=1。',
    '偶数最低位为 0，会跳过加一，最终 R0=0。', '0 是偶数，也会得到 R0=0。',
    '1 确实可得到 R0=1，但不是唯一值；3、5、−1 等所有奇数也可。')
-mc(5, 20, '按已修正程序：R0 先清零，R6 从 1 开始每轮左移；循环计数 R7 从 0 逐轮增加，并用 R1=R7−8 决定继续。回跳到 x3003，恰好检查 R5 的 bit0…bit7，遇到 1 就给 R0 加一，因此 R0 是低字节的 1 的个数。原程序回跳到 x3002，重设 R6，不能得到这个结论。',
+mc(5, 20, '题库答案为 B，网页保留原机器码并按 B 判分。题库的预期思路是用逐位左移的掩码统计 R5 低字节的 1。原程序疑点：x3009 的 BRn #−8 回到 x3002，会重新令 R6=R7+1，实际检测掩码 1…8；R5=x0009 时 R0=5，但低字节仅有两个 1。若回跳改为 #−7 到 x3003 才实现预期统计，这仅作概念说明，不改原题。',
    '高字节从未检测；它可以有额外的 1，所以不能推出整个 16 位恰有五个 1。',
-   '循环只检查低八位，最终 5 表示低字节恰有五个 1。', '循环统计的是低八位的 1，不是全字的 0。',
-   '置位数量不决定数值是否被 5 整除，例如 0x001F 低八位有五个 1，但 31 不能被 5 整除。',
-   '低字节五个 1 意味着三个 0，不是五个 0。')
-amend('C5-MC20', content_correction=True, review_note='程序修正：x3009 的 0000100111111000（BRn #−8）改为 0000100111111001（BRn #−7），回到 x3003 而非 x3002。原程序会反复重设掩码，R5=x0009 时 R0=5 却只有两个 1，原 B 无法由原代码推出。修正后 B 成立；原机器码仍可展开查看。')
+   '这是题库指定答案，意图是统计低字节的 1；但原程序存在回跳位移疑点，不能从原机器码严格推出此结论。', '题库意图统计低八位的 1，不是全字的 0；原程序还存在上述位移疑点。',
+   '置位数量不决定是否被 5 整除；原程序的 R5=9 也会得到 R0=5，而 9 不能被 5 整除。',
+   '按题库预期，低字节有五个 1 就只有三个 0，并非五个 0；原程序的位移疑点另见说明。')
+amend('C5-MC20', '题库原答案 B、原 BRn #−8 均保留。原程序的回跳位移存在疑点：R5=x0009 时 R0=5 却只有两个 1。#−7 的推演只作说明，不替换网页原代码。')
 fill(5, {
  '01':'按课件 Part 2 PDF 16 页的“操作数值来源”分类，LEA 属 immediate/literal：把指令生成的地址直接写入寄存器，不读取该地址中的数据。但它形成地址的公式仍为已自增 PC+SEXT(offset9)，因此也具有 PC 相对的地址形成特征；两种分类角度不能混用。',
  '02':'这些指令归为 data movement：LD/LDR/LDI 从内存载入寄存器，ST/STR/STI 从寄存器存内存，LEA 将计算出的有效地址写入寄存器。',
@@ -498,11 +499,11 @@ fill(5, {
  '12':'literal 或 immediate 表示常量直接编码在指令中；例如 ADD 的 imm5，不需从数据内存读取该常量。',
  '13':'LD 使用 offset9，最大正偏移为 +255。指令在 x6631，取指后 PC=x6632，因此最大目标 x6632+x00FF=x6731；不能从未自增的 x6631 起算。',
 })
-amend('C5-FB01', text="Under the course slides' operand-value classification (the computed address itself is loaded, without reading target memory), LEA uses the ____[1] addressing mode.", review_note='分类限定：保留课件 immediate/literal 答案，同时解释有效地址按 PC 相对公式形成，避免把“立即数来源”与“地址形成”混为一谈。')
+amend('C5-FB01', '分类限定：保留课件 immediate/literal 答案，同时解释有效地址按 PC 相对公式形成，避免把“立即数来源”与“地址形成”混为一谈。')
 
 
 def apply_review(questions):
-    """Overlay reviewed teaching content without changing source provenance or IDs."""
+    """Add teaching notes while keeping every parsed source question authoritative."""
     labels = {q['label'] for q in questions}
     assert labels == set(REVIEW), ('Missing reviews', labels - set(REVIEW), 'Extra reviews', set(REVIEW) - labels)
     for q in questions:
@@ -512,12 +513,10 @@ def apply_review(questions):
         q['original_answer'] = q['answer']
         q['original_answers'] = list(q.get('answers', []))
         q.update(review)
-        if q['label'] == 'C5-MC20':
-            assert q['text'].count('0000100111111000') == 1
-            q['text'] = q['text'].replace('0000100111111000', '0000100111111001')
+        q['answer_basis'] = 'source'
         q['review_revision'] = REVISION
         q['references'] = REFERENCES[q['chapter'] + 1]
-        q['review_status'] = 'corrected' if q['answer'] != q['original_answer'] or q.get('content_correction') else 'clarified' if q.get('review_note') else 'reviewed'
+        q['review_status'] = 'source_issue' if q['label'] in {'C2-MC02', 'C3-TF15', 'C5-MC18', 'C5-MC20'} else 'study_note' if q.get('review_note') else 'reviewed'
         # Each True/False alternative gets the specific factual explanation, not only a key.
         if q['type'] == 'tf':
             q['option_explanations'] = [
@@ -530,5 +529,5 @@ def apply_review(questions):
             assert len(q['option_explanations']) == len(q['options']), q['label']
             assert all(len(t) >= 6 for t in q['option_explanations']), q['label']
         assert len(q['explanation']) >= 20, q['label']
-        # Replace obsolete notes that instructed users to keep known-wrong keys.
+        assert q['text'] == q['original_text'] and q['options'] == q['original_options'] and q['answer'] == q['original_answer'], q['label']
         q['note'] = '原文此题号重复；标签末尾 b 表示同号的第二条，题目未合并或删除。' if q['source_occurrence'] > 1 else ''

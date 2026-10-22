@@ -5,7 +5,8 @@
     "instructor": "Qixia Zhang",
     "term": "26Fall",
     "storage_key": "cps2390-testbank-v1",
-    "review_revision": "2026-10-22.1"
+    "review_revision": "2026-10-22.2-source",
+    "answer_basis": "source"
   },
   "chapters": [
     {
@@ -56,7 +57,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -90,7 +92,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -124,7 +127,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -158,7 +162,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -192,7 +197,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -226,7 +232,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -260,7 +267,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -294,7 +302,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -328,7 +337,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -362,7 +372,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -396,7 +407,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -430,7 +442,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -464,7 +477,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -498,7 +512,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -532,7 +547,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -576,7 +592,8 @@
         "汇编语言面向具体寄存器和机器指令，符合题目要求的“不是高级语言”。",
         "COBOL 面向业务数据与处理，属于高级语言。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -616,7 +633,8 @@
         "显示器把图像显示给用户，是输出设备。",
         "磁盘写入时接收计算机输出的数据，因此不能排除其输出设备身份。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -656,7 +674,8 @@
         "法语是自然语言。",
         "Fortran 有专门为计算机设计的语法和语义，不是自然语言。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -696,7 +715,8 @@
         "确定性要求每一步含义清楚无歧义，确实必要，但不完整。",
         "前三项都成立，综合选项最完整。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -711,8 +731,8 @@
       "source_occurrence": 1,
       "source_text": "A program can be translated into the ISA of a processor by means of:\n\na. a compiler\nb. an assembler\nc. an interpreter\nd. all of the above\n\nAnswer: d",
       "note": "",
-      "explanation": "编译器、汇编器和解释器均可让适合的源程序在处理器上运行，但解释执行不等于生成独立机器码文件。原题把解释器一概称为“翻译成 ISA”不严谨，已明确改为翻译或执行。",
-      "text": "Which of the following tools can translate or execute a program on a processor, for a suitable source language?",
+      "explanation": "题库答案为 D，将编译器、汇编器和解释器都归入让源程序在处理器上运行的工具。概念上，解释执行不一定生成独立机器码文件；原题把解释器一概称为“翻译成 ISA”较宽泛。",
+      "text": "A program can be translated into the ISA of a processor by means of:",
       "options": [
         "a compiler",
         "an assembler",
@@ -734,12 +754,13 @@
         "编译器可把高级源程序翻译为目标代码，是可用工具之一。",
         "汇编器把对应 ISA 的汇编程序编码为机器指令，是可用工具之一。",
         "解释器读取源程序或中间代码，并通过宿主程序执行语义；不一定输出独立的 ISA 程序，也是执行工具之一。",
-        "按澄清后的“翻译或执行”题意，前三种工具都可用。"
+        "题库将翻译与解释执行作广义理解，因此选择全部。需注意解释器不一定生成独立机器码。"
       ],
-      "review_note": "题干澄清：解释器不一定把整个程序翻译成独立的 ISA 机器码；改为“翻译或执行”，保留 D。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库选 D。解释器不一定生成独立机器码；原题将翻译与解释执行作广义理解，原题与原键保持不变。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 21,
@@ -777,7 +798,8 @@
         "四个二进制位只有 16 种序列，是数字表示。",
         "B、C 均不是模拟量，故不能选全部。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -817,7 +839,8 @@
         "输出设备让计算结果可被系统外部使用，属于课程模型组成部分，但不完整。",
         "前三项均属于课程所讨论的完整计算机系统。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -857,7 +880,8 @@
         "“Power PC 641”不是课程列出的 ISA 名称；具体芯片型号也不能与 ISA 层次混同。",
         "只有 A 是合适的 ISA 名称，不能选全部。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -897,7 +921,8 @@
         "Alpha 21264 也是具体实现，成立但只覆盖一项。",
         "三个型号都处于实现/微体系结构层面。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -937,7 +962,8 @@
         "砷化镓是可用于半导体器件的材料技术。",
         "前三项均属于器件实现技术。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -968,7 +994,8 @@
       "original_answers": [
         "central processing unit"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -999,7 +1026,8 @@
       "original_answers": [
         "computer system"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1033,7 +1061,8 @@
         "analog",
         "digital"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1064,7 +1093,8 @@
       "original_answers": [
         "Alan Turing"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1098,7 +1128,8 @@
         "Natural languages",
         "mechanical languages"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1129,7 +1160,8 @@
       "original_answers": [
         "Ambiguity"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1160,7 +1192,8 @@
       "original_answers": [
         "Algorithms"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1191,7 +1224,8 @@
       "original_answers": [
         "definiteness"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1222,7 +1256,8 @@
       "original_answers": [
         "effective computability"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1253,7 +1288,8 @@
       "original_answers": [
         "finiteness"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1284,7 +1320,8 @@
       "original_answers": [
         "high level languages"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1315,7 +1352,8 @@
       "original_answers": [
         "high level"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1349,7 +1387,8 @@
         "high level languages",
         "low level language"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1380,7 +1419,8 @@
       "original_answers": [
         "low level"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1411,7 +1451,8 @@
       "original_answers": [
         "ISA"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1442,7 +1483,8 @@
       "original_answers": [
         "Addressing modes"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1473,7 +1515,8 @@
       "original_answers": [
         "ISAs"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1504,7 +1547,8 @@
       "original_answers": [
         "compiler"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1535,7 +1579,8 @@
       "original_answers": [
         "microarchitectures"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1566,7 +1611,8 @@
       "original_answers": [
         "logic circuits"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 1.pdf：抽象层次、算法、ISA 与微体系结构；CHAPTER 0.pdf：计算机概览。",
       "review_status": "reviewed"
     },
@@ -1596,7 +1642,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1630,7 +1677,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1664,7 +1712,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1698,7 +1747,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1732,7 +1782,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1766,7 +1817,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1800,7 +1852,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1834,7 +1887,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1868,7 +1922,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1902,7 +1957,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1936,7 +1992,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -1970,7 +2027,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -2004,7 +2062,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -2038,7 +2097,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -2072,7 +2132,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -2116,7 +2177,8 @@
         "00110101=0x35，是字符 5 的 ASCII 编码；若按纯二进制整数读则是 53。",
         "题目允许不同表示规则，因此前三项都可表示数字或字符 5。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2131,14 +2193,14 @@
       "source_occurrence": 1,
       "source_text": "If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:\n\na. nothing about the result.\nb. that the result is also a negative integer\nc. that we must have caused an overflow condition.\n\nAnswer: c",
       "note": "",
-      "explanation": "原键 C 错误，修正为 A。仅有最高位进位不能判定有符号溢出，也不能确定结果符号。4 位下 −1+−1=1110（−2），有进位无溢出；−8+−8=0000，有进位且溢出。",
+      "explanation": "题库答案为 C，网页按 C 判分。概念补充：最高位进位与有符号溢出不同。4 位下 −1+−1=1110（−2），有进位无溢出；−8+−8=0000，有进位且溢出。因此原答案存在理论疑点，不能把“有进位”直接记成“有符号溢出”。",
       "text": "If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:",
       "options": [
-        "The carry alone does not determine the result's sign or whether signed overflow occurred.",
+        "nothing about the result.",
         "that the result is also a negative integer",
         "that we must have caused an overflow condition."
       ],
-      "answer": "A",
+      "answer": "C",
       "source_answer": "C",
       "original_text": "If we add two negative integers, represented in 2's complement notation, and a carry is generated, we know:",
       "original_options": [
@@ -2149,14 +2211,15 @@
       "original_answer": "C",
       "original_answers": [],
       "option_explanations": [
-        "意为“仅凭该进位无法确定结果符号或溢出”。上述两个反例说明这是本题的最佳选项，并非完全不知道任何数学事实。",
+        "题库未选 A。从严格补码规则看，单凭进位确实不能确定结果符号或溢出；若把 nothing about the result 理解为这一点，A 更接近理论结论。",
         "负数相加若溢出，截断结果可以为非负，例如 1000+1000=0000，不能保证负数。",
-        "进位是无符号加法的现象；补码溢出需检查同号相加后符号是否改变。有进位不必溢出。"
+        "这是题库指定答案，练习按 C 判分。不过该断言并不普遍成立：补码溢出检查同号相加后符号是否改变，不能只检查进位。"
       ],
-      "review_note": "答案修正：原 C → A。最高位进位不能单独判断补码有符号溢出；A 的原文 nothing about the result 明确为“不能确定符号或溢出”，避免过强断言。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库原答案 C，网页按 C 判分。进位不等于有符号溢出，相关反例只作概念补充，不替换原键。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "corrected"
+      "review_status": "source_issue"
     },
     {
       "id": 63,
@@ -2194,7 +2257,8 @@
         "二者都表示 −43，符号扩展保持补码数值。",
         "编码类型已明确为补码，可以确定数值并比较。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2231,7 +2295,8 @@
         "NOT(真)=假，再与 B=假做 OR 得假。",
         "两个输入和运算符都已给出，结果可唯一确定。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2271,7 +2336,8 @@
         "1–16 排除了必要的 0，且包含不合法的单个数字值 16。",
         "1–15 只有十五种，缺少 0。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2287,7 +2353,7 @@
       "source_text": "If one adds the bit strings corresponding to the ASCII codes for two decimal digits, the sum:\n\na. is the ASCII code of the sum of the two digits.\nb. produces an overflow situation.\nc. is the ASCII code of the sum of the two digits, if you first subtract the ASCII code for 0.\nd. is the 2's complement code of the sum of the two digits.\n\nAnswer: c.",
       "note": "",
       "explanation": "对数字 d1、d2，ASCII(d)=0x30+d，所以 ASCII(d1)+ASCII(d2)−0x30=0x30+(d1+d2)。只有 d1+d2≤9 时，它才是单个和数字的 ASCII 码。",
-      "text": "Assume two decimal digits have a sum no greater than 9. If one adds the bit strings corresponding to their ASCII codes, the sum:",
+      "text": "If one adds the bit strings corresponding to the ASCII codes for two decimal digits, the sum:",
       "options": [
         "is the ASCII code of the sum of the two digits.",
         "produces an overflow situation.",
@@ -2308,13 +2374,14 @@
       "option_explanations": [
         "直接相加多出一个 0x30；例如字符 1 与 2 的编码和是 0x63，并非字符 3 的 0x33。",
         "两个数字的编码最大为 57，和最大 114，在 8 位有符号或无符号范围内，不必发生溢出。",
-        "减去一次字符 0 的编码可消除多余偏置；在题干已限定和≤9 时成立。",
+        "题库指定 C。减去一次字符 0 的编码可消除多余偏置；还需和≤9，才能表示为单个数字字符，原题未明确这个限制。",
         "直接相加得到 96+d1+d2，不是数值 d1+d2 的补码编码。"
       ],
-      "review_note": "题干澄清：限定两位数字之和≤9，否则结果不再是单个十进制数字字符。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：限定两位数字之和≤9，否则结果不再是单个十进制数字字符。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 67,
@@ -2328,7 +2395,7 @@
       "source_text": "If a floating point number is represented in normalized form,\n\na. it must be a positive number.\nb. it must be a negative number.\nc. the most significant digit is 1.\nd. the most significant digit is non-zero.\n\nAnswer: d",
       "note": "",
       "explanation": "非零正规化浮点表示要求最高有效数字非零；在二进制中它恰为 1，在其他基数下可为其他非零数字。",
-      "text": "For a nonzero floating-point number normalized in an arbitrary radix (not necessarily binary),",
+      "text": "If a floating point number is represented in normalized form,",
       "options": [
         "it must be a positive number.",
         "it must be a negative number.",
@@ -2349,13 +2416,14 @@
       "option_explanations": [
         "正规化只约束有效数字形式，不限制正负号。",
         "负数也可正规化，但并非必须为负。",
-        "只有基数为 2 的非零正规数才必有首位 1；题目允许任意基数，例如十进制 3.2×10^4。",
+        "只有基数为 2 的非零正规数才必有首位 1；原题未限定基数，若作一般基数理解（如十进制 3.2×10^4），C 不普遍成立。",
         "任意基数的非零正规化表示均要求首个有效数字非零，这是最一般的表述。"
       ],
-      "review_note": "题干澄清：非零、任意基数。二进制正规数首位既是 1 也非零；原题未说明基数，C、D 容易同时成立。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：非零、任意基数。二进制正规数首位既是 1 也非零；原题未说明基数，C、D 容易同时成立。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 68,
@@ -2393,7 +2461,8 @@
         "至少一个输入真正是 OR 的条件。",
         "两个都真是充分但非必要条件，01、10 也为真。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2430,7 +2499,8 @@
         "一个内存位置是存放数据的地方，不是数据类型定义，且数据不只整数。",
         "浮点符号位只是某种数据类型的一个字段，不是完整的数据类型。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2467,7 +2537,8 @@
         "11110101 按无符号读是 245，按 8 位补码读是 −11，也不是 −13。",
         "无符号类型不含负数，正确结论是不能表示。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2486,7 +2557,7 @@
       "text": "In 2's complement arithmetic, an overflow occurs if:",
       "options": [
         "two positive numbers produce a negative result",
-        "two negative numbers produce a nonnegative result",
+        "two negative numbers produce a positive result",
         "both a and b",
         "neither a nor b"
       ],
@@ -2507,10 +2578,11 @@
         "A、B 分别描述两类同号加法溢出，故选综合选项。",
         "A 和 B 都是溢出的典型判据，不能全否定。"
       ],
-      "review_note": "选项 B 用 nonnegative 代替 positive：最小负数加自身截断为 0 时也会溢出。原答案 C 保持不变。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库原答案 C。B 中的 positive 若写作 nonnegative 更完整：最小负数加自身截断为 0 时也会溢出。网页保留原选项措辞。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 72,
@@ -2524,7 +2596,7 @@
       "source_text": "To divide a 2's complement integer by 4, \n\na. it is first necessary to convert the bit string to its decimal value.\nb. shift right the bit string two places, and insert 0 in the two left-most bit positions.\nc. shift right the bit string two places, and insert the sign bit in the two left-most bit positions.\nd. shift left the bit string two places, and insert 0 in the two right-most bit positions.\n\nAnswer: c",
       "note": "",
       "explanation": "算术右移两位复制原符号位，相当于除以 4 并向负无穷方向取整。可整除时得到精确商；负数有余数时与向零取整不同，如 −5>>2=−2。",
-      "text": "To divide a fixed-width 2's complement integer by 4, rounding down toward negative infinity when necessary,",
+      "text": "To divide a 2's complement integer by 4,",
       "options": [
         "it is first necessary to convert the bit string to its decimal value.",
         "shift right the bit string two places, and insert 0 in the two left-most bit positions.",
@@ -2545,13 +2617,14 @@
       "option_explanations": [
         "二进制硬件可以直接移位，无需先转十进制。",
         "补 0 是逻辑右移，会破坏负数的符号，例如 11111100（−4）变成 00111111（63）。",
-        "复制符号位是算术右移，满足题干指定的舍入规则。",
+        "题库指定 C：复制符号位进行算术右移。它向负无穷取整；原题没有说明舍入方式，不能把它与所有语言的整数除法等同。",
         "左移两位对应乘 4 的低位结果，不是除 4，并可能溢出。"
       ],
-      "review_note": "题干澄清：算术右移向负无穷取整，不等于所有语言中向零取整的整数除法。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：算术右移向负无穷取整，不等于所有语言中向零取整的整数除法。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 73,
@@ -2589,7 +2662,8 @@
         "2^12=4096，恰好对应所有 12 位模式。",
         "固定位数的信息容量有限，不能唯一编码任意多个对象。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2605,7 +2679,7 @@
       "source_text": "A and B are locations containing bit strings.\n\na. It takes the computer more time to ADD A,B than to AND A,B.\nb. It takes the computer more time to AND A,B than to ADD A,B.\nc. It takes the computer exactly the same amount of time to AND as to ADD.\n\nAnswer: a",
       "note": "",
       "explanation": "在教材的逐位并行 AND 与串行进位加法器模型中，AND 各位可同时计算，而 ADD 的最坏路径需等待进位传播。实际处理器指令延迟还取决于具体实现。",
-      "text": "In the textbook circuit-delay model, compare a ripple-carry ADD with a parallel bitwise AND on equal-width operands A and B. Ignore instruction scheduling and memory access.",
+      "text": "A and B are locations containing bit strings.",
       "options": [
         "It takes the computer more time to ADD A,B than to AND A,B.",
         "It takes the computer more time to AND A,B than to ADD A,B.",
@@ -2622,14 +2696,15 @@
       "original_answer": "A",
       "original_answers": [],
       "option_explanations": [
-        "按题干的串行进位电路模型，ADD 的关键路径通常更长。",
-        "AND 没有跨位的进位依赖，题设模型不支持其更慢。",
+        "按课件的串行进位电路模型，ADD 的关键路径通常更长，题库据此选 A。",
+        "AND 没有跨位的进位依赖，课件模型不支持其更慢。",
         "该电路模型中两者关键路径不同；不能据此说任何 CPU 上延迟一定不同或相同。"
       ],
-      "review_note": "题干澄清：比较教材电路延迟，不把结论推广到所有处理器的指令耗时。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：比较教材电路延迟，不把结论推广到所有处理器的指令耗时。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 75,
@@ -2664,7 +2739,8 @@
         "两个源操作数决定 ADD 为 binary operator。",
         "输出不计入元数；两个输入加一个输出仍是二元运算。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2695,7 +2771,8 @@
       "original_answers": [
         "binary"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2726,7 +2803,8 @@
       "original_answers": [
         "overflow"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2757,7 +2835,8 @@
       "original_answers": [
         "2^k"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2773,7 +2852,7 @@
       "source_text": "If we add the 2's complement representation of k to the 2's complement representation of -k, the result will be (all 0's, plus a carry).",
       "note": "",
       "explanation": "在 n 位下，非零 k 与 −k 的编码和为 2^n，所以低 n 位全 0，最高位产生进位。必须保证二者都可表示；k=0 时不会有该进位。",
-      "text": "For a nonzero integer k such that both k and -k are representable in the same n-bit 2's complement format, their encoded sum is ____[1].",
+      "text": "If we add the 2's complement representation of k to the 2's complement representation of -k, the result will be ____[1].",
       "options": [],
       "answer": null,
       "answers": [
@@ -2788,10 +2867,11 @@
       "original_answers": [
         "all 0's, plus a carry"
       ],
-      "review_note": "题干澄清：排除 k=0，并要求 k 与 −k 均可表示，否则“全 0 加进位”不总成立。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：排除 k=0，并要求 k 与 −k 均可表示，否则“全 0 加进位”不总成立。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 80,
@@ -2820,7 +2900,8 @@
       "original_answers": [
         "$"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2851,7 +2932,8 @@
       "original_answers": [
         "XOR"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2882,7 +2964,8 @@
       "original_answers": [
         "NOT"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2913,7 +2996,8 @@
       "original_answers": [
         "sign, fraction, and exponent"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2944,7 +3028,8 @@
       "original_answers": [
         "radix"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -2975,7 +3060,8 @@
       "original_answers": [
         "AND"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3006,7 +3092,8 @@
       "original_answers": [
         "Floating Point"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3037,7 +3124,8 @@
       "original_answers": [
         "hexadecimal"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3068,7 +3156,8 @@
       "original_answers": [
         "49"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3099,7 +3188,8 @@
       "original_answers": [
         "-15"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3133,7 +3223,8 @@
         "arithmetic",
         "logical"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3164,7 +3255,8 @@
       "original_answers": [
         "data type"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3195,7 +3287,8 @@
       "original_answers": [
         "bit"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3226,7 +3319,8 @@
       "original_answers": [
         "logical variable"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3257,7 +3351,8 @@
       "original_answers": [
         "ALU"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3288,7 +3383,8 @@
       "original_answers": [
         "1111101010111100"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3319,7 +3415,8 @@
       "original_answers": [
         "0F2A"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
       "review_status": "reviewed"
     },
@@ -3334,8 +3431,8 @@
       "source_occurrence": 1,
       "source_text": "Every key on the keyboard has at least two corresponding (ASCII) codes, depending on whether or not the SHIFT key is also simultaneously depressed.",
       "note": "",
-      "explanation": "这里问 ASCII 字符码，例如 a 为 0x61、SHIFT 后的 A 为 0x41。原文“每个键至少两个码”不成立：SHIFT、方向键等并非两个可打印 ASCII 字符，现已限定例子的范围。",
-      "text": "For a printable keyboard key whose SHIFT variant is a different ASCII character (for example a and A), the two characters have different ____[1] codes.",
+      "explanation": "按题库填 ASCII，例如 a 为 0x61、SHIFT 后的 A 为 0x41。理解时需注意原文“每个键至少两个码”过强：SHIFT、方向键等并非两个可打印 ASCII 字符；该例只适用于具有不同 ASCII 字符的按键。",
+      "text": "Every key on the keyboard has at least two corresponding ____[1] codes, depending on whether or not the SHIFT key is also simultaneously depressed.",
       "options": [],
       "answer": null,
       "answers": [
@@ -3350,10 +3447,11 @@
       "original_answers": [
         "ASCII"
       ],
-      "review_note": "题干澄清：原文对每个键的断言过强，改为有两个不同 ASCII 可打印字符的按键。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库填 ASCII。原断言并非对每个键都成立，讲解用具有两个不同可打印 ASCII 字符的按键说明。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 2 .pdf：整数与补码（PDF 5–27 页）、逻辑（28–31 页）、浮点（32–39 页）、十六进制与 ASCII（41–44 页）。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 98,
@@ -3367,7 +3465,7 @@
       "source_text": "The minimum number of transistors required to implement a two input AND gate is\n\na. 2\nb. 4\nc. 6\nd. 8\nAnswer: c",
       "note": "",
       "explanation": "教材的静态互补 CMOS 中，二输入 NAND 用 4 个晶体管，再接 2 个晶体管的反相器，得到 AND，共 6 个。此结论不跨越到其他逻辑家族。",
-      "text": "In the textbook static complementary CMOS implementation (using NAND followed by NOT), the minimum transistor count for a two-input AND gate is",
+      "text": "The minimum number of transistors required to implement a two input AND gate is",
       "options": [
         "2",
         "4",
@@ -3391,10 +3489,11 @@
         "NAND 的 4 个加反相器的 2 个，共 6 个，符合题目模型。",
         "8 个可用于更冗余的实现，但不是本模型所需的最少数量。"
       ],
-      "review_note": "题干澄清：指定教材静态互补 CMOS 门模型；不对所有晶体管逻辑家族宣称同一最小数量。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：指定教材静态互补 CMOS 门模型；不对所有晶体管逻辑家族宣称同一最小数量。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 99,
@@ -3432,7 +3531,8 @@
         "末级 NOR 会对第一层结果取另一种否定，不能直接得到原积之和。",
         "NOR–NAND 不是题目所问与或网络的直接德摩根等价两级形式。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3472,7 +3572,8 @@
         "2^16 是位置数，不是单个位置的位数。",
         "没有每个位置的宽度，不能确定 addressability。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3512,7 +3613,8 @@
         "16 位位置可以存字符但浪费空间，不是本题描述的通常选择。",
         "32 位位置也能存字符但更浪费，不是题目想要的一字符一字节组织。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3549,7 +3651,8 @@
         "不能把多位乘法器较复杂的直觉套到这里：1 位乘法只是一项 AND。",
         "加法至少还需要 XOR 和位逻辑，不会与单个 AND 有相同门数。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3589,7 +3692,8 @@
         "WE=0 不是置位信号，原来为 0 仍会保持 0。",
         "WE=0 不触发取反，而是保持。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3629,7 +3733,8 @@
         "decoder 把编码输入译成选择信号，不自行存储。",
         "寄存器保存一组位，符合题目定义。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3669,7 +3774,8 @@
         "AND、OR、NOT 可表示任意真值表，构成功能完备集合。",
         "C 已是功能完备集合，因此不能选没有。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3709,7 +3815,8 @@
         "普通 NAND 是组合门，没有反馈存储。",
         "译码器将当前输入编码转换为输出，不保存历史。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3749,7 +3856,8 @@
         "1/4×2=1/2，容量减半。",
         "总容量应当用位置数乘每位置位数计算，该表达式不符合这个关系。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3789,7 +3897,8 @@
         "log2(m) 个二进制选择位可以唯一选中 m 路之一。",
         "2m 与所需的对数关系不符。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3829,7 +3938,8 @@
         "两个二位切片完全相同。",
         "位串和位范围都已给定，可直接提取。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3869,7 +3979,8 @@
         "只置位是合法操作。",
         "二者均无效是正常保持状态。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3909,7 +4020,8 @@
         "交叉耦合 NAND 是教材的 RS 锁存器结构；两个交叉耦合 NOR 也可构成另一种，但未在选项中。",
         "NAND 与 OR 的混合交叉结构不是教材的标准 RS 锁存器对。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3940,7 +4052,8 @@
       "original_answers": [
         "2*n"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -3971,7 +4084,8 @@
       "original_answers": [
         "MUX"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4002,7 +4116,8 @@
       "original_answers": [
         "0110"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4033,7 +4148,8 @@
       "original_answers": [
         "4"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4064,7 +4180,8 @@
       "original_answers": [
         "3"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4095,7 +4212,8 @@
       "original_answers": [
         "13*2^14"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4126,7 +4244,8 @@
       "original_answers": [
         "65536"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4157,7 +4276,8 @@
       "original_answers": [
         "2^n"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4188,7 +4308,8 @@
       "original_answers": [
         "INVERTER"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4219,7 +4340,8 @@
       "original_answers": [
         "DECODER"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4235,7 +4357,7 @@
       "source_text": "At any time there are exactly (TWO) transistors open circuited in a 2 input nand gate.",
       "note": "",
       "explanation": "理想稳态 CMOS 中每个输入控制一对互补晶体管，一个开路、一个导通。二输入 NAND 有两对，因此恰好 TWO 个开路、两个导通，不论输入组合。",
-      "text": "For stable binary inputs in the textbook ideal complementary CMOS two-input NAND gate, exactly ____[1] transistors are open-circuited.",
+      "text": "At any time there are exactly ____[1] transistors open circuited in a 2 input nand gate.",
       "options": [],
       "answer": null,
       "answers": [
@@ -4250,10 +4372,11 @@
       "original_answers": [
         "TWO"
       ],
-      "review_note": "题干澄清：理想稳态二值输入模型，不讨论切换瞬态或模拟电压。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：理想稳态二值输入模型，不讨论切换瞬态或模拟电压。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 123,
@@ -4267,7 +4390,7 @@
       "source_text": "The function NOT { AB+CD } can be implemented using a minimum of ( 8 ) transistors .",
       "note": "",
       "explanation": "NOT(AB+CD) 是 AOI22：下拉网络由 AB 串联支路与 CD 串联支路并联，共 4 个 nMOS；对偶上拉网络 4 个 pMOS，共 8 个。输出已取反，无需另接反相器。",
-      "text": "In static complementary CMOS, NOT { AB+CD } can be implemented directly with a minimum of ____[1] transistors.",
+      "text": "The function NOT { AB+CD } can be implemented using a minimum of ____[1] transistors .",
       "options": [],
       "answer": null,
       "answers": [
@@ -4282,10 +4405,11 @@
       "original_answers": [
         "8"
       ],
-      "review_note": "题干澄清：晶体管计数采用静态互补 CMOS 的直接 AOI22 实现。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：晶体管计数采用静态互补 CMOS 的直接 AOI22 实现。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 124,
@@ -4317,7 +4441,8 @@
         "n",
         "n+1"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4351,7 +4476,8 @@
         "4",
         "8"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4382,7 +4508,8 @@
       "original_answers": [
         "4.5D"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4413,7 +4540,8 @@
       "original_answers": [
         "closed circuit"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4444,7 +4572,8 @@
       "original_answers": [
         "open circuit"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4475,7 +4604,8 @@
       "original_answers": [
         "WE"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4491,7 +4621,7 @@
       "source_text": "We clear an R-S latch by momentarily setting the (R) signal to (0).",
       "note": "",
       "explanation": "按课件低有效 NAND RS 锁存器，短暂令 R=0、S=1 即复位 Q=0；然后 R 回到 1 进入保持。NOR 型高有效锁存器的电平规则不同。",
-      "text": "For the course NAND-based, active-low R-S latch, clear Q by momentarily setting ____[1] to ____[2] while keeping S inactive.",
+      "text": "We clear an R-S latch by momentarily setting the ____[1] signal to ____[2].",
       "options": [],
       "answer": null,
       "answers": [
@@ -4509,10 +4639,11 @@
         "R",
         "0"
       ],
-      "review_note": "题干澄清：指定低有效 NAND 锁存器；高有效 NOR 型的复位电平不是 0。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：指定低有效 NAND 锁存器；高有效 NOR 型的复位电平不是 0。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 131,
@@ -4541,7 +4672,8 @@
       "original_answers": [
         "A"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed"
     },
@@ -4571,7 +4703,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4605,7 +4738,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4639,7 +4773,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4673,7 +4808,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4693,7 +4829,7 @@
       "source_text": "It is possible for a 3:8 decoder to have 3 out of the eight outputs asserted. (F)",
       "note": "",
       "explanation": "标准完全译码的 3→8 译码器，对稳定输入至多断言一路输出（使能时恰一路）。同时三路有效不符合该模型。",
-      "text": "For stable inputs, a standard one-hot 3-to-8 decoder can have three of its eight outputs asserted.",
+      "text": "It is possible for a 3:8 decoder to have 3 out of the eight outputs asserted.",
       "options": [
         "True",
         "False"
@@ -4707,10 +4843,11 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_note": "题干澄清：标准稳定输入的 one-hot 译码器，不讨论译码瞬态毛刺。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：标准稳定输入的 one-hot 译码器，不讨论译码瞬态毛刺。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "不选。题述不成立：标准完全译码的 3→8 译码器，对稳定输入至多断言一路输出（使能时恰一路）。同时三路有效不符合该模型。",
         "应选。题述不成立：标准完全译码的 3→8 译码器，对稳定输入至多断言一路输出（使能时恰一路）。同时三路有效不符合该模型。"
@@ -4742,7 +4879,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4762,7 +4900,7 @@
       "source_text": "For a two input NAND gate, it is possible that 3 out of 4 transistors are open circuited at a given time (F)",
       "note": "",
       "explanation": "理想稳态互补 CMOS 二输入 NAND 每个输入各使一只 pMOS 和一只 nMOS 中恰一只开路，所以总是两只开路，不会三只。",
-      "text": "In the textbook ideal complementary CMOS two-input NAND gate with stable binary inputs, three of its four transistors can be open-circuited.",
+      "text": "For a two input NAND gate, it is possible that 3 out of 4 transistors are open circuited at a given time",
       "options": [
         "True",
         "False"
@@ -4776,10 +4914,11 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_note": "题干澄清：采用课件的理想稳态 CMOS 模型。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：采用课件的理想稳态 CMOS 模型。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "不选。题述不成立：理想稳态互补 CMOS 二输入 NAND 每个输入各使一只 pMOS 和一只 nMOS 中恰一只开路，所以总是两只开路，不会三只。",
         "应选。题述不成立：理想稳态互补 CMOS 二输入 NAND 每个输入各使一只 pMOS 和一只 nMOS 中恰一只开路，所以总是两只开路，不会三只。"
@@ -4797,7 +4936,7 @@
       "source_text": "The p type and n type transistors of an inverter can never both be short circuited at the same time (T)",
       "note": "",
       "explanation": "在课件的理想开关模型、稳定合法的 0/1 输入下，反相器 pMOS 与 nMOS 互补导通，不会同时导通。真实切换瞬态可能有短路电流，不在此模型内。",
-      "text": "For stable binary inputs in the textbook ideal CMOS inverter, its p-type and n-type transistors cannot both be conducting at the same time.",
+      "text": "The p type and n type transistors of an inverter can never both be short circuited at the same time",
       "options": [
         "True",
         "False"
@@ -4811,10 +4950,11 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_note": "题干澄清：排除真实晶体管切换瞬态；原文的 never 不能跨模型使用。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：排除真实晶体管切换瞬态；原文的 never 不能跨模型使用。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "应选。在课件的理想开关模型、稳定合法的 0/1 输入下，反相器 pMOS 与 nMOS 互补导通，不会同时导通。真实切换瞬态可能有短路电流，不在此模型内。",
         "不选。题述在上述课程模型下成立：在课件的理想开关模型、稳定合法的 0/1 输入下，反相器 pMOS 与 nMOS 互补导通，不会同时导通。真实切换瞬态可能有短路电流，不在此模型内。"
@@ -4846,7 +4986,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4880,7 +5021,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -4900,7 +5042,7 @@
       "source_text": "DeMorgan's Law shows that we can implement any and-or function with a nand-nand function.  If the number of transisors through which a signal has to pass determines the delay of that signal, a nand-nand realisation of a function is faster than and-or realisation Hint: examine the transistor implementations of and, or, and nand. (T)",
       "note": "",
       "explanation": "在教材相同负载、按晶体管级数估计的门模型下，AND–OR 可改为 NAND–NAND，去掉不必要的反相级，关键路径更短。不能据此保证任意真实版图、负载下都更快。",
-      "text": "In the textbook ideal CMOS gate model with comparable loads, replacing an AND–OR network by its DeMorgan-equivalent NAND–NAND network removes inverter stages and reduces the modeled propagation delay.",
+      "text": "DeMorgan's Law shows that we can implement any and-or function with a nand-nand function.  If the number of transisors through which a signal has to pass determines the delay of that signal, a nand-nand realisation of a function is faster than and-or realisation Hint: examine the transistor implementations of and, or, and nand.",
       "options": [
         "True",
         "False"
@@ -4914,10 +5056,11 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_note": "题干澄清：速度比较限定在课件的理想门延迟模型，不声称所有真实电路都更快。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：速度比较限定在课件的理想门延迟模型，不声称所有真实电路都更快。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "应选。在教材相同负载、按晶体管级数估计的门模型下，AND–OR 可改为 NAND–NAND，去掉不必要的反相级，关键路径更短。不能据此保证任意真实版图、负载下都更快。",
         "不选。题述在上述课程模型下成立：在教材相同负载、按晶体管级数估计的门模型下，AND–OR 可改为 NAND–NAND，去掉不必要的反相级，关键路径更短。不能据此保证任意真实版图、负载下都更快。"
@@ -4935,7 +5078,7 @@
       "source_text": "For a logic circuit to work as a storage element it is necessary that the output be fed back to the input (T).",
       "note": "",
       "explanation": "本章的静态逻辑存储电路依靠输出反馈维持状态，使输出除当前输入外还依赖历史。这是课件锁存器模型的结论，不泛指所有物理存储技术。",
-      "text": "For the static logic storage circuits studied in this chapter, feedback from outputs to inputs is necessary to retain state.",
+      "text": "For a logic circuit to work as a storage element it is necessary that the output be fed back to the input",
       "options": [
         "True",
         "False"
@@ -4949,10 +5092,11 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_note": "题干澄清：范围为本章的静态反馈存储逻辑，不概括 DRAM 等所有物理存储机制。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：范围为本章的静态反馈存储逻辑，不概括 DRAM 等所有物理存储机制。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "应选。本章的静态逻辑存储电路依靠输出反馈维持状态，使输出除当前输入外还依赖历史。这是课件锁存器模型的结论，不泛指所有物理存储技术。",
         "不选。题述在上述课程模型下成立：本章的静态逻辑存储电路依靠输出反馈维持状态，使输出除当前输入外还依赖历史。这是课件锁存器模型的结论，不泛指所有物理存储技术。"
@@ -4984,7 +5128,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -5018,7 +5163,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -5037,13 +5183,13 @@
       "source_occurrence": 1,
       "source_text": "The two outputs of a latch are always the complement of each other (T)",
       "note": "",
-      "explanation": "“总是互补”过强，原键 True 修正为 False。正常有效稳态下 Q 与反相输出互补；禁止输入时 NAND 型可使两输出都为 1，NOR 型可使两输出都为 0。",
+      "explanation": "题库答案为 True，按原文判分。按课程通常默认的正常有效稳态理解，Q 与反相输出互补；概念补充：“总是”不能扩展到禁止输入，NAND 型可能两输出都为 1，NOR 型可能两输出都为 0。",
       "text": "The two outputs of a latch are always the complement of each other",
       "options": [
         "True",
         "False"
       ],
-      "answer": "B",
+      "answer": "A",
       "source_answer": "T",
       "original_text": "The two outputs of a latch are always the complement of each other",
       "original_options": [
@@ -5052,13 +5198,14 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_note": "答案修正：原 True → False。禁止输入组合能使两个输出相同；只有正常有效状态下才互补。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库原答案 True，网页按 True 判分。按正常有效稳态理解；禁止输入时两输出可能相同。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 3.pdf：CMOS 门、组合逻辑、存储电路与存储器。电路题采用课件的理想稳态静态互补 CMOS 模型。",
-      "review_status": "corrected",
+      "review_status": "source_issue",
       "option_explanations": [
-        "不选。题述不成立：“总是互补”过强，原键 True 修正为 False。正常有效稳态下 Q 与反相输出互补；禁止输入时 NAND 型可使两输出都为 1，NOR 型可使两输出都为 0。",
-        "应选。题述不成立：“总是互补”过强，原键 True 修正为 False。正常有效稳态下 Q 与反相输出互补；禁止输入时 NAND 型可使两输出都为 1，NOR 型可使两输出都为 0。"
+        "应选。题库答案为 True，按原文判分。按课程通常默认的正常有效稳态理解，Q 与反相输出互补；概念补充：“总是”不能扩展到禁止输入，NAND 型可能两输出都为 1，NOR 型可能两输出都为 0。",
+        "不选。题述在上述课程模型下成立：题库答案为 True，按原文判分。按课程通常默认的正常有效稳态理解，Q 与反相输出互补；概念补充：“总是”不能扩展到禁止输入，NAND 型可能两输出都为 1，NOR 型可能两输出都为 0。"
       ]
     },
     {
@@ -5097,7 +5244,8 @@
         "指令与数据都保存在存储器中。",
         "两者都不存与存储程序模型矛盾。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5137,7 +5285,8 @@
         "存储、处理、输入、输出、控制，共五部分。",
         "PC、IR 等是内部寄存器，不另算第六个基本部分。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5177,7 +5326,8 @@
         "某些机器可能有不同类型或更宽寄存器，但题目问本章通常的通用寄存器关系。",
         "两者在正常字长设计上相关，不能说无关。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5217,7 +5367,8 @@
         "offset 是地址形成或分支位移信息，不是指令种类。",
         "寄存器字段选择操作数位置，不替代 opcode。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5257,7 +5408,8 @@
         "执行之后再算取操作数的地址太晚。",
         "必须先译码，才能知道怎样解释操作数字段。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5294,7 +5446,8 @@
         "Operate 主要变换数据，如 ADD、AND。",
         "Data movement 主要搬移数据，如 LD、ST，不以改变控制流为目的。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5331,7 +5484,8 @@
         "算术求和是数据运算，属于 operate。",
         "ADD 不是只搬移原数据，其结果由算术运算产生。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5371,7 +5525,8 @@
         "EXECUTE 阶段实现跳转/分支的控制转移效果。",
         "DECODE 识别指令种类，还没有执行控制转移。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5411,7 +5566,8 @@
         "NOT 对寄存器值取反，不需要算内存地址。",
         "JMP 直接令 PC=BaseR，不需要 EVALUATE ADDRESS 加法阶段。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5451,7 +5607,8 @@
         "扫描仪把图像送进系统，是输入。",
         "打印机输出文字或图像，符合题意。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5488,7 +5645,8 @@
         "地址计算中虽用加法，但指令的主要 ISA 功能是加载数据。",
         "内存到寄存器的数据传送，属于 data movement。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5504,7 +5662,7 @@
       "source_text": "Each phase of an instruction cycle requires\n    a. exactly one clock cycle to do its job.\n    b. at least one clock cycle to do its job.\n    c. no more than one clock cycle to do its job.\n    d. between 0 and some finite value n cycles to do its job.\n    Answer: d",
       "note": "",
       "explanation": "按课件多周期概念模型，不需要的阶段可跳过（0 周期）；需要的阶段可能占一个或多个周期。题目假定操作最终完成，不讨论无限等待。",
-      "text": "In the course multi-cycle model, assuming processing completes, a conceptual phase of an instruction cycle (including a phase skipped by that instruction) may require",
+      "text": "Each phase of an instruction cycle requires",
       "options": [
         "exactly one clock cycle to do its job.",
         "at least one clock cycle to do its job.",
@@ -5528,10 +5686,11 @@
         "需要的阶段可能超过一个周期，不能限制最多一个。",
         "允许阶段跳过和多周期执行，最符合本章概念模型。"
       ],
-      "review_note": "题干澄清：计入被跳过的阶段，并假设操作完成；0 周期表示该阶段无需执行。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：计入被跳过的阶段，并假设操作完成；0 周期表示该阶段无需执行。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 159,
@@ -5569,7 +5728,8 @@
         "它不承担本章 CPU 处理单元的指令运算职责。",
         "它不控制整机指令处理流程。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5609,7 +5769,8 @@
         "已存储的程序指令不是每次都直接从输入设备取。",
         "输出设备不提供本模型的取指来源。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5646,7 +5807,8 @@
         "额外数据访问使 LDR 需要更多周期。",
         "共同的取指不抵消 LDR 额外的内存读取，不能认为相同。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5686,7 +5848,8 @@
         "FETCH 必须读取指令，符合“总是”。",
         "ADD、NOT 等执行只在 ALU 中运算，无需访问内存。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5723,7 +5886,8 @@
         "不做算术或逐位逻辑结果运算。",
         "虽然复制目标到 PC，但按 ISA 功能分类属于控制类而非普通数据搬移。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5739,7 +5903,7 @@
       "source_text": "An Instruction cycle consists of\n    a. more than 1 machine cycle\n    b. fewer than 1 machine cycle\n    c. Exactly 1 machine cycle.\n    Answer: a",
       "note": "",
       "explanation": "本题采用课件多周期 LC-3 数据通路，指令处理需要多个时钟/机器周期。这不是所有单周期、流水线或其他处理器的普遍定律。",
-      "text": "In the course multi-cycle LC-3 implementation, an instruction cycle consists of",
+      "text": "An Instruction cycle consists of",
       "options": [
         "more than 1 machine cycle",
         "fewer than 1 machine cycle",
@@ -5760,10 +5924,11 @@
         "整个指令处理不可能在本题模型中少于一个机器周期。",
         "单周期设计另有可能，但不是此处课件模型。"
       ],
-      "review_note": "题干澄清：限定课件多周期实现；ISA 本身不规定每条指令必须用多少时钟周期。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：限定课件多周期实现；ISA 本身不规定每条指令必须用多少时钟周期。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 165,
@@ -5801,7 +5966,8 @@
         "EVALUATE ADDRESS 可以使用已自增的 PC，但不负责该顺序自增。",
         "EXECUTE 可能因分支改写 PC，不是本题问的常规顺序自增。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5832,7 +5998,8 @@
       "original_answers": [
         "INSTRUCTION"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5863,7 +6030,8 @@
       "original_answers": [
         "MEMORY ADDRESS REGISTER {MAR}"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5894,7 +6062,8 @@
       "original_answers": [
         "MEMORY DATA REGISTER -MDR"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5925,7 +6094,8 @@
       "original_answers": [
         "WORD LENGTH"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5956,7 +6126,8 @@
       "original_answers": [
         "INSTRUCTION REGISTER"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -5987,7 +6158,8 @@
       "original_answers": [
         "INSTRUCTION POINTER or Program Counter"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6018,7 +6190,8 @@
       "original_answers": [
         "address of the next instruction to be processed"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6052,7 +6225,8 @@
         "OPCODE",
         "OPERANDS"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6083,7 +6257,8 @@
       "original_answers": [
         "INSTRUCTION CYCLE"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6114,7 +6289,8 @@
       "original_answers": [
         "2"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6145,7 +6321,8 @@
       "original_answers": [
         "3"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6176,7 +6353,8 @@
       "original_answers": [
         "8"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6207,7 +6385,8 @@
       "original_answers": [
         "10^9"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6241,7 +6420,8 @@
         "sequentially",
         "control"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed"
     },
@@ -6257,7 +6437,7 @@
       "source_text": "Sometimes it is possible to carry out only a part of instruction, in which case, the computer only carries out that part of the instruction that it can (F).",
       "note": "",
       "explanation": "在课程 ISA 概念模型中，必须完成一条指令规定的完整效果，不能只做能做的部分就视为执行成功。指令内部可以分阶段/微操作，但这是另一个层次。",
-      "text": "In the course ISA-level model, an instruction may be considered successfully completed after carrying out only the part of its specified work that happens to be possible.",
+      "text": "Sometimes it is possible to carry out only a part of instruction, in which case, the computer only carries out that part of the instruction that it can",
       "options": [
         "True",
         "False"
@@ -6271,10 +6451,11 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_note": "题干澄清：讨论 ISA 规定的完整效果，不否认实现中的微操作、异常或部分进度。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：讨论 ISA 规定的完整效果，不否认实现中的微操作、异常或部分进度。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "不选。题述不成立：在课程 ISA 概念模型中，必须完成一条指令规定的完整效果，不能只做能做的部分就视为执行成功。指令内部可以分阶段/微操作，但这是另一个层次。",
         "应选。题述不成立：在课程 ISA 概念模型中，必须完成一条指令规定的完整效果，不能只做能做的部分就视为执行成功。指令内部可以分阶段/微操作，但这是另一个层次。"
@@ -6306,7 +6487,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6340,7 +6522,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6374,7 +6557,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6408,7 +6592,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6442,7 +6627,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6462,7 +6648,7 @@
       "source_text": "It is possible to have a machine without some form of input or output device. (F)",
       "note": "",
       "explanation": "按课件定义的完整冯诺依曼系统，需要以某种输入接收信息、以某种输出提供结果。此题限定这个课程模型，不声称理论上绝无封闭计算装置。",
-      "text": "Under the course definition of a complete von Neumann computer system, the system may omit all forms of input, or omit all forms of output.",
+      "text": "It is possible to have a machine without some form of input or output device.",
       "options": [
         "True",
         "False"
@@ -6476,10 +6662,11 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_note": "题干澄清：限定课程完整系统模型；不把它作为关于所有理论计算装置的不可能性断言。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：限定课程完整系统模型；不把它作为关于所有理论计算装置的不可能性断言。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "不选。题述不成立：按课件定义的完整冯诺依曼系统，需要以某种输入接收信息、以某种输出提供结果。此题限定这个课程模型，不声称理论上绝无封闭计算装置。",
         "应选。题述不成立：按课件定义的完整冯诺依曼系统，需要以某种输入接收信息、以某种输出提供结果。此题限定这个课程模型，不声称理论上绝无封闭计算装置。"
@@ -6511,7 +6698,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6545,7 +6733,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6579,7 +6768,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6613,7 +6803,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6647,7 +6838,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6681,7 +6873,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6715,7 +6908,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6749,7 +6943,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6783,7 +6978,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6817,7 +7013,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6851,7 +7048,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 4.pdf：冯诺依曼模型（PDF 3–14 页）、指令格式与六阶段指令周期（21–36 页）。采用课件多周期数据通路。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6885,7 +7083,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6919,7 +7118,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6953,7 +7153,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -6987,7 +7188,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7021,7 +7223,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7055,7 +7258,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7089,7 +7293,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7109,7 +7314,7 @@
       "source_text": "The instruction 1110111000000000 at memory location 0xF011 sets the N condition code when executed. (T)",
       "note": "",
       "explanation": "1110 111 000000000 是 LEA R7,#0。取指后 PC=xF012，R7←xF012，最高位为 1，按课件/第二版约定置 N=1、Z=P=0。第三版 LEA 不更新条件码，不能混用这两种规则。",
-      "text": "Using the course slides / second-edition LC-3 convention that LEA updates NZP, instruction 1110111000000000 at 0xF011 sets N when executed.",
+      "text": "The instruction 1110111000000000 at memory location 0xF011 sets the N condition code when executed.",
       "options": [
         "True",
         "False"
@@ -7124,9 +7329,10 @@
       "original_answer": "A",
       "original_answers": [],
       "review_note": "版本限定：课件 Part 2 PDF 20 页包含 LEA 更新 NZP；所提供第三版教材已改变此规则。本题按课件/第二版判断 True。",
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "应选。1110 111 000000000 是 LEA R7,#0。取指后 PC=xF012，R7←xF012，最高位为 1，按课件/第二版约定置 N=1、Z=P=0。第三版 LEA 不更新条件码，不能混用这两种规则。",
         "不选。题述在上述课程模型下成立：1110 111 000000000 是 LEA R7,#0。取指后 PC=xF012，R7←xF012，最高位为 1，按课件/第二版约定置 N=1、Z=P=0。第三版 LEA 不更新条件码，不能混用这两种规则。"
@@ -7158,7 +7364,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7178,7 +7385,7 @@
       "source_text": "There exists a sequence of LC-3 instructions such that after they are all executed, the condition codes will be set to N = 0, Z = 0, and P = 0. (F)",
       "note": "",
       "explanation": "正常指令可更新或保持 NZP；更新时负、零、正恰有一项为 1，因此不能通过合法指令序列得到 000。本题假定正常有效的初始条件码状态。",
-      "text": "Starting with a valid one-hot NZP state, a sequence of normally executed legal LC-3 instructions can leave N=0, Z=0, P=0.",
+      "text": "There exists a sequence of LC-3 instructions such that after they are all executed, the condition codes will be set to N = 0, Z = 0, and P = 0.",
       "options": [
         "True",
         "False"
@@ -7192,10 +7399,11 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_note": "题干澄清：从有效 NZP 状态开始，排除未初始化或外部篡改状态。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "讲解中的理解条件：从有效 NZP 状态开始，排除未初始化或外部篡改状态。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "clarified",
+      "review_status": "study_note",
       "option_explanations": [
         "不选。题述不成立：正常指令可更新或保持 NZP；更新时负、零、正恰有一项为 1，因此不能通过合法指令序列得到 000。本题假定正常有效的初始条件码状态。",
         "应选。题述不成立：正常指令可更新或保持 NZP；更新时负、零、正恰有一项为 1，因此不能通过合法指令序列得到 000。本题假定正常有效的初始条件码状态。"
@@ -7227,7 +7435,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7261,7 +7470,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7295,7 +7505,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7329,7 +7540,8 @@
       ],
       "original_answer": "B",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7363,7 +7575,8 @@
       ],
       "original_answer": "A",
       "original_answers": [],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed",
       "option_explanations": [
@@ -7413,7 +7626,8 @@
         "ADD、LD、LEA 不满足题意，不能选全部。",
         "STR 可以做到，因此不能选没有。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7453,7 +7667,8 @@
         "2^9 与某些指令的 9 位位移编码有关，不是存储器可寻址单位。",
         "2^16 位既不是单个位置宽度，也不是 LC-3 总容量；总容量为 2^16×16 位。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7493,7 +7708,8 @@
         "ii 和 iii 成立，但漏掉确实跳到 x306E 的 i。",
         "三条分别独立执行后 PC 都为 x306E。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7533,7 +7749,8 @@
         "63 是 6 位无符号最大值，不是补码最大正值。",
         "64 超过 6 位无符号范围，更不是 6 位补码可表示值。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7573,7 +7790,8 @@
         "LEA 只省去数据操作数内存读取，没有省去取指。",
         "所有候选指令均需取指访问存储器，故选择这个结论。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7613,7 +7831,8 @@
         "LEA 把形成的地址作为结果，不读取数据操作数内存。",
         "LEA 是例外，因此不能说全部都读取操作数内存。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7656,7 +7875,8 @@
         "iii 取反，与复制不同，所以此组合含不成立项。",
         "iii 不能复制，不能三条全选。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7699,7 +7919,8 @@
         "AND 是逐位逻辑操作，排除通用 PC 自增后没有额外加法。",
         "AND 不需要，因此“全部需要”不成立。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7714,8 +7935,8 @@
       "source_occurrence": 1,
       "source_text": "If the LC-3 ISA was modified to specify 32 general purpose registers and every other specification remained unchanged, how many bits would be required to encode an LC-3 ADD instruction? \n\na. 16\nb. 20\nc. 24\nd. 31\ne. 32\n\nAnswer: b",
       "note": "",
-      "explanation": "32 个寄存器字段各需 5 位。重排并去掉原寄存器格式的无用填充后：opcode4+DR5+SR1五位+mode1+SR2五位（或 imm5）=20 位。原题“其他都不变”会产生保留填充位的歧义，已明确要求紧凑重编码。",
-      "text": "Redesign LC-3 ADD for 32 general-purpose registers. Keep a 4-bit opcode, a 1-bit register/immediate mode selector, and a 5-bit immediate. Use 5-bit register fields and omit unused padding bits. What minimum fixed instruction width is required for both ADD forms?",
+      "explanation": "题库答案为 B。32 个寄存器字段各需 5 位，按紧凑重编码理解：opcode4+DR5+SR1五位+mode1+SR2五位（或 imm5）=20 位。原题“其他都不变”有保留填充位的歧义；20 位需要采用去掉无用填充的预期解释。",
+      "text": "If the LC-3 ISA was modified to specify 32 general purpose registers and every other specification remained unchanged, how many bits would be required to encode an LC-3 ADD instruction?",
       "options": [
         "16",
         "20",
@@ -7737,15 +7958,16 @@
       "original_answers": [],
       "option_explanations": [
         "16 位不足以同时保存这些必要字段。",
-        "4+5+5+1+5=20，是题干明确的紧凑格式长度。",
+        "4+5+5+1+5=20，是题库预期的紧凑格式长度。",
         "24 比必要字段之和更多，题目没有要求凑整到字节。",
         "31 没有对应的必要字段计数。",
         "32 可容纳但不是最小所需位数。"
       ],
-      "review_note": "题干澄清：保留必要语义字段并去除未用填充位，得 20 位。原题“其他规格不变”若连保留位也原样保留，会造成不同计数。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库选 B（20 位），按去除无用填充的紧凑编码理解。若逐字保留原题“其他规格不变”的填充位，计数会有歧义。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 222,
@@ -7783,7 +8005,8 @@
         "若原 R0=−2 会得到 −1 和 N，也并非唯一可能。",
         "跳过 AND 清零后，结果依赖未知 R0，信息不足。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7823,7 +8046,8 @@
         "opcode 编码决定机器码如何解释，必须由 ISA 规定。",
         "可以共享一个或配置多个加法器，只要实现相同 ISA 行为即可。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7863,7 +8087,8 @@
         "TRAP 需要选择从向量表取得的目标，PCMUX 有作用。",
         "前三者均使用 PCMUX，故不存在题述的例外。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7903,7 +8128,8 @@
         "LD 从内存位置读取数据，不符合不能使用内存操作数。",
         "AND 也可用 imm5，不限寄存器。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7943,7 +8169,8 @@
         "条件对，但 x5F56 是未跳转时的顺序地址，忽略了 −256 偏移。",
         "条件错误且把顺序地址当成了分支目标，两处都错。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -7986,7 +8213,8 @@
         "iv 取 M[x0201]，未给出该内存值，不能保证为 0。",
         "iii 载入非零地址，iv 读未知值，都不能保证清零。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8026,7 +8254,8 @@
         "立即数形式把有符号 imm5 符号扩展后与寄存器相加，正确。",
         "ADD 的立即数字段是 5 位，不是 10 位。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8041,7 +8270,7 @@
       "source_occurrence": 1,
       "source_text": "If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x4400\t\t     1001100010111111        \t     \n0x4401\t\t     0001100100100001       \n0x4402\t\t     0001100001000100      \n0x4403                 0000100001000000       \n\na. R1 > R2 (R1 was greater than R2)\nb. R1 < R2 (R2 was greater than R1) \nc. R1 = R2 (R1 and R2 were equal)\nd. Cannot be determined with the given information.\n\nAnswer: b",
       "note": "",
-      "explanation": "三条运算形成 R4=(R1−R2) mod 2^16，BRn 依据截断结果负号跳到 x4444。若有溢出，负号不能可靠表示 R1<R2：R1=32767、R2=−1 时结果 x8000 为负，却有 R1>R2。故原键 B 修正为 D。",
+      "explanation": "题库答案为 B，网页按 B 判分。三条运算形成 R4=(R1−R2) mod 2^16，BRn 依据结果负号跳到 x4444。题库预期不发生有符号溢出时，R1−R2<0 意味着 R1<R2。概念补充：原题未声明不溢出；R1=32767、R2=−1 时结果 x8000 为负，却有 R1>R2。",
       "text": "If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x4400\t\t     1001100010111111        \t     \n0x4401\t\t     0001100100100001       \n0x4402\t\t     0001100001000100      \n0x4403                 0000100001000000",
       "options": [
         "R1 > R2 (R1 was greater than R2)",
@@ -8049,7 +8278,7 @@
         "R1 = R2 (R1 and R2 were equal)",
         "Cannot be determined with the given information."
       ],
-      "answer": "D",
+      "answer": "B",
       "source_answer": "B",
       "original_text": "If the control is redirected to location 0x4444 after the execution of the following instructions, what should have been the relationship between R1 and R2 before these instructions were executed?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x4400\t\t     1001100010111111        \t     \n0x4401\t\t     0001100100100001       \n0x4402\t\t     0001100001000100      \n0x4403                 0000100001000000",
       "original_options": [
@@ -8062,14 +8291,15 @@
       "original_answers": [],
       "option_explanations": [
         "R1>R2 可在溢出时导致负结果，但也可不跳，无法由跳转唯一推出。",
-        "仅在减法不溢出时可由负结果推出小于；题目没有给该限制。",
+        "这是题库指定答案。在减法不溢出的默认条件下，负差说明 R1<R2；讲解保留原题没有明确此前提的疑点。",
         "相等时差为 0，置 Z，不会 BRn，因此不能推出相等。",
-        "存在 R1<R2 和 R1>R2 两类可跳转输入，无法唯一判断大小关系；原 B 忽略了溢出。"
+        "题库未选 D，因为其预期忽略溢出。若严格允许全部 16 位补码输入，确有两种大小关系都能跳转，D 更严谨；网页仍以原键 B 为准。"
       ],
-      "review_note": "答案修正：原 B → D。题干未保证减法不溢出，不能只看 N 比较两个补码数。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库原答案 B，网页按 B 判分。此预期解释默认减法不溢出；若不加此前提，存在反例。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "corrected"
+      "review_status": "source_issue"
     },
     {
       "id": 230,
@@ -8107,7 +8337,8 @@
         "0 是偶数，也会得到 R0=0。",
         "1 确实可得到 R0=1，但不是唯一值；3、5、−1 等所有奇数也可。"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8122,8 +8353,8 @@
       "source_occurrence": 1,
       "source_text": "If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000\n0x3001\t\t     0101111111100000    \n0x3002                 0001110111100001    \n0x3003                 0101100101000110   \n0x3004                 0000010000000001    \n0x3005                 0001000000100001    \n0x3006                 0001110110000110   \n0x3007                 0001111111100001    \n0x3008                 0001001111111000    \n0x3009                 0000100111111000    \n0x300A                 0101111111100000\n\na. The bit string in R5 contains 5 1's.\nb. Least significant byte of R5 contains 5 1's.\nc. The bit string in R5 contains 5 0's.\nd. The value of R5 is divisible by 5.\ne. Least significant byte of R5 contains 5 0's.\n\nAnswer: b",
       "note": "",
-      "explanation": "按已修正程序：R0 先清零，R6 从 1 开始每轮左移；循环计数 R7 从 0 逐轮增加，并用 R1=R7−8 决定继续。回跳到 x3003，恰好检查 R5 的 bit0…bit7，遇到 1 就给 R0 加一，因此 R0 是低字节的 1 的个数。原程序回跳到 x3002，重设 R6，不能得到这个结论。",
-      "text": "If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000\n0x3001\t\t     0101111111100000    \n0x3002                 0001110111100001    \n0x3003                 0101100101000110   \n0x3004                 0000010000000001    \n0x3005                 0001000000100001    \n0x3006                 0001110110000110   \n0x3007                 0001111111100001    \n0x3008                 0001001111111000    \n0x3009                 0000100111111001    \n0x300A                 0101111111100000",
+      "explanation": "题库答案为 B，网页保留原机器码并按 B 判分。题库的预期思路是用逐位左移的掩码统计 R5 低字节的 1。原程序疑点：x3009 的 BRn #−8 回到 x3002，会重新令 R6=R7+1，实际检测掩码 1…8；R5=x0009 时 R0=5，但低字节仅有两个 1。若回跳改为 #−7 到 x3003 才实现预期统计，这仅作概念说明，不改原题。",
+      "text": "If the value stored in R0 is 5 at the end of the execution of the following instructions, what can be inferred about R5?\n\nAddress\t   \t     Instruction\n-------\t\t     ------------------------\n0x3000\t\t     0101000000100000\n0x3001\t\t     0101111111100000    \n0x3002                 0001110111100001    \n0x3003                 0101100101000110   \n0x3004                 0000010000000001    \n0x3005                 0001000000100001    \n0x3006                 0001110110000110   \n0x3007                 0001111111100001    \n0x3008                 0001001111111000    \n0x3009                 0000100111111000    \n0x300A                 0101111111100000",
       "options": [
         "The bit string in R5 contains 5 1's.",
         "Least significant byte of R5 contains 5 1's.",
@@ -8145,16 +8376,16 @@
       "original_answers": [],
       "option_explanations": [
         "高字节从未检测；它可以有额外的 1，所以不能推出整个 16 位恰有五个 1。",
-        "循环只检查低八位，最终 5 表示低字节恰有五个 1。",
-        "循环统计的是低八位的 1，不是全字的 0。",
-        "置位数量不决定数值是否被 5 整除，例如 0x001F 低八位有五个 1，但 31 不能被 5 整除。",
-        "低字节五个 1 意味着三个 0，不是五个 0。"
+        "这是题库指定答案，意图是统计低字节的 1；但原程序存在回跳位移疑点，不能从原机器码严格推出此结论。",
+        "题库意图统计低八位的 1，不是全字的 0；原程序还存在上述位移疑点。",
+        "置位数量不决定是否被 5 整除；原程序的 R5=9 也会得到 R0=5，而 9 不能被 5 整除。",
+        "按题库预期，低字节有五个 1 就只有三个 0，并非五个 0；原程序的位移疑点另见说明。"
       ],
-      "content_correction": true,
-      "review_note": "程序修正：x3009 的 0000100111111000（BRn #−8）改为 0000100111111001（BRn #−7），回到 x3003 而非 x3002。原程序会反复重设掩码，R5=x0009 时 R0=5 却只有两个 1，原 B 无法由原代码推出。修正后 B 成立；原机器码仍可展开查看。",
-      "review_revision": "2026-10-22.1",
+      "review_note": "题库原答案 B、原 BRn #−8 均保留。原程序的回跳位移存在疑点：R5=x0009 时 R0=5 却只有两个 1。#−7 的推演只作说明，不替换网页原代码。",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "corrected"
+      "review_status": "source_issue"
     },
     {
       "id": 232,
@@ -8168,7 +8399,7 @@
       "source_text": "LEA instruction uses the (immediate/literal) addressing mode.",
       "note": "",
       "explanation": "按课件 Part 2 PDF 16 页的“操作数值来源”分类，LEA 属 immediate/literal：把指令生成的地址直接写入寄存器，不读取该地址中的数据。但它形成地址的公式仍为已自增 PC+SEXT(offset9)，因此也具有 PC 相对的地址形成特征；两种分类角度不能混用。",
-      "text": "Under the course slides' operand-value classification (the computed address itself is loaded, without reading target memory), LEA uses the ____[1] addressing mode.",
+      "text": "LEA instruction uses the ____[1] addressing mode.",
       "options": [],
       "answer": null,
       "answers": [
@@ -8184,9 +8415,10 @@
         "immediate/literal"
       ],
       "review_note": "分类限定：保留课件 immediate/literal 答案，同时解释有效地址按 PC 相对公式形成，避免把“立即数来源”与“地址形成”混为一谈。",
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
-      "review_status": "clarified"
+      "review_status": "study_note"
     },
     {
       "id": 233,
@@ -8215,7 +8447,8 @@
       "original_answers": [
         "data movement"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8246,7 +8479,8 @@
       "original_answers": [
         "8"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8277,7 +8511,8 @@
       "original_answers": [
         "Control instructions"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8308,7 +8543,8 @@
       "original_answers": [
         "4096"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8339,7 +8575,8 @@
       "original_answers": [
         "Evaluate Address"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8370,7 +8607,8 @@
       "original_answers": [
         "3"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8401,7 +8639,8 @@
       "original_answers": [
         "5541"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8435,7 +8674,8 @@
         "opcode",
         "operands"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8466,7 +8706,8 @@
       "original_answers": [
         "data type"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8500,7 +8741,8 @@
         "ADD",
         "AND"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8531,7 +8773,8 @@
       "original_answers": [
         "literal/immediate"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     },
@@ -8562,7 +8805,8 @@
       "original_answers": [
         "6731"
       ],
-      "review_revision": "2026-10-22.1",
+      "answer_basis": "source",
+      "review_revision": "2026-10-22.2-source",
       "references": "课程 CHAPTER 5.pdf 与 CHAPTER 5 - Part 2.pdf：LC-3 指令与数据通路。采用课件/第二版 LC-3；LEA 更新 NZP（Part 2，PDF 20 页），区别于第三版。",
       "review_status": "reviewed"
     }

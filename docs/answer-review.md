@@ -1,101 +1,63 @@
-# CPS2390 answer review — Fall 2026
+# CPS2390 — original TestBank answers
 
-Review revision: **2026-10-22.1**. All 244 questions have Chinese reasoning;
-all 458 true/false and multiple-choice alternatives have individual explanations.
-The 89 fill questions explain their reference answers, including calculations
-and multi-blank terminology. Fill grading remains self-assessment so equivalent
-wording is not rejected by a brittle text match.
+Current revision: **2026-10-22.2-source**.
 
-This is an independent study aid based on the supplied TestBank, course slides,
-and textbook. It is not a claim that the instructor approved these edits, nor
-a proof that editorial review can eliminate every possible interpretation.
-The exercise model and version are stated where they affect the answer.
+**All practice grading follows the answers supplied in the original TestBank.**
+The original stems, options and LC-3 machine code are retained for all
+244 questions. Earlier editorial key overrides and the one-bit program edit
+have been removed, following the user's instruction to use the bank's answers.
 
-## Corrections
+The supplied files contain answers in three formats:
 
-| Label | Supplied content | Reviewed practice | Reason |
-|---|---|---|---|
-| C2-MC02 | C: carry implies signed overflow | **A** | Four-bit `1111+1111=1110` has carry without signed overflow; `1000+1000=0000` has carry and overflow. Carry alone cannot determine sign or overflow. |
-| C3-TF15 | True: latch outputs are always complementary | **False** | The forbidden NAND-latch input combination permits both outputs high; normal valid states are complementary. |
-| C5-MC18 | B: negative difference implies R1<R2 | **D** | `32767−(−1)` wraps to `x8000`; BRn is taken even though R1>R2. No no-overflow premise was supplied. |
-| C5-MC20 | At x3009: `0000100111111000` (BRn #-8) | **`0000100111111001` (BRn #-7)**; key B retained for repaired code | The original branch returns to x3002 and resets the mask. R5=x0009 gives R0=5 even though the low byte contains only two ones. Changing one offset bit returns to x3003, yielding the intended low-byte population count. |
+- True/false: `(T)` or `(F)` at the end of the statement.
+- Multiple choice: an `Answer: a`–`f` line after the options.
+- Fill in the blanks: intended answers appear in parentheses in the sentence.
 
-Original source text, options and keys remain available under the answer's
-**原题与原答案** disclosure and in `sources/`. They are never overwritten.
-Question IDs, order and labels remain stable.
+Chinese explanations remain available for all 244 questions and all 458 TF/MC
+alternatives. They do not substitute a different grading key. Results are
+labelled **与题库答案一致** or **题库答案**, distinguishing source alignment
+from an unconditional claim that every supplied statement is theoretically sound.
 
-## Course conventions and wording
+## Source answers and separate conceptual notes
 
-The supplied bank is labelled second edition. Course `CHAPTER 5 - Part 2.pdf`,
-PDF page 20 (slide 5-20), explicitly lists LEA among the instructions updating
-NZP. The supplied third-edition `cs2390.pdf`, PDF page 17, explicitly describes
-the later change that LEA no longer updates condition codes. C5-TF08 therefore
-states **course-slides / second-edition LC-3** in its stem. The original
-[second-edition LC-3 Appendix A](https://www.cs.auckland.ac.nz/courses/compsci210s2c/resources/PattPatelAppA.pdf)
-also specifies LEA's condition-code update. This is LC-3, not LC-3b.
+| Label | Source answer used for grading | Conceptual note only |
+|---|---|---|
+| C2-MC02 | **C** | Carry alone does not prove signed overflow. Four-bit `1111+1111=1110` has carry without signed overflow. The original key is retained despite this caveat. |
+| C3-TF15 | **True** | Complementary outputs are the normal valid-state interpretation. A forbidden RS-latch input can produce equal outputs. |
+| C5-MC18 | **B** | The intended comparison assumes no signed overflow. `32767−(−1)` wraps to `x8000`; the strict unrestricted interpretation has a counterexample. |
+| C5-MC20 | **B**, original `0000100111111000` at x3009 | Original BRn #-8 returns to x3002 and resets the mask. R5=x0009 produces R0=5 but has only two set bits. Hypothetical BRn #-7 would implement the intended low-byte population count; it is discussed only, not substituted into the question. |
 
-For C5-FB01, course Part 2 PDF page 16 classifies LEA as immediate/literal by
-the origin of its loaded value. The explanation also states its PC-relative
-effective-address formula; LEA does not load the contents at that address.
+Twenty-five other questions include interpretation or model notes, such as
+single-digit ASCII sums, arithmetic-shift rounding, ideal steady-state CMOS,
+active-low NAND latches, the course multi-cycle datapath and LC-3 edition rules.
+Original question wording and answer keys remain unchanged.
 
-Twenty-five questions have explicit clarifications rather than changed keys:
+For LEA, course `CHAPTER 5 - Part 2.pdf`, PDF page 20 (slide 5-20), lists LEA
+as updating NZP, matching the second-edition bank. The supplied third-edition
+`cs2390.pdf`, preface PDF page 17, describes the later change. Notes identify
+this difference without changing the supplied True answer for C5-TF08.
 
-- C1-MC05: distinguish translating from interpreting/executing a program.
-- C2-MC06: digit sum must remain a single decimal digit.
-- C2-MC07: nonzero normalized number in an arbitrary radix.
-- C2-MC11: negative plus negative may overflow to **zero** as well as a positive result.
-- C2-MC12: arithmetic right shift implements division rounded toward negative infinity.
-- C2-MC14: ripple-carry versus parallel AND **circuit delay**, not a universal CPU timing rule.
-- C2-FB04: nonzero k, with both signed opposites representable.
-- C2-FB20: a printable key with a distinct printable ASCII SHIFT character.
-- C3-MC01, C3-FB11, C3-FB12, C3-TF07, C3-TF08: textbook static complementary CMOS, stable binary inputs.
-- C3-FB19: active-low NAND RS latch, not active-high NOR.
-- C3-TF05: stable-input one-hot decoder.
-- C3-TF11: comparable loads and the textbook ideal gate-delay model.
-- C3-TF12: static feedback logic storage, not every physical storage technology.
-- C4-MC12, C4-MC18: course multi-cycle implementation, skipped phases included where applicable.
-- C4-TF01: ISA-level successful completion versus internal micro-operations.
-- C4-TF07: the course definition of a complete von Neumann system.
-- C5-TF08: second-edition LEA/NZP convention.
-- C5-TF10: a valid initial one-hot NZP state.
-- C5-MC09: a compact redesigned encoding without unused padding bits.
-- C5-FB01: the course's operand-value classification of LEA.
+## Provenance and verification
 
-Each question's Chinese explanation names the relevant assumption. Abstract
-models are not presented as universal claims about all physical processors.
+`sources/` retains extracted source files and original Word-file hashes.
+Original Word files remain unchanged. Chapter 2's duplicate fill numbers
+use suffix `b`; missing source numbers are not invented.
 
-## Evidence used
+`build.py` adds explanations and notes, but asserts that source stems, options
+and keys cannot be overridden. Each question and the course metadata record
+`answer_basis: source`. The final bank was compared to the pre-review website:
+all 244 IDs, labels, stems, options, keys, fill answers and source fields match.
 
-Course files were inspected locally; they are not added to this public repository.
-Page numbers below are PDF page numbers, starting at 1.
+`verify_content.py` checks every original key against the answer marker in its
+source text, explanation coverage, and supporting calculations. LC-3 checks
+distinguish the original program's actual behavior from hypothetical code in
+notes. See [content-verification.json](content-verification.json).
 
-| Supplied reference | Topics checked |
-|---|---|
-| CHAPTER 0.pdf and CHAPTER 1.pdf | Algorithms, language levels, ISA, microarchitecture, logic and devices |
-| CHAPTER 2 .pdf, pp. 5–27 | Unsigned/signed representation, arithmetic, overflow and sign extension |
-| CHAPTER 2 .pdf, pp. 28–44 | Logic, floating point, radix, hexadecimal and ASCII |
-| CHAPTER 3.pdf | Ideal CMOS switches/gates, truth tables, multiplexers, decoders, adders, latches and memory organization |
-| CHAPTER 4.pdf, pp. 3–14 and 21–36 | von Neumann components, registers, instruction fields, phases, control and HALT |
-| CHAPTER 5.pdf; CHAPTER 5 - Part 2.pdf | LC-3 encoding, addressing, datapath, condition codes and control flow |
-| cs2390.pdf (third edition), preface PDF p. 17 | Explicit edition difference for LEA's condition codes |
+Browser tests submit every question using its source answer and inspect all
+rendered option explanations. Migration tests cover restoring source grading
+from the earlier editorial version. See [verification.json](verification.json)
+and [review-verification.json](review-verification.json).
 
-## Verification and existing progress
-
-`python3 build.py` requires an authored review for every stable label and a
-reason for every alternative. `python3 verify_content.py` checks coverage,
-source fingerprints, explicit corrections, arithmetic, truth tables and an
-independent LC-3 interpreter. It reproduces the original C5-MC20 failure and
-checks its repaired loop, as well as the C5-MC19 parity loop, on **all 65,536
-possible R5 inputs**. The two copy-instruction encodings are also checked for
-every 16-bit source value. See [content-verification.json](content-verification.json).
-
-Browser verification submits all 244 questions, checks the rendered reasoning
-for all 458 alternatives, tests correction migration, fill self-assessment,
-wrong-answer review, refresh persistence, six viewport widths, and unavailable
-storage. See [verification.json](verification.json).
-
-Returning users keep the same localStorage key. Cached true/false and choice
-grades are recomputed from their **original submitted choices**, using reviewed
-keys. Attempts, fill self-assessment, drafts, bookmarks and position are
-preserved. A changed grade carries a visible explanation. No MATH3700 storage
-is modified.
+Existing submitted choices, attempts, fill self-assessment, drafts, bookmarks
+and position remain. Cached choice grades are recomputed against the original
+source keys, with a visible message when needed. MATH3700 data is unaffected.

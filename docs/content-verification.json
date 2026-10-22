@@ -1,20 +1,21 @@
 {
-  "revision": "2026-10-22.1",
+  "revision": "2026-10-22.2-source",
   "questions": 244,
   "option_explanations": 458,
   "status_counts": {
     "reviewed": 215,
-    "clarified": 25,
-    "corrected": 4
+    "study_note": 25,
+    "source_issue": 4
   },
-  "passed": 44,
+  "passed": 45,
   "checks": [
     "244 stable unique labels and IDs",
     "All source question types retained",
     "Every question has explanation, evidence and provenance",
     "Every TF/MC option has its own reasoning",
     "All fill reference answers reviewed and retained",
-    "Exactly three explicit source-key corrections; no silent key changes",
+    "Original TestBank keys are the only grading authority for all 244 questions",
+    "All original stems, options, machine code and keys retained without review overrides",
     "Raw source fingerprint: chap01tq.txt",
     "Raw source fingerprint: chap02tq.txt",
     "Raw source fingerprint: chap03tq.txt",
@@ -47,12 +48,12 @@
     "C5-MC18: both less-than and greater-than inputs branch to x4444 (signed overflow counterexample)",
     "C5-MC19/20 source programs parsed independently",
     "C5-MC20 original-code counterexample: R5=9 gives R0=5 with only two set bits",
-    "C5-MC20 repairs exactly one branch-offset bit, preserving original code separately",
-    "C5-MC19/20: oddness and low-byte popcount simulated for all 65536 R5 inputs",
+    "C5-MC20 original BRn #-8 remains in the displayed practice program",
+    "C5-MC19/20: all 65536 R5 inputs verify parity, original-loop behavior, and the separately discussed hypothetical #-7 loop; grading still uses source B",
     "C5-TF08: second-edition LEA sets N",
     "C5-TF08: third-edition LEA would preserve previous Z, proving version distinction matters",
     "C5-FB08: ST effective address x5541",
     "C5 PC-relative limits and redesigned ADD width"
   ],
-  "scope": "Structural coverage plus independently computed arithmetic, truth tables and LC-3 execution; conceptual explanations were reviewed against supplied course slides. No claim of instructor endorsement."
+  "scope": "All grading uses the original supplied keys and original question wording/code. Arithmetic, truth-table and LC-3 checks support conceptual caveats only; they do not override source answers."
 }

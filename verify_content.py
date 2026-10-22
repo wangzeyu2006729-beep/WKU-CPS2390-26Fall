@@ -87,7 +87,15 @@ for q in QS.values():
     else:
         source_key = None
     assert q['original_answer'] == source_key, q['label']
-check({q['label']: (q['original_answer'], q['answer']) for q in QS.values() if q['answer'] != q['original_answer']} == {'C2-MC02': ('C', 'A'), 'C3-TF15': ('A', 'B'), 'C5-MC18': ('B', 'D')}, 'Exactly three explicit source-key corrections; no silent key changes')
+    if q['type'] == 'tf':
+        raw_key = re.search(r'\(\s*([TF])\s*\)\s*\.?\s*$', q['source_text'], re.I)[1].upper()
+        assert source_key == ('A' if raw_key == 'T' else 'B'), q['label']
+    elif q['type'] == 'mc':
+        raw_key = re.search(r'^\s*Answer\s*:\s*([a-f])\.?\s*$', q['source_text'], re.M | re.I)[1].upper()
+        assert source_key == raw_key, q['label']
+    assert q['answer'] == source_key and q['text'] == q['original_text'] and q['options'] == q['original_options'], q['label']
+check(DATA['course']['answer_basis'] == 'source' and all(q['answer_basis'] == 'source' for q in QS.values()), 'Original TestBank keys are the only grading authority for all 244 questions')
+check(all(q['text'] == q['original_text'] and q['options'] == q['original_options'] and q['answer'] == q['original_answer'] for q in QS.values()), 'All original stems, options, machine code and keys retained without review overrides')
 audit = json.loads((ROOT / 'source-audit.json').read_text())
 for file in audit['files']:
     check(hashlib.sha256((ROOT / 'sources' / file['file']).read_bytes()).hexdigest() == file['extracted_text_sha256'], f"Raw source fingerprint: {file['file']}")
@@ -166,14 +174,18 @@ old_pop_codes=program('C5-MC20', original=True)
 r=[0]*8;r[5]=9
 old_result,_,_,_=execute(old_pop_codes,r,0x3000)
 check(old_result[0]==5 and bin(9).count('1')==2, 'C5-MC20 original-code counterexample: R5=9 gives R0=5 with only two set bits')
-check([a for a in pop_codes if pop_codes[a]!=old_pop_codes[a]] == [0x3009] and (pop_codes[0x3009] ^ old_pop_codes[0x3009]) == 1, 'C5-MC20 repairs exactly one branch-offset bit, preserving original code separately')
+check(pop_codes == old_pop_codes and pop_codes[0x3009] == int('0000100111111000', 2), 'C5-MC20 original BRn #-8 remains in the displayed practice program')
+conceptual_pop_codes = dict(pop_codes)
+conceptual_pop_codes[0x3009] ^= 1
 for x in range(65536):
     r=[0]*8;r[5]=x
     result,_,_,_=execute(odd_codes,r,0x3000)
     assert result[0] == (x & 1)
     result,_,_,_=execute(pop_codes,r,0x3000)
+    assert result[0] == sum(bool(x & mask) for mask in range(1, 9))
+    result,_,_,_=execute(conceptual_pop_codes,r,0x3000)
     assert result[0] == bin(x & 255).count('1')
-check(True, 'C5-MC19/20: oddness and low-byte popcount simulated for all 65536 R5 inputs')
+check(True, 'C5-MC19/20: all 65536 R5 inputs verify parity, original-loop behavior, and the separately discussed hypothetical #-7 loop; grading still uses source B')
 regs,pc,cc,_=execute({0xF011:int('1110111000000000',2)},[0]*8,0xF011,2,limit=1)
 check(regs[7]==0xF012 and cc==4, 'C5-TF08: second-edition LEA sets N')
 _,_,cc,_=execute({0xF011:int('1110111000000000',2)},[0]*8,0xF011,2,limit=1,lea_sets_cc=False)
@@ -186,6 +198,6 @@ report = dict(revision=DATA['course']['review_revision'], questions=len(QS),
               option_explanations=sum(len(q.get('option_explanations', [])) for q in QS.values()),
               status_counts=dict(Counter(q['review_status'] for q in QS.values())),
               passed=len(CHECKS), checks=CHECKS,
-              scope='Structural coverage plus independently computed arithmetic, truth tables and LC-3 execution; conceptual explanations were reviewed against supplied course slides. No claim of instructor endorsement.')
+              scope='All grading uses the original supplied keys and original question wording/code. Arithmetic, truth-table and LC-3 checks support conceptual caveats only; they do not override source answers.')
 (ROOT/'docs'/'content-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ['checks','scope']},ensure_ascii=False))

@@ -15,6 +15,7 @@
     "Clearing CPS2390 does not clear MATH3700 answers or bookmarks"
   ],
   "url": "http://127.0.0.1:8768/index.html",
-  "review_revision": "2026-10-22.1",
-  "verified_at_utc": "2026-10-22T02:49:01.368750+00:00"
+  "review_revision": "2026-10-22.2-source",
+  "answer_basis": "source",
+  "verified_at_utc": "2026-10-22T03:04:40.815952+00:00"
 }

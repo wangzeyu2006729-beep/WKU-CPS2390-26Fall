@@ -16,12 +16,12 @@ their chapter headers. The questions, choices, and answer keys remain the
 materials of their respective authors and rights holders. The application's
 MIT License does not relicense those course materials or claim ownership.
 
-The application preserves the supplied text and keys as source provenance.
-The reviewed practice layer corrects three keys and one machine-code typo,
-and explicitly clarifies ambiguous wording and course-model assumptions.
-Chinese explanations cover all 244 questions and every TF/MC alternative.
-See [the answer review](docs/answer-review.md) for the changes and evidence.
-Fill questions are self-assessed against reviewed reference answers.
+The application retains the original supplied question wording, choices, machine
+code and answer keys. The source keys are the sole grading authority. Chinese
+teaching notes cover all 244 questions and every TF/MC alternative; conceptual
+caveats and course-model assumptions are disclosed without overriding the bank.
+Fill questions are self-assessed against the original reference answers.
+See [the source-answer policy](docs/answer-review.md).
 
 This is an independent course-revision tool, not an official university
 website or a claim of instructor or university endorsement.

@@ -100,7 +100,8 @@ def parse():
     chapters = [dict(name=name, english=english) for name, english in CHAPTERS]
     apply_review(questions)
     data = dict(course=dict(code='CPS2390', school='Wenzhou-Kean University', instructor='Qixia Zhang',
-                            term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION), chapters=chapters, questions=questions)
+                            term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION,
+                            answer_basis='source'), chapters=chapters, questions=questions)
     (ROOT / 'questions.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
     (ROOT / 'source-audit.json').write_text(json.dumps(dict(total=len(questions), files=reports), ensure_ascii=False, indent=2)+'\n')
     return data

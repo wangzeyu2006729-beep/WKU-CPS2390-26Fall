@@ -58,21 +58,22 @@ async page => {
  assert(await page.locator('[data-choice="F"]').getAttribute('aria-pressed')==='true','F keyboard shortcut selects the sixth option');
  await page.keyboard.press('Enter');
  assert(await page.locator('.option.correct').getAttribute('data-choice')==='C','Six-option question uses the source key');
- await page.locator('#search').fill('C2-MC02');await page.locator('[data-choice="C"]').click();await page.locator('#submit').click();
- assert(await page.locator('.option.correct').getAttribute('data-choice')==='A'&&(await page.locator('.review-note').textContent()).includes('原 C → A'),'Corrected carry/overflow question grades A and discloses original C');
+ await page.locator('#search').fill('C2-MC02');await page.locator('[data-choice="A"]').click();await page.locator('#submit').click();
+ assert(await page.locator('.option.correct').getAttribute('data-choice')==='C'&&(await page.locator('.review-note').textContent()).includes('网页按 C 判分'),'Carry/overflow question grades original C and keeps the conceptual caveat separate');
  assert(await page.locator('.option-analysis li').count()===3,'Correct and incorrect choices all receive explanations');
  await page.locator('.source-original summary').click();
  assert(/Answer\s*:\s*C/i.test(await page.locator('.original-text').textContent()),'Original source key is still available for comparison');
  await reset();
- const corrected=data.questions.filter(q=>q.answer!==q.original_answer),fillQ=data.questions.find(q=>q.type==='fill');
- await page.evaluate(({corrected,fillQ,key})=>{const s=JSON.parse(localStorage.getItem(key));for(const q of corrected)s.answers[q.id]={choice:q.original_answer,correct:true,attempts:3};s.answers[fillQ.id]={choice:'self',correct:true,given:['saved answer'],attempts:2};s.favorites=[corrected[0].id];s.index=s.order.indexOf(corrected[0].id);s.drafts[244]=['saved draft'];delete s.review_revision;localStorage.setItem(key,JSON.stringify(s));},{corrected,fillQ,key});
+ const oldReviewKeys={'C2-MC02':'A','C3-TF15':'B','C5-MC18':'D'};
+ const corrected=data.questions.filter(q=>oldReviewKeys[q.label]).map(q=>({...q,previousKey:oldReviewKeys[q.label]})),fillQ=data.questions.find(q=>q.type==='fill');
+ await page.evaluate(({corrected,fillQ,key})=>{const s=JSON.parse(localStorage.getItem(key));for(const q of corrected)s.answers[q.id]={choice:q.previousKey,correct:true,attempts:3};s.answers[fillQ.id]={choice:'self',correct:true,given:['saved answer'],attempts:2};s.favorites=[corrected[0].id];s.index=s.order.indexOf(corrected[0].id);s.drafts[244]=['saved draft'];delete s.review_revision;localStorage.setItem(key,JSON.stringify(s));},{corrected,fillQ,key});
  await page.reload();
  const migrated=await read();
- assert(corrected.every(q=>migrated.answers[q.id].correct===false&&migrated.answers[q.id].choice===q.original_answer&&migrated.answers[q.id].attempts===3&&migrated.answers[q.id].regraded),'Old source-key submissions are regraded without losing choices or attempts');
+ assert(corrected.every(q=>migrated.answers[q.id].correct===false&&migrated.answers[q.id].choice===q.previousKey&&migrated.answers[q.id].attempts===3&&migrated.answers[q.id].regraded),'Previous editorial keys are regraded against source answers without losing choices or attempts');
  assert(migrated.favorites.includes(corrected[0].id)&&migrated.drafts[244][0]==='saved draft'&&migrated.order[migrated.index]===corrected[0].id&&migrated.answers[fillQ.id].given[0]==='saved answer','Migration preserves bookmarks, drafts, current position and fill self-assessment');
  assert(await page.locator('.regrade-note').isVisible(),'Changed grades are explained to returning users');
  await page.locator(`[data-index="${migrated.order.indexOf(corrected[0].id)}"]`).click();await page.locator('#retry-current').click();await page.locator(`[data-choice="${corrected[0].answer}"]`).click();await page.locator('#submit').click();
- assert((await read()).answers[corrected[0].id].correct&&await page.locator('.regrade-note').count()===0,'New attempt uses corrected answer and clears old regrade notice');
+ assert((await read()).answers[corrected[0].id].correct&&await page.locator('.regrade-note').count()===0,'New attempt uses source answer and clears old regrade notice');
  await reset();
  for(const q of data.questions){
   if(q.type==='fill'){
