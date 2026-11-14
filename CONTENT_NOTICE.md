@@ -23,9 +23,8 @@ caveats and course-model assumptions are disclosed without overriding the bank.
 Fill questions are self-assessed against the original reference answers.
 See [the source-answer policy](docs/answer-review.md).
 
-The Chapter 6–7 course-practice page also uses the supplied lecture slides,
-third-edition textbook exercises, assignment sheets, and Problem Set 3
-with its source solutions. Those materials retain their respective rights.
+The Chapter 6–7 course-practice page also uses the supplied Assignment 5 and
+selected Problem Set 3 questions with their source solutions. Those materials retain their respective rights.
 
 This is an independent course-revision tool, not an official university
 website or a claim of instructor or university endorsement.

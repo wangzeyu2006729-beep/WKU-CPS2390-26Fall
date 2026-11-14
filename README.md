@@ -25,7 +25,7 @@ Click **查看中文释义** below a question to expand its Chinese meaning, inc
 
 The course name opens a compact dark course panel with the current course marked. Use arrow keys or Tab to move, Enter to follow a course, and Escape or an outside click to dismiss. Each course page retains its own independent learning records.
 
-Open [Chapter 6–7 course practice](course-practice.html) for Assignment 5 (6 questions), Problem Set 3 (14 questions, covering Chapters 5–7), 9 slide exercises, 64 exercises from the third-edition textbook, and the Lab Assignment (2 required programs and 1 optional program). The page provides the supplied Problem Set 3 solutions and slide answers where available.
+Open [Chapter 6–7 course practice](course-practice.html) for Assignment 5 (6 questions) and 11 questions from Problem Set 3 that cover Chapters 6–7, with their supplied solutions. Problem Set 3 keeps the original question numbering.
 
 ## Coverage
 
@@ -74,7 +74,7 @@ The repository rename changes the page path but keeps the same GitHub Pages host
 
 ## Build and offline use
 
-`index.html` embeds the full interface and question bank. Download it and open it to practice offline. Online and offline copies have separate browser storage; switching to the other online course requires an internet connection. For offline access to the additional exercises, keep `course-practice.html` and its `course-practice-assets/` directory next to `index.html`.
+`index.html` embeds the full interface and question bank. Download it and open it to practice offline. Online and offline copies have separate browser storage; switching to the other online course requires an internet connection. For offline access to the additional exercises, keep `course-practice.html` next to `index.html`.
 
 Rebuild with Python 3, without third-party Python dependencies:
 
