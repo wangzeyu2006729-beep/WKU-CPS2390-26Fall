@@ -74,10 +74,10 @@ def execute(memory, regs, pc, cc=2, limit=200, lea_sets_cc=True):
     raise AssertionError('Reference execution did not terminate')
 
 
-check(len(QS) == 244 and [q['id'] for q in DATA['questions']] == list(range(1, 245)), '244 stable unique labels and IDs')
-check(Counter(q['type'] for q in QS.values()) == {'tf': 78, 'mc': 77, 'fill': 89}, 'All source question types retained')
-check(all(q['explanation'] and q['references'] and q['source_text'] and q['review_revision'] for q in QS.values()), 'Every question has explanation, evidence and provenance')
-check(all(len(q.get('option_explanations', [])) == len(q['options']) for q in QS.values() if q['type'] != 'fill'), 'Every TF/MC option has its own reasoning')
+check(len(QS) == 314 and [q['id'] for q in DATA['questions']] == list(range(1, 315)), '314 stable unique labels and IDs')
+check(Counter(q['type'] for q in QS.values()) == {'tf': 110, 'mc': 93, 'fill': 111}, 'All source question types retained')
+check(all(q['explanation'] and q['references'] and q['source_text'] and q['review_revision'] for q in QS.values() if q['chapter'] < 5), 'Chapters 1–5 retain explanation, evidence and provenance')
+check(all(len(q.get('option_explanations', [])) == len(q['options']) for q in QS.values() if q['type'] != 'fill' and q['chapter'] < 5), 'Chapters 1–5 retain all TF/MC option reasoning')
 check(all(q['answers'] == q['source_answer'] for q in QS.values() if q['type'] == 'fill'), 'All fill reference answers reviewed and retained')
 for q in QS.values():
     if q['type'] == 'tf':
@@ -86,16 +86,17 @@ for q in QS.values():
         source_key = q['source_answer']
     else:
         source_key = None
-    assert q['original_answer'] == source_key, q['label']
     if q['type'] == 'tf':
         raw_key = re.search(r'\(\s*([TF])\s*\)\s*\.?\s*$', q['source_text'], re.I)[1].upper()
         assert source_key == ('A' if raw_key == 'T' else 'B'), q['label']
     elif q['type'] == 'mc':
-        raw_key = re.search(r'^\s*Answer\s*:\s*([a-f])\.?\s*$', q['source_text'], re.M | re.I)[1].upper()
+        raw_key = re.search(r'^\s*Answer\s*:\s*([a-g])\.?\s*$', q['source_text'], re.M | re.I)[1].upper()
         assert source_key == raw_key, q['label']
-    assert q['answer'] == source_key and q['text'] == q['original_text'] and q['options'] == q['original_options'], q['label']
-check(DATA['course']['answer_basis'] == 'source' and all(q['answer_basis'] == 'source' for q in QS.values()), 'Original TestBank keys are the only grading authority for all 244 questions')
-check(all(q['text'] == q['original_text'] and q['options'] == q['original_options'] and q['answer'] == q['original_answer'] for q in QS.values()), 'All original stems, options, machine code and keys retained without review overrides')
+    assert q['answer'] == source_key, q['label']
+    if q['chapter'] < 5:
+        assert q['original_answer'] == source_key and q['text'] == q['original_text'] and q['options'] == q['original_options'], q['label']
+check(DATA['course']['answer_basis'] == 'source' and all(q['answer_basis'] == 'source' for q in QS.values()), 'Original TestBank keys are the only grading authority for all 314 questions')
+check(all(q['text'] == q['original_text'] and q['options'] == q['original_options'] and q['answer'] == q['original_answer'] for q in QS.values() if q['chapter'] < 5), 'Chapters 1–5 original stems, options, machine code and keys retained without review overrides')
 audit = json.loads((ROOT / 'source-audit.json').read_text())
 for file in audit['files']:
     check(hashlib.sha256((ROOT / 'sources' / file['file']).read_bytes()).hexdigest() == file['extracted_text_sha256'], f"Raw source fingerprint: {file['file']}")
@@ -196,7 +197,7 @@ check(0x6631+1+255==0x6731 and 0x5201-256==0x5101 and 4+5+5+1+5==20, 'C5 PC-rela
 
 report = dict(revision=DATA['course']['review_revision'], questions=len(QS),
               option_explanations=sum(len(q.get('option_explanations', [])) for q in QS.values()),
-              status_counts=dict(Counter(q['review_status'] for q in QS.values())),
+              status_counts=dict(Counter(q.get('review_status', 'source_only') for q in QS.values())),
               passed=len(CHECKS), checks=CHECKS,
               scope='All grading uses the original supplied keys and original question wording/code. Arithmetic, truth-table and LC-3 checks support conceptual caveats only; they do not override source answers.')
 (ROOT/'docs'/'content-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

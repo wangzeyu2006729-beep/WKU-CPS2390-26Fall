@@ -29,6 +29,14 @@
     {
       "name": "LC-3 指令集",
       "english": "The LC-3"
+    },
+    {
+      "name": "程序设计与调试",
+      "english": "Programming"
+    },
+    {
+      "name": "LC-3 汇编语言",
+      "english": "Assembly Language"
     }
   ],
   "questions": [
@@ -10398,6 +10406,1998 @@
       "zh": {
         "text": "位于 0x6631 的 LD 指令可引用的最大存储地址是 0x____[1]。",
         "options": []
+      }
+    },
+    {
+      "id": 245,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF01",
+      "source_file": "chap06tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "A programmer usually finds that it takes longer to find the errors in a program so the program can execute correctly than it takes to write the program in the first place.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "A programmer usually finds that it takes longer to find the errors in a program so the program can execute correctly than it takes to write the program in the first place.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "为了让程序正确运行，程序员通常发现，找出程序错误所花的时间比写程序本身更长。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 246,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF02",
+      "source_file": "chap06tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "One must NEVER read from a register that one hasn't written to earlier in the execution of the program. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "One must NEVER read from a register that one hasn't written to earlier in the execution of the program.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在一次程序执行中，绝不能读取此前没有写入过的寄存器。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 247,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF03",
+      "source_file": "chap06tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Iteration is one of the constructs of structured programming. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Iteration is one of the constructs of structured programming.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "迭代是结构化程序设计的基本结构之一。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 248,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF04",
+      "source_file": "chap06tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The declaration of a variable as a struct is one of the constructs of structured programming.  (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The declaration of a variable as a struct is one of the constructs of structured programming.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "将变量声明为 struct 是结构化程序设计的基本结构之一。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 249,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF05",
+      "source_file": "chap06tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "In structured programming, one must enter a processing box at exactly one entrance point, but can leave the processing box at up to 4 exit points, depending on the nature of the processing being performed. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "In structured programming, one must enter a processing box at exactly one entrance point, but can leave the processing box at up to 4 exit points, depending on the nature of the processing being performed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在结构化程序设计中，处理框必须只有一个入口，但根据处理的性质，最多可以有四个出口。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 250,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF06",
+      "source_file": "chap06tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "In finding an error in a program, it is often useful to break down the program execution into modules as a way of narrowing the region where the error must have occurred.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "In finding an error in a program, it is often useful to break down the program execution into modules as a way of narrowing the region where the error must have occurred.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "查找程序错误时，把程序的执行划分为若干模块通常有助于缩小错误所在的范围。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 251,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF07",
+      "source_file": "chap06tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "Single stepping a segment of a program's execution is almost never useful because it is so tedious and time consuming. (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Single stepping a segment of a program's execution is almost never useful because it is so tedious and time consuming.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "对程序某一段进行单步执行很繁琐，因此几乎没有用。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 252,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF08",
+      "source_file": "chap06tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "In debugging a program, one can simulate data entry from the keyboard by setting a breakpoint before the input instruction, and just depositing some value into a register as if it came from the keyboard.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "In debugging a program, one can simulate data entry from the keyboard by setting a breakpoint before the input instruction, and just depositing some value into a register as if it came from the keyboard.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "调试程序时，可以在键盘输入指令前设置断点，再把一个值直接写入寄存器来模拟键盘输入。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 253,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF09",
+      "source_file": "chap06tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "One way to stop execution of a program during debugging is by setting one or more breakpoints. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "One way to stop execution of a program during debugging is by setting one or more breakpoints.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "设置一个或多个断点，是让程序执行停下来的一种方法。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 254,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF10",
+      "source_file": "chap06tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "During the systematic decomposition of a processing box via a conditional construct into a decision box and two processing boxes, A and B, box A may subsequently be decomposed via the iterative construct. (T)",
+      "note": "",
+      "explanation": "",
+      "text": "During the systematic decomposition of a processing box via a conditional construct into a decision box and two processing boxes, A and B, box A may subsequently be decomposed via the iterative construct.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "用条件结构把处理框拆成一个判断框和 A、B 两个处理框后，还可以用迭代结构进一步分解 A。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 255,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF11",
+      "source_file": "chap06tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "The decomposition of a processing box via the iterative construct results in a decision box and two smaller processing boxes.  (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The decomposition of a processing box via the iterative construct results in a decision box and two smaller processing boxes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "用迭代结构分解处理框会得到一个判断框和两个更小的处理框。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 256,
+      "chapter": 5,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C6-TF12",
+      "source_file": "chap06tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "The decomposition of a processing box via the sequential construct results in no decision boxes.  (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The decomposition of a processing box via the sequential construct results in no decision boxes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "用顺序结构分解处理框不会产生判断框。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 257,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC01",
+      "source_file": "chap06tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "In debug mode, to examine the contents of a register or memory location, we use the:\n\na. deposit command.\nb. display command.\nc. clear breakpoint command.\n\nAnswer: b",
+      "note": "",
+      "explanation": "",
+      "text": "In debug mode, to examine the contents of a register or memory location, we use the:",
+      "options": [
+        "deposit command.",
+        "display command.",
+        "clear breakpoint command."
+      ],
+      "answer": "B",
+      "source_answer": "B",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在调试模式下，用什么命令查看寄存器或内存单元的内容？",
+        "options": [
+          "写入（deposit）命令",
+          "查看（display）命令",
+          "清除断点命令"
+        ]
+      }
+    },
+    {
+      "id": 258,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC02",
+      "source_file": "chap06tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "The structured programming construct that executes the same sequence again and again until told not to is:\n\na. sequential\nb. conditional\nc. iterative.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The structured programming construct that executes the same sequence again and again until told not to is:",
+      "options": [
+        "sequential",
+        "conditional",
+        "iterative."
+      ],
+      "answer": "C",
+      "source_answer": "C",
+      "answer_basis": "source",
+      "zh": {
+        "text": "哪种结构化程序设计结构会不断重复相同的操作序列，直到满足停止条件？",
+        "options": [
+          "顺序结构",
+          "条件结构",
+          "迭代结构"
+        ]
+      }
+    },
+    {
+      "id": 259,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC03",
+      "source_file": "chap06tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "The structured programming construct that executes one part of a task completely before moving to the next part of the task and never returns to the first part is:\n\na. sequential\nb. conditional\nc. iterative\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "The structured programming construct that executes one part of a task completely before moving to the next part of the task and never returns to the first part is:",
+      "options": [
+        "sequential",
+        "conditional",
+        "iterative"
+      ],
+      "answer": "A",
+      "source_answer": "A",
+      "answer_basis": "source",
+      "zh": {
+        "text": "哪种结构先完整执行任务的一部分，再执行下一部分，而且不返回第一部分？",
+        "options": [
+          "顺序结构",
+          "条件结构",
+          "迭代结构"
+        ]
+      }
+    },
+    {
+      "id": 260,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC04",
+      "source_file": "chap06tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "In debug mode, one can cause execution of one or more instructions by:\n\na. RUN command\nb. set breakpoint command, followed by the RUN command\nc. Single step command\nd. All of the above\n\nAnswer: d",
+      "note": "",
+      "explanation": "",
+      "text": "In debug mode, one can cause execution of one or more instructions by:",
+      "options": [
+        "RUN command",
+        "set breakpoint command, followed by the RUN command",
+        "Single step command",
+        "All of the above"
+      ],
+      "answer": "D",
+      "source_answer": "D",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在调试模式下，可以用什么方法执行一条或多条指令？",
+        "options": [
+          "运行（RUN）命令",
+          "先设置断点，再运行（RUN）",
+          "单步执行（Single step）命令",
+          "以上全部"
+        ]
+      }
+    },
+    {
+      "id": 261,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC05",
+      "source_file": "chap06tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "In debug mode, to simulate external input activity of a program, we use the:\n\na. deposit command\nb. display command\nc. clear breakpoint command\n\nAnswer: a",
+      "note": "",
+      "explanation": "",
+      "text": "In debug mode, to simulate external input activity of a program, we use the:",
+      "options": [
+        "deposit command",
+        "display command",
+        "clear breakpoint command"
+      ],
+      "answer": "A",
+      "source_answer": "A",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在调试模式下，用什么命令模拟程序的外部输入？",
+        "options": [
+          "写入（deposit）命令",
+          "查看（display）命令",
+          "清除断点命令"
+        ]
+      }
+    },
+    {
+      "id": 262,
+      "chapter": 5,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C6-MC06",
+      "source_file": "chap06tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "In debug mode, if we know for sure one particular module is working correctly, we can save time by:\n\na. disabling all ST instructions in the module so it does not waste time writing to memory.\nb. single stepping through that module to verify that in fact the module is working correctly.\nc. setting a breakpoint at the exit of that module, and executing the RUN command when we enter the module.\n\nAnswer: c",
+      "note": "",
+      "explanation": "",
+      "text": "In debug mode, if we know for sure one particular module is working correctly, we can save time by:",
+      "options": [
+        "disabling all ST instructions in the module so it does not waste time writing to memory.",
+        "single stepping through that module to verify that in fact the module is working correctly.",
+        "setting a breakpoint at the exit of that module, and executing the RUN command when we enter the module."
+      ],
+      "answer": "C",
+      "source_answer": "C",
+      "answer_basis": "source",
+      "zh": {
+        "text": "调试时，若确定某个模块工作完全正确，可以怎么节省时间？",
+        "options": [
+          "禁用该模块中的所有 ST 指令，避免向内存写入所花的时间。",
+          "单步执行该模块，以验证它确实正确。",
+          "在模块出口设置断点，进入模块后使用运行（RUN）命令。"
+        ]
+      }
+    },
+    {
+      "id": 263,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB01",
+      "source_file": "chap06tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "In the vernacular of computer science, we refer to errors as (bugs) and the process of removing errors as (debugging).",
+      "note": "",
+      "explanation": "",
+      "text": "In the vernacular of computer science, we refer to errors as ____[1] and the process of removing errors as ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "bugs",
+        "debugging"
+      ],
+      "source_answer": [
+        "bugs",
+        "debugging"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "在计算机科学术语中，通常把错误称为 ____[1]，把消除错误的过程称为 ____[2]。",
+        "options": []
+      }
+    },
+    {
+      "id": 264,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB02",
+      "source_file": "chap06tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "(Structured programming) is the term usually associated with the process of systematically decomposing a natural language statement of a program into smaller pieces by means of three primitive constructs.",
+      "note": "",
+      "explanation": "",
+      "text": "____[1] is the term usually associated with the process of systematically decomposing a natural language statement of a program into smaller pieces by means of three primitive constructs.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "Structured programming"
+      ],
+      "source_answer": [
+        "Structured programming"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "用三种基本结构系统地分解一条自然语言描述的程序，通常称为 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 265,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB03",
+      "source_file": "chap06tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "The three constructs of structured programming are (sequential, conditional, and iterative).",
+      "note": "",
+      "explanation": "",
+      "text": "The three constructs of structured programming are ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "sequential, conditional, and iterative"
+      ],
+      "source_answer": [
+        "sequential, conditional, and iterative"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "结构化程序设计的三种基本结构是 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 266,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB04",
+      "source_file": "chap06tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The (conditional) construct is appropriate when one of two tasks is to be performed, depending on the state of some variable.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] construct is appropriate when one of two tasks is to be performed, depending on the state of some variable.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "conditional"
+      ],
+      "source_answer": [
+        "conditional"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "根据某个变量的状态，从两个任务中选择一个时，适合用 ____[1] 结构。",
+        "options": []
+      }
+    },
+    {
+      "id": 267,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB05",
+      "source_file": "chap06tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "The (iterative) construct is appropriate when a task is repeated again and again until some test says otherwise.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] construct is appropriate when a task is repeated again and again until some test says otherwise.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "iterative"
+      ],
+      "source_answer": [
+        "iterative"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "需要不断重复执行某个任务，直至某项测试满足停止条件时，适合用 ____[1] 结构。",
+        "options": []
+      }
+    },
+    {
+      "id": 268,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB06",
+      "source_file": "chap06tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "A key element of systematic decomposition is that the number of entrances into a processing box is exactly (one) and the number of exits out of a processing box is exactly (one).",
+      "note": "",
+      "explanation": "",
+      "text": "A key element of systematic decomposition is that the number of entrances into a processing box is exactly ____[1] and the number of exits out of a processing box is exactly ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "one",
+        "one"
+      ],
+      "source_answer": [
+        "one",
+        "one"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "系统分解的一个要点是，处理框的入口恰好有 ____[1] 个，出口也恰好有 ____[2] 个。",
+        "options": []
+      }
+    },
+    {
+      "id": 269,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB07",
+      "source_file": "chap06tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "An important first step in any algorithm, or computer program, is to (initialize) all the variables, that is, to put each variable into a known state.",
+      "note": "",
+      "explanation": "",
+      "text": "An important first step in any algorithm, or computer program, is to ____[1] all the variables, that is, to put each variable into a known state.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "initialize"
+      ],
+      "source_answer": [
+        "initialize"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "算法或程序重要的第一步是 ____[1] 所有变量，让每个变量都处于已知状态。",
+        "options": []
+      }
+    },
+    {
+      "id": 270,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB08",
+      "source_file": "chap06tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The simplest and often most effective way to debug a program is to follow the sequence of execution of all instructions from start to finish. That sequence is referred to as a (trace).",
+      "note": "",
+      "explanation": "",
+      "text": "The simplest and often most effective way to debug a program is to follow the sequence of execution of all instructions from start to finish. That sequence is referred to as a ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "trace"
+      ],
+      "source_answer": [
+        "trace"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "调试最简单且往往最有效的方法，是从头到尾跟踪指令执行顺序。这一执行序列称为 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 271,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB09",
+      "source_file": "chap06tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "One can short circuit the examination of the entire sequence by (setting a breakpoint) and allowing the computer to execute all instructions up to some desired point.",
+      "note": "",
+      "explanation": "",
+      "text": "One can short circuit the examination of the entire sequence by ____[1] and allowing the computer to execute all instructions up to some desired point.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "setting a breakpoint"
+      ],
+      "source_answer": [
+        "setting a breakpoint"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "可以通过 ____[1] 并让计算机运行到希望检查的位置，跳过对之前每条指令的检查。",
+        "options": []
+      }
+    },
+    {
+      "id": 272,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB10",
+      "source_file": "chap06tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "One can (single step) the program, that is observe the execution of the program, one instruction at a time.",
+      "note": "",
+      "explanation": "",
+      "text": "One can ____[1] the program, that is observe the execution of the program, one instruction at a time.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "single step"
+      ],
+      "source_answer": [
+        "single step"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "可以对程序 ____[1]，也就是一次观察一条指令的执行。",
+        "options": []
+      }
+    },
+    {
+      "id": 273,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB11",
+      "source_file": "chap06tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "A debugging command useful in simulating external input is the (deposit) command.",
+      "note": "",
+      "explanation": "",
+      "text": "A debugging command useful in simulating external input is the ____[1] command.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "deposit"
+      ],
+      "source_answer": [
+        "deposit"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "用于模拟外部输入的一条实用调试命令是 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 274,
+      "chapter": 5,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C6-FB12",
+      "source_file": "chap06tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "To test to see if the program actually computed a result correctly and stored that result in a particular register or memory location we use the (display) command.",
+      "note": "",
+      "explanation": "",
+      "text": "To test to see if the program actually computed a result correctly and stored that result in a particular register or memory location we use the ____[1] command.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "display"
+      ],
+      "source_answer": [
+        "display"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "要检查程序是否算出正确结果，并将它存入指定的寄存器或内存单元，可以使用 ____[1] 命令。",
+        "options": []
+      }
+    },
+    {
+      "id": 275,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF01",
+      "source_file": "chap07tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "It is more difficult to remember the assembly language name for an opcode than the machine language name for the same opcode (F)",
+      "note": "",
+      "explanation": "",
+      "text": "It is more difficult to remember the assembly language name for an opcode than the machine language name for the same opcode",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "指令操作码的汇编名称比它的机器语言编码更难记住。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 276,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF02",
+      "source_file": "chap07tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "A single assembly language name for an opcode can be translated into two machine language codes (F)",
+      "note": "",
+      "explanation": "",
+      "text": "A single assembly language name for an opcode can be translated into two machine language codes",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "同一个操作码的汇编名称可以翻译成两种机器语言编码。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 277,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF03",
+      "source_file": "chap07tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "Every assembly language instruction must contain a label (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Every assembly language instruction must contain a label",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "每条汇编语言指令都必须包含标签。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 278,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF04",
+      "source_file": "chap07tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "In LC-3 Assembly language, a (;) identifies the beginning of a comment (T)",
+      "note": "",
+      "explanation": "",
+      "text": "In LC-3 Assembly language, a (;) identifies the beginning of a comment",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在 LC-3 汇编语言中，分号（;）表示注释的开始。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 279,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF05",
+      "source_file": "chap07tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "A comment in the instruction never affects the translation of that instruction (T)",
+      "note": "",
+      "explanation": "",
+      "text": "A comment in the instruction never affects the translation of that instruction",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "指令中的注释不会影响它的翻译。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 280,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF06",
+      "source_file": "chap07tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "Every assembly language instruction must contain an OPCODE (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Every assembly language instruction must contain an OPCODE",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "每条汇编语言指令都必须包含操作码（OPCODE）。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 281,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF07",
+      "source_file": "chap07tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "The number of operands required by an OPCODE depends on the opcode (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The number of operands required by an OPCODE depends on the opcode",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "指令需要几个操作数取决于操作码（OPCODE）。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 282,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF08",
+      "source_file": "chap07tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The Location Counter is a device that is used to translate an assembly language program but not used to execute that program (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The Location Counter is a device that is used to translate an assembly language program but not used to execute that program",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "位置计数器用于翻译汇编程序，程序运行时不会使用它。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 283,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF09",
+      "source_file": "chap07tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "The Assembler ignores all comments (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The Assembler ignores all comments",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "汇编器忽略所有注释。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 284,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF10",
+      "source_file": "chap07tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "A comment may be useful to some other programmer who has to modify your program five years from now, long after you have gone on to another job (T)",
+      "note": "",
+      "explanation": "",
+      "text": "A comment may be useful to some other programmer who has to modify your program five years from now, long after you have gone on to another job",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "注释可能对五年后修改程序的其他程序员有用。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 285,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF11",
+      "source_file": "chap07tq.doc",
+      "source_number": 11,
+      "source_occurrence": 1,
+      "source_text": "A comment may be useful to you two months from now, after you have forgotten the reason for a particular instruction in your program (T)",
+      "note": "",
+      "explanation": "",
+      "text": "A comment may be useful to you two months from now, after you have forgotten the reason for a particular instruction in your program",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "两个月后忘了当初为什么使用某条指令时，注释可能对你有用。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 286,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF12",
+      "source_file": "chap07tq.doc",
+      "source_number": 12,
+      "source_occurrence": 1,
+      "source_text": "In LC-3 Assembly Language, all opcodes must be aligned (F)",
+      "note": "",
+      "explanation": "",
+      "text": "In LC-3 Assembly Language, all opcodes must be aligned",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在 LC-3 汇编语言中，所有操作码必须对齐。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 287,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF13",
+      "source_file": "chap07tq.doc",
+      "source_number": 13,
+      "source_occurrence": 1,
+      "source_text": "In LC-3 Assembly Language, all opcodes should be aligned for easier readability (T)",
+      "note": "",
+      "explanation": "",
+      "text": "In LC-3 Assembly Language, all opcodes should be aligned for easier readability",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "为了便于阅读，LC-3 汇编语言中的操作码应当对齐。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 288,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF14",
+      "source_file": "chap07tq.doc",
+      "source_number": 14,
+      "source_occurrence": 1,
+      "source_text": "The .orig pseudo-op sets the location counter to its initial value (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The .orig pseudo-op sets the location counter to its initial value",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 .orig 将位置计数器设为初始值。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 289,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF15",
+      "source_file": "chap07tq.doc",
+      "source_number": 15,
+      "source_occurrence": 1,
+      "source_text": "The .blkw pseudo-op sets aside some number of memory locations in the program space, probably to be used later for storing values (T)",
+      "note": "",
+      "explanation": "",
+      "text": "The .blkw pseudo-op sets aside some number of memory locations in the program space, probably to be used later for storing values",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 .blkw 会在程序的地址空间预留若干内存单元，例如用于存储数据。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 290,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF16",
+      "source_file": "chap07tq.doc",
+      "source_number": 16,
+      "source_occurrence": 1,
+      "source_text": "The .end pseudo-op is translated into the halt opcode.  It stops execution of the program (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The .end pseudo-op is translated into the halt opcode.  It stops execution of the program",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 .end 会被翻译为停止程序执行的 HALT 操作码。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 291,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF17",
+      "source_file": "chap07tq.doc",
+      "source_number": 17,
+      "source_occurrence": 1,
+      "source_text": "Assembly languages are more user friendly than machine language (T)",
+      "note": "",
+      "explanation": "",
+      "text": "Assembly languages are more user friendly than machine language",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "汇编语言比机器语言更易于使用。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 292,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF18",
+      "source_file": "chap07tq.doc",
+      "source_number": 18,
+      "source_occurrence": 1,
+      "source_text": "If a location in an assembly language program is not explicitly referenced, then there is no need to give it a label (T)",
+      "note": "",
+      "explanation": "",
+      "text": "If a location in an assembly language program is not explicitly referenced, then there is no need to give it a label",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "A",
+      "source_answer": "T",
+      "answer_basis": "source",
+      "zh": {
+        "text": "若程序没有显式引用某个位置，就不需要为该位置添加标签。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 293,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF19",
+      "source_file": "chap07tq.doc",
+      "source_number": 19,
+      "source_occurrence": 1,
+      "source_text": "The data accessed by an assembly language program must be part of the same module that contains the instructions that specify the accesses (F)",
+      "note": "",
+      "explanation": "",
+      "text": "The data accessed by an assembly language program must be part of the same module that contains the instructions that specify the accesses",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "汇编程序访问的数据必须与访问它的指令位于同一个模块。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 294,
+      "chapter": 6,
+      "bank": "tf",
+      "type": "tf",
+      "label": "C7-TF20",
+      "source_file": "chap07tq.doc",
+      "source_number": 20,
+      "source_occurrence": 1,
+      "source_text": "Some symbol table entries are created in the second pass of a two-pass assembler (F)",
+      "note": "",
+      "explanation": "",
+      "text": "Some symbol table entries are created in the second pass of a two-pass assembler",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "B",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "两遍汇编器会在第二遍创建部分符号表条目。",
+        "options": [
+          "正确",
+          "错误"
+        ]
+      }
+    },
+    {
+      "id": 295,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB01",
+      "source_file": "chap07tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The main function of the first pass in a two-pass assembly process is to construct the (symbol table).",
+      "note": "",
+      "explanation": "",
+      "text": "The main function of the first pass in a two-pass assembly process is to construct the ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "symbol table"
+      ],
+      "source_answer": [
+        "symbol table"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "两遍汇编的第一遍主要用于建立 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 296,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB02",
+      "source_file": "chap07tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "A (pseudo-op) is a message to the Assembler that helps in the translation process, but does not result in an executable instruction.",
+      "note": "",
+      "explanation": "",
+      "text": "A ____[1] is a message to the Assembler that helps in the translation process, but does not result in an executable instruction.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "pseudo-op"
+      ],
+      "source_answer": [
+        "pseudo-op"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "____[1] 用于向汇编器传达翻译所需的信息，但不会生成可执行指令。",
+        "options": []
+      }
+    },
+    {
+      "id": 297,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB03",
+      "source_file": "chap07tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "The result of the assembly process is to create a/an (object file).",
+      "note": "",
+      "explanation": "",
+      "text": "The result of the assembly process is to create a/an ____[1].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "object file"
+      ],
+      "source_answer": [
+        "object file"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "汇编过程的结果是生成一个 ____[1]。",
+        "options": []
+      }
+    },
+    {
+      "id": 298,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB04",
+      "source_file": "chap07tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "The (linker) combines more than one object file into one (executable image).",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] combines more than one object file into one ____[2].",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "linker",
+        "executable image"
+      ],
+      "source_answer": [
+        "linker",
+        "executable image"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "____[1] 把多个目标文件合并为一个 ____[2]。",
+        "options": []
+      }
+    },
+    {
+      "id": 299,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB05",
+      "source_file": "chap07tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "Each assembly language statement usually translates to (one) machine language instruction(s).  (Hint: how many)",
+      "note": "",
+      "explanation": "",
+      "text": "Each assembly language statement usually translates to ____[1] machine language instruction(s).  (Hint: how many)",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "one"
+      ],
+      "source_answer": [
+        "one"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "一条汇编语言语句通常翻译为 ____[1] 条机器语言指令。（提示：填写数量。）",
+        "options": []
+      }
+    },
+    {
+      "id": 300,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB06",
+      "source_file": "chap07tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "The symbol table is created in pass (one) of a two-pass Assembler",
+      "note": "",
+      "explanation": "",
+      "text": "The symbol table is created in pass ____[1] of a two-pass Assembler",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "one"
+      ],
+      "source_answer": [
+        "one"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "两遍汇编器在第 ____[1] 遍建立符号表。",
+        "options": []
+      }
+    },
+    {
+      "id": 301,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB07",
+      "source_file": "chap07tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "A LD instruction requires (two) explicit operands.",
+      "note": "",
+      "explanation": "",
+      "text": "A LD instruction requires ____[1] explicit operands.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "two"
+      ],
+      "source_answer": [
+        "two"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "一条 LD 指令需要 ____[1] 个显式操作数。",
+        "options": []
+      }
+    },
+    {
+      "id": 302,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB08",
+      "source_file": "chap07tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "The (.ORIG) pseudo-op sets the value of the location counter.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] pseudo-op sets the value of the location counter.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        ".ORIG"
+      ],
+      "source_answer": [
+        ".ORIG"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 ____[1] 设置位置计数器的值。",
+        "options": []
+      }
+    },
+    {
+      "id": 303,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB09",
+      "source_file": "chap07tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "The (.END) pseudo-op specifies the end of the assembly language program module.",
+      "note": "",
+      "explanation": "",
+      "text": "The ____[1] pseudo-op specifies the end of the assembly language program module.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        ".END"
+      ],
+      "source_answer": [
+        ".END"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 ____[1] 表明汇编语言程序模块到此结束。",
+        "options": []
+      }
+    },
+    {
+      "id": 304,
+      "chapter": 6,
+      "bank": "fill",
+      "type": "fill",
+      "label": "C7-FB10",
+      "source_file": "chap07tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "Of the four components of an assembly language instruction, only the (comment) is totally ignored by the Assembler.",
+      "note": "",
+      "explanation": "",
+      "text": "Of the four components of an assembly language instruction, only the ____[1] is totally ignored by the Assembler.",
+      "options": [],
+      "answer": null,
+      "answers": [
+        "comment"
+      ],
+      "source_answer": [
+        "comment"
+      ],
+      "answer_basis": "source",
+      "zh": {
+        "text": "汇编指令的四个组成部分中，只有 ____[1] 会被汇编器完全忽略。",
+        "options": []
+      }
+    },
+    {
+      "id": 305,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC01",
+      "source_file": "chap07tq.doc",
+      "source_number": 1,
+      "source_occurrence": 1,
+      "source_text": "The following is not a part of an assembly language instruction\n   a. LABEL\n   b. OPCODE\n   c. OPERANDS\n   d. COMMENT\n   e. Number of cycles required to execute the instruction\n   Answer: e",
+      "note": "",
+      "explanation": "",
+      "text": "The following is not a part of an assembly language instruction",
+      "options": [
+        "LABEL",
+        "OPCODE",
+        "OPERANDS",
+        "COMMENT",
+        "Number of cycles required to execute the instruction"
+      ],
+      "answer": "E",
+      "source_answer": "E",
+      "answer_basis": "source",
+      "zh": {
+        "text": "以下哪项不是汇编语言指令的组成部分？",
+        "options": [
+          "标签",
+          "操作码",
+          "操作数",
+          "注释",
+          "执行这条指令所需的周期数"
+        ]
+      }
+    },
+    {
+      "id": 306,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC02",
+      "source_file": "chap07tq.doc",
+      "source_number": 2,
+      "source_occurrence": 1,
+      "source_text": "The comment in the instruction  \n   ADD R1,R2,R3 ; Add contents of R3 and R2, put result in R1 is an example of\n\n   a. a helpful comment\n   b. an irrelevant comment\n   c. a harmful comment\n   Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The comment in the instruction  \n   ADD R1,R2,R3 ; Add contents of R3 and R2, put result in R1 is an example of",
+      "options": [
+        "a helpful comment",
+        "an irrelevant comment",
+        "a harmful comment"
+      ],
+      "answer": "C",
+      "source_answer": "C",
+      "answer_basis": "source",
+      "zh": {
+        "text": "指令 ADD R1,R2,R3 ; Add contents of R3 and R2, put result in R1 中的注释属于哪类？",
+        "options": [
+          "有帮助的注释",
+          "无关的注释",
+          "有害的注释"
+        ]
+      }
+    },
+    {
+      "id": 307,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC03",
+      "source_file": "chap07tq.doc",
+      "source_number": 3,
+      "source_occurrence": 1,
+      "source_text": "An instruction requires a LABEL if\n   a. it is the target of a branch\n   b. it is the symbolic address of a data element that is referenced\n   c. neither a nor b\n   d, both a and b\n   Answer: d",
+      "note": "",
+      "explanation": "",
+      "text": "An instruction requires a LABEL if",
+      "options": [
+        "it is the target of a branch",
+        "it is the symbolic address of a data element that is referenced",
+        "neither a nor b",
+        "both a and b"
+      ],
+      "answer": "D",
+      "source_answer": "D",
+      "answer_basis": "source",
+      "zh": {
+        "text": "指令在什么情况下需要标签（LABEL）？",
+        "options": [
+          "它是分支跳转的目标",
+          "它是一个被引用的数据元素的符号地址",
+          "a 和 b 都不成立",
+          "a 和 b 都成立"
+        ]
+      }
+    },
+    {
+      "id": 308,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC04",
+      "source_file": "chap07tq.doc",
+      "source_number": 4,
+      "source_occurrence": 1,
+      "source_text": "A ; alone on a line is\n   a. an assembly error, since there is no information present\n   b. a comment that serves to make the program more readable to a human by separating two parts of the program with a blank line\n   c. a continuation character that tells the assembler to combine the line above the ; with the line below to form a single assembly language instruction.\n   Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "A ; alone on a line is",
+      "options": [
+        "an assembly error, since there is no information present",
+        "a comment that serves to make the program more readable to a human by separating two parts of the program with a blank line",
+        "a continuation character that tells the assembler to combine the line above the ; with the line below to form a single assembly language instruction."
+      ],
+      "answer": "B",
+      "source_answer": "B",
+      "answer_basis": "source",
+      "zh": {
+        "text": "如果一行只有一个分号（;），这行属于什么？",
+        "options": [
+          "一条汇编错误，因为这一行没有信息",
+          "一条注释，相当于空行，把程序的两个部分隔开以方便阅读",
+          "一个续行符，告诉汇编器把上一行和下一行合成一条指令"
+        ]
+      }
+    },
+    {
+      "id": 309,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC05",
+      "source_file": "chap07tq.doc",
+      "source_number": 5,
+      "source_occurrence": 1,
+      "source_text": "The .stringz pseudo-op translates to a sequence of ASCII codes.  The last code in the sequence is\n\n  a. the ASCII code for the last character in the string\n  b. the ASCII code of the end of text character\n  c. x00\n  Answer: c",
+      "note": "",
+      "explanation": "",
+      "text": "The .stringz pseudo-op translates to a sequence of ASCII codes.  The last code in the sequence is",
+      "options": [
+        "the ASCII code for the last character in the string",
+        "the ASCII code of the end of text character",
+        "x00"
+      ],
+      "answer": "C",
+      "source_answer": "C",
+      "answer_basis": "source",
+      "zh": {
+        "text": "伪指令 .stringz 会翻译成一串 ASCII 码。序列中的最后一个代码是什么？",
+        "options": [
+          "字符串最后一个字符的 ASCII 码",
+          "文本结束字符的 ASCII 码",
+          "x00"
+        ]
+      }
+    },
+    {
+      "id": 310,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC06",
+      "source_file": "chap07tq.doc",
+      "source_number": 6,
+      "source_occurrence": 1,
+      "source_text": "In order to process the instruction LD R1,A\n  a. the location labeled A must appear in the program before the LD instruction\n  b. the location labeled A can appear anywhere in the program\n  c. the location labeled A may not appear in the program provided there is a\n pseudo-op .EXTERNAL A in the program\n  d. none of the above\n  e. a and c\n  f. b and c\n  g. all of the above\n  Answer: f",
+      "note": "",
+      "explanation": "",
+      "text": "In order to process the instruction LD R1,A",
+      "options": [
+        "the location labeled A must appear in the program before the LD instruction",
+        "the location labeled A can appear anywhere in the program",
+        "the location labeled A may not appear in the program provided there is a\n pseudo-op .EXTERNAL A in the program",
+        "none of the above",
+        "a and c",
+        "b and c",
+        "all of the above"
+      ],
+      "answer": "F",
+      "source_answer": "F",
+      "answer_basis": "source",
+      "zh": {
+        "text": "为了处理指令 LD R1,A，对程序中 A 标签的位置有什么要求？",
+        "options": [
+          "A 标记的位置必须出现在 LD 指令之前",
+          "A 标记的位置可以出现在程序的任何位置",
+          "若程序中提供了伪指令 .EXTERNAL A，A 可以不出现在程序中",
+          "以上都不是",
+          "a 和 c",
+          "b 和 c",
+          "以上全部"
+        ]
+      }
+    },
+    {
+      "id": 311,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC07",
+      "source_file": "chap07tq.doc",
+      "source_number": 7,
+      "source_occurrence": 1,
+      "source_text": "If one module contains the pseudo-op .EXTERNAL A, and no module contains the label A, the error will be detected at\n\n  a. assembly time\n  b. link time\n  c. run time\n  Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "If one module contains the pseudo-op .EXTERNAL A, and no module contains the label A, the error will be detected at",
+      "options": [
+        "assembly time",
+        "link time",
+        "run time"
+      ],
+      "answer": "B",
+      "source_answer": "B",
+      "answer_basis": "source",
+      "zh": {
+        "text": "如果一个模块包含伪指令 .EXTERNAL A，而没有模块定义标签 A，错误会在哪个阶段被发现？",
+        "options": [
+          "汇编时",
+          "链接时",
+          "运行时"
+        ]
+      }
+    },
+    {
+      "id": 312,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC08",
+      "source_file": "chap07tq.doc",
+      "source_number": 8,
+      "source_occurrence": 1,
+      "source_text": "An LC-3 instruction ADD R1,R2, #45 produces an error.  It will be caught at\n  a. assembly time\n  b. link time\n  c. run time\n  Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "An LC-3 instruction ADD R1,R2, #45 produces an error.  It will be caught at",
+      "options": [
+        "assembly time",
+        "link time",
+        "run time"
+      ],
+      "answer": "A",
+      "source_answer": "A",
+      "answer_basis": "source",
+      "zh": {
+        "text": "LC-3 指令 ADD R1,R2, #45 会造成错误。错误会在哪个阶段被发现？",
+        "options": [
+          "汇编时",
+          "链接时",
+          "运行时"
+        ]
+      }
+    },
+    {
+      "id": 313,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC09",
+      "source_file": "chap07tq.doc",
+      "source_number": 9,
+      "source_occurrence": 1,
+      "source_text": "An LC-3 instruction ADD R6,R7,R8 produces an error.  It will be caught at\n  a. assembly time\n  b. link time\n  c. run time\n  Answer: a",
+      "note": "",
+      "explanation": "",
+      "text": "An LC-3 instruction ADD R6,R7,R8 produces an error.  It will be caught at",
+      "options": [
+        "assembly time",
+        "link time",
+        "run time"
+      ],
+      "answer": "A",
+      "source_answer": "A",
+      "answer_basis": "source",
+      "zh": {
+        "text": "LC-3 指令 ADD R6,R7,R8 会造成错误。错误会在哪个阶段被发现？",
+        "options": [
+          "汇编时",
+          "链接时",
+          "运行时"
+        ]
+      }
+    },
+    {
+      "id": 314,
+      "chapter": 6,
+      "bank": "mc",
+      "type": "mc",
+      "label": "C7-MC10",
+      "source_file": "chap07tq.doc",
+      "source_number": 10,
+      "source_occurrence": 1,
+      "source_text": "In LC-3 Assembly Language, the symbol #101 represents\n    a. the decimal value five\n    b. the decimal value one hundred and one\n    c. the hex string 000100000001\n    Answer: b",
+      "note": "",
+      "explanation": "",
+      "text": "In LC-3 Assembly Language, the symbol #101 represents",
+      "options": [
+        "the decimal value five",
+        "the decimal value one hundred and one",
+        "the hex string 000100000001"
+      ],
+      "answer": "B",
+      "source_answer": "B",
+      "answer_basis": "source",
+      "zh": {
+        "text": "在 LC-3 汇编语言中，符号 #101 表示什么？",
+        "options": [
+          "十进制数 5",
+          "十进制数 101",
+          "十六进制字符串 000100000001"
+        ]
       }
     }
   ]

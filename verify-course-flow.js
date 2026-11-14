@@ -20,7 +20,7 @@ async page => {
   const mathState=await p.evaluate(()=>localStorage.getItem('math3700-practice-v1'));
   await switchTo(p,'cps',cps);
   const c=JSON.parse(await p.locator('#quiz-data').textContent());
-  assert(c.course.ui_version==='2026-10-22.zh1'&&c.course.answer_basis==='source'&&c.questions.length===244,'CPS2390 loads all 244 original-source questions with the new interface');
+  assert(c.course.ui_version==='2026-10-22.zh1'&&c.course.answer_basis==='source'&&c.questions.length===314,'CPS2390 loads all 314 original-source questions with the new interface');
   assert(await p.evaluate(()=>localStorage.getItem('math3700-practice-v1'))===mathState,'Entering CPS2390 preserves MATH progress byte-for-byte');
   await p.locator('#question-translation>summary').click();assert(await p.locator('[data-zh-option]:visible').count()===2,'True/false choices have visible Chinese meanings');
   await p.locator('[data-choice="B"] [data-zh-option]').click();await p.locator('#submit').click();

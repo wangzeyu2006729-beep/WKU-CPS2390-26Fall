@@ -1,0 +1,150 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 7 (Copyright Yale Patt)
+
+True-False
+----------
+
+1. It is more difficult to remember the assembly language name for an opcode than the machine language name for the same opcode (F)
+
+2. A single assembly language name for an opcode can be translated into two machine language codes (F)
+
+3. Every assembly language instruction must contain a label (F)
+
+4. In LC-3 Assembly language, a (;) identifies the beginning of a comment (T)
+
+5. A comment in the instruction never affects the translation of that instruction (T)
+
+6. Every assembly language instruction must contain an OPCODE (T)
+
+7. The number of operands required by an OPCODE depends on the opcode (T)
+
+8. The Location Counter is a device that is used to translate an assembly language program but not used to execute that program (T)
+
+9. The Assembler ignores all comments (T)
+
+10. A comment may be useful to some other programmer who has to modify your program five years from now, long after you have gone on to another job (T)
+
+11. A comment may be useful to you two months from now, after you have forgotten the reason for a particular instruction in your program (T)
+
+12. In LC-3 Assembly Language, all opcodes must be aligned (F)
+
+13. In LC-3 Assembly Language, all opcodes should be aligned for easier readability (T)
+
+14. The .orig pseudo-op sets the location counter to its initial value (T)
+
+15. The .blkw pseudo-op sets aside some number of memory locations in the program space, probably to be used later for storing values (T)
+
+16. The .end pseudo-op is translated into the halt opcode.  It stops execution of the program (F)
+
+17. Assembly languages are more user friendly than machine language (T)
+
+18. If a location in an assembly language program is not explicitly referenced, then there is no need to give it a label (T)
+
+19. The data accessed by an assembly language program must be part of the same module that contains the instructions that specify the accesses (F)
+
+20. Some symbol table entries are created in the second pass of a two-pass assembler (F)
+
+
+Fill in Blanks.  
+--------------
+(Note the answer has been included in parentheses in each problem.)
+
+1. The main function of the first pass in a two-pass assembly process is to construct the (symbol table).
+
+2. A (pseudo-op) is a message to the Assembler that helps in the translation process, but does not result in an executable instruction.
+
+3. The result of the assembly process is to create a/an (object file).
+
+4. The (linker) combines more than one object file into one (executable image).
+
+5. Each assembly language statement usually translates to (one) machine language instruction(s).  (Hint: how many)
+
+6. The symbol table is created in pass (one) of a two-pass Assembler
+
+7. A LD instruction requires (two) explicit operands.
+
+8. The (.ORIG) pseudo-op sets the value of the location counter.
+
+9. The (.END) pseudo-op specifies the end of the assembly language program module.
+
+10. Of the four components of an assembly language instruction, only the (comment) is totally ignored by the Assembler.
+
+
+Multiple Choice.
+---------------
+
+1. The following is not a part of an assembly language instruction
+   a. LABEL
+   b. OPCODE
+   c. OPERANDS
+   d. COMMENT
+   e. Number of cycles required to execute the instruction
+   Answer: e
+
+2. The comment in the instruction  
+   ADD R1,R2,R3 ; Add contents of R3 and R2, put result in R1 is an example of
+
+   a. a helpful comment
+   b. an irrelevant comment
+   c. a harmful comment
+   Answer: c
+
+3. An instruction requires a LABEL if
+   a. it is the target of a branch
+   b. it is the symbolic address of a data element that is referenced
+   c. neither a nor b
+   d, both a and b
+   Answer: d
+
+
+4. A ; alone on a line is
+   a. an assembly error, since there is no information present
+   b. a comment that serves to make the program more readable to a human by separating two parts of the program with a blank line
+   c. a continuation character that tells the assembler to combine the line above the ; with the line below to form a single assembly language instruction.
+   Answer: b
+
+5. The .stringz pseudo-op translates to a sequence of ASCII codes.  The last code in the sequence is
+
+  a. the ASCII code for the last character in the string
+  b. the ASCII code of the end of text character
+  c. x00
+  Answer: c
+
+6. In order to process the instruction LD R1,A
+  a. the location labeled A must appear in the program before the LD instruction
+  b. the location labeled A can appear anywhere in the program
+  c. the location labeled A may not appear in the program provided there is a
+ pseudo-op .EXTERNAL A in the program
+  d. none of the above
+  e. a and c
+  f. b and c
+  g. all of the above
+  Answer: f
+
+7. If one module contains the pseudo-op .EXTERNAL A, and no module contains the label A, the error will be detected at
+
+  a. assembly time
+  b. link time
+  c. run time
+  Answer: b
+
+8. An LC-3 instruction ADD R1,R2, #45 produces an error.  It will be caught at
+  a. assembly time
+  b. link time
+  c. run time
+  Answer: a
+
+9. An LC-3 instruction ADD R6,R7,R8 produces an error.  It will be caught at
+  a. assembly time
+  b. link time
+  c. run time
+  Answer: a
+
+
+10. In LC-3 Assembly Language, the symbol #101 represents
+    a. the decimal value five
+    b. the decimal value one hundred and one
+    c. the hex string 000100000001
+    Answer: b
+

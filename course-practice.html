@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<meta name="theme-color" content="#111315">
+<title>CPS2390 · Chapter 6–7 课程练习</title>
+<style>
+:root{color-scheme:dark;--bg:#111315;--surface:#191c1f;--line:#33383e;--ink:#e7e9ec;--muted:#a2a8af;--accent:#bed1b9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:960px;margin:auto;padding:0 24px 48px}
+a{color:var(--accent);text-underline-offset:4px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;padding:24px 0;border-bottom:1px solid var(--line);font-size:14px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.25;margin:30px 0 12px}
+.chapter-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 22px;padding:0;color:var(--muted)}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.toc a{border:1px solid var(--line);border-radius:6px;padding:7px 11px;text-decoration:none;line-height:1.4;font-size:13px}
+.toc a:hover{background:var(--surface);border-color:var(--accent)}
+.exercise-group{margin-top:32px;scroll-margin-top:12px}
+.exercise-group header h2{font-size:20px;margin:0}
+.exercise-group header p{font-size:13px;color:var(--muted);margin:4px 0 12px}
+.exercise{border:1px solid var(--line);border-radius:8px;background:var(--surface);margin-bottom:8px;overflow-wrap:anywhere}
+.exercise:target{border-color:var(--accent)}
+.exercise>summary,.reference>summary{padding:10px 13px;cursor:pointer;outline-offset:-3px}
+.exercise>summary span{color:var(--muted);font-size:13px;margin-inline-start:8px}
+.source-content{padding:0 14px 10px;min-width:0}
+.source-content p{margin:9px 0;white-space:pre-line}
+.source-bullet{padding-inline-start:16px}
+.source-bullet::before{content:"•";margin-inline-start:-16px;margin-inline-end:8px}
+.reference{border-top:1px solid var(--line)}
+.reference>summary{color:var(--accent)}
+.table-wrap,.code-block{max-width:100%;overflow-x:auto;margin:12px 0}
+.code-block{background:#141719;border:1px solid var(--line);border-radius:5px;padding:10px;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;tab-size:4}
+table{border-collapse:collapse;font-size:13px}
+th,td{border:1px solid var(--line);padding:5px 9px;text-align:left;white-space:pre}
+th{background:#202428}
+.source-figure{margin:10px 0}
+.source-figure img{display:block;max-width:100%;max-height:840px;width:auto;height:auto;border-radius:3px}
+.code-block,.table-wrap,.source-figure{overscroll-behavior-inline:contain}
+</style>
+</head>
+<body>
+<main>
+<nav class="top" aria-label="课程内容"><a href="index.html">← 返回 TestBank</a><strong aria-current="page">CPS2390 课程练习</strong></nav>
+<h1>Chapter 6–7 课程练习</h1>
+<p class="chapter-links">Chapter 6 · 程序设计与调试<br>Chapter 7 · LC-3 汇编语言</p>
+<nav class="toc" aria-label="按练习来源跳转">
+<a href="#assignment-5">Assignment 5</a>
+<a href="#problem-set-3">Problem Set 3</a>
+<a href="#slides">课件练习</a>
+<a href="#book-6">教材 Chapter 6</a>
+<a href="#book-7">教材 Chapter 7</a>
+<a href="#lab">Lab Assignment</a>
+</nav>
+<section id="assignment-5" class="exercise-group" aria-labelledby="assignment-5-title">
+<header><h2 id="assignment-5-title">Assignment 5</h2><p>LC-3 汇编作业 · 6 题</p></header>
+<details id="a5-1" class="exercise">
+<summary><strong>Problem 1 (15 points)</strong> <span>符号表、循环次数与机器码</span></summary>
+<div class="source-content" lang="en">
+<p>Consider the following assembly code:</p>
+<pre class="code-block"><code>          .ORIG   x4000
+            LEA         R3, INPUT
+            LD          R1, SIZE
+            ADD         R3, R3, R1
+LOOP    LDR         R0, R3, #-1
+            ADD         R3, R3, #-1
+            ADD         R1, R1, #-1
+            BRp         LOOP
+            HALT
+INPUT   .STRINGZ &quot;I Like LC-3&quot;
+STRING  .BLKW  4
+INPUT2  .FILL       x1
+SIZE        .FILL       #11
+            .END</code></pre>
+<p class="source-bullet">In the first pass, the assembler creates the symbol table. Fill in the symbol table created by the assembler for this program. (5 points)</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Symbol</th><th scope="col">Address</th></tr></thead><tbody>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+</tbody></table></div>
+<p class="source-bullet">How many times does the instruction at label LOOP execute? (5 points)</p>
+<p class="source-bullet">In the second pass, the assembler creates a binary (.obj) version of the program, using the entries from the symbol table. Write the binary code generated for the first two instructions (LEA and LD). (5 points)</p>
+</div>
+
+</details>
+<details id="a5-2" class="exercise">
+<summary><strong>Problem 2 (15 points)</strong> <span>找出三处汇编错误</span></summary>
+<div class="source-content" lang="en">
+<p>Identify 3 assembly errors in the following program:</p>
+<pre class="code-block"><code>            .ORIG x3001
+            AND R5, R5, ZERO
+            LD R5, STRING
+NEXT        ADD R5, R5, #1
+            BRz NEXT
+            LDR R4, R5, #0
+            SUB R4, R4, #1
+            ST R4, STRING
+NEXT        HALT
+ZERO        .FILL #0
+STRING  .STRINGZ &quot;Hurray !!!&quot;
+            .END</code></pre>
+</div>
+
+</details>
+<details id="a5-3" class="exercise">
+<summary><strong>Problem 3 (15 points)</strong> <span>跟踪位运算程序</span></summary>
+<div class="source-content" lang="en">
+<p>Consider the following assembly program:</p>
+<pre class="code-block"><code>.ORIG X3000
+AND R4, R4, #0
+            LD R5, INPUT
+LOOP    BRz END
+            BRp SKIP
+            ADD R4, R4, #1
+SKIP        ADD R5, R5, R5
+            BR LOOP
+END    ST  R4, RESULT
+            HALT
+INPUT       .FILL x1234
+RESULT .BLKW 1
+            .END</code></pre>
+<p class="source-bullet">Briefly explain what the program does. (i.e., Specify how the value at RESULT relates to value at the INPUT after the execution of the program.) (5 points)</p>
+<p class="source-bullet">How many times does the instruction at label LOOP execute? (5 points)</p>
+<p class="source-bullet">What value will be contained in R5 after the execution of the program? (5 points)</p>
+</div>
+
+</details>
+<details id="a5-4" class="exercise">
+<summary><strong>Problem 4 (15 points)</strong> <span>补全字符串比较程序</span></summary>
+<div class="source-content" lang="en">
+<p>The following LC-3 program compares two character strings of the same length. The source strings are in the .STRINGZ form. The first string starts at memory location x4000, and the second string starts at memory location x4100. If the strings are the same, the program terminates with the value 1 in R5. Insert instructions at (a), (b), and (c) that will complete the program.</p>
+<pre class="code-block"><code>.ORIG x3000
+LD R1, FIRST
+LD R2, SECOND
+AND R0, R0, #0
+LOOP     -------------- (a)
+LDR R4, R2, #0
+BRz NEXT
+ADD R1, R1, #1
+ADD R2, R2, #1
+-------------- (b)
+-------------- (c)
+ADD R3, R3, R4
+BRz LOOP
+AND R5, R5, #0
+BRnzp DONE
+NEXT     AND R5, R5, #0
+ADD R5, R5, #1
+DONE     TRAP x25
+FIRST     .FILL x4000
+SECOND .FILL x4100
+.END</code></pre>
+</div>
+
+</details>
+<details id="a5-5" class="exercise">
+<summary><strong>Problem 5 (20 points)</strong> <span>循环输出 100 个 Z</span></summary>
+<div class="source-content" lang="en">
+<p>Using the iteration construct, write an LC-3 assembly program that displays exactly 100 Zs on the screen (Assume that .ORIG x3000).</p>
+</div>
+
+</details>
+<details id="a5-6" class="exercise">
+<summary><strong>Problem 6 (20 points)</strong> <span>比较寄存器中的两个数</span></summary>
+<div class="source-content" lang="en">
+<p>Write a short LC-3 program that compares the two numbers in R1 and R2 and puts the value 0 in R0 if R1 = R2, 1 if R1 &gt; R2, and −1 if R1 &lt; R2 (Assume that .ORIG x3000).</p>
+</div>
+
+</details>
+</section>
+
+<section id="problem-set-3" class="exercise-group" aria-labelledby="problem-set-3-title">
+<header><h2 id="problem-set-3-title">Problem Set 3</h2><p>原题单覆盖 Chapters 5–7 · 14 题</p></header>
+<details id="ps3-1" class="exercise">
+<summary><strong>第 1 题</strong> <span>根据寄存器快照补全机器码</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(Adapted from 5.31) The following diagram shows a snapshot of the 8 registers of the LC-3 before and after the instruction at location x1000 is executed. Fill in the bits of the instruction at location x1000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Register</th><th scope="col">Before</th><th scope="col">After</th></tr></thead><tbody>
+<tr><td>R0</td><td>x0000</td><td>x0000</td></tr>
+<tr><td>R1</td><td>x1111</td><td>x1111</td></tr>
+<tr><td>R2</td><td>x2222</td><td>x2222</td></tr>
+<tr><td>R3</td><td>x3333</td><td>x3333</td></tr>
+<tr><td>R4</td><td>x4444</td><td>x4444</td></tr>
+<tr><td>R5</td><td>x5555</td><td>xFFF8</td></tr>
+<tr><td>R6</td><td>x6666</td><td>x6666</td></tr>
+<tr><td>R7</td><td>x7777</td><td>x7777</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x1000</td><td>0001 ________________________</td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>1. (Adapted from 5.31) The following diagram shows a snapshot of the 8 registers of the LC-3 before and after the instruction at location x1000 is executed. Fill in the bits of the instruction at location x1000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Register</th><th scope="col">Before</th><th scope="col">After</th></tr></thead><tbody>
+<tr><td>R0</td><td>x0000</td><td>x0000</td></tr>
+<tr><td>R1</td><td>x1111</td><td>x1111</td></tr>
+<tr><td>R2</td><td>x2222</td><td>x2222</td></tr>
+<tr><td>R3</td><td>x3333</td><td>x3333</td></tr>
+<tr><td>R4</td><td>x4444</td><td>x4444</td></tr>
+<tr><td>R5</td><td>x5555</td><td>xFFF8</td></tr>
+</tbody></table></div>
+<pre class="code-block"><code>R6 x6666 x6666
+R7 x7777 x7777</code></pre>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+
+</tbody></table></div>
+<pre class="code-block"><code>x1000 0001 101 000 1 11000</code></pre>
+</div></details>
+</details>
+<details id="ps3-2" class="exercise">
+<summary><strong>第 2 题</strong> <span>断点、寄存器与时钟周期</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">The memory locations x3000 to x3007 contain the values as shown in the table below. Assume the memory contents below are loaded into the simulator and the PC has been set to point to location x3000. Assume that a breakpoint has been placed to the left of the HALT instruction (i.e. at location x3006 which contains 1111 0000 0010 0101). Assume that before the program is run, each of the 8 registers has the value x0000 and the NZP bits are 010.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>0101000000100000</td></tr>
+<tr><td>x3001</td><td>0001000000100101</td></tr>
+<tr><td>x3002</td><td>0010001000000100</td></tr>
+<tr><td>x3003</td><td>0001000000000000</td></tr>
+<tr><td>x3004</td><td>0001001001111111</td></tr>
+<tr><td>x3005</td><td>0000001111111101</td></tr>
+<tr><td>x3006</td><td>1111000000100101</td></tr>
+<tr><td>x3007</td><td>0000000000000100</td></tr>
+</tbody></table></div>
+<p class="source-bullet">In no more than 15 words, summarize what this program will do when the Run button is pushed in the simulator.</p>
+<p>Hint: What relationship is there between the value loaded from memory and the final value in R0 after the program has completed?</p>
+<p class="source-bullet">What are the contents of the PC, the 8 general purpose registers (R0-R7), and the N, Z, and P condition code registers after the program completes?</p>
+<p class="source-bullet">What is the total number of CPU clock cycles that this program will take to execute until it reaches the breakpoint? (Note: when there is a breakpoint placed at an instruction, the program stops right before executing the instruction, not after.)</p>
+<p>Note: Assume each state that accesses memory takes 5 cycles to complete and every other state takes 1 cycle to execute.</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>2. The memory locations x3000 to x3007 contain the values as shown in the table below. Assume the memory contents below are loaded into the simulator and the PC has been set to point to location x3000. Assume that a breakpoint has been placed to the left of the HALT instruction (i.e. at location x3006 which contains 1111 0000 0010 0101). Assume that before the program is run, each of the 8 registers has the value x0000 and the NZP bits are 010.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>0101000000100000</td></tr>
+<tr><td>x3001</td><td>0001000000100101</td></tr>
+<tr><td>x3002</td><td>0010001000000100</td></tr>
+<tr><td>x3003</td><td>0001000000000000</td></tr>
+<tr><td>x3004</td><td>0001001001111111</td></tr>
+<tr><td>x3005</td><td>0000001111111101</td></tr>
+<tr><td>x3006</td><td>1111000000100101</td></tr>
+<tr><td>x3007</td><td>0000000000000100</td></tr>
+</tbody></table></div>
+<p>a. In no more than 15 words, summarize what this program will do when the Run button is pushed in the simulator.</p>
+<p>Hint: What relationship is there between the value loaded from memory and the final value in R0 after the program has completed?</p>
+<p>5 is put in R0 and shifted left the value at location x3007 times</p>
+<p>b. What are the contents of the PC, the 8 general purpose registers (R0-R7), and the N, Z, and P condition code registers after the program completes?</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">PC</th><th scope="col">x3006</th></tr></thead><tbody>
+<tr><td>R0</td><td>x0050</td></tr>
+<tr><td>R1</td><td>x0000</td></tr>
+<tr><td>R2</td><td>x0000</td></tr>
+<tr><td>R3</td><td>x0000</td></tr>
+<tr><td>R4</td><td>x0000</td></tr>
+<tr><td>R5</td><td>x0000</td></tr>
+<tr><td>R6</td><td>x0000</td></tr>
+<tr><td>R7</td><td>x0000</td></tr>
+<tr><td>N</td><td>0</td></tr>
+<tr><td>Z</td><td>1</td></tr>
+<tr><td>P</td><td>0</td></tr>
+</tbody></table></div>
+<p>c. What is the total number of CPU clock cycles that this program will take to execute until it reaches the breakpoint?</p>
+<p>Note: Assume each state that accesses memory takes 5 cycles to complete and every other state takes 1 cycle to execute.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory
+Location</th><th scope="col">Value</th><th scope="col">Instruction</th><th scope="col">Cycles to
+Execute</th><th scope="col">Number of times
+Executed</th><th scope="col">Total
+Cycles</th></tr></thead><tbody>
+<tr><td>x3000</td><td>0101000000100000</td><td>AND</td><td>9</td><td>1</td><td>9</td></tr>
+<tr><td>x3001</td><td>0001000000100101</td><td>ADD</td><td>9</td><td>1</td><td>9</td></tr>
+<tr><td>x3002</td><td>0010001000000100</td><td>LD</td><td>15</td><td>1</td><td>15</td></tr>
+<tr><td>x3003</td><td>0001000000000000</td><td>ADD</td><td>9</td><td>4</td><td>36</td></tr>
+<tr><td>x3004</td><td>0001001001111111</td><td>ADD</td><td>9</td><td>4</td><td>36</td></tr>
+<tr><td>x3005</td><td>0000001111111101</td><td>Branch</td><td>10 taken
+9 not taken</td><td>3 taken
+1 not taken</td><td>39</td></tr>
+</tbody></table></div>
+<p>Total Cycle: 9 + 9 + 15 + 36 + 36 + 39 = 144</p>
+</div></details>
+</details>
+<details id="ps3-3" class="exercise">
+<summary><strong>第 3 题</strong> <span>推断程序功能</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">Below is a segment of LC-3 assembly language program.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">ADD R2, R1, #0</th></tr></thead><tbody>
+<tr><td>HERE</td><td>ADD R3, R2, #-1</td></tr>
+<tr><td></td><td>AND R3, R3, R2</td></tr>
+<tr><td></td><td>BRz END</td></tr>
+<tr><td></td><td>ADD R2, R2, #1</td></tr>
+<tr><td></td><td>BRnzp HERE</td></tr>
+<tr><td>END</td><td>HALT</td></tr>
+</tbody></table></div>
+<p>If the data in R1 is an unsigned integer between 2 and 32768 (inclusive), what does the program do?</p>
+<p>(Hint: what is the relationship between the resulting integer in R2 and the original integer in R1?)</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>3. Below is a segment of LC-3 assembly language program.</p>
+<pre class="code-block"><code>ADD R2, R1, #0
+HERE ADD R3, R2, #-1
+AND R3, R3, R2
+BRz END
+ADD R2, R2, #1
+BRnzp HERE
+END HALT</code></pre>
+<p>If the data in R1 is an unsigned integer between 2 and 32768 (inclusive), what does the program do?</p>
+<p>(Hint: what is the relationship between the resulting integer in R2 and the original integer in R1?)</p>
+<p>The program finds out the smallest power of 2 which is larger than or equal to the unsigned integer in R1.</p>
+</div></details>
+</details>
+<details id="ps3-4" class="exercise">
+<summary><strong>第 4 题</strong> <span>跟踪机器码程序</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">What does the following program do (in 15 words or fewer)? The PC is initially at x3000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>0101 000 000 1 00000</td></tr>
+<tr><td>x3001</td><td>0010 001 011111110</td></tr>
+<tr><td>x3002</td><td>0000 010 000000100</td></tr>
+<tr><td>x3003</td><td>0000 011 000000001</td></tr>
+<tr><td>x3004</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x3005</td><td>0001 001 001 000 001</td></tr>
+<tr><td>x3006</td><td>0000 111 111111011</td></tr>
+<tr><td>x3007</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>4. What does the following program do (in 15 words or fewer)? The PC is initially at x3000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>0101 000 000 1 00000</td></tr>
+<tr><td>x3001</td><td>0010 001 011111110</td></tr>
+<tr><td>x3002</td><td>0000 010 000000100</td></tr>
+<tr><td>x3003</td><td>0000 011 000000001</td></tr>
+<tr><td>x3004</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x3005</td><td>0001 001 001 000 001</td></tr>
+<tr><td>x3006</td><td>0000 111 111111011</td></tr>
+<tr><td>x3007</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+<p>Counts the number of bits that are set to 1 in the word at x3100</p>
+</div></details>
+</details>
+<details id="ps3-5" class="exercise">
+<summary><strong>第 5 题</strong> <span>找出负数并存下地址</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">Prior to executing the following program, memory locations x3100 through x4000 are initialized to random values, exactly one of which is negative. The following program finds the address of the negative value, and stores that address into memory location x3050. Two instructions are missing. Fill in the missing instructions to complete the program. The PC is initially at x3000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>1110 000 011111111</td></tr>
+<tr><td>x3001</td><td></td></tr>
+<tr><td>x3002</td><td></td></tr>
+<tr><td>x3003</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x3004</td><td>0000 111 111111100</td></tr>
+<tr><td>x3005</td><td>0011 000 001001010</td></tr>
+<tr><td>x3006</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>5. Prior to executing the following program, memory locations x3100 through x4000 are initialized to random values, exactly one of which is negative. The following program finds the address of the negative value, and stores that address into memory location x3050. Two instructions are missing. Fill in the missing instructions to complete the program. The PC is initially at x3000.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Memory Location</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>x3000</td><td>1110 000 011111111</td></tr>
+<tr><td>x3001</td><td>0110 001 000 000000</td></tr>
+<tr><td>x3002</td><td>0000 100 000000010</td></tr>
+<tr><td>x3003</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x3004</td><td>0000 111 111111100</td></tr>
+<tr><td>x3005</td><td>0011 000 001001010</td></tr>
+<tr><td>x3006</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+</div></details>
+</details>
+<details id="ps3-6" class="exercise">
+<summary><strong>第 6 题</strong> <span>区分指令次数与内存访问次数</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">The LC-3 has just finished executing a large program. A careful examination of each clock cycle reveals that the number of executed store instructions (ST, STR, and STI) is greater than the number of executed load instructions (LD, LDR, and LDI). However, the number of memory write accesses is less than the number of memory read accesses, excluding instruction fetches. How can that be? Be sure to specify which instructions may account for the discrepancy.</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>6. The LC-3 has just finished executing a large program. A careful examination of each clock cycle reveals that the number of executed store instructions (ST, STR, and STI) is greater than the number of executed load instructions (LD, LDR, and LDI). However, the number of memory write accesses is less than the number of memory read accesses, excluding instruction fetches. How can that be? Be sure to specify which instructions may account for the discrepancy.</p>
+<p>A large number of LDI instructions (two read accesses) and STI instructions (one read access and one write access) could account for this discrepancy.</p>
+</div></details>
+</details>
+<details id="ps3-7" class="exercise">
+<summary><strong>第 7 题</strong> <span>标签与 LD</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(7.2) An LC-3 assembly language program contains the instruction:</p>
+<pre class="code-block"><code>ASCII       LD R1, ASCII</code></pre>
+<p>The label ASCII corresponds to the address x4F08. If this instruction is executed during the running of the program, what will be contained in R1 immediately after the instruction is executed?</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<pre class="code-block"><code>7. (7.2) An LC-3 assembly language program contains the instruction: ASCII LD R1, ASCII</code></pre>
+<p>The label ASCII corresponds to the address x4F08. If this instruction is executed during the running of the program, what will be contained in R1 immediately after the instruction is executed?</p>
+<p>Since the LD instruction is loading itself, the PC offset is #-1 R1 = 0010 001 1 1111 1111</p>
+</div></details>
+</details>
+<details id="ps3-8" class="exercise">
+<summary><strong>第 8 题</strong> <span>立即数范围与错误检测</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(Adapted from 7.10) The following program fragment has an error in it. Identify the error and explain how to fix it.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">ADD R3, R3, #30</th></tr></thead><tbody>
+<tr><td></td><td>ST R3, A</td></tr>
+<tr><td></td><td>HALT</td></tr>
+<tr><td>A</td><td>.BLKW 1</td></tr>
+</tbody></table></div>
+<p>Will this error be detected when this code is assembled or when this code is run on the LC-3?</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>8. (Adapted from 7.10) The following program fragment has an error in it. Identify the error and explain how to fix it.</p>
+<pre class="code-block"><code>ADD R3, R3, #30
+ST R3, A
+HALT
+A .BLKW 1</code></pre>
+<p>Will this error be detected when this code is assembled or when this code is run on the LC-3?</p>
+<pre class="code-block"><code>The immediate value is too large for ADD R3, R3, #30.
+This error will be detected at assembly time because the immediate operand must fit in 5 bits (−16 to +15).
+We can split the instruction into two ADD R3, R3, #15.</code></pre>
+</div></details>
+</details>
+<details id="ps3-9" class="exercise">
+<summary><strong>第 9 题</strong> <span>反推循环初值</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(Adapted from 6.14) Consider the following assembly language program:</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">AND R2, R2, #0</th></tr></thead><tbody>
+<tr><td>LOOP</td><td>ADD R1, R1, #-3</td></tr>
+<tr><td></td><td>BRn END</td></tr>
+<tr><td></td><td>ADD R2, R2, #1</td></tr>
+<tr><td></td><td>BRnzp LOOP</td></tr>
+<tr><td>END</td><td>HALT</td></tr>
+</tbody></table></div>
+<p>What are the possible initial values of R1 that cause the final value in R2 to be 3?</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>9. (Adapted from 6.14) Consider the following assembly language program:</p>
+<pre class="code-block"><code>AND R2, R2, #0
+LOOP ADD R1, R1, #-3
+BRn END
+ADD R2, R2, #1
+BRnzp LOOP
+END HALT</code></pre>
+<p>What are the possible initial values of R1 that cause the final value in R2 to be 3?</p>
+<pre class="code-block"><code>For R2 to contain the value 3, we must have looped the loop body 3 times. This means BRn must not have initiated a branch for 3 consecutive times. Therefore, R1 wasn&#x27;t negative after the instruction ADD R1, R1, #-3 was</code></pre>
+<p>executed 3 times and then was negative after the 4th execution of the instruction. That is:</p>
+<p>R1 − (3 × 3) ≥ 0 and R1 − (3 × 4) &lt; 0</p>
+<p>Solving the inequalities yields, 9 ≤ R1 &lt; 12. Since a register contains integers, R1 could have been 9, 10, or 11.</p>
+</div></details>
+</details>
+<details id="ps3-10" class="exercise">
+<summary><strong>第 10 题</strong> <span>符号表与程序功能</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(Adapted from 7.16) Assume a sequence of nonnegative integers is stored in consecutive memory locations, one integer per memory location, starting at location x4000. Each integer has a value between 0 and 30,000 (decimal). The sequence terminates with the value -1 (i.e., xFFFF).</p>
+<p class="source-bullet">Create the symbol table entries generated by the assembler when translating the following routine into machine code:</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">.ORIG x3000</th></tr></thead><tbody>
+<tr><td></td><td>AND R4, R4, #0</td></tr>
+<tr><td></td><td>AND R3, R3, #0</td></tr>
+<tr><td></td><td>LD R0, NUMBERS</td></tr>
+<tr><td>LOOP</td><td>LDR R1, R0, #0</td></tr>
+<tr><td></td><td>NOT R2, R1</td></tr>
+<tr><td></td><td>BRz DONE</td></tr>
+<tr><td></td><td>AND R2, R1, #1</td></tr>
+<tr><td></td><td>BRz L1</td></tr>
+<tr><td></td><td>ADD R4, R4, #1</td></tr>
+<tr><td></td><td>BRnzp NEXT</td></tr>
+<tr><td>L1</td><td>ADD R3, R3, #1</td></tr>
+<tr><td>NEXT</td><td>ADD R0, R0, #1</td></tr>
+<tr><td></td><td>BRnzp LOOP</td></tr>
+<tr><td>DONE</td><td>TRAP x25</td></tr>
+<tr><td>NUMBERS</td><td>.FILL x4000</td></tr>
+<tr><td></td><td>.END</td></tr>
+</tbody></table></div>
+<p class="source-bullet">What does the above program do?</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>10.(Adapted from 7.16) Assume a sequence of nonnegative integers is stored in consecutive memory locations, one integer per memory location, starting at location x4000. Each integer has a value between 0 and 30,000 (decimal). The sequence terminates with the value -1 (i.e., xFFFF).</p>
+<p>a. Create the symbol table entries generated by the assembler when translating the following routine into machine code:</p>
+<pre class="code-block"><code>.ORIG x3000
+AND R4, R4, #0
+AND R3, R3, #0
+LD R0, NUMBERS
+LOOP LDR R1, R0, #0
+NOT R2, R1
+BRz DONE
+AND R2, R1, #1
+BRz L1
+ADD R4, R4, #1
+BRnzp NEXT
+L1 ADD R3, R3, #1
+NEXT ADD R0, R0, #1
+BRnzp LOOP
+DONE TRAP x25
+NUMBERS .FILL x4000
+.END</code></pre>
+<div class="table-wrap"><table><thead><tr><th scope="col">Label</th><th scope="col">Address</th></tr></thead><tbody>
+<tr><td>LOOP</td><td>x3003</td></tr>
+<tr><td>L1</td><td>x300A</td></tr>
+<tr><td>NEXT</td><td>x300B</td></tr>
+<tr><td>DONE</td><td>x300D</td></tr>
+<tr><td>NUMBERS</td><td>x300E</td></tr>
+</tbody></table></div>
+<p>b. What does the above program do?</p>
+<pre class="code-block"><code>The instruction AND R2, R1, #1 performs a bit mask (x0001) to decide whether the least significant bit of the value is 0 or 1. The LSB of a number is used to determine whether the integer was even or odd. For example, numbers with a zero LSB are: 0000 (#0), 0010 (#2), 0100 (#4), 0110 (#6), which are all even.</code></pre>
+<p>Hence, R3 counts the amount of even numbers in the list and R4 counts the amount of odd numbers.</p>
+</div></details>
+</details>
+<details id="ps3-11" class="exercise">
+<summary><strong>第 11 题</strong> <span>补全字符串比较程序</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">(Adapted from 7.18) The following LC-3 program compares two character strings of the same length. The source strings are in the .STRINGZ form. The first string starts at memory location x4000, and the second string starts at memory location x4100. If the strings are the same, the program terminates with the value 1 in R5; otherwise the program terminates with the value 0 in R5. Insert one instruction each at (a), (b), and (c) that will complete the program. (Note: The memory location immediately following each string contains x0000.)</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">.ORIG x3000</th><th scope="col"></th></tr></thead><tbody>
+<tr><td></td><td>LD R1, FIRST</td><td></td></tr>
+<tr><td></td><td>LD R2, SECOND</td><td></td></tr>
+<tr><td></td><td>AND R0, R0, #0</td><td></td></tr>
+<tr><td>LOOP</td><td>____________________</td><td>; (a)</td></tr>
+<tr><td></td><td>LDR R4, R2, #0</td><td></td></tr>
+<tr><td></td><td>BRz NEXT</td><td></td></tr>
+<tr><td></td><td>ADD R1, R1, #1</td><td></td></tr>
+<tr><td></td><td>ADD R2, R2, #1</td><td></td></tr>
+<tr><td></td><td>____________________</td><td>; (b)</td></tr>
+<tr><td></td><td>____________________</td><td>; (c)</td></tr>
+<tr><td></td><td>ADD R3, R3, R4</td><td></td></tr>
+<tr><td></td><td>BRz LOOP</td><td></td></tr>
+<tr><td></td><td>AND R5, R5, #0</td><td></td></tr>
+<tr><td></td><td>BRnzp DONE</td><td></td></tr>
+<tr><td>NEXT</td><td>AND R5, R5, #0</td><td></td></tr>
+<tr><td></td><td>ADD R5, R5, #1</td><td></td></tr>
+<tr><td>DONE</td><td>TRAP x25</td><td></td></tr>
+<tr><td>FIRST</td><td>.FILL x4000</td><td></td></tr>
+<tr><td>SECOND</td><td>.FILL x4100</td><td></td></tr>
+<tr><td></td><td>.END</td><td></td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>11. (Adapted from 7.18) The following LC-3 program compares two character strings of the same length. The source strings are in the .STRINGZ form. The first string starts at memory location x4000, and the second string starts at memory location x4100. If the strings are the same, the program terminates with the value 1 in R5; otherwise the program terminates with the value 0 in R5. Insert one instruction</p>
+<p>each at (a), (b), and (c) that will complete the program. (Note: The memory location immediately following each string contains x0000.)</p>
+<pre class="code-block"><code>.ORIG x3000
+LD R1, FIRST
+LD R2, SECOND
+AND R0, R0, #0
+LOOP LDR R3, R1, #0 ; (a)
+LDR R4, R2, #0
+BRz NEXT
+ADD R1, R1, #1
+ADD R2, R2, #1
+NOT R4, R4 ; (b)
+ADD R4, R4, #1 ; (c)
+(you could have negated R3 instead)
+ADD R3, R3, R4
+BRz LOOP
+AND R5, R5, #0
+BRnzp DONE
+NEXT AND R5, R5, #0
+ADD R5, R5, #1
+DONE TRAP x25
+FIRST .FILL x4000
+SECOND .FILL x4100
+.END</code></pre>
+</div></details>
+</details>
+<details id="ps3-12" class="exercise">
+<summary><strong>第 12 题</strong> <span>调试位计数程序</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">The data at memory address x3500 is a bit vector with each bit representing whether a certain power plant in the area is generating electricity (bit = 1) or not (bit = 0). The program counts the number of power plants that generate electricity and stores the result at x3501. However, the program contains a mistake which prevents it from correctly counting the number of electricity generating (operational) power plants. Identify it and explain how to fix it.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">.ORIG x3000</th></tr></thead><tbody>
+<tr><td></td><td>AND R0, R0, #0</td></tr>
+<tr><td></td><td>LD R1, NUMBITS</td></tr>
+<tr><td></td><td>LDI R2, VECTOR</td></tr>
+<tr><td></td><td>ADD R3, R0, #1</td></tr>
+<tr><td>CHECK</td><td>AND R4, R2, R3</td></tr>
+<tr><td></td><td>BRz NOTOPER</td></tr>
+<tr><td></td><td>ADD R0, R0, #1</td></tr>
+<tr><td>NOTOPER</td><td>ADD R3, R3, R3</td></tr>
+<tr><td></td><td>ADD R1, R1, #-1</td></tr>
+<tr><td></td><td>BRp CHECK</td></tr>
+<tr><td></td><td>STR R0, R2, #1</td></tr>
+<tr><td></td><td>TRAP x25</td></tr>
+<tr><td>NUMBITS</td><td>.FILL #16</td></tr>
+<tr><td>VECTOR</td><td>.FILL x3500</td></tr>
+<tr><td></td><td>.END</td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>12.The data at memory address x3500 is a bit vector with each bit representing whether a certain power plant in the area is generating electricity (bit = 1) or not (bit = 0). The program counts the number of power plants that generate electricity and stores the result at x3501. However, the program contains a mistake which prevents it from correctly counting the number of electricity generating (operational) power plants. Identify it and explain how to fix it.</p>
+<pre class="code-block"><code>.ORIG x3000
+AND R0, R0, #0
+LD R1, NUMBITS
+LDI R2, VECTOR
+ADD R3, R0, #1
+CHECK AND R4, R2, R3
+BRz NOTOPER
+ADD R0, R0, #1
+NOTOPER ADD R3, R3, R3
+ADD R1, R1, #-1
+BRp CHECK
+LD R2, VECTOR
+STR R0, R2, #1
+TRAP x25
+NUMBITS .FILL #16
+VECTOR .FILL x3500
+.END
+R2 contains the bit vector, and not the address at which the bit vector is contained. The instruction LDI R2, VECTOR loaded the value at x3500 into R2 since the value at the memory address labeled as VECTOR was used as the address from which to load. The store instruction STR R0, R2, #1 uses the value of R2 to evaluate an address. However, R2 must be modified to contain an address for an STR instruction to work. Thus, LD R2, VECTOR is an additional required instruction.</code></pre>
+</div></details>
+</details>
+<details id="ps3-13" class="exercise">
+<summary><strong>第 13 题</strong> <span>跟踪寻址与存储指令</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">The following program does not do anything useful. However, being an electronic idiot, the LC-3 will still execute it.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col"></th><th scope="col">.ORIG x3000</th></tr></thead><tbody>
+<tr><td></td><td>LD R0, Addr1</td></tr>
+<tr><td></td><td>LEA R1, Addr1</td></tr>
+<tr><td></td><td>LDI R2, Addr1</td></tr>
+<tr><td></td><td>LDR R3, R0, #-6</td></tr>
+<tr><td></td><td>LDR R4, R1, #0</td></tr>
+<tr><td></td><td>ADD R1, R1, #3</td></tr>
+<tr><td></td><td>ST R2, #5</td></tr>
+<tr><td></td><td>STR R1, R0, #3</td></tr>
+<tr><td></td><td>STI R4, Addr4</td></tr>
+<tr><td></td><td>HALT</td></tr>
+<tr><td>Addr1</td><td>.FILL x300B</td></tr>
+<tr><td>Addr2</td><td>.FILL x000A</td></tr>
+<tr><td>Addr3</td><td>.BLKW 1</td></tr>
+<tr><td>Addr4</td><td>.FILL x300D</td></tr>
+<tr><td>Addr5</td><td>.FILL x300C</td></tr>
+<tr><td></td><td>.END</td></tr>
+</tbody></table></div>
+<p>Without using the simulator, answer the following questions:</p>
+<p class="source-bullet">What will the values of registers R0 through R4 be after the LC-3 finishes executing the ADD instruction?</p>
+<p class="source-bullet">What will the values of memory locations Addr1 through Addr5 be after the LC-3 finishes executing the HALT instruction?</p>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p>13.The following program does not do anything useful. However, being an electronic idiot, the LC-3 will still execute it.</p>
+<pre class="code-block"><code>.ORIG x3000
+LD R0, Addr1
+LEA R1, Addr1
+LDI R2, Addr1
+LDR R3, R0, #-6
+LDR R4, R1, #0
+ADD R1, R1, #3
+ST R2, #5
+STR R1, R0, #3
+STI R4, Addr4
+HALT
+Addr1 .FILL x300B
+Addr2 .FILL x000A
+Addr3 .BLKW 1
+Addr4 .FILL x300D
+Addr5 .FILL x300C
+.END</code></pre>
+<p>Without using the simulator, answer the following questions:</p>
+<p>a. What will the values of registers R0 through R4 be after the LC-3 finishes executing the ADD instruction?</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">R0</th><th scope="col">x300B</th></tr></thead><tbody>
+<tr><td>R1</td><td>x300D</td></tr>
+<tr><td>R2</td><td>x000A</td></tr>
+<tr><td>R3</td><td>x1263</td></tr>
+<tr><td>R4</td><td>x300B</td></tr>
+</tbody></table></div>
+<p>b. What will the values of memory locations Addr1 through Addr5 be after the LC-3 finishes executing the HALT instruction?</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Addr1</th><th scope="col">x300B</th></tr></thead><tbody>
+<tr><td>Addr2</td><td>x000A</td></tr>
+<tr><td>Addr3</td><td>x000A</td></tr>
+<tr><td>Addr4</td><td>x300B</td></tr>
+<tr><td>Addr5</td><td>x300D</td></tr>
+</tbody></table></div>
+</div></details>
+</details>
+<details id="ps3-14" class="exercise">
+<summary><strong>第 14 题</strong> <span>PCoffset9 与程序停止条件</span></summary>
+<div class="source-content" lang="en">
+<p class="source-bullet">An LC-3 program is stored in memory locations x4000 to x4005. Note that the branch instruction in memory location x4002 has an unspecified PCoffset9, denoted as X.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Address</th><th scope="col">Instruction</th></tr></thead><tbody>
+<tr><td>x4000</td><td>0101 000 000 1 00000</td></tr>
+<tr><td>x4001</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x4002</td><td>0000 011 X</td></tr>
+<tr><td>x4003</td><td>0001 000 000 1 00010</td></tr>
+<tr><td>x4004</td><td>0001 000 000 1 00011</td></tr>
+<tr><td>x4005</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+<p>The program starts executing with PC = x4000.</p>
+<p>Your job: In the table below, for each value of X, answer the question: “Does the program halt?” (Yes or No). If your answer is “Yes”, answer the question: “What value is stored in R0 immediately before the HALT instruction executes?” If your answer is “No”, put a dash in the column labeled “Value stored in R0”.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">X</th><th scope="col">Does the program halt?</th><th scope="col">Value stored in R0</th></tr></thead><tbody>
+<tr><td>000000010</td><td></td><td></td></tr>
+<tr><td>000000001</td><td></td><td></td></tr>
+<tr><td>000000000</td><td></td><td></td></tr>
+<tr><td>111111111</td><td></td><td></td></tr>
+<tr><td>111111110</td><td></td><td></td></tr>
+</tbody></table></div>
+</div>
+<details class="reference"><summary>查看教师参考答案</summary><div class="source-content" lang="en">
+<p class="source-bullet">An LC-3 program is stored in memory locations x4000 to x4005. Note that the branch instruction in memory location x4002 has an unspecified PCoffset9, denoted as X.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Address</th><th scope="col">Instruction</th></tr></thead><tbody>
+<tr><td>x4000</td><td>0101 000 000 1 00000</td></tr>
+<tr><td>x4001</td><td>0001 000 000 1 00001</td></tr>
+<tr><td>x4002</td><td>0000 011 X</td></tr>
+<tr><td>x4003</td><td>0001 000 000 1 00010</td></tr>
+<tr><td>x4004</td><td>0001 000 000 1 00011</td></tr>
+<tr><td>x4005</td><td>1111 0000 0010 0101</td></tr>
+</tbody></table></div>
+<p>The program starts executing with PC = x4000.</p>
+<p>Your job: In the table below, for each value of X, answer the question: “Does the program halt?” (Yes or No). If your answer is “Yes”, answer the question: “What value is stored in R0 immediately before the HALT instruction executes?” If your answer is “No”, put a dash in the column labeled “Value stored in R0”.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">X</th><th scope="col">Does the program halt?</th><th scope="col">Value stored in R0</th></tr></thead><tbody>
+<tr><td>000000010</td><td>Yes</td><td>1</td></tr>
+<tr><td>000000001</td><td>Yes</td><td>4</td></tr>
+<tr><td>000000000</td><td>Yes</td><td>6</td></tr>
+<tr><td>111111111</td><td>No</td><td>–</td></tr>
+<tr><td>111111110</td><td>Yes</td><td>x8005 (-2<sup>15</sup> + 5)</td></tr>
+</tbody></table></div>
+</div></details>
+</details>
+</section>
+
+<section id="slides" class="exercise-group" aria-labelledby="slides-title">
+<header><h2 id="slides-title">课件练习</h2><p>Chapter 6 调试题 · Chapter 7 汇编题 · 共 9 题</p></header>
+<details id="c6-slide-1" class="exercise">
+<summary><strong>6-23–24</strong> <span>乘法程序调试</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-23.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 23 页（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-23.webp" alt="Chapter 6 课件第 23 页"></a></figure>
+</div>
+<details class="reference"><summary>查看课件讲解</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-24.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 24 页讲解（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-24.webp" alt="Chapter 6 课件第 24 页讲解"></a></figure>
+</div></details>
+</details>
+<details id="c6-slide-2" class="exercise">
+<summary><strong>6-25–26</strong> <span>数组求和程序调试</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-25.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 25 页（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-25.webp" alt="Chapter 6 课件第 25 页"></a></figure><p>Input data from the next slide</p><figure class="source-figure"><a href="course-practice-assets/c6-slide-25-input.webp" target="_blank" rel="noopener" aria-label="课件输入数据表（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-25-input.webp" alt="课件输入数据表"></a></figure>
+</div>
+<details class="reference"><summary>查看课件讲解</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-26.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 26 页讲解（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-26.webp" alt="Chapter 6 课件第 26 页讲解"></a></figure>
+</div></details>
+</details>
+<details id="c6-slide-3" class="exercise">
+<summary><strong>6-27–28</strong> <span>查找数值 5</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-27.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 27 页（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-27.webp" alt="Chapter 6 课件第 27 页"></a></figure><p>Input data from the next slide</p><figure class="source-figure"><a href="course-practice-assets/c6-slide-27-input.webp" target="_blank" rel="noopener" aria-label="课件输入数据表（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-27-input.webp" alt="课件输入数据表"></a></figure>
+</div>
+<details class="reference"><summary>查看课件讲解</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-28.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 28 页讲解（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-28.webp" alt="Chapter 6 课件第 28 页讲解"></a></figure>
+</div></details>
+</details>
+<details id="c6-slide-4" class="exercise">
+<summary><strong>6-29–30</strong> <span>寻找最高置位</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-29.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 29 页（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-29.webp" alt="Chapter 6 课件第 29 页"></a></figure>
+</div>
+<details class="reference"><summary>查看课件讲解</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c6-slide-30.webp" target="_blank" rel="noopener" aria-label="Chapter 6 课件第 30 页讲解（打开原图）"><img loading="lazy" src="course-practice-assets/c6-slide-30.webp" alt="Chapter 6 课件第 30 页讲解"></a></figure>
+</div></details>
+</details>
+<details id="c7-slide-15" class="exercise">
+<summary><strong>7-15</strong> <span>构建符号表</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-15.webp" target="_blank" rel="noopener" aria-label="Chapter 7 课件第 15 页（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-15.webp" alt="Chapter 7 课件第 15 页"></a></figure>
+</div>
+<details class="reference"><summary>查看课件答案</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-16-answer.webp" target="_blank" rel="noopener" aria-label="第 16 页符号表（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-16-answer.webp" alt="第 16 页符号表"></a></figure>
+</div></details>
+</details>
+<details id="c7-slide-18" class="exercise">
+<summary><strong>7-18</strong> <span>翻译为机器语言</span></summary>
+<div class="source-content" lang="en">
+<p>Using the symbol table constructed earlier, translate these statements into LC-3 machine language.</p><pre class="code-block"><code>LD   R3, PTR
+ADD  R4, R1, #-4
+LDR  R1, R3, #0
+BRnp GETCHAR</code></pre><figure class="source-figure"><a href="course-practice-assets/c7-figure-7-2.webp" target="_blank" rel="noopener" aria-label="Figure 7.2 汇编程序（打开原图）"><img loading="lazy" src="course-practice-assets/c7-figure-7-2.webp" alt="Figure 7.2 汇编程序"></a></figure>
+</div>
+<details class="reference"><summary>查看课件答案</summary><div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-18-answer.webp" target="_blank" rel="noopener" aria-label="第 18 页机器码表（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-18-answer.webp" alt="第 18 页机器码表"></a></figure>
+</div></details>
+</details>
+<details id="c7-slide-33" class="exercise">
+<summary><strong>7-33</strong> <span>判断程序功能</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-33.webp" target="_blank" rel="noopener" aria-label="Chapter 7 课件第 33 页（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-33.webp" alt="Chapter 7 课件第 33 页"></a></figure>
+</div>
+
+</details>
+<details id="c7-slide-34" class="exercise">
+<summary><strong>7-34</strong> <span>跟踪整数序列</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-34.webp" target="_blank" rel="noopener" aria-label="Chapter 7 课件第 34 页（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-34.webp" alt="Chapter 7 课件第 34 页"></a></figure>
+</div>
+
+</details>
+<details id="c7-slide-35" class="exercise">
+<summary><strong>7-35</strong> <span>补全字符串比较程序</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/c7-slide-35.webp" target="_blank" rel="noopener" aria-label="Chapter 7 课件第 35 页（打开原图）"><img loading="lazy" src="course-practice-assets/c7-slide-35.webp" alt="Chapter 7 课件第 35 页"></a></figure>
+</div>
+
+</details>
+</section>
+
+<section id="book-6" class="exercise-group" aria-labelledby="book-6-title">
+<header><h2 id="book-6-title">教材 Chapter 6 Exercises</h2><p>Patt &amp; Patel 第 3 版 · 6.1–6.27</p></header>
+<details id="book-6-1" class="exercise">
+<summary><strong>6.1</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-1-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.1 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-1-249.webp" alt="教材题 6.1 · 第 220 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-2" class="exercise">
+<summary><strong>6.2</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-2-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.2 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-2-249.webp" alt="教材题 6.2 · 第 220 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-3" class="exercise">
+<summary><strong>6.3</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-3-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.3 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-3-249.webp" alt="教材题 6.3 · 第 220 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-4" class="exercise">
+<summary><strong>6.4</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-4-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.4 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-4-249.webp" alt="教材题 6.4 · 第 220 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-5" class="exercise">
+<summary><strong>6.5</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-5-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.5 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-5-249.webp" alt="教材题 6.5 · 第 220 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-6" class="exercise">
+<summary><strong>6.6</strong> <span>教材第 220 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-6-249.webp" target="_blank" rel="noopener" aria-label="教材题 6.6 · 第 220 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-6-249.webp" alt="教材题 6.6 · 第 220 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-6-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.6 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-6-250.webp" alt="教材题 6.6 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-7" class="exercise">
+<summary><strong>6.7</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-7-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.7 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-7-250.webp" alt="教材题 6.7 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-8" class="exercise">
+<summary><strong>6.8</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-8-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.8 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-8-250.webp" alt="教材题 6.8 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-9" class="exercise">
+<summary><strong>6.9</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-9-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.9 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-9-250.webp" alt="教材题 6.9 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-10" class="exercise">
+<summary><strong>6.10</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-10-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.10 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-10-250.webp" alt="教材题 6.10 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-11" class="exercise">
+<summary><strong>6.11</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-11-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.11 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-11-250.webp" alt="教材题 6.11 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-12" class="exercise">
+<summary><strong>6.12</strong> <span>教材第 221 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-12-250.webp" target="_blank" rel="noopener" aria-label="教材题 6.12 · 第 221 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-12-250.webp" alt="教材题 6.12 · 第 221 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-13" class="exercise">
+<summary><strong>6.13</strong> <span>教材第 222 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-13-251.webp" target="_blank" rel="noopener" aria-label="教材题 6.13 · 第 222 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-13-251.webp" alt="教材题 6.13 · 第 222 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-14" class="exercise">
+<summary><strong>6.14</strong> <span>教材第 222 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-14-251.webp" target="_blank" rel="noopener" aria-label="教材题 6.14 · 第 222 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-14-251.webp" alt="教材题 6.14 · 第 222 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-15" class="exercise">
+<summary><strong>6.15</strong> <span>教材第 222 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-15-251.webp" target="_blank" rel="noopener" aria-label="教材题 6.15 · 第 222 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-15-251.webp" alt="教材题 6.15 · 第 222 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-16" class="exercise">
+<summary><strong>6.16</strong> <span>教材第 223 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-16-252.webp" target="_blank" rel="noopener" aria-label="教材题 6.16 · 第 223 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-16-252.webp" alt="教材题 6.16 · 第 223 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-17" class="exercise">
+<summary><strong>6.17</strong> <span>教材第 223 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-17-252.webp" target="_blank" rel="noopener" aria-label="教材题 6.17 · 第 223 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-17-252.webp" alt="教材题 6.17 · 第 223 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-18" class="exercise">
+<summary><strong>6.18</strong> <span>教材第 224 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-18-253.webp" target="_blank" rel="noopener" aria-label="教材题 6.18 · 第 224 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-18-253.webp" alt="教材题 6.18 · 第 224 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-19" class="exercise">
+<summary><strong>6.19</strong> <span>教材第 224 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-19-253.webp" target="_blank" rel="noopener" aria-label="教材题 6.19 · 第 224 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-19-253.webp" alt="教材题 6.19 · 第 224 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-20" class="exercise">
+<summary><strong>6.20</strong> <span>教材第 224 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-20-253.webp" target="_blank" rel="noopener" aria-label="教材题 6.20 · 第 224 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-20-253.webp" alt="教材题 6.20 · 第 224 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-21" class="exercise">
+<summary><strong>6.21</strong> <span>教材第 224 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-21-253.webp" target="_blank" rel="noopener" aria-label="教材题 6.21 · 第 224 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-21-253.webp" alt="教材题 6.21 · 第 224 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-21-254.webp" target="_blank" rel="noopener" aria-label="教材题 6.21 · 第 225 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-21-254.webp" alt="教材题 6.21 · 第 225 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-22" class="exercise">
+<summary><strong>6.22</strong> <span>教材第 225 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-22-254.webp" target="_blank" rel="noopener" aria-label="教材题 6.22 · 第 225 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-22-254.webp" alt="教材题 6.22 · 第 225 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-22-255.webp" target="_blank" rel="noopener" aria-label="教材题 6.22 · 第 226 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-22-255.webp" alt="教材题 6.22 · 第 226 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-23" class="exercise">
+<summary><strong>6.23</strong> <span>教材第 226 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-23-255.webp" target="_blank" rel="noopener" aria-label="教材题 6.23 · 第 226 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-23-255.webp" alt="教材题 6.23 · 第 226 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-24" class="exercise">
+<summary><strong>6.24</strong> <span>教材第 226 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-24-255.webp" target="_blank" rel="noopener" aria-label="教材题 6.24 · 第 226 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-24-255.webp" alt="教材题 6.24 · 第 226 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-24-256.webp" target="_blank" rel="noopener" aria-label="教材题 6.24 · 第 227 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-24-256.webp" alt="教材题 6.24 · 第 227 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-25" class="exercise">
+<summary><strong>6.25</strong> <span>教材第 227 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-25-256.webp" target="_blank" rel="noopener" aria-label="教材题 6.25 · 第 227 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-25-256.webp" alt="教材题 6.25 · 第 227 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-26" class="exercise">
+<summary><strong>6.26</strong> <span>教材第 227 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-26-256.webp" target="_blank" rel="noopener" aria-label="教材题 6.26 · 第 227 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-26-256.webp" alt="教材题 6.26 · 第 227 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-26-257.webp" target="_blank" rel="noopener" aria-label="教材题 6.26 · 第 228 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-26-257.webp" alt="教材题 6.26 · 第 228 页"></a></figure>
+</div>
+
+</details>
+<details id="book-6-27" class="exercise">
+<summary><strong>6.27</strong> <span>教材第 228 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-6-27-257.webp" target="_blank" rel="noopener" aria-label="教材题 6.27 · 第 228 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-27-257.webp" alt="教材题 6.27 · 第 228 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-6-27-258.webp" target="_blank" rel="noopener" aria-label="教材题 6.27 · 第 229 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-6-27-258.webp" alt="教材题 6.27 · 第 229 页"></a></figure>
+</div>
+
+</details>
+</section>
+
+<section id="book-7" class="exercise-group" aria-labelledby="book-7-title">
+<header><h2 id="book-7-title">教材 Chapter 7 Exercises</h2><p>Patt &amp; Patel 第 3 版 · 7.1–7.37</p></header>
+<details id="book-7-1" class="exercise">
+<summary><strong>7.1</strong> <span>教材第 245 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-1-274.webp" target="_blank" rel="noopener" aria-label="教材题 7.1 · 第 245 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-1-274.webp" alt="教材题 7.1 · 第 245 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-2" class="exercise">
+<summary><strong>7.2</strong> <span>教材第 245 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-2-274.webp" target="_blank" rel="noopener" aria-label="教材题 7.2 · 第 245 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-2-274.webp" alt="教材题 7.2 · 第 245 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-3" class="exercise">
+<summary><strong>7.3</strong> <span>教材第 245 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-3-274.webp" target="_blank" rel="noopener" aria-label="教材题 7.3 · 第 245 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-3-274.webp" alt="教材题 7.3 · 第 245 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-4" class="exercise">
+<summary><strong>7.4</strong> <span>教材第 245 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-4-274.webp" target="_blank" rel="noopener" aria-label="教材题 7.4 · 第 245 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-4-274.webp" alt="教材题 7.4 · 第 245 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-5" class="exercise">
+<summary><strong>7.5</strong> <span>教材第 246 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-5-275.webp" target="_blank" rel="noopener" aria-label="教材题 7.5 · 第 246 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-5-275.webp" alt="教材题 7.5 · 第 246 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-6" class="exercise">
+<summary><strong>7.6</strong> <span>教材第 246 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-6-275.webp" target="_blank" rel="noopener" aria-label="教材题 7.6 · 第 246 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-6-275.webp" alt="教材题 7.6 · 第 246 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-7" class="exercise">
+<summary><strong>7.7</strong> <span>教材第 246 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-7-275.webp" target="_blank" rel="noopener" aria-label="教材题 7.7 · 第 246 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-7-275.webp" alt="教材题 7.7 · 第 246 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-8" class="exercise">
+<summary><strong>7.8</strong> <span>教材第 247 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-8-276.webp" target="_blank" rel="noopener" aria-label="教材题 7.8 · 第 247 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-8-276.webp" alt="教材题 7.8 · 第 247 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-9" class="exercise">
+<summary><strong>7.9</strong> <span>教材第 247 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-9-276.webp" target="_blank" rel="noopener" aria-label="教材题 7.9 · 第 247 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-9-276.webp" alt="教材题 7.9 · 第 247 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-10" class="exercise">
+<summary><strong>7.10</strong> <span>教材第 247 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-10-276.webp" target="_blank" rel="noopener" aria-label="教材题 7.10 · 第 247 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-10-276.webp" alt="教材题 7.10 · 第 247 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-11" class="exercise">
+<summary><strong>7.11</strong> <span>教材第 247 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-11-276.webp" target="_blank" rel="noopener" aria-label="教材题 7.11 · 第 247 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-11-276.webp" alt="教材题 7.11 · 第 247 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-12" class="exercise">
+<summary><strong>7.12</strong> <span>教材第 248 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-12-277.webp" target="_blank" rel="noopener" aria-label="教材题 7.12 · 第 248 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-12-277.webp" alt="教材题 7.12 · 第 248 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-13" class="exercise">
+<summary><strong>7.13</strong> <span>教材第 248 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-13-277.webp" target="_blank" rel="noopener" aria-label="教材题 7.13 · 第 248 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-13-277.webp" alt="教材题 7.13 · 第 248 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-14" class="exercise">
+<summary><strong>7.14</strong> <span>教材第 249 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-14-278.webp" target="_blank" rel="noopener" aria-label="教材题 7.14 · 第 249 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-14-278.webp" alt="教材题 7.14 · 第 249 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-15" class="exercise">
+<summary><strong>7.15</strong> <span>教材第 249 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-15-278.webp" target="_blank" rel="noopener" aria-label="教材题 7.15 · 第 249 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-15-278.webp" alt="教材题 7.15 · 第 249 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-16" class="exercise">
+<summary><strong>7.16</strong> <span>教材第 249 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-16-278.webp" target="_blank" rel="noopener" aria-label="教材题 7.16 · 第 249 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-16-278.webp" alt="教材题 7.16 · 第 249 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-16-279.webp" target="_blank" rel="noopener" aria-label="教材题 7.16 · 第 250 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-16-279.webp" alt="教材题 7.16 · 第 250 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-17" class="exercise">
+<summary><strong>7.17</strong> <span>教材第 250 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-17-279.webp" target="_blank" rel="noopener" aria-label="教材题 7.17 · 第 250 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-17-279.webp" alt="教材题 7.17 · 第 250 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-18" class="exercise">
+<summary><strong>7.18</strong> <span>教材第 250 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-18-279.webp" target="_blank" rel="noopener" aria-label="教材题 7.18 · 第 250 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-18-279.webp" alt="教材题 7.18 · 第 250 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-19" class="exercise">
+<summary><strong>7.19</strong> <span>教材第 251 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-19-280.webp" target="_blank" rel="noopener" aria-label="教材题 7.19 · 第 251 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-19-280.webp" alt="教材题 7.19 · 第 251 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-20" class="exercise">
+<summary><strong>7.20</strong> <span>教材第 251 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-20-280.webp" target="_blank" rel="noopener" aria-label="教材题 7.20 · 第 251 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-20-280.webp" alt="教材题 7.20 · 第 251 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-21" class="exercise">
+<summary><strong>7.21</strong> <span>教材第 251 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-21-280.webp" target="_blank" rel="noopener" aria-label="教材题 7.21 · 第 251 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-21-280.webp" alt="教材题 7.21 · 第 251 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-22" class="exercise">
+<summary><strong>7.22</strong> <span>教材第 251 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-22-280.webp" target="_blank" rel="noopener" aria-label="教材题 7.22 · 第 251 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-22-280.webp" alt="教材题 7.22 · 第 251 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-22-281.webp" target="_blank" rel="noopener" aria-label="教材题 7.22 · 第 252 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-22-281.webp" alt="教材题 7.22 · 第 252 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-23" class="exercise">
+<summary><strong>7.23</strong> <span>教材第 252 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-23-281.webp" target="_blank" rel="noopener" aria-label="教材题 7.23 · 第 252 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-23-281.webp" alt="教材题 7.23 · 第 252 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-24" class="exercise">
+<summary><strong>7.24</strong> <span>教材第 252 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-24-281.webp" target="_blank" rel="noopener" aria-label="教材题 7.24 · 第 252 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-24-281.webp" alt="教材题 7.24 · 第 252 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-25" class="exercise">
+<summary><strong>7.25</strong> <span>教材第 253 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-25-282.webp" target="_blank" rel="noopener" aria-label="教材题 7.25 · 第 253 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-25-282.webp" alt="教材题 7.25 · 第 253 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-26" class="exercise">
+<summary><strong>7.26</strong> <span>教材第 253 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-26-282.webp" target="_blank" rel="noopener" aria-label="教材题 7.26 · 第 253 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-26-282.webp" alt="教材题 7.26 · 第 253 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-27" class="exercise">
+<summary><strong>7.27</strong> <span>教材第 253 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-27-282.webp" target="_blank" rel="noopener" aria-label="教材题 7.27 · 第 253 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-27-282.webp" alt="教材题 7.27 · 第 253 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-28" class="exercise">
+<summary><strong>7.28</strong> <span>教材第 254 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-28-283.webp" target="_blank" rel="noopener" aria-label="教材题 7.28 · 第 254 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-28-283.webp" alt="教材题 7.28 · 第 254 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-29" class="exercise">
+<summary><strong>7.29</strong> <span>教材第 255 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-29-284.webp" target="_blank" rel="noopener" aria-label="教材题 7.29 · 第 255 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-29-284.webp" alt="教材题 7.29 · 第 255 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-30" class="exercise">
+<summary><strong>7.30</strong> <span>教材第 255 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-30-284.webp" target="_blank" rel="noopener" aria-label="教材题 7.30 · 第 255 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-30-284.webp" alt="教材题 7.30 · 第 255 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-30-285.webp" target="_blank" rel="noopener" aria-label="教材题 7.30 · 第 256 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-30-285.webp" alt="教材题 7.30 · 第 256 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-31" class="exercise">
+<summary><strong>7.31</strong> <span>教材第 257 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-31-286.webp" target="_blank" rel="noopener" aria-label="教材题 7.31 · 第 257 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-31-286.webp" alt="教材题 7.31 · 第 257 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-32" class="exercise">
+<summary><strong>7.32</strong> <span>教材第 257 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-32-286.webp" target="_blank" rel="noopener" aria-label="教材题 7.32 · 第 257 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-32-286.webp" alt="教材题 7.32 · 第 257 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-32-287.webp" target="_blank" rel="noopener" aria-label="教材题 7.32 · 第 258 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-32-287.webp" alt="教材题 7.32 · 第 258 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-33" class="exercise">
+<summary><strong>7.33</strong> <span>教材第 258 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-33-287.webp" target="_blank" rel="noopener" aria-label="教材题 7.33 · 第 258 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-33-287.webp" alt="教材题 7.33 · 第 258 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-33-288.webp" target="_blank" rel="noopener" aria-label="教材题 7.33 · 第 259 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-33-288.webp" alt="教材题 7.33 · 第 259 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-34" class="exercise">
+<summary><strong>7.34</strong> <span>教材第 259 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-34-288.webp" target="_blank" rel="noopener" aria-label="教材题 7.34 · 第 259 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-34-288.webp" alt="教材题 7.34 · 第 259 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-35" class="exercise">
+<summary><strong>7.35</strong> <span>教材第 259 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-35-288.webp" target="_blank" rel="noopener" aria-label="教材题 7.35 · 第 259 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-35-288.webp" alt="教材题 7.35 · 第 259 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-35-289.webp" target="_blank" rel="noopener" aria-label="教材题 7.35 · 第 260 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-35-289.webp" alt="教材题 7.35 · 第 260 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-36" class="exercise">
+<summary><strong>7.36</strong> <span>教材第 260 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-36-289.webp" target="_blank" rel="noopener" aria-label="教材题 7.36 · 第 260 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-36-289.webp" alt="教材题 7.36 · 第 260 页"></a></figure>
+<figure class="source-figure"><a href="course-practice-assets/book-7-36-290.webp" target="_blank" rel="noopener" aria-label="教材题 7.36 · 第 261 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-36-290.webp" alt="教材题 7.36 · 第 261 页"></a></figure>
+</div>
+
+</details>
+<details id="book-7-37" class="exercise">
+<summary><strong>7.37</strong> <span>教材第 261 页</span></summary>
+<div class="source-content" lang="en">
+<figure class="source-figure"><a href="course-practice-assets/book-7-37-290.webp" target="_blank" rel="noopener" aria-label="教材题 7.37 · 第 261 页（打开原图）"><img loading="lazy" src="course-practice-assets/book-7-37-290.webp" alt="教材题 7.37 · 第 261 页"></a></figure>
+</div>
+
+</details>
+</section>
+
+<section id="lab" class="exercise-group" aria-labelledby="lab-title">
+<header><h2 id="lab-title">Lab Assignment</h2><p>LC-3 编程 · 2 项必做与 1 项选做</p></header>
+<details id="lab-requirements" class="exercise">
+<summary><strong>提交要求与评分</strong></summary>
+<div class="source-content" lang="en">
+<p>Submission Deadline: Sunday, December 6, 2026, at 11:59 PM</p>
+<h4>1. Lab Background</h4>
+<p>This lab applies concepts from CPS 2390 Computer Organization and Architecture to LC-3 assembly programming. You are required to complete two LC-3 assembly programs. You may also complete an optional bonus program to earn up to 5 additional points toward your final course grade. Your work should demonstrate correct use of LC-3 instructions, memory, bit manipulation, branching, and program control.</p>
+<h4>2. General Requirements</h4>
+<p>1. Write and submit two required LC-3 assembly programs (.asm), plus the optional bonus program if attempted.</p>
+<p>2. All programs must start at memory address x3000 using .ORIG x3000, store results at the specified memory locations, and halt after completing their tasks.</p>
+<p>3. Use the LC-3 simulator to run and test each program. Record the input data, expected results, actual memory contents, and console output where required.</p>
+<p>4. Submit a report covering Program 1, Program 2, and the bonus program if attempted. Do not submit only .obj files or screenshots of code.</p>
+<h4>4. Lab Grading: 15% of Final Course Grade</h4>
+<p>The two required .asm programs account for 8% of the final grade. The lab report accounts for 7%. The optional bonus is separate from this 15% and may add up to 5 points to the final course grade.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Component</th><th scope="col">Weight</th></tr></thead><tbody>
+<tr><td>Program 1: Power-of-Two Checker (.asm)</td><td>4%</td></tr>
+<tr><td>Program 2: 16-Bit Left Rotation (.asm)</td><td>4%</td></tr>
+<tr><td>Report, Section 1: Program Design</td><td>3%</td></tr>
+<tr><td>Report, Section 2: Program Execution and Testing</td><td>3%</td></tr>
+<tr><td>Report, Section 3: Challenges and Reflection</td><td>1%</td></tr>
+<tr><td>TOTAL (required lab)</td><td>15%</td></tr>
+<tr><td>Optional bonus program</td><td>Up to 5 points to your final grade</td></tr>
+</tbody></table></div>
+<h4>4.1 LC-3 Assembly Source Code (8%)</h4>
+<p>•  Naming: Use meaningful labels and clear names for program files and data.</p>
+<p>•  Formatting: Use proper indentation and consistent formatting.</p>
+<p>•  Comments: Include appropriate comments explaining important instructions, branches, loops, and program logic. Begin each file with your name, student ID, and a short description.</p>
+<p>•  Correctness: Ensure each program assembles, runs, produces the required outputs, and halts without errors.</p>
+<p>•  Academic Integrity: AI-generated code and copying code from others are prohibited. Confirmed violations will be reported to the university and result in a score of zero (0) for the entire lab, subject to university procedures.</p>
+<h4>4.2 Lab Report (7%)</h4>
+<h4>Section 1: Program Design (3%)</h4>
+<p>•  For each program: Describe the main design idea, data flow, key LC-3 instructions, use of registers and memory, and how the program works.</p>
+<h4>Section 2: Program Execution and Testing (3%)</h4>
+<p>•  Test cases: Use test case tables (you may add extra cases). Provide a complete test-case table for each program, including the inputs, expected results, actual results, and whether each test passed or failed.</p>
+<p>•  Screenshots: Include representative screenshots of the LC-3 simulator showing input/output memory locations and console output where required. Show boundary cases where applicable.</p>
+<h4>Section 3: Challenges and Reflection (1%)</h4>
+<p>•  Reflection: Describe difficulties you encountered and explain how you solved them. Cover both required programs and the bonus program if attempted.</p>
+<h4>5. Submission Requirements</h4>
+<p>Submission Deadline: Sunday, December 6, 2026, at 11:59 PM</p>
+<p>Submit ONE ZIP file containing the PDF lab report and all required LC-3 assembly source files (.asm).</p>
+<p>ZIP file name: FullName_StudentID_lab.zip   (e.g., Qixia_Zhang_123456_lab.zip)</p>
+<p>•  Report: Submit one PDF containing all three report sections.</p>
+<p>•  Source files: Submit two required .asm files, one per program, and the optional bonus .asm file if attempted.</p>
+<p>•  Important: Submit actual .asm source files. Do not submit only .obj files, screenshots, or copied source code.</p>
+</div>
+
+</details>
+<details id="lab-1" class="exercise">
+<summary><strong>(1) Mandatory Program 1: Power-of-Two Checker</strong></summary>
+<div class="source-content" lang="en">
+<p>Write an LC-3 assembly program that determines whether a positive 16-bit two&#x27;s complement integer is a power of 2.</p>
+<p>•  Input: Before executing the program, manually set memory location x3050 to a positive integer from 1 to 100 (inclusive). This is the test input; keyboard input is not required for Program 1.</p>
+<p>•  Output: If the input is a power of 2, store x0001 at x3051. Otherwise, store x0000 at x3051.</p>
+<p>•  Execution: The program must start at x3000 and halt after storing the result. Check the output by inspecting x3051 in the simulator.</p>
+<p>Test Cases (initialize x3050, then verify x3051):</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">No.</th><th scope="col">Input (dec)</th><th scope="col">x3050 (hex)</th><th scope="col">Power of 2?</th><th scope="col">Expected x3051</th></tr></thead><tbody>
+<tr><td>1</td><td>1</td><td>x0001</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>2</td><td>2</td><td>x0002</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>3</td><td>3</td><td>x0003</td><td>No</td><td>x0000</td></tr>
+<tr><td>4</td><td>4</td><td>x0004</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>5</td><td>7</td><td>x0007</td><td>No</td><td>x0000</td></tr>
+<tr><td>6</td><td>8</td><td>x0008</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>7</td><td>15</td><td>x000F</td><td>No</td><td>x0000</td></tr>
+<tr><td>8</td><td>16</td><td>x0010</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>9</td><td>31</td><td>x001F</td><td>No</td><td>x0000</td></tr>
+<tr><td>10</td><td>32</td><td>x0020</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>11</td><td>63</td><td>x003F</td><td>No</td><td>x0000</td></tr>
+<tr><td>12</td><td>64</td><td>x0040</td><td>Yes</td><td>x0001</td></tr>
+<tr><td>13</td><td>100</td><td>x0064</td><td>No</td><td>x0000</td></tr>
+</tbody></table></div>
+<p>Note: 1 is a power of 2 because 1 = 2^0. Test all rows and include representative screenshots in your report.</p>
+</div>
+
+</details>
+<details id="lab-2" class="exercise">
+<summary><strong>(2) Mandatory Program 2: 16-Bit Left Rotation</strong></summary>
+<div class="source-content" lang="en">
+<p>Write an LC-3 assembly program that rotates a 16-bit pattern to the left by a specified number of bits (an integer from 0 through 15, inclusive). Unlike a logical left shift, a left rotation moves bits shifted out of the most significant end back into the least significant end.</p>
+<p>•  Input (memory only): Before executing the program, manually set memory location x3200 to a 16-bit pattern and x3201 to the rotation amount (0–15 inclusive). No keyboard input is required.</p>
+<p>•  Output (memory): Perform the left rotation and store the 16-bit result at memory location x3202.</p>
+<p>•  Output (console): Print the rotated 16-bit binary result on the screen, with one space between every group of four bits (for example, 0010 0001 0111 1010).</p>
+<p>•  Execution: Your program must start at x3000 and halt after storing and printing the result. Inspect x3202 in the LC-3 simulator to verify the stored value.</p>
+<p>Example:</p>
+<p>Set x3200 = xD10B (1101 0001 0000 1011) and x3201 = x0005 (decimal 5). After rotating left by five bits, x3202 must contain x217A and the console must display: 0010 0001 0111 1010.</p>
+<p>Hints:</p>
+<p>1. LC-3 has no dedicated rotate instruction. Consider how ADD can shift a 16-bit pattern left by one bit, and what happens to its original most significant bit.</p>
+<p>2. Rotate one bit at a time for the specified number of steps. A rotation by 0 leaves the pattern unchanged. For binary output, print four bits, a space, and repeat.</p>
+<p>3. Memory locations x3200–x3202 may be too far from x3000 for a direct PC-relative load/store. Consider address pointers with LDR/STR.</p>
+<p>Test Cases (preset x3200 and x3201; check x3202 and screen output):</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">No.</th><th scope="col">x3200
+(hex)</th><th scope="col">x3200 (binary)
+Before rotation</th><th scope="col">x3201
+(dec)</th><th scope="col">x3202
+(hex)</th><th scope="col">Expected console output
+After rotation</th></tr></thead><tbody>
+<tr><td>1</td><td>xD10B</td><td>1101 0001 0000 1011</td><td>5</td><td>x217A</td><td>0010 0001 0111 1010</td></tr>
+<tr><td>2</td><td>xD10B</td><td>1101 0001 0000 1011</td><td>0</td><td>xD10B</td><td>1101 0001 0000 1011</td></tr>
+<tr><td>3</td><td>xD10B</td><td>1101 0001 0000 1011</td><td>15</td><td>xE885</td><td>1110 1000 1000 0101</td></tr>
+<tr><td>4</td><td>x8001</td><td>1000 0000 0000 0001</td><td>1</td><td>x0003</td><td>0000 0000 0000 0011</td></tr>
+<tr><td>5</td><td>x0001</td><td>0000 0000 0000 0001</td><td>15</td><td>x8000</td><td>1000 0000 0000 0000</td></tr>
+<tr><td>6</td><td>xA55A</td><td>1010 0101 0101 1010</td><td>8</td><td>x5AA5</td><td>0101 1010 1010 0101</td></tr>
+<tr><td>7</td><td>xF000</td><td>1111 0000 0000 0000</td><td>4</td><td>x000F</td><td>0000 0000 0000 1111</td></tr>
+<tr><td>8</td><td>x1234</td><td>0001 0010 0011 0100</td><td>4</td><td>x2341</td><td>0010 0011 0100 0001</td></tr>
+<tr><td>9</td><td>x0000</td><td>0000 0000 0000 0000</td><td>7</td><td>x0000</td><td>0000 0000 0000 0000</td></tr>
+<tr><td>10</td><td>xFFFF</td><td>1111 1111 1111 1111</td><td>13</td><td>xFFFF</td><td>1111 1111 1111 1111</td></tr>
+</tbody></table></div>
+<p>The binary output on the console must match the value stored at x3202. Note: Red bits in the test cases indicate the bits that wrap around during left rotation. Console output does not need to be colored.</p>
+</div>
+
+</details>
+<details id="lab-3" class="exercise">
+<summary><strong>(3) Optional Bonus Program: Integer-to-Floating-Point Conversion</strong></summary>
+<div class="source-content" lang="en">
+<p>In this program, you will implement an LC-3 assembly program that converts an integer from its 2’s complement representation into the custom 16-bit floating-point representation specified below, and prints the converted representation on the screen. LC-3 does not have a defined floating-point standard, so use only the format defined in this assignment. This optional program is worth up to 5 bonus points toward the final course grade.</p>
+<p>16-Bit Floating-Point Format</p>
+<p>The format consists of 1 sign bit (S), 6 exponent bits (E), and 9 fraction bits (F). The exponent bias is 31.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Bit 15</th><th scope="col">Bits 14–9</th><th scope="col">Bits 8–0</th></tr></thead><tbody>
+<tr><td>Sign (1 bit)</td><td>Exponent (6 bits)</td><td>Fraction (9 bits)</td></tr>
+</tbody></table></div>
+<p>For nonzero values: Value = (-1)^S × 2^(E − 31) × (1.F). The fraction represents nine binary bits after the leading 1. Encode the integer 0 as x0000.</p>
+<p>Program Details and Rules</p>
+<p>1. Before running the program, manually set x4000 to a signed 16-bit two’s complement integer (from −32768 to 32767). Convert it and store the encoded 16-bit floating-point result in x4001.</p>
+<p>2. Output the 16-bit floating-point representation in 0s and 1s onto the screen. Then output the corresponding four-digit hexadecimal representation.</p>
+<p>3. Start the program at x3000 and halt after the result has been stored and displayed. Bounds checking is not required.</p>
+<p>4. When nine fraction bits are insufficient, discard the least significant extra bits (truncate, do not round). For example, 4147 is encoded as 0101011000000110 (x5606), representing 4144 after truncation.</p>
+<p>Examples: input 25 (x0019) produces 0100011100100000 (x4720); input −32768 (x8000) produces 1101110000000000 (xDC00).</p>
+<p>Hints:</p>
+<p>1. Find the sign, the position of the highest 1 bit in the magnitude, and the biased exponent. The remaining significant bits determine the fraction.</p>
+<p>2. Handle zero separately. Think carefully about the special input −32768, whose positive magnitude does not fit in a signed 16-bit register.</p>
+<p>3. x4000 and x4001 are far from x3000, so consider using a stored address pointer to access them. You can use repeated shifting to build the binary screen output.</p>
+<p>Test Cases (initialize x4000 and verify x4001 plus console output):</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">No.</th><th scope="col">Input (dec)</th><th scope="col">Represented Value (dec)</th><th scope="col">x4000</th><th scope="col">Expected x4001 (binary)</th><th scope="col">Expected x4001 (hex)</th></tr></thead><tbody>
+<tr><td>1</td><td>0</td><td>0</td><td>x0000</td><td>0000000000000000</td><td>x0000</td></tr>
+<tr><td>2</td><td>1</td><td>1</td><td>x0001</td><td>0011111000000000</td><td>x3E00</td></tr>
+<tr><td>3</td><td>-1</td><td>-1</td><td>xFFFF</td><td>1011111000000000</td><td>xBE00</td></tr>
+<tr><td>4</td><td>1024</td><td>1024</td><td>x0400</td><td>0101001000000000</td><td>x5200</td></tr>
+<tr><td>5</td><td>-12552</td><td>-12544</td><td>xCEF8</td><td>1101100100010000</td><td>xD910</td></tr>
+<tr><td>6</td><td>25</td><td>25</td><td>x0019</td><td>0100011100100000</td><td>x4720</td></tr>
+<tr><td>7</td><td>-32768</td><td>-32768</td><td>x8000</td><td>1101110000000000</td><td>xDC00</td></tr>
+<tr><td>8</td><td>4147</td><td>4144</td><td>x1033</td><td>0101011000000110</td><td>x5606</td></tr>
+<tr><td>9</td><td>32767</td><td>32736</td><td>x7FFF</td><td>0101101111111111</td><td>x5BFF</td></tr>
+<tr><td>10</td><td>-47</td><td>-47</td><td>xFFD1</td><td>1100100011110000</td><td>xC8F0</td></tr>
+</tbody></table></div>
+<p>The &quot;Represented Value (dec)&quot; column shows the decimal value represented by the encoded floating-point number, which may differ from the original input due to truncation.</p>
+</div>
+
+</details>
+</section>
+</main>
+<script>
+function expandLinkedExercise(){
+  const exercise = document.getElementById(location.hash.slice(1));
+  if (exercise instanceof HTMLDetailsElement) exercise.open = true;
+}
+expandLinkedExercise();
+window.addEventListener('hashchange', expandLinkedExercise);
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@ async page => {
   const p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(page.url());
   const data=JSON.parse(await p.locator('#quiz-data').textContent());
   assert(data.course.review_revision==='2026-10-22.2-source'&&data.course.answer_basis==='source','Deployed page uses the original TestBank answer policy');
-  assert(data.questions.length===244&&data.questions.every(q=>q.explanation&&q.references),'All 244 deployed questions have reasoning and references');
+  assert(data.questions.length===314&&data.questions.filter(q=>q.chapter<5).every(q=>q.explanation&&q.references),'All 244 Chapter 1–5 questions have reasoning and references');
   assert(data.questions.reduce((n,q)=>n+(q.option_explanations?.length||0),0)===458,'All 458 option explanations are embedded');
   for(const [label,source,correct] of [['C2-MC02','C','C'],['C3-TF15','A','A'],['C5-MC18','B','B']]){
    await p.locator('#search').fill(label);await p.locator(`[data-choice="${source}"]`).click();await p.locator('#submit').click();

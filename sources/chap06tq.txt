@@ -1,0 +1,118 @@
+Patt/Patel, “Introduction to Computing Systems: From Bits and Gates to C and Beyond, 2e”
+
+Chapter 6 (copyright, 2004, Yale Patt)
+
+True/False
+----------
+
+1. A programmer usually finds that it takes longer to find the errors in a program so the program can execute correctly than it takes to write the program in the first place.  (T)
+
+2. One must NEVER read from a register that one hasn't written to earlier in the execution of the program. (T)
+
+3. Iteration is one of the constructs of structured programming. (T)
+
+4. The declaration of a variable as a struct is one of the constructs of structured programming.  (F)
+
+5. In structured programming, one must enter a processing box at exactly one entrance point, but can leave the processing box at up to 4 exit points, depending on the nature of the processing being performed. (F)
+  
+6. In finding an error in a program, it is often useful to break down the program execution into modules as a way of narrowing the region where the error must have occurred.  (T)
+
+7. Single stepping a segment of a program's execution is almost never useful because it is so tedious and time consuming. (F)
+
+8. In debugging a program, one can simulate data entry from the keyboard by setting a breakpoint before the input instruction, and just depositing some value into a register as if it came from the keyboard.  (T)
+
+9. One way to stop execution of a program during debugging is by setting one or more breakpoints. (T)
+
+10. During the systematic decomposition of a processing box via a conditional construct into a decision box and two processing boxes, A and B, box A may subsequently be decomposed via the iterative construct. (T)
+
+11. The decomposition of a processing box via the iterative construct results in a decision box and two smaller processing boxes.  (F)
+
+12. The decomposition of a processing box via the sequential construct results in no decision boxes.  (T)
+
+
+
+Multiple Choice
+---------------
+
+1. In debug mode, to examine the contents of a register or memory location, we use the:
+
+a. deposit command.
+b. display command.
+c. clear breakpoint command.
+
+Answer: b
+
+2. The structured programming construct that executes the same sequence again and again until told not to is:
+
+a. sequential
+b. conditional
+c. iterative.
+
+Answer: c
+
+
+3. The structured programming construct that executes one part of a task completely before moving to the next part of the task and never returns to the first part is:
+
+a. sequential
+b. conditional
+c. iterative
+
+Answer: a
+
+
+4. In debug mode, one can cause execution of one or more instructions by:
+
+a. RUN command
+b. set breakpoint command, followed by the RUN command
+c. Single step command
+d. All of the above
+
+Answer: d
+
+
+5. In debug mode, to simulate external input activity of a program, we use the:
+
+a. deposit command
+b. display command
+c. clear breakpoint command
+
+Answer: a
+
+
+6. In debug mode, if we know for sure one particular module is working correctly, we can save time by:
+
+a. disabling all ST instructions in the module so it does not waste time writing to memory.
+b. single stepping through that module to verify that in fact the module is working correctly.
+c. setting a breakpoint at the exit of that module, and executing the RUN command when we enter the module.
+
+Answer: c
+
+
+Fill in Blanks
+(Note: Blank is indicated by parentheses, which contains the answer)
+--------------
+1. In the vernacular of computer science, we refer to errors as (bugs) and the process of removing errors as (debugging).
+
+2. (Structured programming) is the term usually associated with the process of systematically decomposing a natural language statement of a program into smaller pieces by means of three primitive constructs.
+
+3. The three constructs of structured programming are (sequential, conditional, and iterative).
+
+4. The (conditional) construct is appropriate when one of two tasks is to be performed, depending on the state of some variable.
+
+5. The (iterative) construct is appropriate when a task is repeated again and again until some test says otherwise.
+
+6. A key element of systematic decomposition is that the number of entrances into a processing box is exactly (one) and the number of exits out of a processing box is exactly (one).
+
+7. An important first step in any algorithm, or computer program, is to (initialize) all the variables, that is, to put each variable into a known state.
+
+8. The simplest and often most effective way to debug a program is to follow the sequence of execution of all instructions from start to finish. That sequence is referred to as a (trace).
+
+9. One can short circuit the examination of the entire sequence by (setting a breakpoint) and allowing the computer to execute all instructions up to some desired point.
+
+10. One can (single step) the program, that is observe the execution of the program, one instruction at a time.
+
+11. A debugging command useful in simulating external input is the (deposit) command. 
+
+12. To test to see if the program actually computed a result correctly and stored that result in a particular register or memory location we use the (display) command.
+
+

@@ -15,6 +15,8 @@ CHAPTERS = [
     ('数字逻辑', 'Digital Logic Structures'),
     ('冯诺依曼模型', 'The von Neumann Model'),
     ('LC-3 指令集', 'The LC-3'),
+    ('程序设计与调试', 'Programming'),
+    ('LC-3 汇编语言', 'Assembly Language'),
 ]
 TYPES = {'tf': '判断题', 'mc': '选择题', 'fill': '填空题'}
 CODES = {'tf': 'TF', 'mc': 'MC', 'fill': 'FB'}
@@ -26,10 +28,10 @@ def clean(text):
 def parse():
     questions = []
     reports = []
-    for chapter in range(1, 6):
+    for chapter in range(1, len(CHAPTERS) + 1):
         path = SOURCES / f'chap{chapter:02d}tq.txt'
         text = path.read_text()
-        sections = list(re.finditer(r'^(True/False|TRUE-FALSE|Multiple Choice|Fill in (?:the )?Blanks)\s*$', text, re.M | re.I))
+        sections = list(re.finditer(r'^(True/False|TRUE-FALSE|Multiple Choice|Fill in (?:the )?Blanks)\.?[ \t]*$', text, re.M | re.I))
         assert len(sections) == 3, path
         counts = Counter()
         seen = Counter()
@@ -59,15 +61,15 @@ def parse():
                     q.update(text=source[:match.start()].strip(), options=['True', 'False'],
                              answer='A' if match[1].upper() == 'T' else 'B', source_answer=match[1].upper())
                 elif kind == 'mc':
-                    key = re.search(r'^\s*Answer\s*:\s*([a-f])\.?\s*$', source, re.M | re.I)
+                    key = re.search(r'^\s*Answer\s*:\s*([a-g])\.?\s*$', source, re.M | re.I)
                     assert key, (label, source)
                     content = source[:key.start()].rstrip()
-                    options = list(re.finditer(r'^\s*([a-f])\s*\.\s*', content, re.M))
-                    assert 3 <= len(options) <= 6, (label, options)
+                    options = list(re.finditer(r'^\s*([a-g])\s*[.,]\s*', content, re.M))
+                    assert 3 <= len(options) <= 7, (label, options)
                     hint = ''
                     items = []
                     for oi, option in enumerate(options):
-                        assert option[1].lower() == 'abcdef'[oi], label
+                        assert option[1].lower() == 'abcdefg'[oi], label
                         value = content[option.end():options[oi+1].start() if oi+1 < len(options) else len(content)].strip()
                         if '(Hint:' in value:
                             value, hint = value.split('(Hint:', 1)
@@ -86,6 +88,8 @@ def parse():
                             return match[0]  # Preserve a(n), a grammatical parenthesis.
                         if value.startswith('by generalizing '):
                             return match[0]  # Preserve the explanatory parenthesis in C3-FB01.
+                        if label == 'C7-FB05' and value in {'s', 'Hint: how many'}:
+                            return match[0]  # The plural suffix and hint are part of the stem.
                         answers.append(value)
                         return f'____[{len(answers)}]'
                     stem = re.sub(r'\(([^()]*)\)', blank, source)
@@ -99,7 +103,9 @@ def parse():
     assert len({q['label'] for q in questions}) == len(questions)
     assert [q['id'] for q in questions] == list(range(1, len(questions)+1))
     chapters = [dict(name=name, english=english) for name, english in CHAPTERS]
-    apply_review(questions)
+    apply_review([q for q in questions if q['chapter'] < 5])
+    for q in questions:
+        q.setdefault('answer_basis', 'source')
     data = dict(course=dict(code='CPS2390', school='Wenzhou-Kean University', instructor='Qixia Zhang',
                             term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION,
                             answer_basis='source'), chapters=chapters, questions=questions)
@@ -114,6 +120,9 @@ def build():
     template = (ROOT / 'template.html').read_text()
     for marker, value in prepare_ui(ROOT, data).items():
         template = template.replace(marker, value)
+    counts = Counter(q['type'] for q in data['questions'])
+    for kind, count in {**counts, 'total': len(data['questions'])}.items():
+        template = template.replace(f'__COUNT_{kind.upper()}__', str(count))
     (ROOT / 'index.html').write_text(template.replace('__QUIZ_DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')))
     print(json.dumps({'questions':len(data['questions']), 'types':dict(Counter(q['type'] for q in data['questions']))}, ensure_ascii=False))
 

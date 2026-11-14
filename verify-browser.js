@@ -6,9 +6,9 @@ async page => {
  page.on('pageerror',e=>errors.push(e.message));
  await reset();
  const data=JSON.parse(await page.locator('#quiz-data').textContent());
- assert(data.questions.length===244,'All 244 source questions are present');
- assert(data.questions.filter(q=>q.type==='tf').length===78&&data.questions.filter(q=>q.type==='mc').length===77&&data.questions.filter(q=>q.type==='fill').length===89,'Question type totals match the five source documents');
- assert(new Set(data.questions.map(q=>q.label)).size===244,'All labels are unique despite duplicate source numbers');
+ assert(data.questions.length===314,'All 314 source questions are present');
+ assert(data.questions.filter(q=>q.type==='tf').length===110&&data.questions.filter(q=>q.type==='mc').length===93&&data.questions.filter(q=>q.type==='fill').length===111,'Question type totals match the seven source documents');
+ assert(new Set(data.questions.map(q=>q.label)).size===314,'All labels are unique despite duplicate source numbers');
  assert(await page.locator('#course-switch').getAttribute('data-current-course')==='cps','Course selector identifies CPS2390');
  assert(await page.locator('#submit').isDisabled(),'Choice questions require a selection');
  assert(await page.locator('.answer-reason,.option-analysis').count()===0,'Explanations are hidden before submission');
@@ -21,7 +21,7 @@ async page => {
  await page.locator('[data-choice="B"]').click();await page.locator('#submit').click();
  assert((await read()).answers[1].correct&&(await read()).answers[1].attempts===2,'Correct retry clears a mistake and increments attempts');
  await page.locator('[data-mode="all"]').click();
- for(const [type,count] of [['tf',78],['mc',77],['fill',89]]){
+ for(const [type,count] of [['tf',110],['mc',93],['fill',111]]){
   await page.locator(`[data-bank="${type}"]`).click();assert((await read()).order.length===count,`${type} filter has ${count} questions`);
  }
  await page.locator('#chapter-select').selectOption('1');
@@ -85,22 +85,22 @@ async page => {
    await page.locator(`[data-choice="${q.answer}"]`).click();await page.locator('#submit').click();
    if(await page.locator('.option.correct').getAttribute('data-choice')!==q.answer)throw new Error(`Grading mismatch ${q.label}`);
   }
-  if(await page.locator('.answer-reason').textContent()!==q.explanation)throw new Error(`Explanation mismatch ${q.label}`);
-  if(q.type!=='fill'){
+  if((await page.locator('.answer-reason').allTextContents()).join('')!==q.explanation)throw new Error(`Explanation mismatch ${q.label}`);
+  if(q.option_explanations){
    const notes=await page.locator('.option-analysis li').allTextContents();
    if(notes.length!==q.options.length||notes.some((t,i)=>!t.endsWith(q.option_explanations[i])))throw new Error(`Option explanation mismatch ${q.label}`);
   }
   if(q.id<data.questions.length)await page.locator('#submit').click();
  }
- assert(Object.keys((await read()).answers).length===244&&Object.values((await read()).answers).every(a=>a.correct),'Every one of the 244 questions completes and grades correctly');
+ assert(Object.keys((await read()).answers).length===314&&Object.values((await read()).answers).every(a=>a.correct),'Every one of the 314 questions completes and grades correctly');
  assert(true,'All 244 explanations and all 458 option explanations render with the authored text');
- assert(await page.locator('#coverage').textContent()==='100'&&await page.locator('#correct-stat').textContent()==='244','Full completion shows 244 answers and 100 percent coverage');
+ assert(await page.locator('#coverage').textContent()==='100'&&await page.locator('#correct-stat').textContent()==='314','Full completion shows 314 answers and 100 percent coverage');
  await page.locator('#submit').click();
- assert(await page.locator('#summary-dialog').isVisible()&&(await page.locator('.summary-number').textContent()).includes('244'),'End-of-round summary uses all 244 questions');
+ assert(await page.locator('#summary-dialog').isVisible()&&(await page.locator('.summary-number').textContent()).includes('314'),'End-of-round summary uses all 314 questions');
  await page.locator('#summary-next').click();
- assert((await read()).retry.length===244&&(await read()).revealed.length===0,'Restart hides all answers, including fill references');
+ assert((await read()).retry.length===314&&(await read()).revealed.length===0,'Restart hides all answers, including fill references');
  await page.locator('#reset').click();await page.locator('[data-close="reset-dialog"]').click();
- assert(Object.keys((await read()).answers).length===244,'Cancel reset preserves progress');
+ assert(Object.keys((await read()).answers).length===314,'Cancel reset preserves progress');
  await page.locator('#reset').click();await page.locator('#confirm-reset').click();
  assert(Object.keys((await read()).answers).length===0,'Confirmed reset clears CPS progress');
  await page.locator('#help').click();assert(await page.locator('#help-dialog').isVisible(),'Help dialog is usable');await page.keyboard.press('Escape');

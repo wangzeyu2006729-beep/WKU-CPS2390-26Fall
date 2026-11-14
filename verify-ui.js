@@ -36,7 +36,7 @@ async page => {
   await p.reload();assert(await p.locator('#question-translation').evaluate(e=>e.open),'Per-question translation state persists after refresh');
   await p.locator('#question-translation>summary').click();await p.waitForFunction(()=>!document.getElementById('question-translation').open);await p.reload();assert(!(await p.locator('#question-translation').evaluate(e=>e.open)),'Explicitly collapsed meaning stays collapsed');
   await p.locator('#search').fill(cps?'晶体管':'梯度');assert((await read()).order.length>0,'Search finds questions using Chinese meaning');
-  assert(await p.locator('#coverage').textContent()===(cps?'0.4':'0.7'),'First completed question shows a visible fractional percentage');
+  assert(await p.locator('#coverage').textContent()===(Math.round(1000/data.questions.length)/10).toFixed(1),'First completed question shows a visible fractional percentage');
   for(const width of [1440,768,390,320]){
    await p.setViewportSize({width,height:900});await p.locator('#search').fill(cps?'C5-MC20':'V23');
    if(!(await p.locator('#question-translation').evaluate(e=>e.open)))await p.locator('#question-translation>summary').click();

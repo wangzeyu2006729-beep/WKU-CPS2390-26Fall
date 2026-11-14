@@ -19,6 +19,14 @@
     {
       "file": "chap05tq.doc",
       "sha256": "c6a36dd599ca42f1e0c85a546c47cc40d89c3930288aa8f5f5c133f1e00f1913"
+    },
+    {
+      "file": "chap06tq.doc",
+      "sha256": "26216d38b13386856a9ec4937c17d9fe66f2abc28900a1652160b920376dfbe0"
+    },
+    {
+      "file": "chap07tq.doc",
+      "sha256": "dd4a7387d28be818b561e8af14796f720eb417499b05506b0e87528f004bda27"
     }
   ],
   "extraction": "macOS textutil -convert txt; source documents retained locally"
