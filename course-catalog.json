@@ -14,10 +14,10 @@
     {
       "id": "cps",
       "code": "CPS2390",
-      "description": "Computer Organization · TestBank",
+      "description": "Computer Organization",
       "instructor": "Qixia Zhang",
       "term": "26Fall",
-      "questions": 314,
+      "questions": 331,
       "storage_key": "cps2390-testbank-v1",
       "url": "https://wangzeyu2006729-beep.github.io/WKU-CPS2390-26Fall/"
     },

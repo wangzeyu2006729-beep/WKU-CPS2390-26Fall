@@ -30,7 +30,7 @@ def prepare_ui(root, data):
     assert all(urlparse(c['url']).scheme == 'https' and urlparse(c['url']).netloc for c in courses)
     current = next(c for c in courses if c['code'] == data['course']['code'])
     assert current['storage_key'] == data['course']['storage_key']
-    assert current['questions'] == len(data['questions'])
+    assert current['questions'] == len(data['questions']) + len(data.get('written_questions', []))
     items = []
     for c in courses:
         active = c['id'] == current['id']

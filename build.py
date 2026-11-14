@@ -1,5 +1,6 @@
 """Build the CPS2390 practice site from extracted, instructor-supplied TestBank text."""
 from collections import Counter
+from html import unescape
 from pathlib import Path
 import hashlib
 import json
@@ -109,6 +110,11 @@ def parse():
     data = dict(course=dict(code='CPS2390', school='Wenzhou-Kean University', instructor='Qixia Zhang',
                             term='26Fall', storage_key='cps2390-testbank-v1', review_revision=REVISION,
                             answer_basis='source'), chapters=chapters, questions=questions)
+    data['written_questions'] = json.loads((SOURCES / 'chapter-6-7-written.json').read_text())
+    for i, q in enumerate(data['written_questions'], len(questions) + 1):
+        q.update(id=i, chapter=q['chapters'][0] - 1, type='written', bank='written',
+                 text=unescape(re.sub(r'<[^>]+>', ' ', q['prompt'])), options=[])
+    assert len({q['label'] for q in questions + data['written_questions']}) == len(questions) + len(data['written_questions'])
     prepare_ui(ROOT, data)
     (ROOT / 'questions.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
     (ROOT / 'source-audit.json').write_text(json.dumps(dict(total=len(questions), files=reports), ensure_ascii=False, indent=2)+'\n')
@@ -120,8 +126,9 @@ def build():
     template = (ROOT / 'template.html').read_text()
     for marker, value in prepare_ui(ROOT, data).items():
         template = template.replace(marker, value)
-    counts = Counter(q['type'] for q in data['questions'])
-    for kind, count in {**counts, 'total': len(data['questions'])}.items():
+    all_questions = data['questions'] + data['written_questions']
+    counts = Counter(q['type'] for q in all_questions)
+    for kind, count in {**counts, 'total': len(all_questions)}.items():
         template = template.replace(f'__COUNT_{kind.upper()}__', str(count))
     (ROOT / 'index.html').write_text(template.replace('__QUIZ_DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')))
     print(json.dumps({'questions':len(data['questions']), 'types':dict(Counter(q['type'] for q in data['questions']))}, ensure_ascii=False))

@@ -25,7 +25,7 @@ Click **查看中文释义** below a question to expand its Chinese meaning, inc
 
 The course name opens a compact dark course panel with the current course marked. Use arrow keys or Tab to move, Enter to follow a course, and Escape or an outside click to dismiss. Each course page retains its own independent learning records.
 
-Open [Chapter 6–7 course practice](course-practice.html) for Assignment 5 (6 questions) and 11 questions from Problem Set 3 that cover Chapters 6–7, with their supplied solutions. Problem Set 3 keeps the original question numbering.
+Use the source and chapter filters on the main practice page to reach Assignment 5 (6 questions) and 11 questions from Problem Set 3, numbered as in the source and paired with the supplied solutions. The combined practice page has 331 questions. Written questions support drafts, bookmarks and completion tracking. The Problem Set provides self-assessment after revealing the reference answer.
 
 ## Coverage
 
@@ -68,13 +68,13 @@ All 244 questions from Chapters 1–5 have Chinese explanations and all 458 TF/M
 
 Records stay in the current browser's localStorage under `cps2390-testbank-v1`. There is no backend, account, tracking, or answer upload. Each other course uses its own key; switching courses or clearing one course does not clear the others.
 
-Typed fill drafts, pending reference-answer reveals, self-assessment results, bookmarks, and position survive refresh. Existing submitted choices are regraded against the original TestBank keys; their attempts and history remain, and changed grades are explained on screen.
+Typed fill and written drafts, pending reference-answer reveals, self-assessment results, bookmarks, and position survive refresh. Existing submitted choices are regraded against the original TestBank keys; their attempts and history remain, and changed grades are explained on screen.
 
 The repository rename changes the page path but keeps the same GitHub Pages hostname and storage key, so existing online records remain available in the same browser profile. Different devices, browsers, and profiles have independent records; tabs in one profile share them. There is no cross-device synchronization. Clearing browser data removes progress; private browsing may discard it on close. If storage is unavailable, practice remains usable for that session with a warning.
 
 ## Build and offline use
 
-`index.html` embeds the full interface and question bank. Download it and open it to practice offline. Online and offline copies have separate browser storage; switching to the other online course requires an internet connection. For offline access to the additional exercises, keep `course-practice.html` next to `index.html`.
+`index.html` embeds the full interface and question bank. Download it and open it to practice offline. Online and offline copies have separate browser storage; switching to the other online course requires an internet connection. The HTML also embeds the assigned questions and supplied solutions.
 
 Rebuild with Python 3, without third-party Python dependencies:
 
@@ -98,7 +98,7 @@ npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filenam
 npx --yes --package @playwright/cli playwright-cli -s=cps2390 run-code --filename verify-isolation.js
 ```
 
-Checks cover all 314 question submissions and available explanations, all 458 option explanations, migration back to source keys, filters, persistence, storage-denied operation, and answered layouts from 320 to 1440 pixels. Isolation checks use independent browser contexts. The local cross-course bridge requires the MATH3700 HTML at `tmp/math-index.html` (copy it from the sibling course checkout); public isolation checks do not need that fixture. See `docs/verification.json` and the additional course checks in `docs/` for verified results.
+Checks cover all 331 question completions and available explanations, all 458 option explanations, migration back to source keys, filters, persistence, storage-denied operation, and answered layouts from 320 to 1440 pixels. Isolation checks use independent browser contexts. The local cross-course bridge requires the MATH3700 HTML at `tmp/math-index.html` (copy it from the sibling course checkout); public isolation checks do not need that fixture. See `docs/verification.json` and the additional course checks in `docs/` for verified results.
 
 ## License and attribution
 

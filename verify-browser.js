@@ -8,7 +8,9 @@ async page => {
  const data=JSON.parse(await page.locator('#quiz-data').textContent());
  assert(data.questions.length===314,'All 314 source questions are present');
  assert(data.questions.filter(q=>q.type==='tf').length===110&&data.questions.filter(q=>q.type==='mc').length===93&&data.questions.filter(q=>q.type==='fill').length===111,'Question type totals match the seven source documents');
- assert(new Set(data.questions.map(q=>q.label)).size===314,'All labels are unique despite duplicate source numbers');
+ const written=data.written_questions,total=data.questions.length+written.length;
+ assert(written.filter(q=>q.source==='assignment').length===6&&written.filter(q=>q.source==='problemset').length===11,'All 17 assigned questions are embedded');
+ assert(new Set([...data.questions,...written].map(q=>q.label)).size===total,'All labels are unique despite duplicate source numbers');
  assert(await page.locator('#course-switch').getAttribute('data-current-course')==='cps','Course selector identifies CPS2390');
  assert(await page.locator('#submit').isDisabled(),'Choice questions require a selection');
  assert(await page.locator('.answer-reason,.option-analysis').count()===0,'Explanations are hidden before submission');
@@ -75,6 +77,29 @@ async page => {
  await page.locator(`[data-index="${migrated.order.indexOf(corrected[0].id)}"]`).click();await page.locator('#retry-current').click();await page.locator(`[data-choice="${corrected[0].answer}"]`).click();await page.locator('#submit').click();
  assert((await read()).answers[corrected[0].id].correct&&await page.locator('.regrade-note').count()===0,'New attempt uses source answer and clears old regrade notice');
  await reset();
+ assert(await page.locator('a[href="course-practice.html"]').count()===0,'Assigned questions use the same page');
+ for(const chapter of ['5','6']){
+  await page.locator('#chapter-select').selectOption(chapter);
+  const expected=[...data.questions.filter(q=>q.chapter===Number(chapter)),...written.filter(q=>q.chapters.includes(Number(chapter)+1))];
+  assert((await read()).order.join()===expected.map(q=>q.id).join(),`Chapter ${Number(chapter)+1} includes its related TestBank and assigned questions`);
+ }
+ await page.locator('#chapter-select').selectOption('all');
+ await page.locator('#source-select').selectOption('assignment');
+ assert((await read()).order.length===6&&await page.locator('#question .table-wrap').count()===1,'Assignment source filter opens the original question table in the shared card');
+ await page.locator('#written-draft').fill('LOOP    LDR R0, R3, #-1');
+ await page.locator('#bookmark').click();
+ await page.reload();
+ assert(await page.locator('#written-draft').inputValue()==='LOOP    LDR R0, R3, #-1'&&await page.locator('#bookmark').getAttribute('aria-pressed')==='true','Written draft and bookmark survive refresh');
+ await page.locator('#submit').click();
+ assert(await page.locator('#map .completed').count()===1&&await page.locator('#wrong-count').textContent()==='0'&&await page.locator('#accuracy').textContent()==='正确率 —','Assignment completion is excluded from accuracy and wrong count');
+ await page.locator('#source-select').selectOption('problemset');
+ assert((await read()).order.length===11&&await page.locator('.explanation').count()===0,'Problem set filter preserves original numbering and hides the teacher answer');
+ await page.locator('#submit').click();
+ assert((await page.locator('.explanation').textContent()).includes('= 144'),'Teacher solution displays in the shared card');
+ await page.locator('#self-wrong').click();
+ await page.locator('[data-mode="wrong"]').click();
+ assert((await read()).order.length===1&&await page.locator('.question-id strong').textContent()==='PS3-02','Self-assessed written question enters wrong review');
+ await reset();
  for(const q of data.questions){
   if(q.type==='fill'){
    await page.locator('#submit').click();
@@ -90,26 +115,31 @@ async page => {
    const notes=await page.locator('.option-analysis li').allTextContents();
    if(notes.length!==q.options.length||notes.some((t,i)=>!t.endsWith(q.option_explanations[i])))throw new Error(`Option explanation mismatch ${q.label}`);
   }
-  if(q.id<data.questions.length)await page.locator('#submit').click();
+  await page.locator('#submit').click();
  }
  assert(Object.keys((await read()).answers).length===314&&Object.values((await read()).answers).every(a=>a.correct),'Every one of the 314 questions completes and grades correctly');
  assert(true,'All 244 explanations and all 458 option explanations render with the authored text');
- assert(await page.locator('#coverage').textContent()==='100'&&await page.locator('#correct-stat').textContent()==='314','Full completion shows 314 answers and 100 percent coverage');
- await page.locator('#submit').click();
- assert(await page.locator('#summary-dialog').isVisible()&&(await page.locator('.summary-number').textContent()).includes('314'),'End-of-round summary uses all 314 questions');
+ for(const q of written){
+  assert(await page.locator('.question-id strong').textContent()===q.label,`Written question in sequence ${q.label}`);
+  await page.locator('#submit').click();
+  if(q.reference)await page.locator('#self-correct').click();
+  await page.locator('#submit').click();
+ }
+ assert(await page.locator('#coverage').textContent()==='100'&&await page.locator('#correct-stat').textContent()==='325','Full completion covers 331 questions and grades only the 325 with answers');
+ assert(await page.locator('#summary-dialog').isVisible()&&(await page.locator('.summary-number').textContent()).includes(String(total)),'End-of-round summary includes all questions');
  await page.locator('#summary-next').click();
- assert((await read()).retry.length===314&&(await read()).revealed.length===0,'Restart hides all answers, including fill references');
+ assert((await read()).retry.length===total&&(await read()).revealed.length===0,'Restart hides all answers, including fill references');
  await page.locator('#reset').click();await page.locator('[data-close="reset-dialog"]').click();
- assert(Object.keys((await read()).answers).length===314,'Cancel reset preserves progress');
+ assert(Object.keys((await read()).answers).length===total,'Cancel reset preserves progress');
  await page.locator('#reset').click();await page.locator('#confirm-reset').click();
  assert(Object.keys((await read()).answers).length===0,'Confirmed reset clears CPS progress');
  await page.locator('#help').click();assert(await page.locator('#help-dialog').isVisible(),'Help dialog is usable');await page.keyboard.press('Escape');
  for(const width of [1440,1024,768,390,375,320]){
   await page.setViewportSize({width,height:950});
-  for(const label of ['C1-TF01','C5-MC01','C1-FB03','C5-MC20']){
+  for(const label of ['C1-TF01','C5-MC01','C1-FB03','C5-MC20','A5-01','PS3-02']){
    await page.locator('#search').fill(label);
-   const q=data.questions.find(q=>q.label===label);
-   if(q.type==='fill'){await page.locator('#submit').click();await page.locator('#self-correct').click();}else {await page.locator(`[data-choice="${q.answer}"]`).click();await page.locator('#submit').click();}
+   const q=[...data.questions,...written].find(q=>q.label===label);
+   if(q.type==='fill'){await page.locator('#submit').click();await page.locator('#self-correct').click();}else if(q.type==='written'){await page.locator('#submit').click();if(q.reference)await page.locator('#self-correct').click();}else {await page.locator(`[data-choice="${q.answer}"]`).click();await page.locator('#submit').click();}
    assert(!(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),`${label} fits ${width}px width`);
    await page.locator('#retry-current').count()&&await page.locator('#retry-current').click();
   }
